@@ -8,7 +8,7 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import PackagesPage from "./pages/PackagesPage";
 import DestinationPage from "./pages/DestinationPage";
-import CustomTripPage from "./pages/CustomTripPage";
+import BookingPage from "./pages/BookingPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,10 +34,11 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/packages" element={<PackagesPage />} />
           <Route path="/packages/:slug" element={<DestinationPage />} />
-          <Route path="/custom-trip" element={<CustomTripPage />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </main>
       <Footer />
     </div>
   );
 }
+

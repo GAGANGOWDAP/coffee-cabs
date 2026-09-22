@@ -46,16 +46,16 @@ export default function PopularRoutesMatrix() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 gsap-route-fade">
           <div className="inline-block text-xs uppercase tracking-widest text-[#71717a] font-extrabold mb-3 bg-white border border-black/10 px-4 py-1.5 rounded-full shadow-sm">
-            Outstation Fare Guide
+            Outstation Tariff Guide
           </div>
           <h2
             className="text-3xl sm:text-4xl font-extrabold text-[#09090b] mb-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Popular Routes – <span className="text-[#f59e0b]">Fleet Fare Estimate</span>
+            Popular Routes & <span className="text-[#f59e0b]">Fleet Tariff Guide</span>
           </h2>
           <p className="text-[#71717a] text-xs sm:text-sm">
-            Estimated one-way fares from Bangalore. Round trips get 15% discount on total fare.
+            Standard owner-approved route tariff reference from Bangalore. Request an enquiry to confirm vehicle availability.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function PopularRoutesMatrix() {
             ))}
           </div>
 
-          {/* Active Route Fare Card */}
+          {/* Active Route Tariff Card */}
           <div className="bg-white rounded-3xl p-6 border border-black/10 shadow-lg">
             <div className="flex justify-between items-center pb-4 border-b border-black/10 mb-4">
               <div>
@@ -120,7 +120,7 @@ export default function PopularRoutesMatrix() {
 
             <Link
               to={`/packages/${activeMobileRoute.slug}`}
-              className="flex items-center justify-center gap-2 w-full py-3 bg-[#09090b] text-white text-xs font-bold rounded-full hover:bg-neutral-800 transition-colors shadow-sm"
+              className="flex items-center justify-center gap-2 w-full py-3 bg-[#09090b] text-[#ffffff] text-xs font-bold rounded-full hover:bg-neutral-800 transition-colors shadow-sm"
             >
               View Full {activeMobileRoute.dest} Package Details <ArrowRight size={14} />
             </Link>
@@ -160,7 +160,7 @@ export default function PopularRoutesMatrix() {
         </div>
 
         <p className="text-center text-xs text-[#71717a] mt-4 font-medium italic">
-          * Fares are estimates. Actual fare depends on route, duration, and vehicle availability. Round trip: 15% discount.
+          * Rates listed are standard owner tariff guidelines. Request a booking enquiry for exact fleet confirmation.
         </p>
       </div>
     </section>

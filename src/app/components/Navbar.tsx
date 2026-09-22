@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Menu, X, Phone, Compass } from "lucide-react";
+import { Menu, X, Phone, CalendarCheck } from "lucide-react";
 import { Link, useLocation } from "react-router";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Fleet", to: "/fleet" },
   { label: "Packages", to: "/packages" },
-  { label: "Custom Trip", to: "/custom-trip" },
+  { label: "Book Enquiry", to: "/booking" },
   { label: "Pricing", to: "/pricing" },
   { label: "Contact", to: "/contact" },
 ];
@@ -48,10 +48,10 @@ export default function Navbar() {
           {/* Right Action Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              to="/custom-trip"
+              to="/booking"
               className="inline-flex items-center gap-1.5 text-xs font-bold bg-[#09090b] text-white px-4 py-2 rounded-full hover:bg-neutral-800 transition-colors shadow-sm"
             >
-              <Compass size={13} /> Custom Trip
+              <CalendarCheck size={13} /> Request Booking
             </Link>
 
             <a
@@ -120,11 +120,11 @@ export default function Navbar() {
 
           <div className="space-y-3 pt-6 border-t border-black/5">
             <Link
-              to="/custom-trip"
+              to="/booking"
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-4 bg-[#09090b] text-white text-sm font-bold rounded-full"
             >
-              <Compass size={16} /> Build Custom Trip
+              <CalendarCheck size={16} /> Request Booking
             </Link>
             <a
               href="tel:+917676726209"

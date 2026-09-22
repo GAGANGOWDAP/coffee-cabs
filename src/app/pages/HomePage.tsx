@@ -21,7 +21,7 @@ import { Link } from "react-router";
 import { VEHICLES } from "../data/vehicles";
 import { DESTINATIONS } from "../data/destinations";
 import VehicleCard from "../components/VehicleCard";
-import Calculator from "../components/Calculator";
+import BookingForm from "../components/BookingForm";
 import FleetComparison from "../components/FleetComparison";
 import PopularRoutesMatrix from "../components/PopularRoutesMatrix";
 
@@ -54,8 +54,8 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: "How is outstation pricing calculated at Coffee Cabs?",
-      a: "Outstation pricing is calculated transparently on a per-kilometer basis (₹19/km for Innova Crysta, ₹35/km for 7+1 TT Recliner, ₹38-₹50/km for Force Urbania variants, and ₹50/km for Buses) with a standard 300 km/day minimum billing rule plus driver daily allowance. Tolls, parking, and state permit taxes are charged extra as per actual receipts.",
+      q: "What are the pricing rules and tariff terms for Coffee Cabs?",
+      a: "We follow owner-approved per-kilometer rates (e.g., ₹19/km for Innova Crysta, ₹35/km for 7+1 TT Recliner, ₹38-₹50/km for Force Urbania variants, and ₹55/km for Luxury Buses) with a standard 300 km/day minimum billing rule plus driver daily allowance. When you submit a booking enquiry, our reservation team confirms the available vehicle and exact applicable price.",
     },
     {
       q: "What makes the Force Urbania and Tempo Traveller Maharaja seats special?",
@@ -66,8 +66,8 @@ export default function HomePage() {
       a: "Booking takes under 60 seconds! Simply choose your vehicle or destination, click 'Book via WhatsApp' or call us directly at +91 76767 26209. We provide instant availability, fixed quotes, and driver confirmation.",
     },
     {
-      q: "Do you offer custom multi-stop trip itineraries?",
-      a: "Yes! Use our dedicated Custom Trip Planner to build any multi-stop itinerary across India. You can add start/end locations, custom waypoints, get dynamic route distance calculations, and generate direct Google Maps directions links.",
+      q: "Can I request custom multi-stop trip itineraries?",
+      a: "Yes! Simply use our Booking & Enquiry form or contact us directly on WhatsApp with your desired itinerary, stops, and dates. Our team will verify fleet availability and provide you with an owner-confirmed booking price.",
     },
     {
       q: "Does Coffee Cabs own its fleet?",
@@ -308,7 +308,7 @@ export default function HomePage() {
       {/* ── 4. FLEET COMPARISON TABLE ── */}
       <FleetComparison />
 
-      {/* ── 5. POPULAR ROUTES FLEET FARE ESTIMATE MATRIX ── */}
+      {/* ── 5. POPULAR ROUTES FLEET TARIFF MATRIX ── */}
       <PopularRoutesMatrix />
 
       {/* ── 6. HOW IT WORKS ── */}
@@ -343,8 +343,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7. CALCULATOR ── */}
-      <Calculator />
+      {/* ── 7. BOOKING ENQUIRY ── */}
+      <section id="booking-enquiry" className="gsap-section-reveal py-16 sm:py-24 bg-[#fafafa] border-y border-black/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
+          <BookingForm />
+        </div>
+      </section>
 
       {/* ── 8. DESTINATIONS EXPLORER ── */}
       <section className="gsap-section-reveal py-16 sm:py-24 bg-white">
@@ -442,7 +446,7 @@ export default function HomePage() {
 
                 <div className="px-4 pb-4">
                   <div className="pt-3 border-t border-black/5 flex items-center justify-between text-xs font-bold text-[#09090b] group-hover:translate-x-0.5 transition-transform">
-                    <span>Calculate Fare</span>
+                    <span>Request Enquiry</span>
                     <ArrowRight size={12} />
                   </div>
                 </div>

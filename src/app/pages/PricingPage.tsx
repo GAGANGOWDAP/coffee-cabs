@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "../utils/gsapSetup";
 import { ArrowRight, ChevronRight, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { VEHICLES, PRICING_TERMS } from "../data/vehicles";
-import Calculator from "../components/Calculator";
+import BookingForm from "../components/BookingForm";
 
 export default function PricingPage() {
   const pageRef = useRef<HTMLDivElement>(null);
@@ -164,8 +164,15 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Live Calculator */}
-      <Calculator />
+      {/* Booking Enquiry Section */}
+      <section className="py-16 sm:py-24 bg-[#fafafa] border-y border-black/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
+          <BookingForm
+            title="Send Booking Enquiry for Vehicle Tariff"
+            subtitle="Select your vehicle preference and trip details to receive owner-approved pricing confirmation."
+          />
+        </div>
+      </section>
 
       {/* Terms & Policies Grid */}
       <section className="py-16 sm:py-24 bg-white">

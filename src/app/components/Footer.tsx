@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/pricing" className="hover:text-white transition-colors">
-                  Fare Matrix & Terms
+                  Fleet Tariff & Terms
                 </Link>
               </li>
             </ul>
@@ -80,8 +80,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/custom-trip" className="text-white font-bold hover:underline">
-                  Custom Multi-Stop Trip →
+                <Link to="/booking" className="text-white font-bold hover:underline">
+                  Booking & Enquiry →
                 </Link>
               </li>
             </ul>
@@ -98,8 +98,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="hover:text-white transition-colors">
-                  Fare Calculator
+                <Link to="/booking" className="hover:text-white transition-colors">
+                  Book Enquiry
                 </Link>
               </li>
               <li>

@@ -47,7 +47,7 @@ export default function PackagesPage() {
             200 Outstation Packages Across India
           </h1>
           <p className="text-[#71717a] text-sm sm:text-base max-w-xl mx-auto">
-            Browse famous tour packages from Bangalore. Select any place to calculate live vehicle fares and book your journey with Coffee Cabs.
+            Browse famous tour packages from Bangalore. Select any destination to view details and request a vehicle booking enquiry with Coffee Cabs.
           </p>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function PackagesPage() {
 
                 <div className="px-4 pb-4">
                   <div className="pt-3 border-t border-black/5 flex items-center justify-between text-xs font-bold text-[#09090b] group-hover:translate-x-0.5 transition-transform">
-                    <span>Calculate Fare</span>
+                    <span>Request Enquiry</span>
                     <ArrowRight size={12} />
                   </div>
                 </div>

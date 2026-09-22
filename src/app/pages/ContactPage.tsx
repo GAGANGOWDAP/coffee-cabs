@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import BookingForm from "../components/BookingForm";
 
 export default function ContactPage() {
   const whatsappMsg = encodeURIComponent("Hi Coffee Cabs! I'd like to inquire about cab booking and availability.");
@@ -24,8 +25,8 @@ export default function ContactPage() {
       </section>
 
       <section className="py-12 sm:py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-8">
-          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8">
+          <div className="grid lg:grid-cols-[1fr_1.8fr] gap-8 items-start">
             {/* Quick Info */}
             <div className="space-y-4">
               <h2 className="text-xl font-bold text-[#09090b] mb-4">Direct Contact Channels</h2>
@@ -82,51 +83,11 @@ export default function ContactPage() {
             </div>
 
             {/* Form */}
-            <div className="bg-[#fafafa] rounded-3xl p-6 sm:p-10 border border-black/10 shadow-xl">
-              <h2 className="text-xl font-bold text-[#09090b] mb-6">Request a Custom Trip Quote</h2>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-bold text-[#71717a] uppercase tracking-wider mb-2">Name</label>
-                    <input
-                      type="text"
-                      placeholder="Your full name"
-                      className="w-full bg-white border border-black/10 px-4 py-3 text-sm text-[#09090b] placeholder:text-[#a1a1aa] focus:outline-none focus:border-[#09090b] transition-colors rounded-xl"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold text-[#71717a] uppercase tracking-wider mb-2">Phone</label>
-                    <input
-                      type="tel"
-                      placeholder="+91 76767 26209"
-                      className="w-full bg-white border border-black/10 px-4 py-3 text-sm text-[#09090b] placeholder:text-[#a1a1aa] focus:outline-none focus:border-[#09090b] transition-colors rounded-xl"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#71717a] uppercase tracking-wider mb-2">Email</label>
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="w-full bg-white border border-black/10 px-4 py-3 text-sm text-[#09090b] placeholder:text-[#a1a1aa] focus:outline-none focus:border-[#09090b] transition-colors rounded-xl"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#71717a] uppercase tracking-wider mb-2">Trip Requirements</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Provide details: Destination, start date, number of passengers, and vehicle preference."
-                    className="w-full bg-white border border-black/10 px-4 py-3 text-sm text-[#09090b] placeholder:text-[#a1a1aa] focus:outline-none focus:border-[#09090b] transition-colors resize-none rounded-xl"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full py-4 bg-[#09090b] text-white text-sm font-bold rounded-full hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2 group"
-                >
-                  Submit Quote Request
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </button>
-              </form>
+            <div>
+              <BookingForm
+                title="Send Booking Enquiry"
+                subtitle="Fill in your travel details to receive owner-approved fleet availability and price confirmation."
+              />
             </div>
           </div>
         </div>
