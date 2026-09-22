@@ -155,20 +155,20 @@ export default function HomePage() {
   return (
     <div ref={homeRef} className="bg-[#08111C] text-[#F4F1E8]">
       {/* ── 1. HERO SECTION ── */}
-      <section className="relative min-h-[780px] md:h-[830px] lg:h-[870px] xl:h-[900px] flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-8 overflow-hidden">
+      <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-8 overflow-hidden">
         {/* Full-width Cinematic Background Image */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src={`${import.meta.env.BASE_URL}images/hero.png`}
             alt="Coffee Cabs Luxury Fleet & Skyline"
-            className="w-full h-full object-cover object-[center_40%] opacity-85 transition-opacity duration-700"
+            className="w-full h-full object-cover object-[center_30%] opacity-90 transition-opacity duration-700"
           />
           {/* Approved Controlled Navy Overlay */}
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(8,17,28,0.45) 0%, rgba(8,17,28,0.20) 40%, rgba(8,17,28,0.82) 100%)",
+                "linear-gradient(180deg, rgba(8,17,28,0.50) 0%, rgba(8,17,28,0.15) 35%, rgba(8,17,28,0.85) 100%)",
             }}
           />
         </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
         {/* Upper Hero Content */}
         <div className="relative z-10 max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
           {/* Decorative Eyebrow */}
-          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-4">
+          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-3">
             <span className="h-[1px] w-8 sm:w-12 bg-[#C6A15B]" />
             <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#C6A15B]">
               PREMIUM TRAVEL • BANGALORE & BEYOND
@@ -186,7 +186,7 @@ export default function HomePage() {
 
           {/* Main Headline - Strictly 2 lines */}
           <h1
-            className="gsap-hero-headline text-4xl sm:text-6xl lg:text-7xl xl:text-[76px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-4 sm:mb-5 max-w-4xl"
+            className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-3 sm:mb-4 max-w-4xl"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             RIDE TO RELAX.<br />
@@ -194,54 +194,54 @@ export default function HomePage() {
           </h1>
 
           {/* Hero Description */}
-          <p className="gsap-hero-desc text-xs sm:text-sm md:text-base text-[#AEB7C2] max-w-[650px] mx-auto mb-7 sm:mb-8 font-medium leading-relaxed">
+          <p className="gsap-hero-desc text-xs sm:text-sm text-[#AEB7C2] max-w-[620px] mx-auto mb-6 font-medium leading-relaxed">
             Bangalore's premium car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
           </p>
 
           {/* Hero CTAs */}
-          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto mb-10 lg:mb-12">
+          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md mx-auto mb-6 lg:mb-8">
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-8 py-3.5 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-[1.03] transition-all duration-300 text-center shadow-xl flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto px-7 py-3 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-[1.02] transition-all duration-300 text-center shadow-xl flex items-center justify-center gap-2 group min-h-[44px]"
             >
-              BOOK YOUR RIDE <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+              BOOK YOUR RIDE <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/fleet"
-              className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-[1.03] transition-all duration-300 text-center flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto px-7 py-3 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-[1.02] transition-all duration-300 text-center flex items-center justify-center gap-2 group min-h-[44px]"
             >
-              EXPLORE OUR FLEET <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+              EXPLORE OUR FLEET <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
 
-        {/* Foreground Fleet Cards Section (Reference-Style Layout) */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full mt-auto">
-          <div className="gsap-hero-cards grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-7 items-end mb-6">
+        {/* Foreground Compact Fleet Cards Section (Positioned Low to Reveal Background Urbania) */}
+        <div className="relative z-10 max-w-[1020px] mx-auto px-4 sm:px-6 w-full mt-auto">
+          <div className="gsap-hero-cards flex flex-col sm:flex-row items-center sm:items-end justify-center gap-4 lg:gap-5 mb-5">
             {/* CARD 1: LEFT - Toyota Innova Crysta */}
-            <div className="bg-[#132333] border border-[#AEB7C2]/20 rounded-2xl lg:rounded-3xl p-4 sm:p-5 shadow-2xl hover:border-[#C6A15B] hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+            <div className="w-full sm:w-[275px] lg:w-[295px] bg-[#132333]/95 backdrop-blur-sm border border-[#AEB7C2]/20 rounded-2xl p-3.5 sm:p-4 shadow-xl hover:border-[#C6A15B] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] mb-4">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5">
                   <img
                     src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop"
                     alt="Toyota Innova Crysta"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-1">
+                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
                   PREMIUM SUV • 6+1 SEATER
                 </div>
-                <h3 className="text-base font-extrabold text-[#F4F1E8] mb-3 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
                   Toyota Innova Crysta
                 </h3>
               </div>
-              <div className="pt-3 border-t border-[#AEB7C2]/18 flex items-center justify-between">
-                <div className="text-base font-extrabold text-[#F4F1E8]">
-                  ₹19 <span className="text-xs text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#F4F1E8]">
+                  ₹19 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -249,32 +249,32 @@ export default function HomePage() {
             </div>
 
             {/* CARD 2: CENTER FEATURED - Force Urbania Luxury */}
-            <div className="bg-[#132333] border-2 border-[#C6A15B]/80 rounded-2xl lg:rounded-3xl p-4 sm:p-5 shadow-2xl hover:border-[#C6A15B] hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between relative sm:-translate-y-5">
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#C6A15B] text-[#08111C] text-[10px] font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full shadow-lg whitespace-nowrap">
+            <div className="w-full sm:w-[295px] lg:w-[320px] bg-[#132333]/95 backdrop-blur-sm border-2 border-[#C6A15B] rounded-2xl p-3.5 sm:p-4 shadow-2xl hover:border-[#C6A15B] transition-all duration-300 group flex flex-col justify-between relative shrink-0">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C6A15B] text-[#08111C] text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
                 FLEXIBLE GROUP FAVORITE
               </div>
               <div>
-                <div className="aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] mb-4 mt-1">
+                <div className="h-[115px] sm:h-[120px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5 mt-0.5">
                   <img
                     src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop"
                     alt="Force Urbania Luxury"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-1">
+                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
                   LUXURY RECLINER • 16 SEATER
                 </div>
-                <h3 className="text-base font-extrabold text-[#F4F1E8] mb-3 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
                   Force Urbania Luxury
                 </h3>
               </div>
-              <div className="pt-3 border-t border-[#AEB7C2]/18 flex items-center justify-between">
-                <div className="text-base font-extrabold text-[#F4F1E8]">
-                  ₹50 <span className="text-xs text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#F4F1E8]">
+                  ₹50 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -282,29 +282,29 @@ export default function HomePage() {
             </div>
 
             {/* CARD 3: RIGHT - Force Tempo Traveller */}
-            <div className="bg-[#132333] border border-[#AEB7C2]/20 rounded-2xl lg:rounded-3xl p-4 sm:p-5 shadow-2xl hover:border-[#C6A15B] hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between">
+            <div className="w-full sm:w-[275px] lg:w-[295px] bg-[#132333]/95 backdrop-blur-sm border border-[#AEB7C2]/20 rounded-2xl p-3.5 sm:p-4 shadow-xl hover:border-[#C6A15B] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] mb-4">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5">
                   <img
                     src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=500&fit=crop"
                     alt="Force Tempo Traveller"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-1">
+                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
                   GROUP TRAVEL • 12/17 SEATER
                 </div>
-                <h3 className="text-base font-extrabold text-[#F4F1E8] mb-3 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
                   Force Tempo Traveller
                 </h3>
               </div>
-              <div className="pt-3 border-t border-[#AEB7C2]/18 flex items-center justify-between">
-                <div className="text-base font-extrabold text-[#F4F1E8]">
-                  ₹35 <span className="text-xs text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#F4F1E8]">
+                  ₹35 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -313,28 +313,28 @@ export default function HomePage() {
           </div>
 
           {/* Micro Details Statistics Bar */}
-          <div className="gsap-hero-stats bg-[#08111C]/85 backdrop-blur-md p-3.5 sm:p-4 rounded-xl border border-[#AEB7C2]/15 shadow-xl">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-0 text-center">
+          <div className="gsap-hero-stats bg-[#08111C]/85 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-[#AEB7C2]/15 shadow-xl">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-0 text-center">
               <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
+                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
                   8+ <span className="text-[#C6A15B]">YEARS</span>
                 </div>
                 <div className="text-[10px] text-[#AEB7C2] font-medium">Experience</div>
               </div>
               <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
+                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
                   5000+
                 </div>
                 <div className="text-[10px] text-[#AEB7C2] font-medium">Groups Served</div>
               </div>
               <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
+                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
                   &lt; 5 MIN
                 </div>
                 <div className="text-[10px] text-[#AEB7C2] font-medium">Average Response</div>
               </div>
               <div className="px-2">
-                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
+                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
                   24/7
                 </div>
                 <div className="text-[10px] text-[#AEB7C2] font-medium">Travel Support</div>
