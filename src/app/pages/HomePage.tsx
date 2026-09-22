@@ -388,17 +388,17 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
             <div>
               <div className="inline-block text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3 bg-[#132333] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full">
-                Elite Collection
+                OUR FLEET
               </div>
               <h2 className="text-3xl sm:text-5xl font-bold text-[#F4F1E8]">
-                Our Featured Fleet Categories
+                CHOOSE YOUR RIDE
               </h2>
             </div>
             <Link
               to="/fleet"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#C6A15B] text-[#08111C] text-xs font-bold rounded-full hover:bg-[#d4b06a] transition-all shrink-0 shadow-md"
             >
-              View All Fleet Models <ArrowRight size={14} />
+              VIEW FULL FLEET <ArrowRight size={14} />
             </Link>
           </div>
 

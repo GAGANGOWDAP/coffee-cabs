@@ -1,15 +1,36 @@
+export interface VehiclePricing {
+  startingFare: string | number | null;
+  perKm: number | null;
+  minimumKm: number | null;
+  minimumDays: number | null;
+  driverAllowance: number | null;
+  tolls: string | null;
+  parking: string | null;
+  otherCharges: string | null;
+}
+
 export interface Vehicle {
   id: string;
+  slug: string;
   name: string;
   category: "SUV" | "Tempo Traveller" | "Force Urbania" | "Luxury Bus" | "Executive Car";
+  filterCategory: "PREMIUM CARS" | "LUXURY VANS" | "GROUP TRAVEL";
   shortName: string;
   seats: string;
+  seatingCapacity: string;
+  luggageCapacity: string;
+  acAvailable: boolean | string;
   pricePerKm: number;
   driverAllowance: number;
   company: string;
+  image: string;
   images: string[];
   features: string[];
+  shortDescription: string;
   description: string;
+  idealFor: string[];
+  serviceTypes: string[];
+  pricing: VehiclePricing;
   specifications: {
     engine: string;
     fuel: string;
@@ -22,13 +43,19 @@ export interface Vehicle {
 export const VEHICLES: Vehicle[] = [
   {
     id: "innova-crysta",
+    slug: "innova-crysta",
     name: "Toyota Innova Crysta Premium",
     category: "SUV",
+    filterCategory: "PREMIUM CARS",
     shortName: "Innova Crysta",
     seats: "6–7",
+    seatingCapacity: "6+1 Seater (Captain / Bench)",
+    luggageCapacity: "Suitable for 4 Large Suitcases",
+    acAvailable: "Dual Automatic Climate Control AC",
     pricePerKm: 19,
     driverAllowance: 400,
     company: "Toyota",
+    image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200&h=800&fit=crop",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=800&fit=crop",
@@ -39,8 +66,21 @@ export const VEHICLES: Vehicle[] = [
       "Generous boot space for 4-5 large suitcases",
       "Captain seat recliner option",
     ],
+    shortDescription: "India's premier SUV for comfortable family travel, airport transfers, and outstation trips.",
     description:
       "India's premier MPV for comfortable family travel, executive transfers, and outstation trips. Renowned for supreme reliability and smooth highway cruising.",
+    idealFor: ["Airport Transfers", "Corporate Travel", "Family Trips", "Outstation Travel"],
+    serviceTypes: ["Airport", "Local Sightseeing", "Outstation", "Corporate"],
+    pricing: {
+      startingFare: null,
+      perKm: 19,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 400,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.4L Diesel Engine",
       fuel: "Diesel",
@@ -51,13 +91,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "force-urbania-luxury",
+    slug: "force-urbania-luxury",
     name: "Force Urbania Luxury (10/12 Seater)",
     category: "Force Urbania",
+    filterCategory: "LUXURY VANS",
     shortName: "Urbania Luxury",
     seats: "10–12",
+    seatingCapacity: "10–12 Maharaja Recliner Seats",
+    luggageCapacity: "Dedicated Rear Luggage Boot",
+    acAvailable: "High Capacity Individual Roof AC",
     pricePerKm: 50,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
@@ -68,8 +114,21 @@ export const VEHICLES: Vehicle[] = [
       "On-board smart TV & high-power audio",
       "Panoramic windows & high-roof walking clearance",
     ],
+    shortDescription: "The flagship Force Urbania Luxury offers private-jet level comfort for VIP delegations & weddings.",
     description:
       "The flagship Force Urbania Luxury offers private-jet level comfort for VIP delegations, weddings, and premium outstation tours.",
+    idealFor: ["VIP Delegations", "Weddings", "Luxury Outstation Tours", "Corporate Retreats"],
+    serviceTypes: ["Outstation", "Corporate", "Events", "Weddings"],
+    pricing: {
+      startingFare: null,
+      perKm: 50,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "FM 2.6 CR ED Turbo Diesel",
       fuel: "Diesel",
@@ -80,13 +139,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "force-urbania-deluxe",
+    slug: "force-urbania-deluxe",
     name: "Force Urbania Deluxe (10/12/16 Seater)",
     category: "Force Urbania",
+    filterCategory: "LUXURY VANS",
     shortName: "Urbania Deluxe",
     seats: "10–16",
+    seatingCapacity: "10–16 Pushback Seats",
+    luggageCapacity: "Rear Luggage Storage",
+    acAvailable: "Roof Mounted Heavy Duty AC",
     pricePerKm: 40,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     ],
@@ -96,8 +161,21 @@ export const VEHICLES: Vehicle[] = [
       "Bluetooth / Aux audio system",
       "Wide aisle and comfortable legroom",
     ],
+    shortDescription: "Force Urbania Deluxe balances premium seating comfort with group capacity.",
     description:
       "Force Urbania Deluxe balances premium seating comfort with group capacity for outstation holidays and corporate trips.",
+    idealFor: ["Family Holidays", "Corporate Trips", "Outstation Group Tours"],
+    serviceTypes: ["Outstation", "Corporate", "Group Trips"],
+    pricing: {
+      startingFare: null,
+      perKm: 40,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.6L Turbo Diesel Engine",
       fuel: "Diesel",
@@ -108,13 +186,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "force-urbania-standard",
+    slug: "force-urbania-standard",
     name: "Force Urbania Standard (10/12/16 Seater)",
     category: "Force Urbania",
+    filterCategory: "LUXURY VANS",
     shortName: "Urbania Standard",
     seats: "10–16",
+    seatingCapacity: "10–16 High Back Cushioned Seats",
+    luggageCapacity: "Rear Cargo Space",
+    acAvailable: "Central High-Performance AC",
     pricePerKm: 38,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     ],
@@ -124,8 +208,21 @@ export const VEHICLES: Vehicle[] = [
       "High roof walk-through aisle",
       "Smooth monocoque body suspension",
     ],
+    shortDescription: "Affordable luxury group transport with Force Urbania's signature smooth ride.",
     description:
       "Affordable luxury group transport with Force Urbania's signature smooth ride and spacious interior.",
+    idealFor: ["Group Tours", "Outstation Pilgrimages", "Corporate Outings"],
+    serviceTypes: ["Outstation", "Local Sightseeing", "Corporate"],
+    pricing: {
+      startingFare: null,
+      perKm: 38,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.6L CRDI Engine",
       fuel: "Diesel",
@@ -136,13 +233,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "7-seater-tt",
+    slug: "7-seater-tt",
     name: "7+1 Luxury Tempo Traveller (Recliner)",
     category: "Tempo Traveller",
+    filterCategory: "GROUP TRAVEL",
     shortName: "7+1 TT Recliner",
     seats: "7+1",
+    seatingCapacity: "7+1 Maharaja Recliner Seats",
+    luggageCapacity: "Dedicated Rear Luggage Boot",
+    acAvailable: "Roof Mounted Individual AC Vents",
     pricePerKm: 35,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     ],
@@ -152,8 +255,21 @@ export const VEHICLES: Vehicle[] = [
       "Smart TV & Surround Sound audio",
       "Ideal for long outstation trips & pilgrimages",
     ],
+    shortDescription: "Ultra-comfortable 7+1 Traveller featuring plush Maharaja recliner seats.",
     description:
       "Featuring plush Maharaja recliner seats, generous legroom, and individual climate controls for comfortable group travel.",
+    idealFor: ["Family Group Travel", "Pilgrimages", "Outstation Tours"],
+    serviceTypes: ["Outstation", "Pilgrimages", "Family Tours"],
+    pricing: {
+      startingFare: null,
+      perKm: 35,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.6L Diesel Engine",
       fuel: "Diesel",
@@ -164,13 +280,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "9-seater-tt",
+    slug: "9-seater-tt",
     name: "9+1 Luxury Tempo Traveller",
     category: "Tempo Traveller",
+    filterCategory: "GROUP TRAVEL",
     shortName: "9+1 TT Luxury",
     seats: "9+1",
+    seatingCapacity: "9+1 Pushback Seats",
+    luggageCapacity: "Rear & Under-seat Space",
+    acAvailable: "Roof Mounted AC Vents",
     pricePerKm: 28,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     ],
@@ -179,8 +301,21 @@ export const VEHICLES: Vehicle[] = [
       "Individual AC vents",
       "Bluetooth audio & curtains",
     ],
+    shortDescription: "Optimal combination of capacity and comfort for mid-sized family groups.",
     description:
       "Optimal combination of capacity and comfort for mid-sized family groups and pilgrimages.",
+    idealFor: ["Family Groups", "Pilgrimages", "Weekend Tours"],
+    serviceTypes: ["Outstation", "Local Sightseeing"],
+    pricing: {
+      startingFare: null,
+      perKm: 28,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.6L Turbo Diesel",
       fuel: "Diesel",
@@ -191,13 +326,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "12-14-seater-tt",
+    slug: "12-14-seater-tt",
     name: "12/14 Seater Luxury Tempo Traveller",
     category: "Tempo Traveller",
+    filterCategory: "GROUP TRAVEL",
     shortName: "12/14 Seater TT",
     seats: "12–14",
+    seatingCapacity: "12–14 Pushback Seats",
+    luggageCapacity: "Dedicated Rear Boot",
+    acAvailable: "Dual Blower Heavy Duty AC",
     pricePerKm: 30,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     ],
@@ -206,8 +347,21 @@ export const VEHICLES: Vehicle[] = [
       "Dual blower heavy-duty AC",
       "LED TV & audio system",
     ],
+    shortDescription: "Popular choice for wedding parties, corporate outings, and outstation tours.",
     description:
       "Popular choice for wedding parties, corporate outings, and extended outstation tours.",
+    idealFor: ["Weddings", "Corporate Outings", "Outstation Group Tours"],
+    serviceTypes: ["Outstation", "Corporate", "Events"],
+    pricing: {
+      startingFare: null,
+      perKm: 30,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "2.6L Turbo Diesel",
       fuel: "Diesel",
@@ -218,13 +372,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "16-seater-tt",
+    slug: "16-seater-tt",
     name: "16 Seater Executive Tempo Traveller",
     category: "Tempo Traveller",
+    filterCategory: "GROUP TRAVEL",
     shortName: "16 Seater TT",
     seats: "16",
+    seatingCapacity: "16 Pushback Seats",
+    luggageCapacity: "Rear Luggage Area",
+    acAvailable: "Heavy Duty Roof AC",
     pricePerKm: 35,
     driverAllowance: 600,
     company: "Force Motors",
+    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     ],
@@ -233,8 +393,21 @@ export const VEHICLES: Vehicle[] = [
       "Powerful roof-mounted AC",
       "Spacious central aisle",
     ],
+    shortDescription: "Maximum capacity Tempo Traveller for large group tours and corporate events.",
     description:
       "Maximum capacity Tempo Traveller for large group tours and corporate events.",
+    idealFor: ["Large Group Tours", "Corporate Events", "Pilgrimage Groups"],
+    serviceTypes: ["Outstation", "Corporate", "Events"],
+    pricing: {
+      startingFare: null,
+      perKm: 35,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 600,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "FM 2.6 CR Engine",
       fuel: "Diesel",
@@ -245,13 +418,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "mini-bus",
+    slug: "mini-bus",
     name: "Spacious Mini Bus (21/25/30/33/40/50 Seater)",
     category: "Luxury Bus",
+    filterCategory: "GROUP TRAVEL",
     shortName: "Mini Bus",
     seats: "21–50",
+    seatingCapacity: "21–50 Reclining Seats",
+    luggageCapacity: "Large Under-deck Luggage Hold",
+    acAvailable: "Central Roof AC",
     pricePerKm: 50,
     driverAllowance: 800,
     company: "Tata / Ashok Leyland",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
     ],
@@ -260,8 +439,21 @@ export const VEHICLES: Vehicle[] = [
       "High-power AC & LED TV",
       "Ample luggage under-deck storage",
     ],
+    shortDescription: "Spacious 21 to 50 seater Mini Buses perfect for large wedding parties.",
     description:
       "Spacious 21 to 50 seater Mini Buses perfect for large wedding parties, corporate events, and pilgrimages.",
+    idealFor: ["Large Wedding Parties", "Corporate Events", "Pilgrimage Groups"],
+    serviceTypes: ["Outstation", "Events", "Weddings", "Corporate"],
+    pricing: {
+      startingFare: null,
+      perKm: 50,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 800,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "4.0L Turbo Diesel",
       fuel: "Diesel",
@@ -272,13 +464,19 @@ export const VEHICLES: Vehicle[] = [
   },
   {
     id: "luxury-bus",
+    slug: "luxury-bus",
     name: "Ultra Luxury AC Bus (22/40 Seater)",
     category: "Luxury Bus",
+    filterCategory: "GROUP TRAVEL",
     shortName: "Luxury Bus",
     seats: "22–40",
+    seatingCapacity: "22–40 Maharaja Recliners",
+    luggageCapacity: "Huge Belly Cargo Space",
+    acAvailable: "Climate Control AC",
     pricePerKm: 55,
     driverAllowance: 1000,
     company: "Volvo / Scania / Eicher",
+    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
     ],
@@ -287,8 +485,21 @@ export const VEHICLES: Vehicle[] = [
       "Maharaja recliner seats & washroom option",
       "Individual charging ports & TV screens",
     ],
+    shortDescription: "Premium Volvo/Eicher Luxury Buses featuring air-suspension and top amenities.",
     description:
       "Premium 22 & 40 seater Volvo/Eicher Luxury Buses featuring air-suspension and top luxury amenities.",
+    idealFor: ["VIP Delegates", "Large Groups", "Corporate Offsites"],
+    serviceTypes: ["Outstation", "Corporate", "Events"],
+    pricing: {
+      startingFare: null,
+      perKm: 55,
+      minimumKm: 300,
+      minimumDays: 1,
+      driverAllowance: 1000,
+      tolls: "Additional (As per actual fastag receipts)",
+      parking: "Additional (As per actual receipts)",
+      otherCharges: null,
+    },
     specifications: {
       engine: "6-Cylinder Volvo Diesel Engine",
       fuel: "Diesel",

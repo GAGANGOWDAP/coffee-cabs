@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import MobileStickyActionBar from "./components/MobileStickyActionBar";
 import HomePage from "./pages/HomePage";
 import FleetPage from "./pages/FleetPage";
+import VehicleDetailPage from "./pages/VehicleDetailPage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import PackagesPage from "./pages/PackagesPage";
@@ -28,6 +29,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/fleet" element={<FleetPage />} />
+          <Route path="/fleet/:slug" element={<VehicleDetailPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/packages" element={<PackagesPage />} />

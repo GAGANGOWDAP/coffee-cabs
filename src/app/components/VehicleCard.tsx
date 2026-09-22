@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { ChevronLeft, ChevronRight, Users, Fuel, CheckCircle2, ArrowRight } from "lucide-react";
 import { Vehicle } from "../data/vehicles";
 
@@ -128,15 +129,19 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
       </div>
 
       {/* Footer CTA */}
-      <div className="px-6 pb-6 pt-0">
-        <a
-          href={`https://wa.me/917676726209?text=${whatsappMsg}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full py-3.5 min-h-[48px] bg-[#C6A15B] text-[#08111C] text-xs font-extrabold rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#132333]"
+      <div className="px-6 pb-6 pt-0 flex flex-col sm:flex-row items-center gap-2.5">
+        <Link
+          to={`/fleet/${vehicle.slug || vehicle.id}`}
+          className="flex-1 flex items-center justify-center gap-1.5 w-full py-3 min-h-[44px] bg-transparent border border-[#F4F1E8]/40 text-[#F4F1E8] hover:border-[#C6A15B] hover:text-[#C6A15B] text-xs font-bold rounded-xl transition-all duration-200 text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B]"
         >
-          Book {vehicle.shortName} Now <ArrowRight size={14} />
-        </a>
+          VIEW DETAILS →
+        </Link>
+        <Link
+          to={`/booking?vehicle=${vehicle.slug || vehicle.id}`}
+          className="flex-1 flex items-center justify-center gap-1.5 w-full py-3 min-h-[44px] bg-[#C6A15B] text-[#08111C] hover:bg-[#d4b06a] text-xs font-extrabold rounded-xl transition-all duration-200 shadow-md text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B]"
+        >
+          REQUEST QUOTE →
+        </Link>
       </div>
     </div>
   );

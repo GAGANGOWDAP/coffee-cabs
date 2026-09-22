@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router";
 import {
   Calendar,
   Clock,
@@ -26,6 +27,21 @@ export default function BookingForm({
   title = "Request a Booking / Enquiry",
   subtitle = "Choose your vehicle preference and share trip details. Our team will review and confirm vehicle availability and owner-approved pricing with you.",
 }: BookingFormProps) {
+  const [searchParams] = useSearchParams();
+  const queryVehicleParam = searchParams.get("vehicle") || "";
+
+  const resolvedInitialVehicle =
+    initialVehicleId ||
+    queryVehicleParam ||
+    VEHICLES[0].id;
+
+  const initialVehicleObj =
+    VEHICLES.find(
+      (v) =>
+        v.id === resolvedInitialVehicle ||
+        v.slug === resolvedInitialVehicle
+    ) || VEHICLES[0];
+
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -35,8 +51,21 @@ export default function BookingForm({
   const [pickupTime, setPickupTime] = useState("06:00 AM");
   const [passengers, setPassengers] = useState("4");
   const [preferredVehicle, setPreferredVehicle] = useState(
-    initialVehicleId || VEHICLES[0].id
+    initialVehicleObj.id
   );
+
+  useEffect(() => {
+    if (queryVehicleParam || initialVehicleId) {
+      const matched = VEHICLES.find(
+        (v) =>
+          v.id === (queryVehicleParam || initialVehicleId) ||
+          v.slug === (queryVehicleParam || initialVehicleId)
+      );
+      if (matched) {
+        setPreferredVehicle(matched.id);
+      }
+    }
+  }, [queryVehicleParam, initialVehicleId]);
   const [serviceType, setServiceType] = useState("Outstation Round Trip");
   const [notes, setNotes] = useState("");
 
