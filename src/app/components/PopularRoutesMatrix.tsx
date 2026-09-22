@@ -48,10 +48,7 @@ export default function PopularRoutesMatrix() {
           <div className="inline-block text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3 bg-[#132333] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full shadow-sm">
             Outstation Tariff Guide
           </div>
-          <h2
-            className="text-3xl sm:text-4xl font-extrabold text-[#F4F1E8] mb-3"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F4F1E8] mb-3">
             Popular Routes & <span className="text-[#C6A15B]">Fleet Tariff Guide</span>
           </h2>
           <p className="text-[#AEB7C2] text-xs sm:text-sm">

@@ -209,10 +209,9 @@ export default function Navbar() {
                       key={link.label}
                       href={link.to}
                       onClick={handleAboutClick}
-                      className={`block text-xl font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
+                      className={`block text-lg font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
                         isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
                       }`}
-                      style={{ fontFamily: "'Playfair Display', serif" }}
                     >
                       {link.label}
                     </a>
@@ -223,10 +222,9 @@ export default function Navbar() {
                   <Link
                     key={link.to}
                     to={link.to}
-                    className={`block text-xl font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
+                    className={`block text-lg font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
                       isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
                     }`}
-                    style={{ fontFamily: "'Playfair Display', serif" }}
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.label}

@@ -185,10 +185,7 @@ export default function HomePage() {
           </div>
 
           {/* Main Headline - Strictly 2 lines */}
-          <h1
-            className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-3 sm:mb-4 max-w-4xl"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h1 className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-3 sm:mb-4 max-w-4xl">
             RIDE TO RELAX.<br />
             <span className="text-[#C6A15B]">WE DO THE REST.</span>
           </h1>
@@ -350,10 +347,7 @@ export default function HomePage() {
           <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
             About Coffee Cabs
           </div>
-          <h2
-            className="text-3xl sm:text-4xl font-bold text-[#F4F1E8] mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8] mb-4">
             Bangalore's Premier Executive Chauffeur & Luxury Transport
           </h2>
           <p className="text-sm text-[#AEB7C2] leading-relaxed mb-12">
@@ -396,10 +390,7 @@ export default function HomePage() {
               <div className="inline-block text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3 bg-[#132333] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full">
                 Elite Collection
               </div>
-              <h2
-                className="text-3xl sm:text-5xl font-bold text-[#F4F1E8]"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
+              <h2 className="text-3xl sm:text-5xl font-bold text-[#F4F1E8]">
                 Our Featured Fleet Categories
               </h2>
             </div>
@@ -432,10 +423,7 @@ export default function HomePage() {
             <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
               Simple & Fast
             </div>
-            <h2
-              className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
               How It Works — 4 Easy Steps
             </h2>
           </div>
@@ -472,10 +460,7 @@ export default function HomePage() {
               <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
                 Weekend Getaways & Outstation Packages
               </div>
-              <h2
-                className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
                 Explore Destinations Across India
               </h2>
             </div>
@@ -577,10 +562,7 @@ export default function HomePage() {
             <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
               Got Questions?
             </div>
-            <h2
-              className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
               Frequently Asked Questions
             </h2>
           </div>
@@ -616,10 +598,7 @@ export default function HomePage() {
       {/* ── 10. CTA BANNER ── */}
       <section className="gsap-section-reveal py-16 sm:py-20 bg-[#08111C] text-[#F4F1E8] border-t border-[#C6A15B]/20">
         <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center space-y-6">
-          <h2
-            className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8]"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8]">
             Ready to Hit the Road?
           </h2>
           <p className="text-xs sm:text-sm text-[#AEB7C2] max-w-md mx-auto">

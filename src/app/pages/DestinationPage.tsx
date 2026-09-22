@@ -54,10 +54,7 @@ export default function DestinationPage() {
             </span>
           </div>
 
-          <h1
-            className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8] tracking-tight"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8] tracking-tight">
             Bangalore to {dest.name} Cab Service
           </h1>
         </div>
@@ -90,10 +87,7 @@ export default function DestinationPage() {
 
               {/* Description */}
               <div>
-                <h2
-                  className="text-2xl font-bold text-[#F4F1E8] mb-3"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                >
+                <h2 className="text-2xl font-bold text-[#F4F1E8] mb-3">
                   Overview & Travel Guide
                 </h2>
                 <p className="text-sm text-[#AEB7C2] leading-relaxed">{dest.description}</p>
@@ -117,10 +111,7 @@ export default function DestinationPage() {
 
               {/* Vehicle Rates Matrix */}
               <div>
-                <h3
-                  className="text-xl font-bold text-[#F4F1E8] mb-4"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                >
+                <h3 className="text-xl font-bold text-[#F4F1E8] mb-4">
                   Fleet Options for {dest.name}
                 </h3>
 

@@ -93,10 +93,7 @@ export default function BookingForm({
         <div className="inline-flex items-center gap-2 bg-[#132333] text-[#C6A15B] px-4 py-1.5 rounded-full border border-[#C6A15B]/30 text-xs font-semibold mb-3">
           <ShieldCheck size={14} className="text-[#C6A15B]" /> Owner-Approved Fleet & Transparent Tariff
         </div>
-        <h2
-          className="text-2xl sm:text-4xl font-extrabold text-[#F4F1E8] mb-2"
-          style={{ fontFamily: "'Playfair Display', serif" }}
-        >
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#F4F1E8] mb-2">
           {title}
         </h2>
         <p className="text-xs sm:text-sm text-[#AEB7C2] max-w-xl mx-auto leading-relaxed">
@@ -113,10 +110,7 @@ export default function BookingForm({
             </div>
 
             <div>
-              <h3
-                className="text-2xl font-bold text-[#F4F1E8] mb-3"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
+              <h3 className="text-2xl font-bold text-[#F4F1E8] mb-3">
                 Booking Enquiry Sent Successfully!
               </h3>
               <div className="bg-[#08111C] p-5 rounded-2xl border border-[#AEB7C2]/15 text-left text-xs space-y-2 mb-4">

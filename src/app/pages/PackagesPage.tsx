@@ -40,10 +40,7 @@ export default function PackagesPage() {
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#C6A15B] mb-3 font-extrabold bg-[#08111C] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full shadow-sm">
             <Compass size={14} className="text-[#C6A15B]" /> Coffee Cabs Outstation Packages
           </div>
-          <h1
-            className="text-3xl sm:text-5xl font-bold text-[#F4F1E8] mb-3"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h1 className="text-3xl sm:text-5xl font-bold text-[#F4F1E8] mb-3">
             200 Outstation Packages Across India
           </h1>
           <p className="text-[#AEB7C2] text-sm sm:text-base max-w-xl mx-auto">

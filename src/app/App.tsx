@@ -21,10 +21,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <div
-      className="min-h-screen bg-[#08111C] text-[#F4F1E8] overflow-x-hidden relative"
-      style={{ fontFamily: "'Nunito', sans-serif" }}
-    >
+    <div className="min-h-screen bg-[#08111C] text-[#F4F1E8] overflow-x-hidden relative">
       <ScrollToTop />
       <Navbar />
       <main className="pb-20 sm:pb-0">

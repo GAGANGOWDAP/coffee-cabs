@@ -33,10 +33,7 @@ export default function PricingPage() {
           <div className="text-xs tracking-widest uppercase text-[#C6A15B] mb-3 font-extrabold bg-[#08111C] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full inline-block shadow-sm">
             Transparent Tariff
           </div>
-          <h1
-            className="text-3xl sm:text-5xl font-bold text-[#F4F1E8] mb-3"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h1 className="text-3xl sm:text-5xl font-bold text-[#F4F1E8] mb-3">
             Official Per-Km Pricing & Allowance
           </h1>
           <p className="text-[#AEB7C2] text-sm sm:text-base max-w-lg mx-auto">
@@ -176,10 +173,7 @@ export default function PricingPage() {
       {/* Terms & Policies Grid */}
       <section className="py-16 sm:py-24 bg-[#08111C]">
         <div className="max-w-5xl mx-auto px-4 sm:px-8">
-          <h2
-            className="text-2xl sm:text-3xl font-bold text-[#F4F1E8] mb-8 text-center"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#F4F1E8] mb-8 text-center">
             Outstation Terms & Operating Guidelines
           </h2>
 

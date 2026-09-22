@@ -88,10 +88,7 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
         {/* Content Body */}
         <div className="p-6">
           <div className="flex items-center justify-between gap-2 mb-2">
-            <h3
-              className="text-xl font-bold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
+            <h3 className="text-xl font-bold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors">
               {vehicle.name}
             </h3>
           </div>
