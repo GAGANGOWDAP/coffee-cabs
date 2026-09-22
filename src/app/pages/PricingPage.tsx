@@ -149,9 +149,10 @@ export default function PricingPage() {
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#C6A15B] text-[#08111C] hover:bg-[#d4b06a] transition-all shadow-md"
+                        className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#C6A15B] text-[#08111C] hover:bg-[#d4b06a] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#132333]"
+                        aria-label={`Book ${v.name} via WhatsApp`}
                       >
-                        <ArrowRight size={14} />
+                        <ArrowRight size={16} />
                       </a>
                     </td>
                   </tr>

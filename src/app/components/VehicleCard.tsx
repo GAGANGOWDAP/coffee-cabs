@@ -47,17 +47,17 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
             <>
               <button
                 onClick={prevImage}
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20"
-                aria-label="Previous image"
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B]"
+                aria-label={`Previous image of ${vehicle.name}`}
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={20} />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20"
-                aria-label="Next image"
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B]"
+                aria-label={`Next image of ${vehicle.name}`}
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={20} />
               </button>
 
               {/* Dots indicator */}
@@ -70,11 +70,15 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
                       e.stopPropagation();
                       setCurrentImgIndex(idx);
                     }}
-                    className={`h-1.5 rounded-full transition-all ${
-                      idx === currentImgIndex ? "w-6 bg-[#C6A15B]" : "w-1.5 bg-[#AEB7C2]/40"
-                    }`}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  />
+                    className="p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded-full"
+                    aria-label={`Go to ${vehicle.name} slide ${idx + 1}`}
+                  >
+                    <span
+                      className={`block h-1.5 rounded-full transition-all ${
+                        idx === currentImgIndex ? "w-6 bg-[#C6A15B]" : "w-1.5 bg-[#AEB7C2]/40"
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
             </>
@@ -132,7 +136,7 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           href={`https://wa.me/917676726209?text=${whatsappMsg}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-xs font-extrabold rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md"
+          className="flex items-center justify-center gap-2 w-full py-3.5 min-h-[48px] bg-[#C6A15B] text-[#08111C] text-xs font-extrabold rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#132333]"
         >
           Book {vehicle.shortName} Now <ArrowRight size={14} />
         </a>
