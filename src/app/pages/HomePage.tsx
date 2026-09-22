@@ -81,31 +81,59 @@ export default function HomePage() {
     () => {
       if (!homeRef.current) return;
 
-      // Hero Elements Reveal
-      gsap.from(".gsap-hero-badge", {
-        y: -30,
-        opacity: 0,
-        duration: 0.8,
-        ease: "back.out(1.7)",
-        delay: 0.1,
-      });
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      gsap.from(".gsap-hero-title", {
-        y: 40,
+      tl.from(".gsap-hero-eyebrow", {
+        y: 20,
         opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        delay: 0.2,
-      });
-
-      gsap.from(".gsap-hero-cta", {
-        scale: 0.9,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power2.out",
-        delay: 0.4,
-      });
+        duration: 0.7,
+      })
+        .from(
+          ".gsap-hero-headline",
+          {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+          },
+          "-=0.4"
+        )
+        .from(
+          ".gsap-hero-desc",
+          {
+            y: 20,
+            opacity: 0,
+            duration: 0.7,
+          },
+          "-=0.5"
+        )
+        .from(
+          ".gsap-hero-cta",
+          {
+            y: 20,
+            opacity: 0,
+            duration: 0.7,
+            stagger: 0.15,
+          },
+          "-=0.5"
+        )
+        .from(
+          ".gsap-hero-vehicles",
+          {
+            scale: 0.96,
+            opacity: 0,
+            duration: 0.9,
+          },
+          "-=0.5"
+        )
+        .from(
+          ".gsap-hero-stats",
+          {
+            y: 25,
+            opacity: 0,
+            duration: 0.8,
+          },
+          "-=0.6"
+        );
 
       // Section Fade Reveals on Scroll
       gsap.utils.toArray<HTMLElement>(".gsap-section-reveal").forEach((section) => {
@@ -127,104 +155,172 @@ export default function HomePage() {
   return (
     <div ref={homeRef} className="bg-[#08111C] text-[#F4F1E8]">
       {/* ── 1. HERO SECTION ── */}
-      <section className="relative min-h-[92dvh] sm:min-h-dvh flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-16 overflow-hidden">
-        {/* Hero Background Image & Sophisticated Gradient Overlay */}
+      <section className="relative min-h-screen flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-12 overflow-hidden">
+        {/* Cinematic Vehicle Background Image & Gradient Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src={`${import.meta.env.BASE_URL}images/hero.png`}
-            alt="Coffee Cabs Luxury Fleet Vehicles"
-            className="w-full h-full object-cover object-bottom opacity-75"
+            alt="Coffee Cabs Luxury Fleet"
+            className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#08111C]/85 via-[#08111C]/65 to-[#08111C]" />
+          {/* Approved Gradient Overlay: Top 55%, Middle 30%, Bottom 88% */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(8,17,28,0.55) 0%, rgba(8,17,28,0.30) 45%, rgba(8,17,28,0.88) 100%)",
+            }}
+          />
         </div>
 
-        {/* Center Content / Badge / Headline */}
-        <div className="relative z-10 max-w-3xl mx-auto px-4 text-center pt-8 sm:pt-14 flex flex-col items-center">
-          {/* Rating Badge */}
-          <div className="gsap-hero-badge inline-flex items-center gap-2 bg-[#132333]/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#C6A15B]/30 text-xs font-semibold mb-5 shadow-lg text-[#F4F1E8]">
-            <div className="flex gap-0.5 text-[#C6A15B]">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={13} className="fill-[#C6A15B] text-[#C6A15B]" />
-              ))}
-            </div>
-            <span>4.9★ (100+ Verified Traveler Reviews)</span>
+        {/* Hero Core Content */}
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+          {/* Eyebrow */}
+          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-4">
+            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/60" />
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#C6A15B]">
+              PREMIUM TRAVEL • BANGALORE & BEYOND
+            </span>
+            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/60" />
           </div>
 
-          {/* Center Circular Logo Badge */}
-          <div className="gsap-hero-badge w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#132333]/80 backdrop-blur-xl border border-[#C6A15B]/40 flex items-center justify-center p-2.5 mb-4 shadow-2xl">
-            <img
-              src={`${import.meta.env.BASE_URL}images/logo.png`}
-              alt="Coffee Cabs Logo Badge"
-              className="w-full h-full object-contain filter invert"
-            />
-          </div>
-
-          <div className="gsap-hero-title inline-block tracking-widest text-[11px] uppercase font-extrabold text-[#C6A15B] mb-1">
-            COFFEE CABS BANGALORE
-          </div>
-          <p className="gsap-hero-title text-[11px] text-[#AEB7C2] uppercase tracking-widest font-semibold mb-4">
-            Bangalore's Premier Executive Chauffeur & Luxury Transport
-          </p>
-
+          {/* Main Headline */}
           <h1
-            className="gsap-hero-title text-4xl sm:text-6xl font-extrabold text-[#F4F1E8] tracking-tight leading-tight mb-3"
+            className="gsap-hero-headline text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-5 text-[#F4F1E8]"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             RIDE TO RELAX. <span className="text-[#C6A15B] block sm:inline">WE DO THE REST.</span>
           </h1>
 
-          <p className="gsap-hero-title text-xs sm:text-sm text-[#AEB7C2] max-w-md mx-auto mb-6 font-medium leading-relaxed">
-            Where executive luxury meets performance & precision.
+          {/* Hero Description */}
+          <p className="gsap-hero-desc text-xs sm:text-sm md:text-base text-[#AEB7C2] max-w-[600px] mx-auto mb-8 font-medium leading-relaxed">
+            Bangalore's premium car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
           </p>
 
-          {/* Key Quick Stats (Glass / Dark Panel Effect) */}
-          <div className="gsap-hero-title grid grid-cols-3 gap-3 w-full max-w-md mb-6 bg-[#08111C]/85 backdrop-blur-md p-3.5 rounded-2xl border border-[#C6A15B]/20 shadow-2xl">
-            <div>
-              <div className="text-xs sm:text-sm font-extrabold text-[#F4F1E8]">8+ Years</div>
-              <div className="text-[10px] text-[#AEB7C2] font-semibold">Excellence</div>
-            </div>
-            <div className="border-x border-[#C6A15B]/20 px-1">
-              <div className="text-xs sm:text-sm font-extrabold text-[#F4F1E8]">5000+ Groups</div>
-              <div className="text-[10px] text-[#AEB7C2] font-semibold">Served</div>
-            </div>
-            <div>
-              <div className="text-xs sm:text-sm font-extrabold text-[#F4F1E8]">&lt; 5 Mins</div>
-              <div className="text-[10px] text-[#AEB7C2] font-semibold font-semibold">Reply Time</div>
-            </div>
-          </div>
-
-          {/* Hero CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md mx-auto mb-6">
+          {/* Hero CTAs */}
+          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto mb-10">
             <Link
               to="/booking"
-              className="gsap-hero-cta w-full py-3.5 px-6 bg-[#C6A15B] text-[#08111C] text-xs font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-105 transition-all duration-300 text-center shadow-lg flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-105 transition-all duration-300 text-center shadow-lg flex items-center justify-center gap-2"
             >
               BOOK YOUR RIDE <ArrowRight size={15} />
             </Link>
             <Link
               to="/fleet"
-              className="gsap-hero-cta w-full py-3.5 px-6 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2"
             >
               EXPLORE OUR FLEET
             </Link>
           </div>
-        </div>
 
-        {/* Curved Arc Overlay */}
-        <div className="relative z-10 w-full overflow-hidden leading-none">
-          <svg
-            className="relative block w-full h-10 sm:h-16 text-[#08111C]"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            fill="currentColor"
-          >
-            <path d="M0,0 C300,90 900,90 1200,0 L1200,120 L0,120 Z"></path>
-          </svg>
+          {/* Hero 3-Vehicle Composition Showcase */}
+          <div className="gsap-hero-vehicles w-full max-w-4xl mx-auto mb-10 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 items-end">
+              {/* Left Vehicle: Innova Crysta */}
+              <div className="bg-[#132333]/70 backdrop-blur-md rounded-2xl p-4 border border-[#AEB7C2]/15 text-left transform sm:scale-95 transition-all hover:border-[#C6A15B]/40 shadow-xl relative group">
+                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop"
+                    alt="Innova Crysta"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Subtle Grounded Shadow */}
+                  <div className="absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-[#08111C] to-transparent opacity-80" />
+                </div>
+                <div className="text-xs font-bold text-[#F4F1E8] tracking-wide uppercase">
+                  INNOVA CRYSTA
+                </div>
+                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
+                  <span>Premium</span>
+                  <span className="text-[#C6A15B] font-semibold">6+1 Seater</span>
+                </div>
+              </div>
+
+              {/* Center Focal Point Vehicle: Urbania */}
+              <div className="bg-[#132333]/90 backdrop-blur-md rounded-2xl p-4 sm:p-5 border-2 border-[#C6A15B]/60 text-left transform sm:scale-105 transition-all shadow-2xl relative group z-10">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C6A15B] text-[#08111C] text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-md">
+                  FLEXIBLE GROUP FAVORITE
+                </div>
+                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop"
+                    alt="Force Urbania"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Grounded Shadow */}
+                  <div className="absolute bottom-0 inset-x-0 h-8 bg-gradient-to-t from-[#08111C] to-transparent opacity-90" />
+                </div>
+                <div className="text-sm font-extrabold text-[#F4F1E8] tracking-wide uppercase">
+                  URBANIA
+                </div>
+                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
+                  <span>Luxury</span>
+                  <span className="text-[#C6A15B] font-semibold">16 Seater</span>
+                </div>
+              </div>
+
+              {/* Right Vehicle: Force Traveller */}
+              <div className="bg-[#132333]/70 backdrop-blur-md rounded-2xl p-4 border border-[#AEB7C2]/15 text-left transform sm:scale-95 transition-all hover:border-[#C6A15B]/40 shadow-xl relative group">
+                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=500&fit=crop"
+                    alt="Force Traveller"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Subtle Grounded Shadow */}
+                  <div className="absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-[#08111C] to-transparent opacity-80" />
+                </div>
+                <div className="text-xs font-bold text-[#F4F1E8] tracking-wide uppercase">
+                  FORCE TRAVELLER
+                </div>
+                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
+                  <span>Group Travel</span>
+                  <span className="text-[#C6A15B] font-semibold">12/17 Seater</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero Statistics Panel */}
+          <div className="gsap-hero-stats w-full max-w-4xl mx-auto bg-[#08111C]/82 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-[#AEB7C2]/15 shadow-2xl">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0">
+              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+                  8+ <span className="text-[#C6A15B]">YEARS</span>
+                </div>
+                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Experience</div>
+              </div>
+              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+                  5000+
+                </div>
+                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Groups Served</div>
+              </div>
+              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+                  &lt; 5 MIN
+                </div>
+                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Average Response</div>
+              </div>
+              <div className="px-3 py-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+                  24/7
+                </div>
+                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Travel Support</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Micro Detail: Scroll to Explore */}
+          <div className="mt-8 flex items-center gap-2 text-[10px] uppercase tracking-widest text-[#AEB7C2] animate-bounce">
+            <span>SCROLL TO EXPLORE</span>
+            <ChevronDown size={14} className="text-[#C6A15B]" />
+          </div>
         </div>
       </section>
 
       {/* ── 2. INTRO / ABOUT BLURB & 3 FEATURE ICONS ── */}
-      <section className="gsap-section-reveal py-16 sm:py-20 bg-[#08111C] border-b border-[#AEB7C2]/15">
+      <section id="about" className="gsap-section-reveal py-16 sm:py-20 bg-[#08111C] border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
           <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
             About Coffee Cabs

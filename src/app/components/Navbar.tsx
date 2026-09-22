@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone, CalendarCheck } from "lucide-react";
-import { Link, useLocation } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
@@ -8,66 +8,133 @@ const NAV_LINKS = [
   { label: "Packages", to: "/packages" },
   { label: "Book Enquiry", to: "/booking" },
   { label: "Pricing", to: "/pricing" },
+  { label: "About Us", to: "/#about", isHash: true },
   { label: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleAboutClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    if (location.pathname === "/") {
+      const element = document.getElementById("about");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById("about");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#08111C]/90 backdrop-blur-md border-b border-[#AEB7C2]/15 text-[#F4F1E8]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between">
-          {/* Logo */}
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-[#F4F1E8] ${
+          scrolled
+            ? "bg-[#08111C] border-b border-[#AEB7C2]/20 shadow-2xl py-3"
+            : "bg-[#08111C]/88 backdrop-blur-[12px] border-b border-[#AEB7C2]/15 py-3.5"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
+          {/* LEFT: Coffee Cabs Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Logo"
-              className="h-8 sm:h-9 w-auto object-contain filter invert"
+              className="h-8 sm:h-9 w-auto object-contain filter invert transition-transform hover:scale-105 duration-200"
             />
           </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-7">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`text-xs uppercase tracking-wider font-bold transition-colors duration-200 ${
-                  location.pathname === link.to
-                    ? "text-[#C6A15B] border-b-2 border-[#C6A15B] pb-1"
-                    : "text-[#AEB7C2] hover:text-[#F4F1E8]"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* CENTER: Navigation Links */}
+          <div className="hidden lg:flex items-center gap-6 xl:gap-7">
+            {NAV_LINKS.map((link) => {
+              const isActive =
+                link.to === "/"
+                  ? location.pathname === "/" && !location.hash
+                  : link.isHash
+                  ? location.pathname === "/" && location.hash === "#about"
+                  : location.pathname === link.to;
+
+              if (link.isHash) {
+                return (
+                  <a
+                    key={link.label}
+                    href={link.to}
+                    onClick={handleAboutClick}
+                    className={`text-[11px] xl:text-xs uppercase tracking-wider font-semibold transition-all duration-200 relative py-1 ${
+                      isActive
+                        ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
+                        : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`text-[11px] xl:text-xs uppercase tracking-wider font-semibold transition-all duration-200 relative py-1 ${
+                    isActive
+                      ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
+                      : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
-          {/* Right Action Buttons */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* RIGHT: Action Buttons */}
+          <div className="hidden sm:flex items-center gap-3.5">
             <Link
               to="/booking"
-              className="inline-flex items-center gap-1.5 text-xs font-bold bg-[#C6A15B] text-[#08111C] px-4 py-2 rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold bg-[#C6A15B] text-[#08111C] px-4 xl:px-5 py-2.5 rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95"
             >
-              <CalendarCheck size={13} /> Request Booking
+              <CalendarCheck size={14} /> Request Booking
             </Link>
 
             <a
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm"
+              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-all duration-200 shadow-sm hover:scale-105 shrink-0"
               aria-label="WhatsApp"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
             </a>
+
             <a
               href="tel:+917676726209"
-              className="flex items-center gap-1.5 text-xs font-bold text-[#F4F1E8] hover:text-[#C6A15B] transition-colors"
+              className="hidden xl:flex items-center gap-1.5 text-xs font-semibold text-[#F4F1E8] hover:text-[#C6A15B] transition-colors"
             >
               <Phone size={13} className="text-[#C6A15B]" />
               +91 76767 26209
@@ -76,7 +143,7 @@ export default function Navbar() {
 
           {/* Mobile Hamburger Button */}
           <button
-            className="md:hidden w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8]"
+            className="lg:hidden w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8] transition-colors hover:bg-[#1a2d42]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -87,7 +154,7 @@ export default function Navbar() {
 
       {/* Mobile Overlay Menu */}
       {menuOpen && (
-        <div className="md:hidden fixed inset-0 z-[60] bg-[#08111C] text-[#F4F1E8] flex flex-col justify-between p-6">
+        <div className="lg:hidden fixed inset-0 z-[60] bg-[#08111C] text-[#F4F1E8] flex flex-col justify-between p-6 overflow-y-auto transition-all duration-300">
           <div>
             <div className="flex items-center justify-between pb-6 border-b border-[#AEB7C2]/15">
               <Link to="/" onClick={() => setMenuOpen(false)}>
@@ -96,39 +163,65 @@ export default function Navbar() {
               <button
                 className="w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8]"
                 onClick={() => setMenuOpen(false)}
+                aria-label="Close menu"
               >
                 <X size={20} />
               </button>
             </div>
 
-            <div className="pt-8 space-y-4">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`block text-2xl font-bold py-2 transition-colors ${
-                    location.pathname === link.to ? "text-[#C6A15B]" : "text-[#AEB7C2]"
-                  }`}
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="pt-6 space-y-3">
+              {NAV_LINKS.map((link) => {
+                const isActive =
+                  link.to === "/"
+                    ? location.pathname === "/" && !location.hash
+                    : link.isHash
+                    ? location.pathname === "/" && location.hash === "#about"
+                    : location.pathname === link.to;
+
+                if (link.isHash) {
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.to}
+                      onClick={handleAboutClick}
+                      className={`block text-xl font-semibold py-2 transition-colors ${
+                        isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                      }`}
+                      style={{ fontFamily: "'Playfair Display', serif" }}
+                    >
+                      {link.label}
+                    </a>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`block text-xl font-semibold py-2 transition-colors ${
+                      isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                    }`}
+                    style={{ fontFamily: "'Playfair Display', serif" }}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
-          <div className="space-y-3 pt-6 border-t border-[#AEB7C2]/15">
+          <div className="space-y-3 pt-6 border-t border-[#AEB7C2]/15 mt-6">
             <Link
               to="/booking"
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 bg-[#C6A15B] text-[#08111C] text-sm font-bold rounded-full hover:bg-[#d4b06a] transition-all"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-sm font-semibold rounded-full hover:bg-[#d4b06a] transition-all shadow-md"
             >
               <CalendarCheck size={16} /> Request Booking
             </Link>
             <a
               href="tel:+917676726209"
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#132333] text-[#F4F1E8] border border-[#AEB7C2]/20 text-sm font-bold rounded-full"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#132333] text-[#F4F1E8] border border-[#AEB7C2]/20 text-sm font-semibold rounded-full"
             >
               <Phone size={16} className="text-[#C6A15B]" /> Call +91 76767 26209
             </a>
@@ -138,4 +231,6 @@ export default function Navbar() {
     </>
   );
 }
+
+
 
