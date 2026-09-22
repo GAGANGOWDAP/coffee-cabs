@@ -117,11 +117,11 @@ export default function HomePage() {
           "-=0.5"
         )
         .from(
-          ".gsap-hero-vehicles",
+          ".gsap-hero-cards",
           {
-            scale: 0.96,
+            y: 30,
             opacity: 0,
-            duration: 0.9,
+            duration: 0.8,
           },
           "-=0.5"
         )
@@ -155,166 +155,189 @@ export default function HomePage() {
   return (
     <div ref={homeRef} className="bg-[#08111C] text-[#F4F1E8]">
       {/* ── 1. HERO SECTION ── */}
-      <section className="relative min-h-screen flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-12 overflow-hidden">
-        {/* Cinematic Vehicle Background Image & Gradient Overlay */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+      <section className="relative min-h-[680px] md:h-[780px] lg:h-[830px] xl:h-[860px] flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-6 overflow-hidden">
+        {/* Full-width Cinematic Background Image */}
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src={`${import.meta.env.BASE_URL}images/hero.png`}
-            alt="Coffee Cabs Luxury Fleet"
-            className="w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-1000"
+            alt="Coffee Cabs Luxury Fleet & Skyline"
+            className="w-full h-full object-cover object-[center_40%] opacity-85 transition-opacity duration-700"
           />
-          {/* Approved Gradient Overlay: Top 55%, Middle 30%, Bottom 88% */}
+          {/* Approved Controlled Navy & Gradient Overlay */}
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(8,17,28,0.55) 0%, rgba(8,17,28,0.30) 45%, rgba(8,17,28,0.88) 100%)",
+                "linear-gradient(180deg, rgba(8,17,28,0.50) 0%, rgba(8,17,28,0.28) 42%, rgba(8,17,28,0.82) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(8,17,28,0.35) 0%, rgba(8,17,28,0.20) 45%, rgba(8,17,28,0.88) 100%)",
             }}
           />
         </div>
 
-        {/* Hero Core Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+        {/* Upper Hero Content (Negative Space above Vehicles) */}
+        <div className="relative z-10 max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
           {/* Eyebrow */}
-          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-4">
-            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/60" />
+          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-3">
+            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/70" />
             <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#C6A15B]">
               PREMIUM TRAVEL • BANGALORE & BEYOND
             </span>
-            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/60" />
+            <span className="h-[1px] w-6 sm:w-10 bg-[#C6A15B]/70" />
           </div>
 
-          {/* Main Headline */}
+          {/* Headline - Strictly 2 lines on desktop */}
           <h1
-            className="gsap-hero-headline text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-5 text-[#F4F1E8]"
+            className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-[#F4F1E8] mb-3 sm:mb-4"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            RIDE TO RELAX. <span className="text-[#C6A15B] block sm:inline">WE DO THE REST.</span>
+            RIDE TO RELAX.<br />
+            <span className="text-[#C6A15B]">WE DO THE REST.</span>
           </h1>
 
-          {/* Hero Description */}
-          <p className="gsap-hero-desc text-xs sm:text-sm md:text-base text-[#AEB7C2] max-w-[600px] mx-auto mb-8 font-medium leading-relaxed">
+          {/* Description */}
+          <p className="gsap-hero-desc text-xs sm:text-sm text-[#AEB7C2] max-w-[580px] mx-auto mb-6 font-medium leading-relaxed">
             Bangalore's premium car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
           </p>
 
-          {/* Hero CTAs */}
-          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto mb-10">
+          {/* CTAs */}
+          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-sm sm:max-w-md mx-auto mb-6 sm:mb-8">
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-8 py-3.5 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-105 transition-all duration-300 text-center shadow-lg flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-105 transition-all duration-300 text-center shadow-lg flex items-center justify-center gap-2"
             >
               BOOK YOUR RIDE <ArrowRight size={15} />
             </Link>
             <Link
               to="/fleet"
-              className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2"
             >
               EXPLORE OUR FLEET
             </Link>
           </div>
+        </div>
 
-          {/* Hero 3-Vehicle Composition Showcase */}
-          <div className="gsap-hero-vehicles w-full max-w-4xl mx-auto mb-10 pt-2">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 items-end">
-              {/* Left Vehicle: Innova Crysta */}
-              <div className="bg-[#132333]/70 backdrop-blur-md rounded-2xl p-4 border border-[#AEB7C2]/15 text-left transform sm:scale-95 transition-all hover:border-[#C6A15B]/40 shadow-xl relative group">
-                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+        {/* Foreground Fleet Cards (Sitting over bottom portion of Hero) */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full mt-auto">
+          <div className="gsap-hero-cards grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-5 mb-4">
+            {/* Card 1: Innova Crysta */}
+            <div className="bg-[#132333]/90 backdrop-blur-md rounded-2xl p-3.5 border border-[#AEB7C2]/20 shadow-2xl hover:border-[#C6A15B]/60 transition-all duration-300 group flex sm:flex-col justify-between gap-3 sm:gap-0">
+              <div className="flex sm:flex-col items-center sm:items-start gap-3 sm:gap-0 w-full">
+                <div className="w-24 sm:w-full aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] shrink-0 sm:mb-3">
                   <img
                     src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop"
                     alt="Innova Crysta"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Subtle Grounded Shadow */}
-                  <div className="absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-[#08111C] to-transparent opacity-80" />
                 </div>
-                <div className="text-xs font-bold text-[#F4F1E8] tracking-wide uppercase">
-                  INNOVA CRYSTA
-                </div>
-                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
-                  <span>Premium</span>
-                  <span className="text-[#C6A15B] font-semibold">6+1 Seater</span>
+                <div className="flex-1">
+                  <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                    Premium SUV • 6+1 Seater
+                  </div>
+                  <div className="text-sm font-extrabold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors">
+                    Toyota Innova Crysta
+                  </div>
                 </div>
               </div>
+              <div className="pt-2 sm:mt-2 border-t border-[#AEB7C2]/15 flex items-center justify-between text-xs font-bold shrink-0">
+                <span className="text-[#F4F1E8]">₹19 <span className="text-[10px] text-[#AEB7C2] font-normal">/ km</span></span>
+                <Link to="/booking" className="text-[#C6A15B] hover:underline flex items-center gap-1 text-[11px]">
+                  Book <ArrowRight size={11} />
+                </Link>
+              </div>
+            </div>
 
-              {/* Center Focal Point Vehicle: Urbania */}
-              <div className="bg-[#132333]/90 backdrop-blur-md rounded-2xl p-4 sm:p-5 border-2 border-[#C6A15B]/60 text-left transform sm:scale-105 transition-all shadow-2xl relative group z-10">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C6A15B] text-[#08111C] text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-md">
-                  FLEXIBLE GROUP FAVORITE
-                </div>
-                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+            {/* Card 2: Force Urbania (Center Focal Card) */}
+            <div className="bg-[#132333] rounded-2xl p-3.5 border-2 border-[#C6A15B]/70 shadow-2xl hover:border-[#C6A15B] transition-all duration-300 group flex sm:flex-col justify-between gap-3 sm:gap-0 relative">
+              <div className="absolute -top-2.5 right-4 bg-[#C6A15B] text-[#08111C] text-[9px] font-extrabold uppercase tracking-widest px-2.5 py-0.5 rounded-full shadow-md hidden sm:block">
+                FLEXIBLE GROUP FAVORITE
+              </div>
+              <div className="flex sm:flex-col items-center sm:items-start gap-3 sm:gap-0 w-full">
+                <div className="w-24 sm:w-full aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] shrink-0 sm:mb-3">
                   <img
                     src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop"
                     alt="Force Urbania"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Grounded Shadow */}
-                  <div className="absolute bottom-0 inset-x-0 h-8 bg-gradient-to-t from-[#08111C] to-transparent opacity-90" />
                 </div>
-                <div className="text-sm font-extrabold text-[#F4F1E8] tracking-wide uppercase">
-                  URBANIA
-                </div>
-                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
-                  <span>Luxury</span>
-                  <span className="text-[#C6A15B] font-semibold">16 Seater</span>
+                <div className="flex-1">
+                  <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                    Luxury Recliner • 16 Seater
+                  </div>
+                  <div className="text-sm font-extrabold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors">
+                    Force Urbania Luxury
+                  </div>
                 </div>
               </div>
+              <div className="pt-2 sm:mt-2 border-t border-[#AEB7C2]/15 flex items-center justify-between text-xs font-bold shrink-0">
+                <span className="text-[#F4F1E8]">₹50 <span className="text-[10px] text-[#AEB7C2] font-normal">/ km</span></span>
+                <Link to="/booking" className="text-[#C6A15B] hover:underline flex items-center gap-1 text-[11px]">
+                  Book <ArrowRight size={11} />
+                </Link>
+              </div>
+            </div>
 
-              {/* Right Vehicle: Force Traveller */}
-              <div className="bg-[#132333]/70 backdrop-blur-md rounded-2xl p-4 border border-[#AEB7C2]/15 text-left transform sm:scale-95 transition-all hover:border-[#C6A15B]/40 shadow-xl relative group">
-                <div className="aspect-[16/9] rounded-xl overflow-hidden mb-3 bg-[#08111C] relative">
+            {/* Card 3: Tempo Traveller */}
+            <div className="bg-[#132333]/90 backdrop-blur-md rounded-2xl p-3.5 border border-[#AEB7C2]/20 shadow-2xl hover:border-[#C6A15B]/60 transition-all duration-300 group flex sm:flex-col justify-between gap-3 sm:gap-0">
+              <div className="flex sm:flex-col items-center sm:items-start gap-3 sm:gap-0 w-full">
+                <div className="w-24 sm:w-full aspect-[16/10] rounded-xl overflow-hidden bg-[#08111C] shrink-0 sm:mb-3">
                   <img
                     src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=500&fit=crop"
-                    alt="Force Traveller"
+                    alt="Tempo Traveller"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Subtle Grounded Shadow */}
-                  <div className="absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-[#08111C] to-transparent opacity-80" />
                 </div>
-                <div className="text-xs font-bold text-[#F4F1E8] tracking-wide uppercase">
-                  FORCE TRAVELLER
+                <div className="flex-1">
+                  <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                    Group Travel • 12/17 Seater
+                  </div>
+                  <div className="text-sm font-extrabold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors">
+                    Force Tempo Traveller
+                  </div>
                 </div>
-                <div className="text-[11px] text-[#AEB7C2] flex items-center justify-between mt-0.5">
-                  <span>Group Travel</span>
-                  <span className="text-[#C6A15B] font-semibold">12/17 Seater</span>
-                </div>
+              </div>
+              <div className="pt-2 sm:mt-2 border-t border-[#AEB7C2]/15 flex items-center justify-between text-xs font-bold shrink-0">
+                <span className="text-[#F4F1E8]">₹35 <span className="text-[10px] text-[#AEB7C2] font-normal">/ km</span></span>
+                <Link to="/booking" className="text-[#C6A15B] hover:underline flex items-center gap-1 text-[11px]">
+                  Book <ArrowRight size={11} />
+                </Link>
               </div>
             </div>
           </div>
 
-          {/* Hero Statistics Panel */}
-          <div className="gsap-hero-stats w-full max-w-4xl mx-auto bg-[#08111C]/82 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-[#AEB7C2]/15 shadow-2xl">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0">
-              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
-                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+          {/* Micro Details Statistics Bar */}
+          <div className="gsap-hero-stats bg-[#08111C]/85 backdrop-blur-md p-3 sm:p-4 rounded-xl border border-[#AEB7C2]/15 shadow-xl">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-0 text-center">
+              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
                   8+ <span className="text-[#C6A15B]">YEARS</span>
                 </div>
-                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Experience</div>
+                <div className="text-[10px] text-[#AEB7C2] font-medium">Experience</div>
               </div>
-              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
-                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
                   5000+
                 </div>
-                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Groups Served</div>
+                <div className="text-[10px] text-[#AEB7C2] font-medium">Groups Served</div>
               </div>
-              <div className="sm:border-r border-[#AEB7C2]/15 px-3 py-1">
-                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
                   &lt; 5 MIN
                 </div>
-                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Average Response</div>
+                <div className="text-[10px] text-[#AEB7C2] font-medium">Average Response</div>
               </div>
-              <div className="px-3 py-1">
-                <div className="text-xl sm:text-2xl font-extrabold text-[#F4F1E8]">
+              <div className="px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#F4F1E8]">
                   24/7
                 </div>
-                <div className="text-xs text-[#AEB7C2] font-medium mt-0.5">Travel Support</div>
+                <div className="text-[10px] text-[#AEB7C2] font-medium">Travel Support</div>
               </div>
             </div>
-          </div>
-
-          {/* Micro Detail: Scroll to Explore */}
-          <div className="mt-8 flex items-center gap-2 text-[10px] uppercase tracking-widest text-[#AEB7C2] animate-bounce">
-            <span>SCROLL TO EXPLORE</span>
-            <ChevronDown size={14} className="text-[#C6A15B]" />
           </div>
         </div>
       </section>
