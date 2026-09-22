@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, CalendarCheck } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
 
 const NAV_LINKS = [
@@ -52,24 +52,24 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-[#F4F1E8] ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-[#F4F1E8] border-b border-[#C6A15B]/20 ${
           scrolled
-            ? "bg-[#08111C] border-b border-[#AEB7C2]/20 shadow-2xl py-3"
-            : "bg-[#08111C]/88 backdrop-blur-[12px] border-b border-[#AEB7C2]/15 py-3.5"
+            ? "bg-[#08111C] shadow-2xl py-3"
+            : "bg-[#08111C]/70 backdrop-blur-[12px] py-4"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
-          {/* LEFT: Coffee Cabs Logo */}
-          <Link to="/" className="flex items-center gap-2 shrink-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 flex items-center justify-between h-12">
+          {/* LEFT: Coffee Cabs Logo (10-15% larger) */}
+          <Link to="/" className="flex items-center gap-2 shrink-0 pl-1">
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Logo"
-              className="h-8 sm:h-9 w-auto object-contain filter invert transition-transform hover:scale-105 duration-200"
+              className="h-9 sm:h-10 md:h-10.5 w-auto object-contain filter invert transition-transform hover:scale-105 duration-200"
             />
           </Link>
 
           {/* CENTER: Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-7">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-7">
             {NAV_LINKS.map((link) => {
               const isActive =
                 link.to === "/"
@@ -78,17 +78,19 @@ export default function Navbar() {
                   ? location.pathname === "/" && location.hash === "#about"
                   : location.pathname === link.to;
 
+              const linkClasses = `text-[11px] xl:text-xs uppercase tracking-[0.08em] font-semibold transition-all duration-300 relative py-1.5 ${
+                isActive
+                  ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
+                  : "text-[#AEB7C2] hover:text-[#F4F1E8] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#C6A15B]/60 after:transition-all after:duration-300"
+              }`;
+
               if (link.isHash) {
                 return (
                   <a
                     key={link.label}
                     href={link.to}
                     onClick={handleAboutClick}
-                    className={`text-[11px] xl:text-xs uppercase tracking-wider font-semibold transition-all duration-200 relative py-1 ${
-                      isActive
-                        ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
-                        : "text-[#AEB7C2] hover:text-[#F4F1E8]"
-                    }`}
+                    className={linkClasses}
                   >
                     {link.label}
                   </a>
@@ -96,35 +98,32 @@ export default function Navbar() {
               }
 
               return (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`text-[11px] xl:text-xs uppercase tracking-wider font-semibold transition-all duration-200 relative py-1 ${
-                    isActive
-                      ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
-                      : "text-[#AEB7C2] hover:text-[#F4F1E8]"
-                  }`}
-                >
+                <Link key={link.to} to={link.to} className={linkClasses}>
                   {link.label}
                 </Link>
               );
             })}
           </div>
 
-          {/* RIGHT: Action Buttons */}
+          {/* RIGHT: Action Area */}
           <div className="hidden sm:flex items-center gap-3.5">
+            {/* Subtle Vertical Divider */}
+            <div className="hidden lg:block h-5 w-[1px] bg-[#AEB7C2]/20 mr-1" />
+
+            {/* Request Booking CTA */}
             <Link
               to="/booking"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold bg-[#C6A15B] text-[#08111C] px-4 xl:px-5 py-2.5 rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95"
+              className="inline-flex items-center gap-2 text-xs font-semibold bg-[#C6A15B] text-[#08111C] px-4.5 xl:px-5 py-2.5 rounded-full hover:bg-[#d4b06a] hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 group"
             >
-              <CalendarCheck size={14} /> Request Booking
+              Request Booking <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
 
+            {/* WhatsApp Button */}
             <a
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-all duration-200 shadow-sm hover:scale-105 shrink-0"
+              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-105 transition-transform duration-250 shadow-sm shrink-0"
               aria-label="WhatsApp"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none">
@@ -132,6 +131,7 @@ export default function Navbar() {
               </svg>
             </a>
 
+            {/* Phone Link */}
             <a
               href="tel:+917676726209"
               className="hidden xl:flex items-center gap-1.5 text-xs font-semibold text-[#F4F1E8] hover:text-[#C6A15B] transition-colors"
@@ -158,7 +158,7 @@ export default function Navbar() {
           <div>
             <div className="flex items-center justify-between pb-6 border-b border-[#AEB7C2]/15">
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-8 w-auto filter invert" />
+                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-9 w-auto filter invert" />
               </Link>
               <button
                 className="w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8]"
@@ -215,9 +215,9 @@ export default function Navbar() {
             <Link
               to="/booking"
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-sm font-semibold rounded-full hover:bg-[#d4b06a] transition-all shadow-md"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-sm font-semibold rounded-full hover:bg-[#d4b06a] transition-all shadow-md group"
             >
-              <CalendarCheck size={16} /> Request Booking
+              Request Booking <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
               href="tel:+917676726209"
@@ -231,6 +231,7 @@ export default function Navbar() {
     </>
   );
 }
+
 
 
 
