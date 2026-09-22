@@ -134,7 +134,7 @@ export default function HomePage() {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src="/images/hero.png"
+            src={`${import.meta.env.BASE_URL}images/hero.png`}
             alt="Coffee Cabs Luxury Fleet Vehicles"
             className="w-full h-full object-cover object-bottom opacity-80"
           />
@@ -156,7 +156,7 @@ export default function HomePage() {
           {/* Center Circular Logo Badge */}
           <div className="gsap-hero-badge w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/10 backdrop-blur-xl border border-white/30 flex items-center justify-center p-2.5 mb-3 shadow-2xl">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Logo Badge"
               className="w-full h-full object-contain filter invert"
             />

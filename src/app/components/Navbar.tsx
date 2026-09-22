@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Logo"
               className="h-8 sm:h-9 w-auto object-contain"
             />
@@ -91,7 +91,7 @@ export default function Navbar() {
           <div>
             <div className="flex items-center justify-between pb-6 border-b border-black/5">
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img src="/images/logo.png" alt="Coffee Cabs" className="h-8 w-auto" />
+                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-8 w-auto" />
               </Link>
               <button
                 className="w-10 h-10 rounded-full bg-[#f4f4f5] flex items-center justify-center text-[#09090b]"

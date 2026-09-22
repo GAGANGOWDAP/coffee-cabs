@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 sm:col-span-1">
             <Link to="/" className="inline-block mb-4">
-              <img src="/images/logo.png" alt="Coffee Cabs" className="h-9 w-auto filter invert" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-9 w-auto filter invert" />
             </Link>
             <p className="text-xs text-[#a1a1aa] leading-relaxed mb-4">
               Premium luxury chauffeur services from Bangalore. Toyota Innova Crysta & Force Tempo Traveller rentals for outstation travel across India.
