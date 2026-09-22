@@ -21,7 +21,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <div
-      className="min-h-screen bg-white text-[#09090b] overflow-x-hidden"
+      className="min-h-screen bg-[#08111C] text-[#F4F1E8] overflow-x-hidden"
       style={{ fontFamily: "'Nunito', sans-serif" }}
     >
       <ScrollToTop />

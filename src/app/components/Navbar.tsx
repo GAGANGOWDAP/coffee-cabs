@@ -17,14 +17,14 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5 text-[#09090b]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#08111C]/90 backdrop-blur-md border-b border-[#AEB7C2]/15 text-[#F4F1E8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Logo"
-              className="h-8 sm:h-9 w-auto object-contain"
+              className="h-8 sm:h-9 w-auto object-contain filter invert"
             />
           </Link>
 
@@ -36,8 +36,8 @@ export default function Navbar() {
                 to={link.to}
                 className={`text-xs uppercase tracking-wider font-bold transition-colors duration-200 ${
                   location.pathname === link.to
-                    ? "text-[#09090b] border-b-2 border-[#09090b] pb-1"
-                    : "text-[#71717a] hover:text-[#09090b]"
+                    ? "text-[#C6A15B] border-b-2 border-[#C6A15B] pb-1"
+                    : "text-[#AEB7C2] hover:text-[#F4F1E8]"
                 }`}
               >
                 {link.label}
@@ -49,7 +49,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               to="/booking"
-              className="inline-flex items-center gap-1.5 text-xs font-bold bg-[#09090b] text-white px-4 py-2 rounded-full hover:bg-neutral-800 transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 text-xs font-bold bg-[#C6A15B] text-[#08111C] px-4 py-2 rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md"
             >
               <CalendarCheck size={13} /> Request Booking
             </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-opacity"
+              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm"
               aria-label="WhatsApp"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none">
@@ -67,16 +67,16 @@ export default function Navbar() {
             </a>
             <a
               href="tel:+917676726209"
-              className="flex items-center gap-1.5 text-xs font-bold text-[#09090b] hover:text-[#52525b] transition-colors"
+              className="flex items-center gap-1.5 text-xs font-bold text-[#F4F1E8] hover:text-[#C6A15B] transition-colors"
             >
-              <Phone size={13} />
+              <Phone size={13} className="text-[#C6A15B]" />
               +91 76767 26209
             </a>
           </div>
 
           {/* Mobile Hamburger Button */}
           <button
-            className="md:hidden w-10 h-10 rounded-full bg-[#f4f4f5] flex items-center justify-center text-[#09090b]"
+            className="md:hidden w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -87,14 +87,14 @@ export default function Navbar() {
 
       {/* Mobile Overlay Menu */}
       {menuOpen && (
-        <div className="md:hidden fixed inset-0 z-[60] bg-white text-[#09090b] flex flex-col justify-between p-6">
+        <div className="md:hidden fixed inset-0 z-[60] bg-[#08111C] text-[#F4F1E8] flex flex-col justify-between p-6">
           <div>
-            <div className="flex items-center justify-between pb-6 border-b border-black/5">
+            <div className="flex items-center justify-between pb-6 border-b border-[#AEB7C2]/15">
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-8 w-auto" />
+                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-8 w-auto filter invert" />
               </Link>
               <button
-                className="w-10 h-10 rounded-full bg-[#f4f4f5] flex items-center justify-center text-[#09090b]"
+                className="w-10 h-10 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8]"
                 onClick={() => setMenuOpen(false)}
               >
                 <X size={20} />
@@ -107,7 +107,7 @@ export default function Navbar() {
                   key={link.to}
                   to={link.to}
                   className={`block text-2xl font-bold py-2 transition-colors ${
-                    location.pathname === link.to ? "text-[#09090b]" : "text-[#a1a1aa]"
+                    location.pathname === link.to ? "text-[#C6A15B]" : "text-[#AEB7C2]"
                   }`}
                   style={{ fontFamily: "'Playfair Display', serif" }}
                   onClick={() => setMenuOpen(false)}
@@ -118,19 +118,19 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="space-y-3 pt-6 border-t border-black/5">
+          <div className="space-y-3 pt-6 border-t border-[#AEB7C2]/15">
             <Link
               to="/booking"
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 bg-[#09090b] text-white text-sm font-bold rounded-full"
+              className="flex items-center justify-center gap-2 w-full py-4 bg-[#C6A15B] text-[#08111C] text-sm font-bold rounded-full hover:bg-[#d4b06a] transition-all"
             >
               <CalendarCheck size={16} /> Request Booking
             </Link>
             <a
               href="tel:+917676726209"
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#f4f4f5] text-[#09090b] text-sm font-bold rounded-full"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#132333] text-[#F4F1E8] border border-[#AEB7C2]/20 text-sm font-bold rounded-full"
             >
-              <Phone size={16} /> Call +91 76767 26209
+              <Phone size={16} className="text-[#C6A15B]" /> Call +91 76767 26209
             </a>
           </div>
         </div>
@@ -138,3 +138,4 @@ export default function Navbar() {
     </>
   );
 }
+

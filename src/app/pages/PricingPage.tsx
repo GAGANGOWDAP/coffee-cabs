@@ -26,32 +26,32 @@ export default function PricingPage() {
   const activeVehicle = VEHICLES[selectedMobileVehicle];
 
   return (
-    <div ref={pageRef} className="pt-20 bg-white text-[#09090b] min-h-screen">
+    <div ref={pageRef} className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
       {/* Header */}
-      <section className="py-12 sm:py-16 bg-[#fafafa] border-b border-black/5">
+      <section className="py-12 sm:py-16 bg-[#132333] border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center gsap-pricing-fade">
-          <div className="text-xs tracking-widest uppercase text-[#52525b] mb-3 font-extrabold bg-white border border-black/10 px-4 py-1.5 rounded-full inline-block shadow-sm">
+          <div className="text-xs tracking-widest uppercase text-[#C6A15B] mb-3 font-extrabold bg-[#08111C] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full inline-block shadow-sm">
             Transparent Tariff
           </div>
           <h1
-            className="text-3xl sm:text-5xl font-bold text-[#09090b] mb-3"
+            className="text-3xl sm:text-5xl font-bold text-[#F4F1E8] mb-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Official Per-Km Pricing & Allowance
           </h1>
-          <p className="text-[#71717a] text-sm sm:text-base max-w-lg mx-auto">
+          <p className="text-[#AEB7C2] text-sm sm:text-base max-w-lg mx-auto">
             Zero hidden charges. Complete clarity on per-km rates, driver allowance, minimum billing distance, and outstation rules.
           </p>
         </div>
       </section>
 
       {/* Pricing Matrix Section */}
-      <section className="py-12 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-[#08111C]">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 gsap-pricing-fade">
           {/* ── MOBILE / IPHONE FRIENDLY CARD VIEW (Visible on Mobile) ── */}
           <div className="block sm:hidden mb-8">
-            <label className="block text-[11px] font-extrabold text-[#71717a] uppercase tracking-wider mb-2">
-              Select Vehicle (iPhone Friendly View)
+            <label className="block text-[11px] font-extrabold text-[#AEB7C2] uppercase tracking-wider mb-2">
+              Select Vehicle
             </label>
 
             <div className="flex items-center gap-2 overflow-x-auto pb-3 scrollbar-none mb-4">
@@ -61,8 +61,8 @@ export default function PricingPage() {
                   onClick={() => setSelectedMobileVehicle(idx)}
                   className={`px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                     selectedMobileVehicle === idx
-                      ? "bg-[#09090b] text-white shadow-md"
-                      : "bg-[#fafafa] text-[#71717a] border border-black/10 hover:bg-neutral-200"
+                      ? "bg-[#C6A15B] text-[#08111C] shadow-md"
+                      : "bg-[#132333] text-[#AEB7C2] border border-[#AEB7C2]/15 hover:bg-[#132333]/80"
                   }`}
                 >
                   {v.shortName}
@@ -71,30 +71,30 @@ export default function PricingPage() {
             </div>
 
             {/* Mobile Active Vehicle Rate Card */}
-            <div className="bg-[#fafafa] rounded-3xl p-6 border border-black/10 shadow-lg">
-              <div className="flex justify-between items-start pb-4 border-b border-black/10 mb-4">
+            <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
+              <div className="flex justify-between items-start pb-4 border-b border-[#AEB7C2]/15 mb-4">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-[#71717a]">{activeVehicle.category}</span>
-                  <h3 className="text-xl font-extrabold text-[#09090b]">{activeVehicle.name}</h3>
+                  <span className="text-[10px] uppercase font-bold text-[#C6A15B]">{activeVehicle.category}</span>
+                  <h3 className="text-xl font-extrabold text-[#F4F1E8]">{activeVehicle.name}</h3>
                 </div>
                 <div className="text-right">
-                  <div className="text-2xl font-extrabold text-[#09090b]">₹{activeVehicle.pricePerKm}</div>
-                  <div className="text-[10px] text-[#71717a]">per km</div>
+                  <div className="text-2xl font-extrabold text-[#C6A15B]">₹{activeVehicle.pricePerKm}</div>
+                  <div className="text-[10px] text-[#AEB7C2]">per km</div>
                 </div>
               </div>
 
               <div className="space-y-3 text-xs mb-6">
-                <div className="bg-white p-3 rounded-2xl border border-black/5 flex justify-between items-center">
-                  <span className="text-[#71717a] font-semibold">Seating Capacity</span>
-                  <span className="font-extrabold text-[#09090b]">{activeVehicle.seats} Seats</span>
+                <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
+                  <span className="text-[#AEB7C2] font-semibold">Seating Capacity</span>
+                  <span className="font-extrabold text-[#F4F1E8]">{activeVehicle.seats} Seats</span>
                 </div>
-                <div className="bg-white p-3 rounded-2xl border border-black/5 flex justify-between items-center">
-                  <span className="text-[#71717a] font-semibold">Driver Allowance</span>
-                  <span className="font-extrabold text-[#09090b]">₹{activeVehicle.driverAllowance}/day</span>
+                <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
+                  <span className="text-[#AEB7C2] font-semibold">Driver Allowance</span>
+                  <span className="font-extrabold text-[#F4F1E8]">₹{activeVehicle.driverAllowance}/day</span>
                 </div>
-                <div className="bg-white p-3 rounded-2xl border border-black/5 flex justify-between items-center">
-                  <span className="text-[#71717a] font-semibold">Minimum Outstation</span>
-                  <span className="font-extrabold text-[#09090b]">300 km / day</span>
+                <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
+                  <span className="text-[#AEB7C2] font-semibold">Minimum Outstation</span>
+                  <span className="font-extrabold text-[#F4F1E8]">300 km / day</span>
                 </div>
               </div>
 
@@ -104,7 +104,7 @@ export default function PricingPage() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#09090b] text-white text-xs font-bold rounded-full hover:bg-neutral-800 transition-colors shadow-md"
+                className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-xs font-bold rounded-full hover:bg-[#d4b06a] transition-all shadow-md"
               >
                 Book {activeVehicle.shortName} via WhatsApp <ArrowRight size={14} />
               </a>
@@ -112,37 +112,35 @@ export default function PricingPage() {
           </div>
 
           {/* ── DESKTOP & TABLET TABLE VIEW ── */}
-          <div className="hidden sm:block rounded-3xl overflow-hidden border border-black/10 bg-white shadow-xl">
+          <div className="hidden sm:block rounded-3xl overflow-hidden border border-[#AEB7C2]/15 bg-[#132333] shadow-2xl">
             <table className="w-full">
               <thead>
-                <tr className="bg-[#09090b] text-white">
+                <tr className="bg-[#08111C] text-[#F4F1E8]">
                   <th className="text-left px-6 py-4 text-xs font-extrabold uppercase tracking-wider">Vehicle Model</th>
                   <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider">Seating</th>
-                  <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider">Rate / Km</th>
-                  <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider">Driver Allowance</th>
+                  <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider text-[#C6A15B]">Rate / Km</th>
+                  <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider text-[#C6A15B]">Driver Allowance</th>
                   <th className="text-center px-4 py-4 text-xs font-extrabold uppercase tracking-wider">Book</th>
                 </tr>
               </thead>
-              <tbody>
-                {VEHICLES.map((v, i) => (
+              <tbody className="divide-y divide-[#AEB7C2]/15">
+                {VEHICLES.map((v) => (
                   <tr
                     key={v.id}
-                    className={`border-b border-black/5 hover:bg-[#fafafa] transition-colors ${
-                      i % 2 === 0 ? "bg-white" : "bg-[#fafafa]"
-                    }`}
+                    className="hover:bg-[#1a2d42] transition-colors"
                   >
                     <td className="px-6 py-5">
-                      <div className="font-bold text-sm text-[#09090b]">{v.name}</div>
-                      <div className="text-[11px] text-[#71717a]">{v.company}</div>
+                      <div className="font-bold text-sm text-[#F4F1E8]">{v.name}</div>
+                      <div className="text-[11px] text-[#AEB7C2]">{v.company}</div>
                     </td>
-                    <td className="text-center px-4 py-5 text-xs text-[#71717a] font-semibold">{v.seats}</td>
+                    <td className="text-center px-4 py-5 text-xs text-[#AEB7C2] font-semibold">{v.seats}</td>
                     <td className="text-center px-4 py-5">
-                      <span className="font-extrabold text-[#09090b] text-sm">₹{v.pricePerKm}</span>
-                      <span className="text-[#71717a] text-xs">/km</span>
+                      <span className="font-extrabold text-[#C6A15B] text-sm">₹{v.pricePerKm}</span>
+                      <span className="text-[#AEB7C2] text-xs">/km</span>
                     </td>
                     <td className="text-center px-4 py-5">
-                      <span className="font-extrabold text-[#09090b] text-sm">₹{v.driverAllowance}</span>
-                      <span className="text-[#71717a] text-xs">/day</span>
+                      <span className="font-extrabold text-[#C6A15B] text-sm">₹{v.driverAllowance}</span>
+                      <span className="text-[#AEB7C2] text-xs">/day</span>
                     </td>
                     <td className="text-center px-4 py-5">
                       <a
@@ -151,7 +149,7 @@ export default function PricingPage() {
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#09090b] text-white hover:bg-neutral-800 transition-colors"
+                        className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#C6A15B] text-[#08111C] hover:bg-[#d4b06a] transition-all shadow-md"
                       >
                         <ArrowRight size={14} />
                       </a>
@@ -165,7 +163,7 @@ export default function PricingPage() {
       </section>
 
       {/* Booking Enquiry Section */}
-      <section className="py-16 sm:py-24 bg-[#fafafa] border-y border-black/5">
+      <section className="py-16 sm:py-24 bg-[#08111C] border-y border-[#AEB7C2]/15">
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <BookingForm
             title="Send Booking Enquiry for Vehicle Tariff"
@@ -175,57 +173,61 @@ export default function PricingPage() {
       </section>
 
       {/* Terms & Policies Grid */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-[#08111C]">
         <div className="max-w-5xl mx-auto px-4 sm:px-8">
           <h2
-            className="text-2xl sm:text-3xl font-bold text-[#09090b] mb-8 text-center"
+            className="text-2xl sm:text-3xl font-bold text-[#F4F1E8] mb-8 text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Outstation Terms & Operating Guidelines
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="bg-[#fafafa] rounded-3xl p-6 border border-black/10">
-              <h3 className="font-bold text-[#09090b] mb-3 text-sm flex items-center gap-2">
-                <ShieldCheck size={16} className="text-[#09090b]" /> Included in Per-Km Rate
+            <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
+              <h3 className="font-bold text-[#F4F1E8] mb-3 text-sm flex items-center gap-2">
+                <ShieldCheck size={16} className="text-[#C6A15B]" /> Included in Per-Km Rate
               </h3>
               <ul className="space-y-2">
                 {PRICING_TERMS.included.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-xs text-[#71717a]">
-                    <CheckCircle2 size={13} className="text-[#09090b] shrink-0" /> {item}
+                  <li key={item} className="flex items-center gap-2 text-xs text-[#AEB7C2]">
+                    <CheckCircle2 size={13} className="text-[#C6A15B] shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-[#fafafa] rounded-3xl p-6 border border-black/10">
-              <h3 className="font-bold text-[#09090b] mb-3 text-sm flex items-center gap-2">
-                <ChevronRight size={16} className="text-[#09090b]" /> Additional Charges (As per Actuals)
+            <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
+              <h3 className="font-bold text-[#F4F1E8] mb-3 text-sm flex items-center gap-2">
+                <ChevronRight size={16} className="text-[#C6A15B]" /> Additional Charges (As per Actuals)
               </h3>
               <ul className="space-y-2">
                 {PRICING_TERMS.extras.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-xs text-[#71717a]">
-                    <ChevronRight size={12} className="text-[#09090b] shrink-0" /> {item}
+                  <li key={item} className="flex items-center gap-2 text-xs text-[#AEB7C2]">
+                    <ChevronRight size={12} className="text-[#C6A15B] shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-[#fafafa] rounded-3xl p-6 border border-black/10">
-              <h3 className="font-bold text-[#09090b] mb-3 text-sm">📋 Billing Rules</h3>
-              <ul className="space-y-2 text-xs text-[#71717a]">
-                <li><strong>Minimum Outstation:</strong> {PRICING_TERMS.minimumBilling}</li>
-                <li><strong>Local Package:</strong> {PRICING_TERMS.localPackage}</li>
-                <li><strong>One-Way Trips:</strong> {PRICING_TERMS.oneWay}</li>
+            <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
+              <h3 className="font-bold text-[#F4F1E8] mb-3 text-sm flex items-center gap-2">
+                <span className="text-[#C6A15B]">📋</span> Billing Rules
+              </h3>
+              <ul className="space-y-2 text-xs text-[#AEB7C2]">
+                <li><strong className="text-[#F4F1E8]">Minimum Outstation:</strong> {PRICING_TERMS.minimumBilling}</li>
+                <li><strong className="text-[#F4F1E8]">Local Package:</strong> {PRICING_TERMS.localPackage}</li>
+                <li><strong className="text-[#F4F1E8]">One-Way Trips:</strong> {PRICING_TERMS.oneWay}</li>
               </ul>
             </div>
 
-            <div className="bg-[#fafafa] rounded-3xl p-6 border border-black/10">
-              <h3 className="font-bold text-[#09090b] mb-3 text-sm">✕ Cancellation Terms</h3>
+            <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
+              <h3 className="font-bold text-[#F4F1E8] mb-3 text-sm flex items-center gap-2">
+                <span className="text-[#C6A15B]">✕</span> Cancellation Terms
+              </h3>
               <ul className="space-y-2">
                 {PRICING_TERMS.cancellation.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-xs text-[#71717a]">
-                    <ChevronRight size={12} className="text-[#09090b] shrink-0 mt-0.5" /> {item}
+                  <li key={item} className="flex items-start gap-2 text-xs text-[#AEB7C2]">
+                    <ChevronRight size={12} className="text-[#C6A15B] shrink-0 mt-0.5" /> {item}
                   </li>
                 ))}
               </ul>
@@ -236,3 +238,4 @@ export default function PricingPage() {
     </div>
   );
 }
+

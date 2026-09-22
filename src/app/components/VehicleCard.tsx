@@ -22,23 +22,23 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
   );
 
   return (
-    <div className="bg-white border border-black/10 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+    <div className="bg-[#132333] border border-[#AEB7C2]/15 rounded-3xl overflow-hidden shadow-xl hover:border-[#C6A15B]/50 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Slideshow Image Header */}
-        <div className="relative aspect-[16/10] bg-neutral-900 overflow-hidden">
+        <div className="relative aspect-[16/10] bg-[#08111C] overflow-hidden">
           <img
             src={vehicle.images[currentImgIndex]}
             alt={`${vehicle.name} - Image ${currentImgIndex + 1}`}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
           />
 
           {/* Company Badge */}
-          <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/20 uppercase tracking-widest">
+          <div className="absolute top-4 left-4 bg-[#08111C]/80 backdrop-blur-md text-[#F4F1E8] text-[11px] font-bold px-3 py-1.5 rounded-full border border-[#C6A15B]/30 uppercase tracking-widest">
             {vehicle.company}
           </div>
 
           {/* Rate Badge */}
-          <div className="absolute top-4 right-4 bg-white text-black text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg">
+          <div className="absolute top-4 right-4 bg-[#C6A15B] text-[#08111C] text-xs font-extrabold px-3.5 py-1.5 rounded-full shadow-lg">
             ₹{vehicle.pricePerKm}/km
           </div>
 
@@ -47,14 +47,14 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
             <>
               <button
                 onClick={prevImage}
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black text-white flex items-center justify-center backdrop-blur-sm transition-colors border border-white/20"
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20"
                 aria-label="Previous image"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black text-white flex items-center justify-center backdrop-blur-sm transition-colors border border-white/20"
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#08111C]/80 hover:bg-[#08111C] text-[#F4F1E8] flex items-center justify-center backdrop-blur-sm transition-colors border border-[#AEB7C2]/20"
                 aria-label="Next image"
               >
                 <ChevronRight size={18} />
@@ -71,7 +71,7 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
                       setCurrentImgIndex(idx);
                     }}
                     className={`h-1.5 rounded-full transition-all ${
-                      idx === currentImgIndex ? "w-6 bg-white" : "w-1.5 bg-white/40"
+                      idx === currentImgIndex ? "w-6 bg-[#C6A15B]" : "w-1.5 bg-[#AEB7C2]/40"
                     }`}
                     aria-label={`Go to slide ${idx + 1}`}
                   />
@@ -85,40 +85,40 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
         <div className="p-6">
           <div className="flex items-center justify-between gap-2 mb-2">
             <h3
-              className="text-xl font-bold text-[#09090b] group-hover:text-neutral-700 transition-colors"
+              className="text-xl font-bold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               {vehicle.name}
             </h3>
           </div>
 
-          <p className="text-xs text-[#71717a] leading-relaxed mb-5">
+          <p className="text-xs text-[#AEB7C2] leading-relaxed mb-5">
             {vehicle.description}
           </p>
 
           {/* Quick Specs */}
-          <div className="grid grid-cols-2 gap-2 mb-5">
-            <div className="bg-[#fafafa] rounded-xl p-3 border border-black/5 flex items-center gap-2.5">
-              <Users size={16} className="text-[#09090b] shrink-0" />
+          <div className="grid grid-cols-2 gap-2.5 mb-5">
+            <div className="bg-[#08111C]/60 rounded-xl p-3 border border-[#AEB7C2]/15 flex items-center gap-2.5">
+              <Users size={16} className="text-[#C6A15B] shrink-0" />
               <div>
-                <div className="text-[10px] text-[#71717a] uppercase tracking-wider font-semibold">Capacity</div>
-                <div className="text-xs font-bold text-[#09090b]">{vehicle.seats} Seater</div>
+                <div className="text-[10px] text-[#AEB7C2] uppercase tracking-wider font-semibold">Capacity</div>
+                <div className="text-xs font-bold text-[#F4F1E8]">{vehicle.seats} Seater</div>
               </div>
             </div>
-            <div className="bg-[#fafafa] rounded-xl p-3 border border-black/5 flex items-center gap-2.5">
-              <Fuel size={16} className="text-[#09090b] shrink-0" />
+            <div className="bg-[#08111C]/60 rounded-xl p-3 border border-[#AEB7C2]/15 flex items-center gap-2.5">
+              <Fuel size={16} className="text-[#C6A15B] shrink-0" />
               <div>
-                <div className="text-[10px] text-[#71717a] uppercase tracking-wider font-semibold">Driver Allowance</div>
-                <div className="text-xs font-bold text-[#09090b]">₹{vehicle.driverAllowance}/day</div>
+                <div className="text-[10px] text-[#AEB7C2] uppercase tracking-wider font-semibold">Driver Allowance</div>
+                <div className="text-xs font-bold text-[#F4F1E8]">₹{vehicle.driverAllowance}/day</div>
               </div>
             </div>
           </div>
 
           {/* Feature Highlights */}
-          <ul className="space-y-1.5 mb-6">
+          <ul className="space-y-2 mb-6">
             {vehicle.features.slice(0, 4).map((f, i) => (
-              <li key={i} className="flex items-center gap-2 text-xs text-[#71717a]">
-                <CheckCircle2 size={13} className="text-[#09090b] shrink-0" />
+              <li key={i} className="flex items-center gap-2 text-xs text-[#AEB7C2]">
+                <CheckCircle2 size={13} className="text-[#C6A15B] shrink-0" />
                 <span>{f}</span>
               </li>
             ))}
@@ -132,7 +132,7 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           href={`https://wa.me/917676726209?text=${whatsappMsg}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#09090b] text-white text-xs font-bold rounded-full hover:bg-neutral-800 transition-colors shadow-md"
+          className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-xs font-extrabold rounded-full hover:bg-[#d4b06a] transition-all duration-200 shadow-md"
         >
           Book {vehicle.shortName} Now <ArrowRight size={14} />
         </a>
@@ -140,3 +140,4 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
     </div>
   );
 }
+

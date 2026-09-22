@@ -2,18 +2,25 @@
 
 @layer base {
   :root {
-    --bg-main: #ffffff;
-    --bg-surface: #fafafa;
-    --bg-card: #ffffff;
-    --text-primary: #09090b;
-    --text-secondary: #52525b;
-    --text-muted: #71717a;
-    --border-subtle: rgba(0, 0, 0, 0.08);
+    --color-midnight: #08111C;
+    --color-deep-navy: #132333;
+    --color-champagne-gold: #C6A15B;
+    --color-warm-ivory: #F4F1E8;
+    --color-silver-grey: #AEB7C2;
+
+    --bg-main: #08111C;
+    --bg-surface: #132333;
+    --bg-card: #132333;
+    --text-primary: #F4F1E8;
+    --text-secondary: #AEB7C2;
+    --text-accent: #C6A15B;
+    --border-subtle: rgba(174, 183, 194, 0.15);
+    --border-gold: rgba(198, 164, 91, 0.25);
   }
 
   body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
+    background-color: #08111C;
+    color: #F4F1E8;
     font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
