@@ -11,6 +11,12 @@ import ContactPage from "./pages/ContactPage";
 import PackagesPage from "./pages/PackagesPage";
 import DestinationPage from "./pages/DestinationPage";
 import BookingPage from "./pages/BookingPage";
+import TravelIndexPage from "./pages/TravelIndexPage";
+import DestinationDetailPage from "./pages/DestinationDetailPage";
+import PackagesIndexPage from "./pages/PackagesIndexPage";
+import PackageDetailPage from "./pages/PackageDetailPage";
+import RoutesIndexPage from "./pages/RoutesIndexPage";
+import RouteDetailPage from "./pages/RouteDetailPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,8 +38,24 @@ export default function App() {
           <Route path="/fleet/:slug" element={<VehicleDetailPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/packages" element={<PackagesPage />} />
-          <Route path="/packages/:slug" element={<DestinationPage />} />
+
+          {/* Travel Dictionary & Destinations */}
+          <Route path="/travel" element={<TravelIndexPage />} />
+          <Route path="/travel/destinations" element={<TravelIndexPage />} />
+          <Route path="/travel/destinations/:slug" element={<DestinationDetailPage />} />
+          <Route path="/destinations/:slug" element={<DestinationDetailPage />} />
+
+          {/* Tour Packages */}
+          <Route path="/travel/packages" element={<PackagesIndexPage />} />
+          <Route path="/travel/packages/:slug" element={<PackageDetailPage />} />
+          <Route path="/packages" element={<PackagesIndexPage />} />
+          <Route path="/packages/:slug" element={<PackageDetailPage />} />
+
+          {/* Outstation Routes */}
+          <Route path="/routes" element={<RoutesIndexPage />} />
+          <Route path="/routes/:slug" element={<RouteDetailPage />} />
+
+          {/* Booking & Enquiry */}
           <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </main>
@@ -42,5 +64,6 @@ export default function App() {
     </div>
   );
 }
+
 
 

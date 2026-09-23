@@ -4,11 +4,12 @@ import { Link, useLocation, useNavigate } from "react-router";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
+  { label: "Travel", to: "/travel" },
   { label: "Fleet", to: "/fleet" },
-  { label: "Packages", to: "/packages" },
-  { label: "Book Enquiry", to: "/booking" },
+  { label: "Packages", to: "/travel/packages" },
+  { label: "Routes", to: "/routes" },
+  { label: "Book Cab", to: "/booking" },
   { label: "Pricing", to: "/pricing" },
-  { label: "About Us", to: "/#about", isHash: true },
   { label: "Contact", to: "/contact" },
 ];
 

@@ -186,7 +186,7 @@ export default function HomePage() {
 
           {/* Main Headline - Strictly 2 lines */}
           <h1 className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-3 sm:mb-4 max-w-4xl">
-            RIDE TO RELAX.<br />
+            RIDE TO RELAX<br />
             <span className="text-[#C6A15B]">WE DO THE REST.</span>
           </h1>
 
