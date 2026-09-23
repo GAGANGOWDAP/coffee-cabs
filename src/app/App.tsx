@@ -8,8 +8,6 @@ import FleetPage from "./pages/FleetPage";
 import VehicleDetailPage from "./pages/VehicleDetailPage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
-import PackagesPage from "./pages/PackagesPage";
-import DestinationPage from "./pages/DestinationPage";
 import BookingPage from "./pages/BookingPage";
 import TravelIndexPage from "./pages/TravelIndexPage";
 import DestinationDetailPage from "./pages/DestinationDetailPage";
