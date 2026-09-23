@@ -15,6 +15,7 @@ import PackagesIndexPage from "./pages/PackagesIndexPage";
 import PackageDetailPage from "./pages/PackageDetailPage";
 import RoutesIndexPage from "./pages/RoutesIndexPage";
 import RouteDetailPage from "./pages/RouteDetailPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -55,6 +56,9 @@ export default function App() {
 
           {/* Booking & Enquiry */}
           <Route path="/booking" element={<BookingPage />} />
+
+          {/* 404 Catch-All */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
