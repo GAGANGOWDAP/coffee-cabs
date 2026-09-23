@@ -1,10 +1,16 @@
 import { Route as RouteIcon, Navigation } from "lucide-react";
 import { ROUTES } from "../data/routes";
 import RouteCard from "../components/RouteCard";
+import SEO from "../components/SEO";
 
 export default function RoutesIndexPage() {
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Bengaluru Outstation Taxi Routes & Cabs"
+        description="Book outstation cabs from Bengaluru to Mysuru, Coorg, Chikkamagaluru, Hampi, Udupi, Gokarna, Mangaluru, Ooty & Goa. One-way & round trip."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/routes"
+      />
       {/* HEADER HERO */}
       <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">

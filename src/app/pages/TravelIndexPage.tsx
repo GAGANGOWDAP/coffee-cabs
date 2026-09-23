@@ -4,6 +4,7 @@ import { Compass, Filter, MapPin, Sparkles } from "lucide-react";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import TravelSearch from "../components/TravelSearch";
+import SEO from "../components/SEO";
 
 export default function TravelIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -66,6 +67,11 @@ export default function TravelIndexPage() {
 
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="100 Karnataka Travel Destinations & Outstation Cabs"
+        description="Explore 100 curated Karnataka travel destinations from Bengaluru. Filter by region, distance, and categories. Rent Toyota Innova Crysta & Force Urbania cabs."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel"
+      />
       {/* HEADER HERO */}
       <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">

@@ -3,6 +3,7 @@ import { Package as PackageIcon, Filter } from "lucide-react";
 import { PACKAGES } from "../data/packages";
 import PackageCard from "../components/PackageCard";
 import TripPlanner from "../components/TripPlanner";
+import SEO from "../components/SEO";
 
 export default function PackagesIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -26,6 +27,11 @@ export default function PackagesIndexPage() {
 
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Outstation Tour Packages from Bengaluru"
+        description="Explore 145+ custom outstation tour packages from Bengaluru. Heritage, Hill stations, Waterfalls, Wildlife & Coastal tours with private chauffeur vehicles."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel/packages"
+      />
       {/* HEADER HERO */}
       <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">

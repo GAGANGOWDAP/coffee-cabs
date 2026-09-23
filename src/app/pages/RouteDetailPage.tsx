@@ -18,6 +18,7 @@ import { ROUTES, CommercialRoute } from "../data/routes";
 import { VEHICLES } from "../data/vehicles";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
+import SEO from "../components/SEO";
 
 export default function RouteDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -54,8 +55,24 @@ export default function RouteDetailPage() {
     `Hi Coffee Cabs! I would like to book a cab for the route: ${route.title} (${route.approximateDistance}). Please share vehicle availability & fare.`
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gagangowdap.github.io/coffee-cabs/" },
+      { "@type": "ListItem", "position": 2, "name": "Routes", "item": "https://gagangowdap.github.io/coffee-cabs/routes" },
+      { "@type": "ListItem", "position": 3, "name": route.title, "item": `https://gagangowdap.github.io/coffee-cabs/routes/${route.slug}` }
+    ]
+  };
+
   return (
     <article className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title={`${route.title} | Outstation Cab Booking`}
+        description={`Book ${route.title}. Distance: ${route.approximateDistance}. Drive time: ${route.approximateDriveTime}. Toyota Innova Crysta & Force Urbania cabs with Coffee Cabs.`}
+        canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/routes/${route.slug}`}
+        schemaJson={[breadcrumbSchema]}
+      />
       {/* ROUTE HERO */}
       <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">

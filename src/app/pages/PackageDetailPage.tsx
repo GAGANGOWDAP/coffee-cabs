@@ -19,6 +19,7 @@ import { PACKAGES, TourPackage } from "../data/packages";
 import { VEHICLES } from "../data/vehicles";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
+import SEO from "../components/SEO";
 
 export default function PackageDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -55,8 +56,25 @@ export default function PackageDetailPage() {
     `Hi Coffee Cabs! I would like to inquire about booking the "${pkg.title}" (${pkg.duration}). Please share vehicle availability & fare details.`
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gagangowdap.github.io/coffee-cabs/" },
+      { "@type": "ListItem", "position": 2, "name": "Travel", "item": "https://gagangowdap.github.io/coffee-cabs/travel" },
+      { "@type": "ListItem", "position": 3, "name": "Packages", "item": "https://gagangowdap.github.io/coffee-cabs/travel/packages" },
+      { "@type": "ListItem", "position": 4, "name": pkg.title, "item": `https://gagangowdap.github.io/coffee-cabs/travel/packages/${pkg.slug}` }
+    ]
+  };
+
   return (
     <article className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title={`${pkg.title} (${pkg.duration}) Tour Package`}
+        description={`Book ${pkg.title}. Route: ${pkg.route}. Duration: ${pkg.duration}. Rent Toyota Innova Crysta, Force Urbania or Tempo Traveller with Coffee Cabs.`}
+        canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/travel/packages/${pkg.slug}`}
+        schemaJson={[breadcrumbSchema]}
+      />
       {/* PACKAGE HERO */}
       <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
