@@ -55,10 +55,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 19,
     driverAllowance: 400,
     company: "Toyota",
-    image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/innova-crysta.png`,
     images: [
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/innova-crysta.png`,
     ],
     features: [
       "Spacious 7-seater plush leather cabin",
@@ -103,10 +102,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 50,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/force-urbania.png`,
     images: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/force-urbania.png`,
     ],
     features: [
       "Maharaja ultra-wide plush recliners",
@@ -151,9 +149,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 40,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/force-urbania.png`,
     images: [
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/force-urbania.png`,
     ],
     features: [
       "Plush pushback seats with armrests",
@@ -198,9 +196,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 38,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/force-urbania.png`,
     images: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/force-urbania.png`,
     ],
     features: [
       "Ergonomic seats with headrests",
@@ -245,9 +243,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 35,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     images: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     ],
     features: [
       "Maharaja recliner leather seats",
@@ -292,9 +290,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 28,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     images: [
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     ],
     features: [
       "Pushback seating with armrests",
@@ -338,9 +336,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 30,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     images: [
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     ],
     features: [
       "High back pushback seats",
@@ -384,9 +382,9 @@ export const VEHICLES: Vehicle[] = [
     pricePerKm: 35,
     driverAllowance: 600,
     company: "Force Motors",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     images: [
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1200&h=800&fit=crop",
+      `${import.meta.env.BASE_URL}images/tempo-traveller.png`,
     ],
     features: [
       "16 comfortable pushback seats",

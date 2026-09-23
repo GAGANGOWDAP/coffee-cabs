@@ -22,11 +22,11 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
     <div className="bg-white border border-[#DDD5C8] rounded-3xl overflow-hidden shadow-sm hover:shadow-md hover:border-[#23483A]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Slideshow Image Header */}
-        <div className="relative aspect-[16/10] bg-[#EDE5D8] overflow-hidden">
+        <div className="relative aspect-[16/10] bg-[#F7F3EC] overflow-hidden p-3 flex items-center justify-center">
           <img
             src={vehicle.images[currentImgIndex]}
             alt={`${vehicle.name} - Image ${currentImgIndex + 1}`}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
           />
 
           {/* Company Badge */}
