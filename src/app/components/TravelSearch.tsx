@@ -93,7 +93,7 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
     <div ref={searchRef} className="relative w-full max-w-2xl mx-auto z-40">
       {/* Search Bar Input */}
       <div className="relative flex items-center">
-        <Search className="absolute left-4 text-[#C6A15B] shrink-0" size={20} />
+        <Search className="absolute left-4 text-[#23483A] shrink-0" size={20} />
         <input
           type="text"
           value={query}
@@ -103,7 +103,7 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
           }}
           onFocus={() => setIsOpen(true)}
           placeholder={placeholder}
-          className="w-full bg-[#132333] border border-[#AEB7C2]/25 focus:border-[#C6A15B] text-[#F4F1E8] placeholder-[#AEB7C2]/60 rounded-2xl pl-12 pr-10 py-3.5 text-sm md:text-base outline-none transition-all shadow-xl"
+          className="w-full bg-white border border-[#DDD5C8] focus:border-[#23483A] text-[#252525] placeholder-[#6F6A63]/60 rounded-2xl pl-12 pr-10 py-3.5 text-sm md:text-base outline-none transition-all shadow-sm font-medium"
         />
         {query && (
           <button
@@ -111,7 +111,7 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
               setQuery("");
               setIsOpen(false);
             }}
-            className="absolute right-3.5 text-[#AEB7C2] hover:text-[#F4F1E8] p-1"
+            className="absolute right-3.5 text-[#6F6A63] hover:text-[#252525] p-1"
           >
             <X size={18} />
           </button>
@@ -120,47 +120,47 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
 
       {/* Search Results Dropdown */}
       {isOpen && trimmed.length >= 2 && (
-        <div className="absolute left-0 right-0 top-full mt-2 bg-[#132333] border border-[#C6A15B]/30 rounded-2xl shadow-2xl overflow-hidden max-h-96 overflow-y-auto z-50 divide-y divide-[#AEB7C2]/10 backdrop-blur-xl">
+        <div className="absolute left-0 right-0 top-full mt-2 bg-white border border-[#DDD5C8] rounded-2xl shadow-xl overflow-hidden max-h-96 overflow-y-auto z-50 divide-y divide-[#DDD5C8]">
           {limitedResults.length > 0 ? (
             limitedResults.map((item) => (
               <Link
                 key={`${item.type}-${item.id}`}
                 to={item.url}
                 onClick={() => setIsOpen(false)}
-                className="flex items-center justify-between p-4 hover:bg-[#08111C]/80 transition-colors group"
+                className="flex items-center justify-between p-4 hover:bg-[#F7F3EC] transition-colors group"
               >
                 <div className="flex items-start gap-3 min-w-0 pr-2">
-                  <div className="p-2 rounded-xl bg-[#08111C] border border-[#AEB7C2]/15 text-[#C6A15B] shrink-0 mt-0.5">
+                  <div className="p-2 rounded-xl bg-[#EDE5D8] text-[#23483A] shrink-0 mt-0.5 border border-[#DDD5C8]">
                     {item.type === "destination" && <MapPin size={16} />}
                     {item.type === "package" && <PackageIcon size={16} />}
                     {item.type === "route" && <RouteIcon size={16} />}
                   </div>
                   <div className="min-w-0">
                     <div className="flex items-center gap-2">
-                      <h4 className="text-sm font-bold text-[#F4F1E8] group-hover:text-[#C6A15B] transition-colors truncate">
+                      <h4 className="text-sm font-bold text-[#252525] group-hover:text-[#4A3025] transition-colors truncate">
                         {item.title}
                       </h4>
                       <span
                         className={`text-[10px] uppercase tracking-wider font-extrabold px-2 py-0.5 rounded ${
                           item.type === "destination"
-                            ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                            ? "bg-[#23483A]/10 text-[#23483A]"
                             : item.type === "package"
-                            ? "bg-amber-500/20 text-amber-400 border border-amber-500/30"
-                            : "bg-blue-500/20 text-blue-400 border border-blue-500/30"
+                            ? "bg-[#4A3025]/10 text-[#4A3025]"
+                            : "bg-[#B86F52]/10 text-[#B86F52]"
                         }`}
                       >
                         {item.type}
                       </span>
                     </div>
-                    <p className="text-xs text-[#AEB7C2] truncate mt-0.5">{item.subtitle}</p>
+                    <p className="text-xs text-[#6F6A63] truncate mt-0.5 font-medium">{item.subtitle}</p>
                   </div>
                 </div>
 
-                <ArrowRight size={16} className="text-[#AEB7C2] group-hover:text-[#C6A15B] group-hover:translate-x-1 transition-all shrink-0" />
+                <ArrowRight size={16} className="text-[#6F6A63] group-hover:text-[#23483A] group-hover:translate-x-1 transition-all shrink-0" />
               </Link>
             ))
           ) : (
-            <div className="p-6 text-center text-[#AEB7C2] text-sm">
+            <div className="p-6 text-center text-[#6F6A63] text-sm font-medium">
               No matching destinations, packages or routes found for &quot;{query}&quot;.
             </div>
           )}

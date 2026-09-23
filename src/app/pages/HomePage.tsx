@@ -4,7 +4,6 @@ import { gsap } from "../utils/gsapSetup";
 import {
   ArrowRight,
   Search,
-  Star,
   Car,
   Filter,
   Phone,
@@ -156,27 +155,26 @@ export default function HomePage() {
   );
 
   return (
-    <div ref={homeRef} className="bg-[#08111C] text-[#F4F1E8]">
+    <div ref={homeRef} className="bg-[#F7F3EC] text-[#252525]">
       <SEO
         title="Coffee Cabs — Executive Chauffeur & Outstation Travel Platform"
-        description="Bangalore's premier luxury cab service. Rent Toyota Innova Crysta, Force Urbania & Tempo Traveller for outstation Karnataka travel, airport transfers & tour packages."
+        description="Bengaluru's premier luxury cab service. Rent Toyota Innova Crysta, Force Urbania & Tempo Traveller for outstation Karnataka travel, airport transfers & tour packages."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/"
       />
       {/* ── 1. HERO SECTION ── */}
-      <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-8 overflow-hidden">
-        {/* Full-width Cinematic Background Image */}
+      <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#F7F3EC] text-[#252525] pt-24 sm:pt-28 pb-8 overflow-hidden border-b border-[#DDD5C8]">
+        {/* Full-width Background Image */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <img
             src={`${import.meta.env.BASE_URL}images/hero.png`}
-            alt="Coffee Cabs Luxury Fleet & Skyline"
-            className="w-full h-full object-cover object-[center_30%] opacity-90 transition-opacity duration-700"
+            alt="Coffee Cabs Luxury Fleet"
+            className="w-full h-full object-cover object-[center_30%] opacity-40 transition-opacity duration-700"
           />
-          {/* Approved Controlled Navy Overlay */}
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(8,17,28,0.50) 0%, rgba(8,17,28,0.15) 35%, rgba(8,17,28,0.85) 100%)",
+                "linear-gradient(180deg, rgba(247,243,236,0.85) 0%, rgba(247,243,236,0.60) 40%, rgba(247,243,236,0.95) 100%)",
             }}
           />
         </div>
@@ -185,68 +183,68 @@ export default function HomePage() {
         <div className="relative z-10 max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
           {/* Decorative Eyebrow */}
           <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-3">
-            <span className="h-[1px] w-8 sm:w-12 bg-[#C6A15B]" />
-            <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#C6A15B]">
-              PREMIUM TRAVEL • BANGALORE & BEYOND
+            <span className="h-[1px] w-8 sm:w-12 bg-[#23483A]" />
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#23483A]">
+              PREMIUM TRAVEL • BENGALURU & BEYOND
             </span>
-            <span className="h-[1px] w-8 sm:w-12 bg-[#C6A15B]" />
+            <span className="h-[1px] w-8 sm:w-12 bg-[#23483A]" />
           </div>
 
-          {/* Main Headline - Strictly 2 lines */}
-          <h1 className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] font-extrabold tracking-tight leading-[1.1] text-[#F4F1E8] mb-3 sm:mb-4 max-w-4xl">
-            RIDE TO RELAX<br />
-            <span className="text-[#C6A15B]">WE DO THE REST.</span>
+          {/* Main Headline */}
+          <h1 className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[66px] font-extrabold tracking-tight leading-[1.1] text-[#252525] mb-3 sm:mb-4 max-w-4xl">
+            RIDE TO RELAX.<br />
+            <span className="text-[#4A3025]">WE DO THE REST.</span>
           </h1>
 
           {/* Hero Description */}
-          <p className="gsap-hero-desc text-xs sm:text-sm text-[#AEB7C2] max-w-[620px] mx-auto mb-6 font-medium leading-relaxed">
-            Bangalore's premium car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
+          <p className="gsap-hero-desc text-xs sm:text-sm text-[#6F6A63] max-w-[620px] mx-auto mb-6 font-medium leading-relaxed">
+            Bengaluru&apos;s premier car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
           </p>
 
           {/* Hero CTAs */}
-          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md mx-auto mb-6 lg:mb-8">
+          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto mb-6 lg:mb-8">
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-7 py-3 bg-[#C6A15B] text-[#08111C] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#d4b06a] hover:scale-[1.02] transition-all duration-300 text-center shadow-xl flex items-center justify-center gap-2 group min-h-[44px]"
+              className="w-full sm:w-auto px-7 py-3.5 bg-[#4A3025] text-white text-xs uppercase tracking-wider font-bold rounded-full hover:bg-[#23483A] transition-all duration-300 text-center shadow-md flex items-center justify-center gap-2 group min-h-[44px]"
             >
               BOOK YOUR RIDE <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/fleet"
-              className="w-full sm:w-auto px-7 py-3 bg-transparent border border-[#F4F1E8] text-[#F4F1E8] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#F4F1E8] hover:text-[#08111C] hover:scale-[1.02] transition-all duration-300 text-center flex items-center justify-center gap-2 group min-h-[44px]"
+              className="w-full sm:w-auto px-7 py-3.5 bg-transparent border border-[#23483A] text-[#23483A] hover:bg-[#23483A] hover:text-white text-xs uppercase tracking-wider font-bold rounded-full transition-all duration-300 text-center flex items-center justify-center gap-2 group min-h-[44px]"
             >
               EXPLORE OUR FLEET <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
 
-        {/* Foreground Compact Fleet Cards Section (Positioned Low to Reveal Background Urbania) */}
+        {/* Foreground Compact Fleet Cards Section */}
         <div className="relative z-10 max-w-[1020px] mx-auto px-4 sm:px-6 w-full mt-auto">
           <div className="gsap-hero-cards flex flex-col sm:flex-row items-center sm:items-end justify-center gap-4 lg:gap-5 mb-5">
             {/* CARD 1: LEFT - Toyota Innova Crysta */}
-            <div className="w-full sm:w-[275px] lg:w-[295px] bg-[#132333]/95 backdrop-blur-sm border border-[#AEB7C2]/20 rounded-2xl p-3.5 sm:p-4 shadow-xl hover:border-[#C6A15B] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
+            <div className="w-full sm:w-[275px] lg:w-[295px] bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5">
                   <img
                     src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop"
                     alt="Toyota Innova Crysta"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
                   PREMIUM SUV • 6+1 SEATER
                 </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#252525] mb-2 group-hover:text-[#4A3025] transition-colors">
                   Toyota Innova Crysta
                 </h3>
               </div>
-              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#F4F1E8]">
-                  ₹19 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#DDD5C8] flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#4A3025]">
+                  ₹19 <span className="text-[11px] text-[#6F6A63] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
+                  className="text-xs font-bold text-[#23483A] hover:text-[#4A3025] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -254,32 +252,32 @@ export default function HomePage() {
             </div>
 
             {/* CARD 2: CENTER FEATURED - Force Urbania Luxury */}
-            <div className="w-full sm:w-[295px] lg:w-[320px] bg-[#132333]/95 backdrop-blur-sm border-2 border-[#C6A15B] rounded-2xl p-3.5 sm:p-4 shadow-2xl hover:border-[#C6A15B] transition-all duration-300 group flex flex-col justify-between relative shrink-0">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C6A15B] text-[#08111C] text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
+            <div className="w-full sm:w-[295px] lg:w-[320px] bg-white border-2 border-[#4A3025] rounded-2xl p-3.5 sm:p-4 shadow-md hover:border-[#23483A] transition-all duration-300 group flex flex-col justify-between relative shrink-0">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#4A3025] text-white text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-sm whitespace-nowrap">
                 FLEXIBLE GROUP FAVORITE
               </div>
               <div>
-                <div className="h-[115px] sm:h-[120px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5 mt-0.5">
+                <div className="h-[115px] sm:h-[120px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5 mt-0.5">
                   <img
                     src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop"
                     alt="Force Urbania Luxury"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
                   LUXURY RECLINER • 16 SEATER
                 </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#252525] mb-2 group-hover:text-[#4A3025] transition-colors">
                   Force Urbania Luxury
                 </h3>
               </div>
-              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#F4F1E8]">
-                  ₹50 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#DDD5C8] flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#4A3025]">
+                  ₹50 <span className="text-[11px] text-[#6F6A63] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
+                  className="text-xs font-bold text-[#23483A] hover:text-[#4A3025] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -287,29 +285,29 @@ export default function HomePage() {
             </div>
 
             {/* CARD 3: RIGHT - Force Tempo Traveller */}
-            <div className="w-full sm:w-[275px] lg:w-[295px] bg-[#132333]/95 backdrop-blur-sm border border-[#AEB7C2]/20 rounded-2xl p-3.5 sm:p-4 shadow-xl hover:border-[#C6A15B] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
+            <div className="w-full sm:w-[275px] lg:w-[295px] bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#08111C] mb-2.5">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5">
                   <img
                     src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=500&fit=crop"
                     alt="Force Tempo Traveller"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider mb-0.5">
+                <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
                   GROUP TRAVEL • 12/17 SEATER
                 </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#F4F1E8] mb-2 group-hover:text-[#C6A15B] transition-colors">
+                <h3 className="text-sm sm:text-base font-extrabold text-[#252525] mb-2 group-hover:text-[#4A3025] transition-colors">
                   Force Tempo Traveller
                 </h3>
               </div>
-              <div className="pt-2.5 border-t border-[#AEB7C2]/15 flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#F4F1E8]">
-                  ₹35 <span className="text-[11px] text-[#AEB7C2] font-normal">/ km</span>
+              <div className="pt-2.5 border-t border-[#DDD5C8] flex items-center justify-between">
+                <div className="text-sm font-extrabold text-[#4A3025]">
+                  ₹35 <span className="text-[11px] text-[#6F6A63] font-normal">/ km</span>
                 </div>
                 <Link
                   to="/booking"
-                  className="text-xs font-bold text-[#C6A15B] flex items-center gap-1 group-hover:translate-x-1 transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C6A15B] rounded"
+                  className="text-xs font-bold text-[#23483A] hover:text-[#4A3025] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                 >
                   Book <ArrowRight size={13} />
                 </Link>
@@ -318,31 +316,31 @@ export default function HomePage() {
           </div>
 
           {/* Micro Details Statistics Bar */}
-          <div className="gsap-hero-stats bg-[#08111C]/85 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-[#AEB7C2]/15 shadow-xl">
+          <div className="gsap-hero-stats bg-white p-3 sm:p-3.5 rounded-xl border border-[#DDD5C8] shadow-sm">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-0 text-center">
-              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
-                  8+ <span className="text-[#C6A15B]">YEARS</span>
+              <div className="sm:border-r border-[#DDD5C8] px-2">
+                <div className="text-sm sm:text-base font-extrabold text-[#252525]">
+                  8+ <span className="text-[#4A3025]">YEARS</span>
                 </div>
-                <div className="text-[10px] text-[#AEB7C2] font-medium">Experience</div>
+                <div className="text-[10px] text-[#6F6A63] font-medium">Experience</div>
               </div>
-              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
+              <div className="sm:border-r border-[#DDD5C8] px-2">
+                <div className="text-sm sm:text-base font-extrabold text-[#252525]">
                   5000+
                 </div>
-                <div className="text-[10px] text-[#AEB7C2] font-medium">Groups Served</div>
+                <div className="text-[10px] text-[#6F6A63] font-medium">Groups Served</div>
               </div>
-              <div className="sm:border-r border-[#AEB7C2]/15 px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
+              <div className="sm:border-r border-[#DDD5C8] px-2">
+                <div className="text-sm sm:text-base font-extrabold text-[#252525]">
                   &lt; 5 MIN
                 </div>
-                <div className="text-[10px] text-[#AEB7C2] font-medium">Average Response</div>
+                <div className="text-[10px] text-[#6F6A63] font-medium">Average Response</div>
               </div>
               <div className="px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#F4F1E8]">
+                <div className="text-sm sm:text-base font-extrabold text-[#252525]">
                   24/7
                 </div>
-                <div className="text-[10px] text-[#AEB7C2] font-medium">Travel Support</div>
+                <div className="text-[10px] text-[#6F6A63] font-medium">Travel Support</div>
               </div>
             </div>
           </div>
@@ -350,61 +348,61 @@ export default function HomePage() {
       </section>
 
       {/* ── 2. INTRO / ABOUT BLURB & 3 FEATURE ICONS ── */}
-      <section id="about" className="gsap-section-reveal py-16 sm:py-20 bg-[#08111C] border-b border-[#AEB7C2]/15">
+      <section id="about" className="gsap-section-reveal py-16 sm:py-20 bg-[#F7F3EC] border-b border-[#DDD5C8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
-          <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
+          <div className="text-xs uppercase tracking-widest text-[#23483A] font-extrabold mb-3">
             About Coffee Cabs
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8] mb-4">
-            Bangalore's Premier Executive Chauffeur & Luxury Transport
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4A3025] mb-4">
+            Bengaluru&apos;s Premier Executive Chauffeur & Luxury Transport
           </h2>
-          <p className="text-sm text-[#AEB7C2] leading-relaxed mb-12">
-            Coffee Cabs is Bangalore’s trusted luxury transportation provider. We specialize in Toyota Innova Crysta rentals, Force Urbania Luxury, Tempo Travellers, and Luxury Buses for outstation trips, family holidays, pilgrimages, and corporate executive travel.
+          <p className="text-sm text-[#6F6A63] leading-relaxed mb-12 font-medium">
+            Coffee Cabs is Bengaluru’s trusted luxury transportation provider. We specialize in Toyota Innova Crysta rentals, Force Urbania Luxury, Tempo Travellers, and Luxury Buses for outstation trips, family holidays, pilgrimages, and corporate executive travel.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-6">
-            <div className="bg-[#132333] p-6 rounded-3xl border border-[#AEB7C2]/15 shadow-md hover:border-[#C6A15B]/50 transition-all text-center">
-              <div className="w-12 h-12 rounded-2xl bg-[#08111C] text-[#C6A15B] border border-[#C6A15B]/30 flex items-center justify-center mx-auto mb-4 font-bold">
+            <div className="bg-white p-6 rounded-3xl border border-[#DDD5C8] shadow-sm hover:border-[#23483A]/40 transition-all text-center">
+              <div className="w-12 h-12 rounded-2xl bg-[#EDE5D8] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center mx-auto mb-4 font-bold">
                 <Car size={22} />
               </div>
-              <h3 className="text-sm font-bold text-[#F4F1E8] mb-2">100% Owned Fleet</h3>
-              <p className="text-xs text-[#AEB7C2]">Fully owned commercial vehicles, sanitized & maintained to peak safety standards.</p>
+              <h3 className="text-sm font-bold text-[#252525] mb-2">100% Owned Fleet</h3>
+              <p className="text-xs text-[#6F6A63] font-medium">Fully owned commercial vehicles, sanitized & maintained to peak safety standards.</p>
             </div>
 
-            <div className="bg-[#132333] p-6 rounded-3xl border border-[#AEB7C2]/15 shadow-md hover:border-[#C6A15B]/50 transition-all text-center">
-              <div className="w-12 h-12 rounded-2xl bg-[#08111C] text-[#C6A15B] border border-[#C6A15B]/30 flex items-center justify-center mx-auto mb-4 font-bold">
+            <div className="bg-white p-6 rounded-3xl border border-[#DDD5C8] shadow-sm hover:border-[#23483A]/40 transition-all text-center">
+              <div className="w-12 h-12 rounded-2xl bg-[#EDE5D8] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center mx-auto mb-4 font-bold">
                 <MessageSquare size={22} />
               </div>
-              <h3 className="text-sm font-bold text-[#F4F1E8] mb-2">24/7 WhatsApp Support</h3>
-              <p className="text-xs text-[#AEB7C2]">Instant quotes, rapid booking confirmation, and active trip assistance.</p>
+              <h3 className="text-sm font-bold text-[#252525] mb-2">24/7 WhatsApp Support</h3>
+              <p className="text-xs text-[#6F6A63] font-medium">Instant quotes, rapid booking confirmation, and active trip assistance.</p>
             </div>
 
-            <div className="bg-[#132333] p-6 rounded-3xl border border-[#AEB7C2]/15 shadow-md hover:border-[#C6A15B]/50 transition-all text-center">
-              <div className="w-12 h-12 rounded-2xl bg-[#08111C] text-[#C6A15B] border border-[#C6A15B]/30 flex items-center justify-center mx-auto mb-4 font-bold">
+            <div className="bg-white p-6 rounded-3xl border border-[#DDD5C8] shadow-sm hover:border-[#23483A]/40 transition-all text-center">
+              <div className="w-12 h-12 rounded-2xl bg-[#EDE5D8] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center mx-auto mb-4 font-bold">
                 <Award size={22} />
               </div>
-              <h3 className="text-sm font-bold text-[#F4F1E8] mb-2">Maharaja Recliner Seating</h3>
-              <p className="text-xs text-[#AEB7C2]">Ultra-wide plush recliners with individual AC vents & charging ports.</p>
+              <h3 className="text-sm font-bold text-[#252525] mb-2">Maharaja Recliner Seating</h3>
+              <p className="text-xs text-[#6F6A63] font-medium">Ultra-wide plush recliners with individual AC vents & charging ports.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── 3. FLEET SECTION ── */}
-      <section id="fleet" className="gsap-section-reveal py-16 sm:py-24 bg-[#08111C]">
+      <section id="fleet" className="gsap-section-reveal py-16 sm:py-24 bg-[#F7F3EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
             <div>
-              <div className="inline-block text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3 bg-[#132333] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full">
+              <div className="inline-block text-xs uppercase tracking-widest text-[#23483A] font-bold mb-3 bg-[#EDE5D8] border border-[#DDD5C8] px-4 py-1.5 rounded-full">
                 OUR FLEET
               </div>
-              <h2 className="text-3xl sm:text-5xl font-bold text-[#F4F1E8]">
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-[#4A3025]">
                 CHOOSE YOUR RIDE
               </h2>
             </div>
             <Link
               to="/fleet"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#C6A15B] text-[#08111C] text-xs font-bold rounded-full hover:bg-[#d4b06a] transition-all shrink-0 shadow-md"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#4A3025] text-white text-xs font-bold rounded-full hover:bg-[#23483A] transition-all shrink-0 shadow-sm"
             >
               VIEW FULL FLEET <ArrowRight size={14} />
             </Link>
@@ -425,13 +423,13 @@ export default function HomePage() {
       <PopularRoutesMatrix />
 
       {/* ── 6. HOW IT WORKS ── */}
-      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#132333] border-b border-[#AEB7C2]/15">
+      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#EDE5D8] border-b border-[#DDD5C8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
+            <div className="text-xs uppercase tracking-widest text-[#23483A] font-bold mb-3">
               Simple & Fast
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4A3025]">
               How It Works — 4 Easy Steps
             </h2>
           </div>
@@ -443,10 +441,10 @@ export default function HomePage() {
               { step: "03", title: "Get Instant Quote", desc: "Receive transparent per-km breakdown with driver allowance & 300km/day rule calculations." },
               { step: "04", title: "Confirm & Ride", desc: "Get driver details & vehicle confirmation. Enjoy a comfortable luxury journey!" },
             ].map((s) => (
-              <div key={s.step} className="bg-[#08111C] p-8 rounded-3xl border border-[#AEB7C2]/15 relative shadow-md hover:border-[#C6A15B]/50 transition-all">
-                <div className="text-3xl font-extrabold text-[#C6A15B] mb-4">{s.step}</div>
-                <h3 className="text-base font-bold text-[#F4F1E8] mb-2">{s.title}</h3>
-                <p className="text-xs text-[#AEB7C2] leading-relaxed">{s.desc}</p>
+              <div key={s.step} className="bg-white p-8 rounded-3xl border border-[#DDD5C8] relative shadow-sm hover:border-[#23483A]/40 transition-all">
+                <div className="text-3xl font-extrabold text-[#4A3025] mb-4">{s.step}</div>
+                <h3 className="text-base font-bold text-[#252525] mb-2">{s.title}</h3>
+                <p className="text-xs text-[#6F6A63] leading-relaxed font-medium">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -454,62 +452,62 @@ export default function HomePage() {
       </section>
 
       {/* ── 7. BOOKING ENQUIRY ── */}
-      <section id="booking-enquiry" className="gsap-section-reveal py-16 sm:py-24 bg-[#08111C] border-y border-[#AEB7C2]/15">
+      <section id="booking-enquiry" className="gsap-section-reveal py-16 sm:py-24 bg-[#F7F3EC] border-y border-[#DDD5C8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <BookingForm />
         </div>
       </section>
 
       {/* ── 8. DESTINATIONS EXPLORER ── */}
-      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#132333]">
+      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#F7F3EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
             <div>
-              <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
+              <div className="text-xs uppercase tracking-widest text-[#23483A] font-bold mb-3">
                 Weekend Getaways & Outstation Packages
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
-                Explore Destinations Across India
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4A3025]">
+                Explore Destinations Across Karnataka
               </h2>
             </div>
 
             <Link
               to="/packages"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#C6A15B] text-[#08111C] text-xs font-bold rounded-full hover:bg-[#d4b06a] transition-all shrink-0 shadow-md"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#4A3025] text-white text-xs font-bold rounded-full hover:bg-[#23483A] transition-all shrink-0 shadow-sm"
             >
               Browse All Packages Catalog <ArrowRight size={14} />
             </Link>
           </div>
 
           {/* Search & Select Dropdown Filter */}
-          <div className="bg-[#08111C] p-4 rounded-3xl border border-[#AEB7C2]/15 mb-10">
+          <div className="bg-white p-4 rounded-3xl border border-[#DDD5C8] mb-10 shadow-sm">
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="relative flex-1">
-                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#AEB7C2]" />
+                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#23483A]" />
                 <input
                   type="text"
-                  placeholder="Search destination name or state (e.g., Mysore, Coorg, Ooty, Goa, Tirupati)..."
+                  placeholder="Search destination name or district (e.g., Mysuru, Coorg, Hampi, Gokarna)..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-[#132333] text-[#F4F1E8] placeholder:text-[#AEB7C2] pl-12 pr-4 py-3.5 rounded-2xl border border-[#AEB7C2]/25 text-sm focus:outline-none focus:border-[#C6A15B] transition-colors shadow-sm font-medium"
+                  className="w-full bg-[#F7F3EC] text-[#252525] placeholder:text-[#6F6A63]/60 pl-12 pr-4 py-3.5 rounded-2xl border border-[#DDD5C8] text-sm focus:outline-none focus:border-[#23483A] transition-colors shadow-sm font-medium"
                 />
               </div>
 
               {/* Category Select Dropdown */}
               <div className="relative w-full sm:w-64">
-                <Filter size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#AEB7C2] pointer-events-none" />
+                <Filter size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#23483A] pointer-events-none" />
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full bg-[#132333] text-[#F4F1E8] font-bold pl-11 pr-8 py-3.5 rounded-2xl border border-[#AEB7C2]/25 text-sm focus:outline-none focus:border-[#C6A15B] transition-colors shadow-sm appearance-none cursor-pointer"
+                  className="w-full bg-[#F7F3EC] text-[#252525] font-bold pl-11 pr-8 py-3.5 rounded-2xl border border-[#DDD5C8] text-sm focus:outline-none focus:border-[#23483A] transition-colors shadow-sm appearance-none cursor-pointer"
                 >
                   {categories.map((cat) => (
-                    <option key={cat} value={cat} className="bg-[#08111C] text-[#F4F1E8]">
+                    <option key={cat} value={cat} className="bg-white text-[#252525]">
                       {cat === "All" ? "Filter by Category: All" : cat}
                     </option>
                   ))}
                 </select>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-xs text-[#C6A15B]">
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-xs text-[#23483A]">
                   ▼
                 </div>
               </div>
@@ -522,37 +520,37 @@ export default function HomePage() {
               <Link
                 key={d.slug}
                 to={`/travel/destinations/${d.slug}`}
-                className="bg-[#08111C] rounded-2xl overflow-hidden border border-[#AEB7C2]/15 hover:border-[#C6A15B]/50 transition-all duration-300 group flex flex-col justify-between shadow-lg"
+                className="bg-white rounded-2xl overflow-hidden border border-[#DDD5C8] hover:border-[#23483A]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between shadow-sm"
               >
                 <div>
-                  <div className="aspect-[4/3] bg-[#08111C] overflow-hidden relative">
+                  <div className="aspect-[4/3] bg-[#EDE5D8] overflow-hidden relative">
                     <img
                       src={d.heroImage || defaultFallbackImg}
                       alt={`${d.name} Coffee Cabs`}
                       onError={(e) => {
                         e.currentTarget.src = defaultFallbackImg;
                       }}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 right-3 bg-[#08111C]/90 backdrop-blur-md text-[#C6A15B] border border-[#C6A15B]/30 text-[10px] font-bold px-2.5 py-1 rounded-full">
+                    <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-[#23483A] border border-[#DDD5C8] text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
                       {d.approximateDistanceFromBengaluru}
                     </div>
                   </div>
                   <div className="p-4">
-                    <div className="text-[10px] uppercase tracking-wider text-[#AEB7C2] font-bold mb-1">
+                    <div className="text-[10px] uppercase tracking-wider text-[#23483A] font-bold mb-1">
                       {d.region}
                     </div>
-                    <h3 className="text-base font-bold text-[#F4F1E8] mb-1 group-hover:text-[#C6A15B] transition-colors">
+                    <h3 className="text-base font-bold text-[#252525] mb-1 group-hover:text-[#4A3025] transition-colors">
                       {d.name}
                     </h3>
-                    <p className="text-[11px] text-[#AEB7C2] flex items-center gap-1">
-                      <MapPin size={11} className="text-[#C6A15B]" /> {d.approximateDriveTime}
+                    <p className="text-[11px] text-[#6F6A63] flex items-center gap-1 font-medium">
+                      <MapPin size={11} className="text-[#23483A]" /> {d.approximateDriveTime}
                     </p>
                   </div>
                 </div>
 
                 <div className="px-4 pb-4">
-                  <div className="pt-3 border-t border-[#AEB7C2]/15 flex items-center justify-between text-xs font-bold text-[#C6A15B] group-hover:translate-x-0.5 transition-transform">
+                  <div className="pt-3 border-t border-[#DDD5C8] flex items-center justify-between text-xs font-bold text-[#4A3025] group-hover:translate-x-0.5 transition-transform">
                     <span>EXPLORE GUIDE</span>
                     <ArrowRight size={12} />
                   </div>
@@ -565,7 +563,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               to="/travel"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#C6A15B] hover:bg-[#b08d4b] text-[#08111C] font-extrabold text-xs rounded-2xl shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#4A3025] hover:bg-[#23483A] text-white font-bold text-xs rounded-2xl shadow-sm transition-all"
             >
               <span>EXPLORE ALL 100 KARNATAKA DESTINATIONS</span>
               <ArrowRight size={16} />
@@ -575,13 +573,13 @@ export default function HomePage() {
       </section>
 
       {/* ── 9. FAQ SECTION ── */}
-      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#08111C] border-y border-[#AEB7C2]/15">
+      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#F7F3EC] border-y border-[#DDD5C8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
-            <div className="text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3">
+            <div className="text-xs uppercase tracking-widest text-[#23483A] font-bold mb-3">
               Got Questions?
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F4F1E8]">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4A3025]">
               Frequently Asked Questions
             </h2>
           </div>
@@ -590,21 +588,21 @@ export default function HomePage() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-[#132333] rounded-2xl border border-[#AEB7C2]/15 overflow-hidden shadow-md transition-all"
+                className="bg-white rounded-2xl border border-[#DDD5C8] overflow-hidden shadow-sm transition-all"
               >
                 <button
                   onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                  className="w-full text-left p-5 flex items-center justify-between gap-4 font-bold text-sm text-[#F4F1E8]"
+                  className="w-full text-left p-5 flex items-center justify-between gap-4 font-bold text-sm text-[#252525]"
                 >
                   <span>{faq.q}</span>
                   {openFaqIndex === index ? (
-                    <ChevronUp size={18} className="text-[#C6A15B] shrink-0" />
+                    <ChevronUp size={18} className="text-[#23483A] shrink-0" />
                   ) : (
-                    <ChevronDown size={18} className="text-[#AEB7C2] shrink-0" />
+                    <ChevronDown size={18} className="text-[#6F6A63] shrink-0" />
                   )}
                 </button>
                 {openFaqIndex === index && (
-                  <div className="px-5 pb-5 text-xs text-[#AEB7C2] leading-relaxed border-t border-[#AEB7C2]/15 pt-3">
+                  <div className="px-5 pb-5 text-xs text-[#6F6A63] leading-relaxed border-t border-[#DDD5C8] pt-3 font-medium">
                     {faq.a}
                   </div>
                 )}
@@ -614,27 +612,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 10. CTA BANNER ── */}
-      <section className="gsap-section-reveal py-16 sm:py-20 bg-[#08111C] text-[#F4F1E8] border-t border-[#C6A15B]/20">
+      {/* ── 10. CTA BANNER (DARK CONTRAST MOMENT) ── */}
+      <section className="gsap-section-reveal py-16 sm:py-20 bg-[#23483A] text-white border-t border-[#4A3025]/20">
         <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8]">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
             Ready to Hit the Road?
           </h2>
-          <p className="text-xs sm:text-sm text-[#AEB7C2] max-w-md mx-auto">
+          <p className="text-xs sm:text-sm text-[#DDD5C8] max-w-md mx-auto font-medium leading-relaxed">
             Book your luxury Innova Crysta, Force Urbania, or Tempo Traveller in under 60 seconds. Connect with us on WhatsApp or call us directly.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">
             <a
               href="https://wa.me/917676726209?text=Hi%20Coffee%20Cabs!%20I%20want%20to%20book%20a%20cab."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white text-xs font-bold rounded-full hover:bg-[#1da851] hover:scale-105 transition-all shadow-xl w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#B86F52] text-white text-xs font-bold rounded-full hover:bg-[#4A3025] transition-all shadow-md w-full sm:w-auto"
             >
               <MessageSquare size={16} /> Book via WhatsApp
             </a>
             <Link
               to="/booking"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#C6A15B] text-[#08111C] text-xs font-bold rounded-full hover:bg-[#d4b06a] hover:scale-105 transition-all w-full sm:w-auto shadow-xl"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#4A3025] text-xs font-bold rounded-full hover:bg-[#F7F3EC] transition-all w-full sm:w-auto shadow-md"
             >
               <Phone size={16} /> Request Booking
             </Link>
@@ -644,4 +642,3 @@ export default function HomePage() {
     </div>
   );
 }
-

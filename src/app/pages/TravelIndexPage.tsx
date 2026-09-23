@@ -1,6 +1,5 @@
 import { useState, useMemo } from "react";
-import { Link } from "react-router";
-import { Compass, Filter, MapPin, Sparkles } from "lucide-react";
+import { Compass, Filter } from "lucide-react";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import TravelSearch from "../components/TravelSearch";
@@ -66,25 +65,25 @@ export default function TravelIndexPage() {
   }, [selectedCategory, selectedRegion, selectedDistance]);
 
   return (
-    <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+    <div className="pt-20 bg-[#F7F3EC] text-[#252525] min-h-screen">
       <SEO
         title="100 Karnataka Travel Destinations & Outstation Cabs"
         description="Explore 100 curated Karnataka travel destinations from Bengaluru. Filter by region, distance, and categories. Rent Toyota Innova Crysta & Force Urbania cabs."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel"
       />
       {/* HEADER HERO */}
-      <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
+      <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#C6A15B] bg-[#08111C] px-4 py-1.5 rounded-full border border-[#C6A15B]/30 mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#23483A] bg-white px-4 py-1.5 rounded-full border border-[#DDD5C8] mb-4 shadow-sm">
             <Compass size={16} />
             <span>KARNATAKA TRAVEL DICTIONARY</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8] tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#4A3025] tracking-tight mb-4">
             100 Curated Travel Destinations from Bengaluru
           </h1>
 
-          <p className="text-[#AEB7C2] text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-[#6F6A63] text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed font-medium">
             Explore heritage landmarks, hill stations, waterfalls, wildlife sanctuaries, and coastal towns. Rent luxury Toyota Innova Crysta & Force Urbania cabs with verified drivers.
           </p>
 
@@ -96,10 +95,10 @@ export default function TravelIndexPage() {
       {/* FILTER CONTROLS & GRID */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 py-12">
         {/* Filter Pills Bar */}
-        <div className="bg-[#132333] border border-[#AEB7C2]/15 rounded-3xl p-6 mb-10 space-y-6">
-          <div className="flex items-center justify-between border-b border-[#AEB7C2]/10 pb-4">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#F4F1E8]">
-              <Filter size={18} className="text-[#C6A15B]" />
+        <div className="bg-white border border-[#DDD5C8] rounded-3xl p-6 mb-10 space-y-6 shadow-sm">
+          <div className="flex items-center justify-between border-b border-[#DDD5C8] pb-4">
+            <div className="flex items-center gap-2 text-sm font-bold text-[#252525]">
+              <Filter size={18} className="text-[#23483A]" />
               <span>EXPLORE & FILTER DESTINATIONS ({filteredDestinations.length} / {DESTINATIONS.length})</span>
             </div>
 
@@ -110,7 +109,7 @@ export default function TravelIndexPage() {
                   setSelectedRegion("All");
                   setSelectedDistance("All");
                 }}
-                className="text-xs font-bold text-[#C6A15B] hover:underline"
+                className="text-xs font-bold text-[#23483A] hover:underline"
               >
                 Reset Filters
               </button>
@@ -119,7 +118,7 @@ export default function TravelIndexPage() {
 
           {/* Category Filter Pills */}
           <div>
-            <span className="text-[11px] font-bold text-[#AEB7C2] uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider block mb-2">
               BY CATEGORY:
             </span>
             <div className="flex flex-wrap gap-2">
@@ -127,10 +126,10 @@ export default function TravelIndexPage() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`text-xs font-medium px-3.5 py-1.5 rounded-xl border transition-all ${
+                  className={`text-xs font-bold px-3.5 py-1.5 rounded-xl border transition-all ${
                     selectedCategory === cat
-                      ? "bg-[#C6A15B] text-[#08111C] font-extrabold border-[#C6A15B]"
-                      : "bg-[#08111C] text-[#AEB7C2] border-[#AEB7C2]/20 hover:border-[#C6A15B]/50"
+                      ? "bg-[#4A3025] text-white border-[#4A3025]"
+                      : "bg-[#F7F3EC] text-[#6F6A63] border-[#DDD5C8] hover:border-[#23483A]"
                   }`}
                 >
                   {cat}
@@ -141,7 +140,7 @@ export default function TravelIndexPage() {
 
           {/* Region Filter Pills */}
           <div>
-            <span className="text-[11px] font-bold text-[#AEB7C2] uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider block mb-2">
               BY REGION:
             </span>
             <div className="flex flex-wrap gap-2">
@@ -149,10 +148,10 @@ export default function TravelIndexPage() {
                 <button
                   key={reg}
                   onClick={() => setSelectedRegion(reg)}
-                  className={`text-xs font-medium px-3.5 py-1.5 rounded-xl border transition-all ${
+                  className={`text-xs font-bold px-3.5 py-1.5 rounded-xl border transition-all ${
                     selectedRegion === reg
-                      ? "bg-[#C6A15B] text-[#08111C] font-extrabold border-[#C6A15B]"
-                      : "bg-[#08111C] text-[#AEB7C2] border-[#AEB7C2]/20 hover:border-[#C6A15B]/50"
+                      ? "bg-[#4A3025] text-white border-[#4A3025]"
+                      : "bg-[#F7F3EC] text-[#6F6A63] border-[#DDD5C8] hover:border-[#23483A]"
                   }`}
                 >
                   {reg}
@@ -163,7 +162,7 @@ export default function TravelIndexPage() {
 
           {/* Distance Filter Pills */}
           <div>
-            <span className="text-[11px] font-bold text-[#AEB7C2] uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider block mb-2">
               BY DISTANCE FROM BENGALURU:
             </span>
             <div className="flex flex-wrap gap-2">
@@ -171,10 +170,10 @@ export default function TravelIndexPage() {
                 <button
                   key={dist.value}
                   onClick={() => setSelectedDistance(dist.value)}
-                  className={`text-xs font-medium px-3.5 py-1.5 rounded-xl border transition-all ${
+                  className={`text-xs font-bold px-3.5 py-1.5 rounded-xl border transition-all ${
                     selectedDistance === dist.value
-                      ? "bg-[#C6A15B] text-[#08111C] font-extrabold border-[#C6A15B]"
-                      : "bg-[#08111C] text-[#AEB7C2] border-[#AEB7C2]/20 hover:border-[#C6A15B]/50"
+                      ? "bg-[#4A3025] text-white border-[#4A3025]"
+                      : "bg-[#F7F3EC] text-[#6F6A63] border-[#DDD5C8] hover:border-[#23483A]"
                   }`}
                 >
                   {dist.label}
@@ -192,9 +191,9 @@ export default function TravelIndexPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-[#132333] rounded-3xl border border-[#AEB7C2]/15">
-            <h3 className="text-lg font-bold text-[#F4F1E8] mb-2">No Destinations Found</h3>
-            <p className="text-sm text-[#AEB7C2] mb-4">
+          <div className="text-center py-16 bg-white rounded-3xl border border-[#DDD5C8]">
+            <h3 className="text-lg font-bold text-[#252525] mb-2">No Destinations Found</h3>
+            <p className="text-sm text-[#6F6A63] mb-4 font-medium">
               No destinations match your active category, region, or distance filters.
             </p>
             <button
@@ -203,7 +202,7 @@ export default function TravelIndexPage() {
                 setSelectedRegion("All");
                 setSelectedDistance("All");
               }}
-              className="text-xs font-bold text-[#C6A15B] bg-[#08111C] px-5 py-2.5 rounded-xl border border-[#C6A15B]/30 hover:bg-[#08111C]/80 transition-all"
+              className="text-xs font-bold text-[#4A3025] bg-[#EDE5D8] px-5 py-2.5 rounded-xl border border-[#DDD5C8] hover:bg-[#DDD5C8] transition-all"
             >
               Reset All Filters
             </button>

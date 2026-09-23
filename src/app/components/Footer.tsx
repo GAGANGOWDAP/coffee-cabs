@@ -3,85 +3,85 @@ import { Link } from "react-router";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#08111C] border-t border-[#C6A15B]/20 text-[#F4F1E8]">
+    <footer className="bg-[#23483A] border-t border-[#4A3025]/30 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-14">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 sm:col-span-1">
-            <Link to="/" className="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
+            <Link to="/" className="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B86F52] rounded">
               <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-9 w-auto filter invert" />
             </Link>
-            <p className="text-xs text-[#AEB7C2] leading-relaxed mb-4">
-              Premium luxury chauffeur services from Bangalore. Toyota Innova Crysta & Force Tempo Traveller rentals for outstation travel across India.
+            <p className="text-xs text-[#DDD5C8] leading-relaxed mb-4 font-medium">
+              Premium luxury chauffeur services from Bengaluru. Toyota Innova Crysta & Force Tempo Traveller rentals for outstation travel across Karnataka and India.
             </p>
-            <div className="space-y-2.5 text-xs text-[#AEB7C2]">
-              <a href="tel:+917676726209" className="inline-flex items-center gap-2 hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                <Phone size={13} className="text-[#C6A15B]" /> +91 76767 26209
+            <div className="space-y-2.5 text-xs text-[#DDD5C8]">
+              <a href="tel:+917676726209" className="inline-flex items-center gap-2 hover:text-[#F7F3EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B86F52] rounded">
+                <Phone size={13} className="text-[#B86F52]" /> +91 76767 26209
               </a>
               <br />
-              <a href="mailto:info@coffeecabs.in" className="inline-flex items-center gap-2 hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                <Mail size={13} className="text-[#C6A15B]" /> info@coffeecabs.in
+              <a href="mailto:info@coffeecabs.in" className="inline-flex items-center gap-2 hover:text-[#F7F3EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B86F52] rounded">
+                <Mail size={13} className="text-[#B86F52]" /> info@coffeecabs.in
               </a>
               <div className="flex items-center gap-2 pt-1">
-                <MapPin size={13} className="shrink-0 text-[#C6A15B]" /> Bangalore, Karnataka, India
+                <MapPin size={13} className="shrink-0 text-[#B86F52]" /> Bengaluru, Karnataka, India
               </div>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F4F1E8] mb-4">
-              Our 3 Vehicles
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F7F3EC] mb-4">
+              Our Vehicles
             </h4>
-            <ul className="space-y-2.5 text-xs text-[#AEB7C2]">
+            <ul className="space-y-2.5 text-xs text-[#DDD5C8]">
               <li>
-                <Link to="/fleet" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Innova Crysta Premium (₹19/km)
+                <Link to="/fleet" className="hover:text-white transition-colors">
+                  Innova Crysta Premium (7 Seater)
                 </Link>
               </li>
               <li>
-                <Link to="/fleet" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  7+1 TT Recliner (₹35/km)
+                <Link to="/fleet" className="hover:text-white transition-colors">
+                  Force Urbania Luxury (12-17 Seater)
                 </Link>
               </li>
               <li>
-                <Link to="/fleet" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  9+1 TT Luxury (₹32/km)
+                <Link to="/fleet" className="hover:text-white transition-colors">
+                  Tempo Traveller (12-26 Seater)
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Fleet Tariff & Terms
+                <Link to="/pricing" className="hover:text-white transition-colors">
+                  Fleet Tariff & Rules
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F4F1E8] mb-4">
-              Popular Trips
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F7F3EC] mb-4">
+              Popular Routes
             </h4>
-            <ul className="space-y-2.5 text-xs text-[#AEB7C2]">
+            <ul className="space-y-2.5 text-xs text-[#DDD5C8]">
               <li>
-                <Link to="/packages/mysore" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Bangalore to Mysore
+                <Link to="/routes/bengaluru-to-mysuru" className="hover:text-white transition-colors">
+                  Bengaluru → Mysuru
                 </Link>
               </li>
               <li>
-                <Link to="/packages/coorg" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Bangalore to Coorg
+                <Link to="/routes/bengaluru-to-coorg" className="hover:text-white transition-colors">
+                  Bengaluru → Coorg
                 </Link>
               </li>
               <li>
-                <Link to="/packages/ooty" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Bangalore to Ooty
+                <Link to="/routes/bengaluru-to-chikkamagaluru" className="hover:text-white transition-colors">
+                  Bengaluru → Chikkamagaluru
                 </Link>
               </li>
               <li>
-                <Link to="/packages/goa" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Bangalore to Goa
+                <Link to="/routes/bengaluru-to-hampi" className="hover:text-white transition-colors">
+                  Bengaluru → Hampi
                 </Link>
               </li>
               <li>
-                <Link to="/booking" className="text-[#C6A15B] font-bold hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
+                <Link to="/booking" className="text-[#B86F52] font-bold hover:underline">
                   Booking & Enquiry →
                 </Link>
               </li>
@@ -89,42 +89,42 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F4F1E8] mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#F7F3EC] mb-4">
               Quick Links
             </h4>
-            <ul className="space-y-2.5 text-xs text-[#AEB7C2]">
+            <ul className="space-y-2.5 text-xs text-[#DDD5C8]">
               <li>
-                <Link to="/" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
+                <Link to="/" className="hover:text-white transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/booking" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Book Enquiry
+                <Link to="/travel" className="hover:text-white transition-colors">
+                  Explore Karnataka
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
+                <Link to="/travel/packages" className="hover:text-white transition-colors">
+                  Tour Packages
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-white transition-colors">
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/pricing" className="hover:text-[#C6A15B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] rounded">
-                  Cancellation Policy
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-[#AEB7C2]/15 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#AEB7C2]">
+        <div className="border-t border-[#DDD5C8]/20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#DDD5C8]">
           <p>© {new Date().getFullYear()} Coffee Cabs. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <a
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#08111C]"
+              className="w-10 h-10 rounded-full bg-[#B86F52] text-white flex items-center justify-center hover:bg-[#4A3025] transition-all shadow-sm"
               aria-label="Contact Coffee Cabs on WhatsApp"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none">
@@ -137,4 +137,3 @@ export default function Footer() {
     </footer>
   );
 }
-

@@ -32,7 +32,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Keyboard Escape key handler to close mobile menu
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape" && menuOpen) {
@@ -67,22 +66,22 @@ export default function Navbar() {
     <>
       <nav
         aria-label="Main Navigation"
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-[#F4F1E8] border-b border-[#C6A15B]/20 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-[#252525] border-b border-[#DDD5C8] ${
           scrolled
-            ? "bg-[#08111C] shadow-2xl py-3"
-            : "bg-[#08111C]/70 backdrop-blur-[12px] py-4"
+            ? "bg-[#F7F3EC]/95 shadow-md py-3 backdrop-blur-md"
+            : "bg-[#F7F3EC]/90 backdrop-blur-md py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 flex items-center justify-between h-12">
-          {/* LEFT: Coffee Cabs Logo (10-15% larger) */}
+          {/* LEFT: Coffee Cabs Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 shrink-0 pl-1 focus-visible:outline-2 focus-visible:outline-[#C6A15B] focus-visible:outline-offset-2 rounded-lg"
+            className="flex items-center gap-2 shrink-0 focus-visible:outline-2 focus-visible:outline-[#23483A] focus-visible:outline-offset-2 rounded-lg"
           >
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Executive Chauffeur Logo"
-              className="h-9 sm:h-10 md:h-10.5 w-auto object-contain filter invert transition-transform hover:scale-105 duration-200"
+              className="h-9 sm:h-10 md:h-10.5 w-auto object-contain transition-transform hover:scale-105 duration-200"
             />
           </Link>
 
@@ -96,10 +95,10 @@ export default function Navbar() {
                   ? location.pathname === "/" && location.hash === "#about"
                   : location.pathname === link.to;
 
-              const linkClasses = `text-[11px] xl:text-xs uppercase tracking-[0.08em] font-semibold transition-all duration-300 relative py-1.5 focus-visible:outline-2 focus-visible:outline-[#C6A15B] focus-visible:outline-offset-2 rounded ${
+              const linkClasses = `text-[11px] xl:text-xs uppercase tracking-[0.08em] font-bold transition-all duration-300 relative py-1.5 focus-visible:outline-2 focus-visible:outline-[#23483A] focus-visible:outline-offset-2 rounded ${
                 isActive
-                  ? "text-[#C6A15B] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-9 after:h-[2px] after:bg-[#C6A15B] after:rounded-full"
-                  : "text-[#AEB7C2] hover:text-[#F4F1E8] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#C6A15B]/60 after:transition-all after:duration-300"
+                  ? "text-[#4A3025] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-8 after:h-[2.5px] after:bg-[#23483A] after:rounded-full"
+                  : "text-[#6F6A63] hover:text-[#23483A] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#23483A]/60 after:transition-all after:duration-300"
               }`;
 
               if (link.isHash) {
@@ -125,13 +124,12 @@ export default function Navbar() {
 
           {/* RIGHT: Action Area */}
           <div className="hidden sm:flex items-center gap-3.5">
-            {/* Subtle Vertical Divider */}
-            <div className="hidden lg:block h-5 w-[1px] bg-[#AEB7C2]/20 mr-1" />
+            <div className="hidden lg:block h-5 w-[1px] bg-[#DDD5C8] mr-1" />
 
-            {/* Request Booking CTA */}
+            {/* Request Booking CTA - Primary Button (#4A3025 -> #23483A) */}
             <Link
               to="/booking"
-              className="inline-flex items-center gap-2 text-xs font-semibold bg-[#C6A15B] text-[#08111C] px-4.5 xl:px-5 py-2.5 rounded-full hover:bg-[#d4b06a] hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 group focus-visible:outline-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-2 text-xs font-bold bg-[#4A3025] text-white px-4.5 xl:px-5 py-2.5 rounded-full hover:bg-[#23483A] transition-all duration-300 shadow-sm active:scale-95 group focus-visible:outline-2 focus-visible:outline-[#23483A]"
             >
               Request Booking <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
@@ -141,7 +139,7 @@ export default function Navbar() {
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-105 transition-transform duration-250 shadow-sm shrink-0 focus-visible:outline-2 focus-visible:outline-[#25D366]"
+              className="w-9 h-9 rounded-full bg-[#23483A] text-white flex items-center justify-center hover:bg-[#4A3025] hover:scale-105 transition-all duration-250 shadow-sm shrink-0 focus-visible:outline-2 focus-visible:outline-[#23483A]"
               aria-label="Contact Coffee Cabs on WhatsApp"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none">
@@ -152,10 +150,10 @@ export default function Navbar() {
             {/* Phone Link */}
             <a
               href="tel:+917676726209"
-              className="hidden xl:flex items-center gap-1.5 text-xs font-semibold text-[#F4F1E8] hover:text-[#C6A15B] transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded"
+              className="hidden xl:flex items-center gap-1.5 text-xs font-bold text-[#4A3025] hover:text-[#23483A] transition-colors focus-visible:outline-2 focus-visible:outline-[#23483A] rounded"
               aria-label="Call Coffee Cabs at +91 76767 26209"
             >
-              <Phone size={13} className="text-[#C6A15B]" />
+              <Phone size={13} className="text-[#23483A]" />
               +91 76767 26209
             </a>
           </div>
@@ -163,7 +161,7 @@ export default function Navbar() {
           {/* Mobile Hamburger Button */}
           <button
             ref={menuButtonRef}
-            className="lg:hidden w-11 h-11 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8] transition-colors hover:bg-[#1a2d42] focus-visible:outline-2 focus-visible:outline-[#C6A15B]"
+            className="lg:hidden w-10 h-10 rounded-full bg-[#EDE5D8] border border-[#DDD5C8] flex items-center justify-center text-[#4A3025] transition-colors hover:bg-[#DDD5C8] focus-visible:outline-2 focus-visible:outline-[#23483A]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
@@ -179,15 +177,15 @@ export default function Navbar() {
         <div
           id="mobile-navigation-menu"
           aria-label="Mobile Navigation Menu"
-          className="lg:hidden fixed inset-0 z-[60] bg-[#08111C] text-[#F4F1E8] flex flex-col justify-between p-6 overflow-y-auto transition-all duration-300"
+          className="lg:hidden fixed inset-0 z-[60] bg-[#F7F3EC] text-[#252525] flex flex-col justify-between p-6 overflow-y-auto transition-all duration-300"
         >
           <div>
-            <div className="flex items-center justify-between pb-6 border-b border-[#AEB7C2]/15">
+            <div className="flex items-center justify-between pb-6 border-b border-[#DDD5C8]">
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs Executive Chauffeur" className="h-9 w-auto filter invert" />
+                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs Logo" className="h-9 w-auto" />
               </Link>
               <button
-                className="w-11 h-11 rounded-full bg-[#132333] border border-[#AEB7C2]/15 flex items-center justify-center text-[#F4F1E8] focus-visible:outline-2 focus-visible:outline-[#C6A15B]"
+                className="w-10 h-10 rounded-full bg-[#EDE5D8] border border-[#DDD5C8] flex items-center justify-center text-[#4A3025] focus-visible:outline-2 focus-visible:outline-[#23483A]"
                 onClick={() => setMenuOpen(false)}
                 aria-label="Close navigation menu"
               >
@@ -210,8 +208,8 @@ export default function Navbar() {
                       key={link.label}
                       href={link.to}
                       onClick={handleAboutClick}
-                      className={`block text-lg font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
-                        isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                      className={`block text-lg font-bold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#23483A] rounded ${
+                        isActive ? "text-[#4A3025]" : "text-[#6F6A63] hover:text-[#23483A]"
                       }`}
                     >
                       {link.label}
@@ -223,8 +221,8 @@ export default function Navbar() {
                   <Link
                     key={link.to}
                     to={link.to}
-                    className={`block text-lg font-semibold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#C6A15B] rounded ${
-                      isActive ? "text-[#C6A15B]" : "text-[#AEB7C2] hover:text-[#F4F1E8]"
+                    className={`block text-lg font-bold py-2.5 transition-colors focus-visible:outline-2 focus-visible:outline-[#23483A] rounded ${
+                      isActive ? "text-[#4A3025]" : "text-[#6F6A63] hover:text-[#23483A]"
                     }`}
                     onClick={() => setMenuOpen(false)}
                   >
@@ -235,20 +233,20 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="space-y-3 pt-6 border-t border-[#AEB7C2]/15 mt-6 mb-8">
+          <div className="space-y-3 pt-6 border-t border-[#DDD5C8] mt-6 mb-8">
             <Link
               to="/booking"
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#C6A15B] text-[#08111C] text-sm font-semibold rounded-full hover:bg-[#d4b06a] transition-all shadow-md group min-h-[48px]"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#4A3025] text-white text-sm font-bold rounded-full hover:bg-[#23483A] transition-all shadow-md group min-h-[48px]"
             >
               Request Booking <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
               href="tel:+917676726209"
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#132333] text-[#F4F1E8] border border-[#AEB7C2]/20 text-sm font-semibold rounded-full min-h-[48px]"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#EDE5D8] text-[#4A3025] border border-[#DDD5C8] text-sm font-bold rounded-full min-h-[48px]"
               aria-label="Call Coffee Cabs at +91 76767 26209"
             >
-              <Phone size={16} className="text-[#C6A15B]" /> Call +91 76767 26209
+              <Phone size={16} className="text-[#23483A]" /> Call +91 76767 26209
             </a>
           </div>
         </div>
@@ -256,8 +254,3 @@ export default function Navbar() {
     </>
   );
 }
-
-
-
-
-

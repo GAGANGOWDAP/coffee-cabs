@@ -2,20 +2,23 @@
 
 @layer base {
   :root {
-    --color-midnight: #08111C;
-    --color-deep-navy: #132333;
-    --color-champagne-gold: #C6A15B;
-    --color-warm-ivory: #F4F1E8;
-    --color-silver-grey: #AEB7C2;
+    --bg-warm-ivory: #F7F3EC;
+    --bg-soft-sand: #EDE5D8;
+    --bg-card: #FFFFFF;
+    --coffee-brown: #4A3025;
+    --forest-green: #23483A;
+    --terracotta: #B86F52;
+    --charcoal: #252525;
+    --warm-gray: #6F6A63;
+    --border-beige: #DDD5C8;
 
-    --bg-main: #08111C;
-    --bg-surface: #132333;
-    --bg-card: #132333;
-    --text-primary: #F4F1E8;
-    --text-secondary: #AEB7C2;
-    --text-accent: #C6A15B;
-    --border-subtle: rgba(174, 183, 194, 0.15);
-    --border-gold: rgba(198, 164, 91, 0.25);
+    --bg-main: #F7F3EC;
+    --bg-surface: #EDE5D8;
+    --text-primary: #252525;
+    --text-secondary: #6F6A63;
+    --text-accent: #23483A;
+    --border-subtle: #DDD5C8;
+    --border-accent: #B86F52;
 
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     
@@ -27,8 +30,8 @@
   }
 
   body, html {
-    background-color: #08111C;
-    color: #F4F1E8;
+    background-color: #F7F3EC;
+    color: #252525;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -39,7 +42,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #C6A15B;
+    outline: 2px solid #23483A;
     outline-offset: 3px;
   }
 }

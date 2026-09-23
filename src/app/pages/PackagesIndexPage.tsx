@@ -83,25 +83,25 @@ export default function PackagesIndexPage() {
   };
 
   return (
-    <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+    <div className="pt-20 bg-[#F7F3EC] text-[#252525] min-h-screen">
       <SEO
         title="145+ Outstation Tour Packages from Bengaluru"
         description="Explore 145+ custom outstation tour packages from Bengaluru. Heritage, Hill stations, Waterfalls, Wildlife & Coastal tours with private chauffeur vehicles."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel/packages"
       />
       {/* HEADER HERO */}
-      <section className="bg-gradient-to-b from-[#132333] to-[#08111C] border-b border-[#AEB7C2]/15 py-12 md:py-16">
+      <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#C6A15B] bg-[#08111C] px-4 py-1.5 rounded-full border border-[#C6A15B]/30 mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#23483A] bg-[#FFFFFF] px-4 py-1.5 rounded-full border border-[#DDD5C8] mb-4">
             <PackageIcon size={16} />
             <span>CUSTOM CHAUFFEUR TOUR PACKAGES</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#F4F1E8] tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#4A3025] tracking-tight mb-4">
             Outstation Tour Packages from Bengaluru
           </h1>
 
-          <p className="text-[#AEB7C2] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#6F6A63] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             Hassle-free outstation holidays with dedicated vehicles and experienced drivers. Enjoy transparent owner-approved pricing on enquiry.
           </p>
         </div>
@@ -114,22 +114,22 @@ export default function PackagesIndexPage() {
 
       {/* PACKAGES SEARCH & FILTER BAR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 py-6">
-        <div className="bg-[#132333] border border-[#AEB7C2]/15 rounded-3xl p-6 space-y-6">
+        <div className="bg-[#FFFFFF] border border-[#DDD5C8] rounded-3xl p-6 space-y-6 shadow-sm">
           {/* Search & Sort header */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
             <div className="md:col-span-2 relative">
-              <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#C6A15B]" />
+              <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#23483A]" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search packages by title or destination (e.g., Mysuru, Coorg, Hampi, Waterfalls)..."
-                className="w-full bg-[#08111C] border border-[#AEB7C2]/20 rounded-xl pl-11 pr-10 py-3 text-sm text-[#F4F1E8] placeholder-[#AEB7C2]/60 focus:outline-none focus:border-[#C6A15B]"
+                className="w-full bg-[#F7F3EC] border border-[#DDD5C8] rounded-xl pl-11 pr-10 py-3 text-sm text-[#252525] placeholder-[#6F6A63] focus:outline-none focus:border-[#23483A]"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#AEB7C2] hover:text-[#F4F1E8]"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6F6A63] hover:text-[#252525]"
                 >
                   <X size={16} />
                 </button>
@@ -137,12 +137,12 @@ export default function PackagesIndexPage() {
             </div>
 
             <div className="flex items-center justify-end gap-2">
-              <ArrowUpDown size={16} className="text-[#C6A15B]" />
-              <span className="text-xs text-[#AEB7C2] font-semibold">SORT:</span>
+              <ArrowUpDown size={16} className="text-[#23483A]" />
+              <span className="text-xs text-[#6F6A63] font-semibold">SORT:</span>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="bg-[#08111C] text-[#F4F1E8] border border-[#AEB7C2]/20 rounded-xl px-3 py-2.5 text-xs font-semibold focus:outline-none focus:border-[#C6A15B]"
+                className="bg-[#F7F3EC] text-[#252525] border border-[#DDD5C8] rounded-xl px-3 py-2.5 text-xs font-semibold focus:outline-none focus:border-[#23483A]"
               >
                 <option value="default">Default Catalog Order</option>
                 <option value="a-z">Title (A – Z)</option>
@@ -154,7 +154,7 @@ export default function PackagesIndexPage() {
 
           {/* Duration Pills */}
           <div>
-            <span className="text-[11px] font-bold text-[#AEB7C2] uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider block mb-2">
               BY DURATION:
             </span>
             <div className="flex flex-wrap gap-2">
@@ -164,8 +164,8 @@ export default function PackagesIndexPage() {
                   onClick={() => setSelectedDuration(dur.value)}
                   className={`text-xs font-medium px-3.5 py-1.5 rounded-xl border transition-all ${
                     selectedDuration === dur.value
-                      ? "bg-[#C6A15B] text-[#08111C] font-extrabold border-[#C6A15B]"
-                      : "bg-[#08111C] text-[#AEB7C2] border-[#AEB7C2]/20 hover:border-[#C6A15B]/50"
+                      ? "bg-[#4A3025] text-white font-extrabold border-[#4A3025]"
+                      : "bg-[#F7F3EC] text-[#252525] border-[#DDD5C8] hover:border-[#23483A]"
                   }`}
                 >
                   {dur.label}
@@ -176,7 +176,7 @@ export default function PackagesIndexPage() {
 
           {/* Category Pills */}
           <div>
-            <span className="text-[11px] font-bold text-[#AEB7C2] uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider block mb-2">
               BY REGION & CATEGORY:
             </span>
             <div className="flex flex-wrap gap-2">
@@ -186,8 +186,8 @@ export default function PackagesIndexPage() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`text-xs font-medium px-3.5 py-1.5 rounded-xl border transition-all ${
                     selectedCategory === cat
-                      ? "bg-[#C6A15B] text-[#08111C] font-extrabold border-[#C6A15B]"
-                      : "bg-[#08111C] text-[#AEB7C2] border-[#AEB7C2]/20 hover:border-[#C6A15B]/50"
+                      ? "bg-[#23483A] text-white font-extrabold border-[#23483A]"
+                      : "bg-[#F7F3EC] text-[#252525] border-[#DDD5C8] hover:border-[#23483A]"
                   }`}
                 >
                   {cat}
@@ -201,15 +201,15 @@ export default function PackagesIndexPage() {
       {/* PACKAGES CATALOG GRID */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 py-8">
         <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-2 text-lg font-bold text-[#F4F1E8]">
-            <Filter size={18} className="text-[#C6A15B]" />
+          <div className="flex items-center gap-2 text-lg font-bold text-[#252525]">
+            <Filter size={18} className="text-[#23483A]" />
             <span>PACKAGES MATCHING FILTERS ({filteredAndSortedPackages.length} / {PACKAGES.length})</span>
           </div>
 
           {(searchQuery || selectedCategory !== "All" || selectedDuration !== "All" || sortBy !== "default") && (
             <button
               onClick={resetFilters}
-              className="text-xs font-bold text-[#C6A15B] hover:underline"
+              className="text-xs font-bold text-[#B86F52] hover:underline"
             >
               Reset Filters
             </button>
@@ -223,14 +223,14 @@ export default function PackagesIndexPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-[#132333] rounded-3xl border border-[#AEB7C2]/15">
-            <h3 className="text-lg font-bold text-[#F4F1E8] mb-2">No Packages Found</h3>
-            <p className="text-sm text-[#AEB7C2] mb-4">
+          <div className="text-center py-16 bg-[#FFFFFF] rounded-3xl border border-[#DDD5C8]">
+            <h3 className="text-lg font-bold text-[#252525] mb-2">No Packages Found</h3>
+            <p className="text-sm text-[#6F6A63] mb-4">
               No tour packages match your active search terms, duration, or category filters.
             </p>
             <button
               onClick={resetFilters}
-              className="text-xs font-bold text-[#C6A15B] bg-[#08111C] px-5 py-2.5 rounded-xl border border-[#C6A15B]/30 hover:bg-[#08111C]/80 transition-all"
+              className="text-xs font-bold text-[#FFFFFF] bg-[#4A3025] px-5 py-2.5 rounded-xl border border-[#4A3025] hover:bg-[#23483A] transition-all"
             >
               Clear Filters
             </button>

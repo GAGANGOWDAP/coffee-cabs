@@ -127,16 +127,16 @@ export default function FleetComparison() {
   const activeMobile = comparisonData[selectedMobileVehicle];
 
   return (
-    <section ref={containerRef} className="py-16 sm:py-24 bg-[#08111C] text-[#F4F1E8] overflow-hidden">
+    <section ref={containerRef} className="py-16 sm:py-24 bg-[#F7F3EC] text-[#252525] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 gsap-fade-up">
-          <div className="inline-block text-xs uppercase tracking-widest text-[#C6A15B] font-extrabold mb-3 bg-[#132333] border border-[#AEB7C2]/15 px-4 py-1.5 rounded-full shadow-sm">
+          <div className="inline-block text-xs uppercase tracking-widest text-[#4A3025] font-bold mb-3 bg-[#EDE5D8] border border-[#DDD5C8] px-4 py-1.5 rounded-full shadow-sm">
             Side-by-Side Comparison
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F4F1E8] mb-3">
-            Fleet <span className="text-[#C6A15B]">Comparison</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#252525] mb-3">
+            Fleet <span className="text-[#4A3025]">Comparison</span>
           </h2>
-          <p className="text-[#AEB7C2] text-xs sm:text-sm">
+          <p className="text-[#6F6A63] text-xs sm:text-sm font-medium">
             Compare all our Coffee Cabs vehicles side-by-side to find the perfect match for your trip.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function FleetComparison() {
         <div className="block lg:hidden mb-8 gsap-fade-up">
           {/* Mobile Vehicle Tab Selector */}
           <div className="mb-4">
-            <label className="block text-[11px] font-extrabold text-[#AEB7C2] uppercase tracking-wider mb-2">
+            <label className="block text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider mb-2">
               Select Vehicle to Compare
             </label>
             <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -155,8 +155,8 @@ export default function FleetComparison() {
                   onClick={() => setSelectedMobileVehicle(idx)}
                   className={`px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                     selectedMobileVehicle === idx
-                      ? "bg-[#C6A15B] text-[#08111C] shadow-md"
-                      : "bg-[#132333] text-[#AEB7C2] border border-[#AEB7C2]/15 hover:bg-[#132333]/80"
+                      ? "bg-[#4A3025] text-white shadow-sm"
+                      : "bg-white text-[#252525] border border-[#DDD5C8] hover:bg-[#EDE5D8]"
                   }`}
                 >
                   {v.name}
@@ -166,44 +166,44 @@ export default function FleetComparison() {
           </div>
 
           {/* Active Mobile Vehicle Spec Card */}
-          <div className="bg-[#132333] rounded-3xl p-6 border border-[#AEB7C2]/15 shadow-xl">
-            <div className="flex justify-between items-start pb-4 border-b border-[#AEB7C2]/15 mb-4">
+          <div className="bg-white rounded-3xl p-6 border border-[#DDD5C8] shadow-sm">
+            <div className="flex justify-between items-start pb-4 border-b border-[#DDD5C8] mb-4">
               <div>
-                <span className="text-[10px] uppercase font-bold text-[#C6A15B] tracking-wider">
+                <span className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider">
                   {activeMobile.bestFor}
                 </span>
-                <h3 className="text-xl font-extrabold text-[#F4F1E8]">{activeMobile.name}</h3>
+                <h3 className="text-xl font-extrabold text-[#252525]">{activeMobile.name}</h3>
               </div>
               <div className="text-right">
-                <div className="text-lg font-extrabold text-[#C6A15B]">{activeMobile.price}</div>
-                <div className="text-[10px] text-[#AEB7C2]">per kilometer</div>
+                <div className="text-lg font-extrabold text-[#4A3025]">{activeMobile.price}</div>
+                <div className="text-[10px] text-[#6F6A63]">per kilometer</div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
-                <span className="text-[#AEB7C2] font-semibold">Seating</span>
-                <span className="font-extrabold text-[#F4F1E8]">{activeMobile.seating} Seats</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
+                <span className="text-[#6F6A63] font-medium">Seating</span>
+                <span className="font-extrabold text-[#252525]">{activeMobile.seating} Seats</span>
               </div>
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
-                <span className="text-[#AEB7C2] font-semibold">AC</span>
-                <span className="font-extrabold text-[#C6A15B]">✓ Dual AC</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
+                <span className="text-[#6F6A63] font-medium">AC</span>
+                <span className="font-extrabold text-[#23483A]">✓ Dual AC</span>
               </div>
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center col-span-2">
-                <span className="text-[#AEB7C2] font-semibold">Pushback Seats</span>
-                <span className="font-extrabold text-[#F4F1E8]">{activeMobile.pushback}</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center col-span-2">
+                <span className="text-[#6F6A63] font-medium">Pushback Seats</span>
+                <span className="font-extrabold text-[#252525]">{activeMobile.pushback}</span>
               </div>
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
-                <span className="text-[#AEB7C2] font-semibold">LED TV</span>
-                <span className="font-extrabold text-[#F4F1E8]">{activeMobile.tv ? "✓ Yes" : "— No"}</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
+                <span className="text-[#6F6A63] font-medium">LED TV</span>
+                <span className="font-extrabold text-[#252525]">{activeMobile.tv ? "✓ Yes" : "— No"}</span>
               </div>
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center">
-                <span className="text-[#AEB7C2] font-semibold">WiFi</span>
-                <span className="font-extrabold text-[#F4F1E8]">{activeMobile.wifi ? "✓ Yes" : "— No"}</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
+                <span className="text-[#6F6A63] font-medium">WiFi</span>
+                <span className="font-extrabold text-[#252525]">{activeMobile.wifi ? "✓ Yes" : "— No"}</span>
               </div>
-              <div className="bg-[#08111C] p-3 rounded-2xl border border-[#AEB7C2]/15 flex justify-between items-center col-span-2">
-                <span className="text-[#AEB7C2] font-semibold">Restroom Facility</span>
-                <span className="font-extrabold text-[#F4F1E8]">{activeMobile.restroom ? "✓ On-board Restroom" : "— Available on Stops"}</span>
+              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center col-span-2">
+                <span className="text-[#6F6A63] font-medium">Restroom Facility</span>
+                <span className="font-extrabold text-[#252525]">{activeMobile.restroom ? "✓ On-board Restroom" : "— Available on Stops"}</span>
               </div>
             </div>
           </div>
@@ -211,92 +211,92 @@ export default function FleetComparison() {
 
         {/* ── DESKTOP & SWIPEABLE FULL TABLE VIEW ── */}
         <div className="hidden lg:block gsap-fade-up">
-          <div className="flex justify-end items-center gap-1.5 text-xs text-[#AEB7C2] font-semibold mb-2">
+          <div className="flex justify-end items-center gap-1.5 text-xs text-[#6F6A63] font-semibold mb-2">
             <span>Scroll horizontally to view all vehicles</span>
-            <MoveRight size={14} className="text-[#C6A15B]" />
+            <MoveRight size={14} className="text-[#23483A]" />
           </div>
 
-          <div className="overflow-x-auto rounded-3xl border border-[#AEB7C2]/15 shadow-2xl bg-[#132333]">
+          <div className="overflow-x-auto rounded-3xl border border-[#DDD5C8] shadow-sm bg-white">
             <table className="w-full text-left text-xs min-w-[900px]">
               <thead>
-                <tr className="bg-[#08111C] text-[#F4F1E8]">
+                <tr className="bg-[#EDE5D8] text-[#252525]">
                   <th className="p-4 font-bold uppercase tracking-wider text-[11px] w-36">Feature</th>
                   {comparisonData.map((v) => (
-                    <th key={v.name} className="p-4 font-bold text-center bg-[#C6A15B] text-[#08111C]">
+                    <th key={v.name} className="p-4 font-bold text-center bg-[#4A3025] text-white">
                       {v.name}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#AEB7C2]/15 text-[#F4F1E8]">
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#C6A15B]">Price</td>
+              <tbody className="divide-y divide-[#DDD5C8] text-[#252525]">
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#4A3025]">Price</td>
                   {comparisonData.map((v) => (
-                    <td key={v.name} className="p-4 text-center font-extrabold text-[#C6A15B]">
+                    <td key={v.name} className="p-4 text-center font-extrabold text-[#4A3025]">
                       {v.price}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">Seating</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">Seating</td>
                   {comparisonData.map((v) => (
-                    <td key={v.name} className="p-4 text-center font-semibold text-[#F4F1E8]">
+                    <td key={v.name} className="p-4 text-center font-semibold text-[#252525]">
                       {v.seating}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">AC</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">AC</td>
                   {comparisonData.map((v) => (
-                    <td key={v.name} className="p-4 text-center font-bold text-[#C6A15B]">
+                    <td key={v.name} className="p-4 text-center font-bold text-[#23483A]">
                       ✓
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">Pushback Seats</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">Pushback Seats</td>
                   {comparisonData.map((v) => (
                     <td key={v.name} className="p-4 text-center">
-                      <span className="font-bold text-[#F4F1E8]">{v.pushback}</span>
+                      <span className="font-bold text-[#252525]">{v.pushback}</span>
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">LED TV</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">LED TV</td>
                   {comparisonData.map((v) => (
                     <td key={v.name} className="p-4 text-center">
-                      {v.tv ? <Check size={16} className="mx-auto text-[#C6A15B]" /> : <Minus size={14} className="mx-auto text-[#AEB7C2]/40" />}
+                      {v.tv ? <Check size={16} className="mx-auto text-[#23483A]" /> : <Minus size={14} className="mx-auto text-[#6F6A63]/40" />}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">Music System</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">Music System</td>
                   {comparisonData.map((v) => (
                     <td key={v.name} className="p-4 text-center">
-                      {v.music ? <Check size={16} className="mx-auto text-[#C6A15B]" /> : <Minus size={14} className="mx-auto text-[#AEB7C2]/40" />}
+                      {v.music ? <Check size={16} className="mx-auto text-[#23483A]" /> : <Minus size={14} className="mx-auto text-[#6F6A63]/40" />}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">Restroom</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">Restroom</td>
                   {comparisonData.map((v) => (
                     <td key={v.name} className="p-4 text-center">
-                      {v.restroom ? <Check size={16} className="mx-auto text-[#C6A15B]" /> : <Minus size={14} className="mx-auto text-[#AEB7C2]/40" />}
+                      {v.restroom ? <Check size={16} className="mx-auto text-[#23483A]" /> : <Minus size={14} className="mx-auto text-[#6F6A63]/40" />}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">WiFi</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">WiFi</td>
                   {comparisonData.map((v) => (
                     <td key={v.name} className="p-4 text-center">
-                      {v.wifi ? <Check size={16} className="mx-auto text-[#C6A15B]" /> : <Minus size={14} className="mx-auto text-[#AEB7C2]/40" />}
+                      {v.wifi ? <Check size={16} className="mx-auto text-[#23483A]" /> : <Minus size={14} className="mx-auto text-[#6F6A63]/40" />}
                     </td>
                   ))}
                 </tr>
-                <tr className="hover:bg-[#1a2d42] transition-colors font-semibold">
-                  <td className="p-4 font-bold bg-[#08111C] text-[#F4F1E8]">Best For</td>
+                <tr className="hover:bg-[#F7F3EC] transition-colors font-semibold">
+                  <td className="p-4 font-bold bg-[#F7F3EC] text-[#252525]">Best For</td>
                   {comparisonData.map((v) => (
-                    <td key={v.name} className="p-4 text-center text-[#AEB7C2]">
+                    <td key={v.name} className="p-4 text-center text-[#6F6A63]">
                       {v.bestFor}
                     </td>
                   ))}
@@ -309,4 +309,3 @@ export default function FleetComparison() {
     </section>
   );
 }
-
