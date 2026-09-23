@@ -1,5 +1,6 @@
 import BookingForm from "../components/BookingForm";
 import SEO from "../components/SEO";
+import { getBookingPageSchema } from "../utils/seoSchemas";
 
 export default function BookingPage() {
   return (
@@ -8,6 +9,7 @@ export default function BookingPage() {
         title="Vehicle Booking & Outstation Taxi Enquiry | Coffee Cabs"
         description="Book your outstation cab, Toyota Innova Crysta, Force Urbania or Tempo Traveller with Coffee Cabs. Instant confirmation & transparent fares."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/booking"
+        schemaJson={getBookingPageSchema()}
       />
       {/* Page Header */}
       <section className="py-12 sm:py-16 bg-[#EDE5D8] border-b border-[#DDD5C8]">

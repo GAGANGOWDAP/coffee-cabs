@@ -19,6 +19,7 @@ import { VEHICLES } from "../data/vehicles";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import SEO from "../components/SEO";
+import { getRouteDetailSchema } from "../utils/seoSchemas";
 
 export default function RouteDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -71,7 +72,7 @@ export default function RouteDetailPage() {
         title={`${route.title} | Outstation Cab Booking`}
         description={`Book ${route.title}. Distance: ${route.approximateDistance}. Drive time: ${route.approximateDriveTime}. Toyota Innova Crysta & Force Urbania cabs with Coffee Cabs.`}
         canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/routes/${route.slug}`}
-        schemaJson={[breadcrumbSchema]}
+        schemaJson={getRouteDetailSchema(route)}
       />
       {/* ROUTE HERO */}
       <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">

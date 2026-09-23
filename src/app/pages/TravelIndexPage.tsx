@@ -4,6 +4,7 @@ import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import TravelSearch from "../components/TravelSearch";
 import SEO from "../components/SEO";
+import { getTravelIndexSchema } from "../utils/seoSchemas";
 
 export default function TravelIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -70,6 +71,7 @@ export default function TravelIndexPage() {
         title="100 Karnataka Travel Destinations & Outstation Cabs"
         description="Explore 100 curated Karnataka travel destinations from Bengaluru. Filter by region, distance, and categories. Rent Toyota Innova Crysta & Force Urbania cabs."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel"
+        schemaJson={getTravelIndexSchema()}
       />
       {/* HEADER HERO */}
       <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">

@@ -17,6 +17,7 @@ import {
 import { VEHICLES } from "../data/vehicles";
 import BookingForm from "../components/BookingForm";
 import SEO from "../components/SEO";
+import { getVehicleDetailSchema } from "../utils/seoSchemas";
 
 export default function VehicleDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -67,6 +68,7 @@ export default function VehicleDetailPage() {
         description={`Rent ${vehicle.name}. Seating capacity: ${vehicle.seatingCapacity}. Luggage: ${vehicle.luggageCapacity}. Outstation rate: ${vehicle.perKmRate}. Professional chauffeurs with Coffee Cabs.`}
         canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/fleet/${vehicle.slug}`}
         ogImage={vehicle.image}
+        schemaJson={getVehicleDetailSchema(vehicle)}
       />
       {/* ── A. BREADCRUMB HEADER ── */}
       <section className="bg-[#EDE5D8] py-4 border-b border-[#DDD5C8]">

@@ -2,6 +2,7 @@ import { Route as RouteIcon, Navigation } from "lucide-react";
 import { ROUTES } from "../data/routes";
 import RouteCard from "../components/RouteCard";
 import SEO from "../components/SEO";
+import { getRoutesIndexSchema } from "../utils/seoSchemas";
 
 export default function RoutesIndexPage() {
   return (
@@ -10,6 +11,7 @@ export default function RoutesIndexPage() {
         title="Bengaluru Outstation Taxi Routes & Cabs"
         description="Book outstation cabs from Bengaluru to Mysuru, Coorg, Chikkamagaluru, Hampi, Udupi, Gokarna, Mangaluru, Ooty & Goa. One-way & round trip."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/routes"
+        schemaJson={getRoutesIndexSchema()}
       />
       {/* HEADER HERO */}
       <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">

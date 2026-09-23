@@ -4,6 +4,7 @@ import { ArrowRight, Phone, ShieldCheck, Check, SlidersHorizontal, Layers } from
 import { VEHICLES, Vehicle } from "../data/vehicles";
 import VehicleCard from "../components/VehicleCard";
 import SEO from "../components/SEO";
+import { getFleetIndexSchema } from "../utils/seoSchemas";
 
 export default function FleetPage() {
   const [activeFilter, setActiveFilter] = useState<string>("ALL");
@@ -45,6 +46,7 @@ export default function FleetPage() {
         title="Fleet | Toyota Innova Crysta, Force Urbania & Tempo Traveller"
         description="Explore the Coffee Cabs commercial fleet. Toyota Innova Crysta, Force Urbania 12-seater, 17-seater & Tempo Travellers with professional chauffeurs."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/fleet"
+        schemaJson={getFleetIndexSchema()}
       />
       {/* ── A. PREMIUM HERO SECTION ── */}
       <section className="py-14 sm:py-20 bg-[#EDE5D8] border-b border-[#DDD5C8] relative overflow-hidden">

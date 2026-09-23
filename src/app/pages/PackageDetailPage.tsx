@@ -20,6 +20,7 @@ import { VEHICLES } from "../data/vehicles";
 import { DESTINATIONS } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import SEO from "../components/SEO";
+import { getPackageDetailSchema } from "../utils/seoSchemas";
 
 export default function PackageDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -73,7 +74,7 @@ export default function PackageDetailPage() {
         title={`${pkg.title} (${pkg.duration}) Tour Package`}
         description={`Book ${pkg.title}. Route: ${pkg.route}. Duration: ${pkg.duration}. Rent Toyota Innova Crysta, Force Urbania or Tempo Traveller with Coffee Cabs.`}
         canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/travel/packages/${pkg.slug}`}
-        schemaJson={[breadcrumbSchema]}
+        schemaJson={getPackageDetailSchema(pkg)}
       />
       {/* PACKAGE HERO */}
       <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">

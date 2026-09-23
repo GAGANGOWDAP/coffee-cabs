@@ -4,6 +4,7 @@ import { PACKAGES } from "../data/packages";
 import PackageCard from "../components/PackageCard";
 import TripPlanner from "../components/TripPlanner";
 import SEO from "../components/SEO";
+import { getPackagesIndexSchema } from "../utils/seoSchemas";
 
 export default function PackagesIndexPage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -88,6 +89,7 @@ export default function PackagesIndexPage() {
         title="145+ Outstation Tour Packages from Bengaluru"
         description="Explore 145+ custom outstation tour packages from Bengaluru. Heritage, Hill stations, Waterfalls, Wildlife & Coastal tours with private chauffeur vehicles."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/travel/packages"
+        schemaJson={getPackagesIndexSchema()}
       />
       {/* HEADER HERO */}
       <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">

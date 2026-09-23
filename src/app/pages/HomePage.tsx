@@ -21,6 +21,7 @@ import BookingForm from "../components/BookingForm";
 import FleetComparison from "../components/FleetComparison";
 import PopularRoutesMatrix from "../components/PopularRoutesMatrix";
 import SEO from "../components/SEO";
+import { getHomePageSchema } from "../utils/seoSchemas";
 
 export default function HomePage() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -160,6 +161,7 @@ export default function HomePage() {
         title="Coffee Cabs — Executive Chauffeur & Outstation Travel Platform"
         description="Bengaluru's premier luxury cab service. Rent Toyota Innova Crysta, Force Urbania & Tempo Traveller for outstation Karnataka travel, airport transfers & tour packages."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/"
+        schemaJson={getHomePageSchema(faqs)}
       />
       {/* ── 1. HERO SECTION ── */}
       <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#F7F3EC] text-[#252525] pt-24 sm:pt-28 pb-8 overflow-hidden border-b border-[#DDD5C8]">

@@ -5,6 +5,7 @@ import { ArrowRight, ChevronRight, ShieldCheck, CheckCircle2 } from "lucide-reac
 import { VEHICLES, PRICING_TERMS } from "../data/vehicles";
 import BookingForm from "../components/BookingForm";
 import SEO from "../components/SEO";
+import { getPricingPageSchema } from "../utils/seoSchemas";
 
 export default function PricingPage() {
   const pageRef = useRef<HTMLDivElement>(null);
@@ -32,6 +33,7 @@ export default function PricingPage() {
         title="Tariff & Outstation Cab Pricing | Coffee Cabs"
         description="Official per-km pricing, driver allowance, minimum billing distance, and transparent outstation cab rules for Coffee Cabs."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/pricing"
+        schemaJson={getPricingPageSchema()}
       />
       {/* Header */}
       <section className="py-12 sm:py-16 bg-[#EDE5D8] border-b border-[#DDD5C8]">

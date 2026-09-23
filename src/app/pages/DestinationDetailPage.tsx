@@ -27,6 +27,7 @@ import DestinationCard from "../components/DestinationCard";
 import PackageCard from "../components/PackageCard";
 import RouteCard from "../components/RouteCard";
 import SEO from "../components/SEO";
+import { getDestinationDetailSchema } from "../utils/seoSchemas";
 
 export default function DestinationDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -91,32 +92,6 @@ export default function DestinationDetailPage() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const whatsappMsg = encodeURIComponent(
-    `Hi Coffee Cabs! I would like to book a cab from Bengaluru to ${destination.name}. Please share vehicle choices & fare options.`
-  );
-
-  // Structured Data
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gagangowdap.github.io/coffee-cabs/" },
-      { "@type": "ListItem", "position": 2, "name": "Travel", "item": "https://gagangowdap.github.io/coffee-cabs/travel" },
-      { "@type": "ListItem", "position": 3, "name": "Destinations", "item": "https://gagangowdap.github.io/coffee-cabs/travel/destinations" },
-      { "@type": "ListItem", "position": 4, "name": destination.name, "item": `https://gagangowdap.github.io/coffee-cabs/travel/destinations/${destination.slug}` }
-    ]
-  };
-
-  const faqSchema = destination.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": destination.faqs.map((f) => ({
-      "@type": "Question",
-      "name": f.question,
-      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-    }))
-  } : null;
-
   return (
     <article className="pt-20 bg-[#F7F3EC] text-[#252525] min-h-screen">
       <SEO
@@ -125,7 +100,7 @@ export default function DestinationDetailPage() {
         canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/travel/destinations/${destination.slug}`}
         ogImage={destination.heroImage}
         ogType="article"
-        schemaJson={faqSchema ? [breadcrumbSchema, faqSchema] : [breadcrumbSchema]}
+        schemaJson={getDestinationDetailSchema(destination)}
       />
       {/* 1. DESTINATION HERO */}
       <section className="relative min-h-[50vh] flex items-end pb-10 bg-[#EDE5D8] border-b border-[#DDD5C8]">
