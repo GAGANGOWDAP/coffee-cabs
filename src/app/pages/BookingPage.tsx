@@ -1,8 +1,14 @@
 import BookingForm from "../components/BookingForm";
+import SEO from "../components/SEO";
 
 export default function BookingPage() {
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Vehicle Booking & Outstation Taxi Enquiry | Coffee Cabs"
+        description="Book your outstation cab, Toyota Innova Crysta, Force Urbania or Tempo Traveller with Coffee Cabs. Instant confirmation & transparent fares."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/booking"
+      />
       {/* Page Header */}
       <section className="py-12 sm:py-16 bg-[#132333] border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">

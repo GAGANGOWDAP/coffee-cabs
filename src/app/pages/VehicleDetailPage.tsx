@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { VEHICLES } from "../data/vehicles";
 import BookingForm from "../components/BookingForm";
+import SEO from "../components/SEO";
 
 export default function VehicleDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -26,15 +27,14 @@ export default function VehicleDetailPage() {
     (v) => v.slug === slug || v.id === slug
   );
 
-  useEffect(() => {
-    if (vehicle) {
-      document.title = `${vehicle.name} | Premium Fleet | Coffee Cabs`;
-    }
-  }, [vehicle]);
-
   if (!vehicle) {
     return (
       <div className="pt-28 pb-20 bg-[#08111C] text-[#F4F1E8] min-h-screen text-center px-4">
+        <SEO
+          title="Vehicle Not Found | Coffee Cabs"
+          description="The requested vehicle could not be found."
+          canonicalUrl="https://gagangowdap.github.io/coffee-cabs/fleet"
+        />
         <div className="max-w-md mx-auto py-16 bg-[#132333] rounded-3xl border border-[#AEB7C2]/15 p-8">
           <HelpCircle size={48} className="mx-auto text-[#C6A15B] mb-4" />
           <h1 className="text-2xl font-bold mb-2">Vehicle Not Found</h1>
@@ -62,6 +62,12 @@ export default function VehicleDetailPage() {
 
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title={`${vehicle.name} (${vehicle.seatingCapacity}) Rental & Outstation Cabs`}
+        description={`Rent ${vehicle.name}. Seating capacity: ${vehicle.seatingCapacity}. Luggage: ${vehicle.luggageCapacity}. Outstation rate: ${vehicle.perKmRate}. Professional chauffeurs with Coffee Cabs.`}
+        canonicalUrl={`https://gagangowdap.github.io/coffee-cabs/fleet/${vehicle.slug}`}
+        ogImage={vehicle.image}
+      />
       {/* ── A. BREADCRUMB HEADER ── */}
       <section className="bg-[#132333] py-4 border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between text-xs">

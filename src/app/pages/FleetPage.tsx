@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { ArrowRight, Phone, ShieldCheck, Check, SlidersHorizontal, Layers } from "lucide-react";
 import { VEHICLES, Vehicle } from "../data/vehicles";
 import VehicleCard from "../components/VehicleCard";
+import SEO from "../components/SEO";
 
 export default function FleetPage() {
   const [activeFilter, setActiveFilter] = useState<string>("ALL");
@@ -40,6 +41,11 @@ export default function FleetPage() {
 
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Fleet | Toyota Innova Crysta, Force Urbania & Tempo Traveller"
+        description="Explore the Coffee Cabs commercial fleet. Toyota Innova Crysta, Force Urbania 12-seater, 17-seater & Tempo Travellers with professional chauffeurs."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/fleet"
+      />
       {/* ── A. PREMIUM HERO SECTION ── */}
       <section className="py-14 sm:py-20 bg-[#132333] border-b border-[#AEB7C2]/15 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-8 text-center relative z-10">

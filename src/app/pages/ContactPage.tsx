@@ -1,11 +1,17 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import BookingForm from "../components/BookingForm";
+import SEO from "../components/SEO";
 
 export default function ContactPage() {
   const whatsappMsg = encodeURIComponent("Hi Coffee Cabs! I'd like to inquire about cab booking and availability.");
 
   return (
     <div className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Contact Coffee Cabs | 24/7 Phone & WhatsApp Booking"
+        description="Contact Coffee Cabs for outstation cab bookings, Innova Crysta & Tempo Traveller rentals in Bengaluru. Phone: +91 76767 26209."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/contact"
+      />
       {/* Header */}
       <section className="py-12 sm:py-16 bg-[#132333] border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">

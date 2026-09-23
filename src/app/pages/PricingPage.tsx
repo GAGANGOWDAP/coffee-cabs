@@ -4,6 +4,7 @@ import { gsap } from "../utils/gsapSetup";
 import { ArrowRight, ChevronRight, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { VEHICLES, PRICING_TERMS } from "../data/vehicles";
 import BookingForm from "../components/BookingForm";
+import SEO from "../components/SEO";
 
 export default function PricingPage() {
   const pageRef = useRef<HTMLDivElement>(null);
@@ -27,6 +28,12 @@ export default function PricingPage() {
 
   return (
     <div ref={pageRef} className="pt-20 bg-[#08111C] text-[#F4F1E8] min-h-screen">
+      <SEO
+        title="Tariff & Outstation Cab Pricing | Coffee Cabs"
+        description="Official per-km pricing, driver allowance, minimum billing distance, and transparent outstation cab rules for Coffee Cabs."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/pricing"
+      />
+      {/* Header */}
       {/* Header */}
       <section className="py-12 sm:py-16 bg-[#132333] border-b border-[#AEB7C2]/15">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center gsap-pricing-fade">

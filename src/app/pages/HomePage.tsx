@@ -21,6 +21,7 @@ import VehicleCard from "../components/VehicleCard";
 import BookingForm from "../components/BookingForm";
 import FleetComparison from "../components/FleetComparison";
 import PopularRoutesMatrix from "../components/PopularRoutesMatrix";
+import SEO from "../components/SEO";
 
 export default function HomePage() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -31,11 +32,12 @@ export default function HomePage() {
   const categories = [
     "All",
     "Hill Station",
-    "Heritage & Forts",
-    "Beach Escapes",
-    "Wildlife & Nature",
+    "Heritage",
+    "Nature",
+    "Beach",
+    "Wildlife",
     "Pilgrimage",
-    "Lakes & Waterfalls",
+    "Waterfalls"
   ];
   const defaultFallbackImg =
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop";
@@ -43,11 +45,12 @@ export default function HomePage() {
   const filteredDestinations = DESTINATIONS.filter((d) => {
     const matchesSearch =
       d.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      d.state.toLowerCase().includes(searchQuery.toLowerCase());
+      d.district.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      d.region.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory =
-      selectedCategory === "All" || d.category === selectedCategory;
+      selectedCategory === "All" || d.categories.includes(selectedCategory);
     return matchesSearch && matchesCategory;
-  }).slice(0, 12);
+  }).slice(0, 8);
 
   const faqs = [
     {
@@ -154,6 +157,11 @@ export default function HomePage() {
 
   return (
     <div ref={homeRef} className="bg-[#08111C] text-[#F4F1E8]">
+      <SEO
+        title="Coffee Cabs — Executive Chauffeur & Outstation Travel Platform"
+        description="Bangalore's premier luxury cab service. Rent Toyota Innova Crysta, Force Urbania & Tempo Traveller for outstation Karnataka travel, airport transfers & tour packages."
+        canonicalUrl="https://gagangowdap.github.io/coffee-cabs/"
+      />
       {/* ── 1. HERO SECTION ── */}
       <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#08111C] text-[#F4F1E8] pt-24 sm:pt-28 pb-8 overflow-hidden">
         {/* Full-width Cinematic Background Image */}
@@ -509,48 +517,59 @@ export default function HomePage() {
           </div>
 
           {/* Destinations Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {filteredDestinations.map((d) => (
               <Link
                 key={d.slug}
-                to={`/packages/${d.slug}`}
+                to={`/travel/destinations/${d.slug}`}
                 className="bg-[#08111C] rounded-2xl overflow-hidden border border-[#AEB7C2]/15 hover:border-[#C6A15B]/50 transition-all duration-300 group flex flex-col justify-between shadow-lg"
               >
                 <div>
                   <div className="aspect-[4/3] bg-[#08111C] overflow-hidden relative">
                     <img
-                      src={d.image}
-                      alt={`${d.name} Coffee Cabs Package`}
+                      src={d.heroImage || defaultFallbackImg}
+                      alt={`${d.name} Coffee Cabs`}
                       onError={(e) => {
                         e.currentTarget.src = defaultFallbackImg;
                       }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
                     />
                     <div className="absolute top-3 right-3 bg-[#08111C]/90 backdrop-blur-md text-[#C6A15B] border border-[#C6A15B]/30 text-[10px] font-bold px-2.5 py-1 rounded-full">
-                      {d.distance} km
+                      {d.approximateDistanceFromBengaluru}
                     </div>
                   </div>
                   <div className="p-4">
                     <div className="text-[10px] uppercase tracking-wider text-[#AEB7C2] font-bold mb-1">
-                      {d.state} · {d.category}
+                      {d.region}
                     </div>
                     <h3 className="text-base font-bold text-[#F4F1E8] mb-1 group-hover:text-[#C6A15B] transition-colors">
                       {d.name}
                     </h3>
                     <p className="text-[11px] text-[#AEB7C2] flex items-center gap-1">
-                      <MapPin size={11} className="text-[#C6A15B]" /> {d.time} travel time
+                      <MapPin size={11} className="text-[#C6A15B]" /> {d.approximateDriveTime}
                     </p>
                   </div>
                 </div>
 
                 <div className="px-4 pb-4">
                   <div className="pt-3 border-t border-[#AEB7C2]/15 flex items-center justify-between text-xs font-bold text-[#C6A15B] group-hover:translate-x-0.5 transition-transform">
-                    <span>Request Enquiry</span>
+                    <span>EXPLORE GUIDE</span>
                     <ArrowRight size={12} />
                   </div>
                 </div>
               </Link>
             ))}
+          </div>
+
+          {/* Explore All Destinations CTA */}
+          <div className="mt-12 text-center">
+            <Link
+              to="/travel"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#C6A15B] hover:bg-[#b08d4b] text-[#08111C] font-extrabold text-xs rounded-2xl shadow-xl transition-all"
+            >
+              <span>EXPLORE ALL 100 KARNATAKA DESTINATIONS</span>
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>

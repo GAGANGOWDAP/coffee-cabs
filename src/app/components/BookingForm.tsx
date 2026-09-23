@@ -29,6 +29,9 @@ export default function BookingForm({
 }: BookingFormProps) {
   const [searchParams] = useSearchParams();
   const queryVehicleParam = searchParams.get("vehicle") || "";
+  const queryDestination = searchParams.get("destination") || searchParams.get("drop") || "";
+  const queryPackage = searchParams.get("package") || "";
+  const queryRoute = searchParams.get("route") || "";
 
   const resolvedInitialVehicle =
     initialVehicleId ||
@@ -46,7 +49,9 @@ export default function BookingForm({
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [pickupLocation, setPickupLocation] = useState("Bangalore");
-  const [dropLocation, setDropLocation] = useState(initialDestination);
+  const [dropLocation, setDropLocation] = useState(
+    initialDestination || queryDestination || queryPackage || queryRoute || ""
+  );
   const [travelDate, setTravelDate] = useState("");
   const [pickupTime, setPickupTime] = useState("06:00 AM");
   const [passengers, setPassengers] = useState("4");
@@ -66,8 +71,23 @@ export default function BookingForm({
       }
     }
   }, [queryVehicleParam, initialVehicleId]);
+
+  useEffect(() => {
+    if (initialDestination) {
+      setDropLocation(initialDestination);
+    } else if (queryDestination) {
+      setDropLocation(queryDestination);
+    } else if (queryPackage) {
+      setDropLocation(queryPackage);
+    } else if (queryRoute) {
+      setDropLocation(queryRoute);
+    }
+  }, [initialDestination, queryDestination, queryPackage, queryRoute]);
+
   const [serviceType, setServiceType] = useState("Outstation Round Trip");
-  const [notes, setNotes] = useState("");
+  const [notes, setNotes] = useState(
+    queryPackage ? `Package Inquiry: ${queryPackage}` : queryRoute ? `Route Inquiry: ${queryRoute}` : ""
+  );
 
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
