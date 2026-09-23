@@ -611,34 +611,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ── 10. CTA BANNER (DARK CONTRAST MOMENT) ── */}
-      <section className="gsap-section-reveal py-16 sm:py-20 bg-[#23483A] text-white border-t border-[#4A3025]/20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-8 text-center space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white">
-            Ready to Hit the Road?
-          </h2>
-          <p className="text-xs sm:text-sm text-[#DDD5C8] max-w-md mx-auto font-medium leading-relaxed">
-            Book your luxury Innova Crysta, Force Urbania, or Tempo Traveller in under 60 seconds. Connect with us on WhatsApp or call us directly.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">
-            <a
-              href="https://wa.me/917676726209?text=Hi%20Coffee%20Cabs!%20I%20want%20to%20book%20a%20cab."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#B86F52] text-white text-xs font-bold rounded-full hover:bg-[#4A3025] transition-all shadow-md w-full sm:w-auto"
-            >
-              <MessageSquare size={16} /> Book via WhatsApp
-            </a>
-            <Link
-              to="/booking"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#4A3025] text-xs font-bold rounded-full hover:bg-[#F7F3EC] transition-all w-full sm:w-auto shadow-md"
-            >
-              <Phone size={16} /> Request Booking
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
