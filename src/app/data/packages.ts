@@ -48,600 +48,16753 @@ export interface TourPackage {
 
 export const PACKAGES: TourPackage[] = [
   {
-    id: "nandi-hills-ramanagara-1day",
-    title: "Nandi Hills Sunrise & Ramanagara Adventure 1-Day Escape",
-    slug: "nandi-hills-ramanagara-1day",
-    category: "Bengaluru nearby 1-day",
-    duration: "1 Day",
-    destinationIds: ["nandi-hills", "ramanagara"],
-    route: "Bengaluru → Nandi Hills → Devanahalli → Ramanagara → Bengaluru",
-    pickupAreas: ["Airport", "Indiranagar", "Koramangala", "Whitefield", "Electronic City", "All Bengaluru Pickups"],
-    dropAreas: ["All Bengaluru Drop Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-1",
+    "title": "Bengaluru nearby 1-day Tour Option #1 (1 Day)",
+    "slug": "bengaluru-nearby-1",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Early Morning Sunrise at Nandi Hills & Sholay Hills Adventure",
-        activities: [
-          "04:00 AM pickup from Bengaluru address",
-          "Reach Nandi Hills summit for scenic early morning fog & sunrise viewpoint",
-          "Explore Tipu's Drop, Amrita Sarovar, and ancient Bhoga Nandeeshwara Temple at foothill",
-          "Breakfast en route featuring South Indian specialties",
-          "Drive to Ramanagara (Ramadevara Betta / Sholay shooting spot) for silk town exploration & rock scenery",
-          "Return to Bengaluru by early evening"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: [
-          "Panoramic misty sunrise views",
-          "1,000-year-old Chola/Hoysala architecture at Bhoga Nandeeshwara",
-          "Iconic Sholay hill lock rock formations"
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
         ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "9-seater-tt"],
-    inclusions: [
-      "Private AC Chauffeur Vehicle for full day (up to 250 km)",
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
       "Fuel charges & experienced highway driver",
-      "Driver allowance",
+      "Outstation driver night allowance",
       "Doorstep pickup & drop in Bengaluru"
     ],
-    exclusions: [
-      "Entry tickets & parking fees at Nandi Hills",
-      "Meals, beverages, and personal expenses",
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
       "Toll charges (as per actual FASTag)"
     ],
-    approximateDistance: "220 km round trip",
-    season: "September to March (Best sunrise & cool weather)",
-    notes: "Nandi Hills entry opens early morning; weekend entry passes may require advance booking on government portal.",
-    relatedDestinations: ["nandi-hills", "ramanagara", "devanadurga", "savandurga"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "What time does the trip start?",
-        answer: "Pickup is recommended at 04:00 AM to reach Nandi Hills before sunrise."
-      },
-      {
-        question: "Can we customize the stops along the way?",
-        answer: "Yes, private cabs offer complete flexibility to stop at local breakfast spots or nearby attractions."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Book Nandi Hills 1-Day Cab Escort",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #1 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "mysuru-heritage-royal-1day",
-    title: "Royal Mysuru Heritage & Palace 1-Day Tour",
-    slug: "mysuru-heritage-royal-1day",
-    category: "Mysuru",
-    duration: "1 Day",
-    destinationIds: ["mysuru", "chamundi-hills", "srirangapatna", "krs-brindavan-gardens"],
-    route: "Bengaluru → Srirangapatna → Chamundi Hills → Mysuru Palace → Brindavan Gardens → Bengaluru",
-    pickupAreas: ["Any Bengaluru Home / Hotel / Airport"],
-    dropAreas: ["Any Bengaluru Location"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-2",
+    "title": "Bengaluru nearby 1-day Tour Option #2 (1 Day)",
+    "slug": "bengaluru-nearby-2",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Island Fortress, Sacred Hills, Mysore Palace & Musical Fountains",
-        activities: [
-          "06:00 AM pickup via Mysuru Expressway",
-          "Visit Tipu Sultan's Summer Palace (Daria Daulat Bagh) and Ranganathaswamy Temple in Srirangapatna",
-          "Ascend Chamundi Hills for Sri Chamundeshwari Temple & Nandi Monolith",
-          "Authentic Mysuru Thali / Mysore Pak tasting break",
-          "Guided walkthrough of illuminated Mysuru Palace & Durbar Hall",
-          "Evening musical fountain show at KRS Brindavan Gardens",
-          "Expressway return drive to Bengaluru by 10:30 PM"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: [
-          "Fast smooth transit via Bengaluru-Mysuru Expressway",
-          "Iconic Mysore Palace Durbar Hall & Golden Throne history",
-          "Evening fountain lights at Brindavan Gardens"
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
         ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "12-14-seater-tt"],
-    inclusions: [
-      "Dedicated AC Vehicle with expert driver",
-      "Fuel, driver allowance & toll management support",
-      "Flexible itinerary pacing"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Palace & Garden entry tickets",
-      "Camera fees & guide charges",
-      "Food and personal shopping"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "340 km round trip",
-    season: "Year-round (Dasara festival in Oct/Nov is extra special)",
-    notes: "Palace illumination happens on Sundays and public holidays; general lighting operates every evening.",
-    relatedDestinations: ["mysuru", "chamundi-hills", "srirangapatna", "somanathapura"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Is 1 day enough for Mysuru?",
-        answer: "Yes! Thanks to the 10-lane expressway, you can cover major heritage landmarks comfortably in a single day."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Book Mysuru Heritage Day Cab",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #2 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "coorg-misty-hills-3day",
-    title: "Coorg Misty Hills, Coffee Estates & Wildlife 3-Day Retreat",
-    slug: "coorg-misty-hills-3day",
-    category: "Coorg",
-    duration: "3 Days / 2 Nights",
-    destinationIds: ["madikeri", "kushalnagar-dubare", "bhagamandala-talakaveri", "virajpet", "kakkabe-tadiandamol"],
-    route: "Bengaluru → Kushalnagar → Madikeri → Talakaveri → Abbey Falls → Virajpet → Bengaluru",
-    pickupAreas: ["All Bengaluru Areas & BLR Airport"],
-    dropAreas: ["All Bengaluru Drop Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-3",
+    "title": "Bengaluru nearby 1-day Tour Option #3 (1 Day)",
+    "slug": "bengaluru-nearby-3",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Golden Temple Namdroling & Dubare Elephant Camp",
-        activities: [
-          "06:30 AM departure from Bengaluru",
-          "Visit Namdroling Monastery (Bylakuppe Tibetan Settlement)",
-          "Interactive elephant bath experience at Dubare Elephant Camp along Cauvery river",
-          "Check-in at Madikeri resort / homestay",
-          "Sunset views at Raja's Seat"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["Bylakuppe Golden Temple", "Dubare Elephant Camp river rafting"]
-      },
-      {
-        day: 2,
-        title: "Origin of Cauvery & Cascade Waterfalls",
-        activities: [
-          "Scenic drive to Bhagamandala triveni sangam & Talakaveri sacred peak",
-          "Panoramic Brahmagiri mountain views",
-          "Visit Abbey Falls nestled inside lush coffee plantations",
-          "Explore Madikeri Fort & Omkareshwara Temple",
-          "Spices & Kodava coffee shopping in Madikeri town"
-        ],
-        highlights: ["Talakaveri mountain views", "Abbey Falls coffee estate walk"]
-      },
-      {
-        day: 3,
-        title: "Nisargadhama Bamboo Forest & Return",
-        activities: [
-          "Visit Kaveri Nisargadhama bamboo island park",
-          "Optional halt at Coffee plantation roasting center",
-          "Return drive to Bengaluru reaching by late evening"
-        ],
-        highlights: ["Kaveri island hanging bridge", "Fresh spice plantation purchasing"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "12-14-seater-tt"],
-    inclusions: [
-      "Outstation AC vehicle with driver allowance for 3 days / 2 nights",
-      "Fuel costs for entire circuit (up to 800 km included)",
-      "Inter-district permit clearance"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Resort accommodation & food",
-      "Activity charges (Elephant bath, rafting, jeep safari)",
-      "Tolls & parking receipts"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "650 km total circuit",
-    season: "October to May (Monsoons Jul-Aug feature lush waterfalls)",
-    notes: "Dubare Elephant Camp morning interaction starts early around 08:30 AM.",
-    relatedDestinations: ["madikeri", "kushalnagar-dubare", "bhagamandala-talakaveri", "virajpet"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Does the cab driver stay with us in Coorg?",
-        answer: "Yes, your dedicated vehicle and driver remain with you for all local transfers and sightseeing throughout the trip."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Enquire Coorg 3-Day Tour Package",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #3 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "chikkamagaluru-coffee-peaks-3day",
-    title: "Chikkamagaluru Coffee Estates & Highest Peaks 3-Day Tour",
-    slug: "chikkamagaluru-coffee-peaks-3day",
-    category: "Chikkamagaluru",
-    duration: "3 Days / 2 Nights",
-    destinationIds: ["chikkamagaluru", "mullayanagiri-baba-budangiri", "kemmannugundi", "kudremukh", "bhadra-wildlife-sanctuary"],
-    route: "Bengaluru → Hassan → Belur → Chikkamagaluru → Mullayanagiri → Hebbe Falls → Kemmannugundi → Bengaluru",
-    pickupAreas: ["All Bengaluru Locations"],
-    dropAreas: ["All Bengaluru Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-4",
+    "title": "Bengaluru nearby 1-day Tour Option #4 (1 Day)",
+    "slug": "bengaluru-nearby-4",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Hoysala Architecture & Coffee Country Welcome",
-        activities: [
-          "Depart Bengaluru early morning via NH75",
-          "En route stop at Belur Chennakeshava Temple (Hoysala masterpiece)",
-          "Arrive in Chikkamagaluru and check in at coffee plantation estate",
-          "Evening visit to Hirekolale Lake for tranquil sunset"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["Belur Stone Sculpture", "Hirekolale Lake sunset reflection"]
-      },
-      {
-        day: 2,
-        title: "Conquering Karnataka's Highest Peak Mullayanagiri & Baba Budangiri",
-        activities: [
-          "Early morning drive to Mullayanagiri peak (highest in Karnataka at 1,930m)",
-          "Visit sacred shrine of Baba Budangiri & Manikyadhara Falls",
-          "Jeep ride into Jhari / Buttermilk Falls",
-          "Walk through aromatic Arabica & Robusta coffee plantations"
-        ],
-        highlights: ["Mullayanagiri peak summit", "Jhari waterfall jeep trail", "Coffee tasting session"]
-      },
-      {
-        day: 3,
-        title: "Kemmannugundi Hill Station & Return",
-        activities: [
-          "Scenic drive to Kemmannugundi royal retreat & Z Point viewpoint",
-          "Visit Hebbe Falls / Kalhatti Falls",
-          "Return journey to Bengaluru reaching by 09:30 PM"
-        ],
-        highlights: ["Z Point mountain ridge", "Kemmannugundi rose gardens"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "12-14-seater-tt"],
-    inclusions: [
-      "AC vehicle for 3 days / 2 nights outstation tour",
-      "Fuel, driver allowance & outstation driver night charges",
-      "All driver stay & boarding charges"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Jeep hire charges at Jhari/Hebbe falls (local hill rule)",
-      "Hotel stay & food",
-      "Tolls & parking"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "720 km round trip",
-    season: "September to May",
-    notes: "Mullayanagiri summit steps require comfortable walking shoes.",
-    relatedDestinations: ["chikkamagaluru", "mullayanagiri-baba-budangiri", "kemmannugundi", "belur"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Can our cab drive all the way to Mullayanagiri top?",
-        answer: "Yes, cab access goes right up to the parking lot below the summit steps."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Book Chikkamagaluru Peak Package",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #4 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "hampi-badami-heritage-4day",
-    title: "Vijayanagara & Chalukya Empire Heritage Trail (Hampi-Badami 4-Day)",
-    slug: "hampi-badami-heritage-4day",
-    category: "Hampi/Badami/Pattadakal",
-    duration: "4 Days / 3 Nights",
-    destinationIds: ["hampi", "hosapete", "anegundi", "badami", "pattadakal", "aihole"],
-    route: "Bengaluru → Chitradurga → Hampi → Anegundi → Badami → Pattadakal → Aihole → Bengaluru",
-    pickupAreas: ["All Bengaluru Addresses & Airport"],
-    dropAreas: ["All Bengaluru Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-5",
+    "title": "Bengaluru nearby 1-day Tour Option #5 (1 Day)",
+    "slug": "bengaluru-nearby-5",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Chitradurga Fort & Arrival in Hampi UNESCO Realm",
-        activities: [
-          "06:00 AM departure via NH50",
-          "Explore Chitradurga Fort (Seven Circles / Kallina Kote)",
-          "Drive to Hospet/Hampi and check in",
-          "Sunset view from Hemakuta Hill overlooking Virupaksha Temple"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["Chitradurga Fort history", "Hemakuta Hill golden sunset"]
-      },
-      {
-        day: 2,
-        title: "Full Day Hampi Monumental Marvels",
-        activities: [
-          "Visit Virupaksha Temple, Monolithic Sasivekalu & Kadalekalu Ganesha",
-          "Vittala Temple Complex with iconic Stone Chariot & Musical Pillars",
-          "Lotus Mahal, Elephant Stables & Royal Enclosure",
-          "Coracle boat ride on Tungabhadra river"
-        ],
-        highlights: ["Vittala Stone Chariot UNESCO symbol", "Tungabhadra Coracle ride"]
-      },
-      {
-        day: 3,
-        title: "Chalukyan Rock-Cut Caves of Badami, Pattadakal & Aihole",
-        activities: [
-          "Day excursion to Badami cave temples carved into red sandstone cliffs",
-          "Agastya Lake & Bhutanatha Temple cluster",
-          "Pattadakal UNESCO complex showing Dravidian & Nagara architecture fusion",
-          "Aihole Durga Temple (cradle of Indian temple architecture)"
-        ],
-        highlights: ["Badami red sandstone cave relief sculptures", "Pattadakal temple architecture"]
-      },
-      {
-        day: 4,
-        title: "Anegundi Mythological Realm & Return",
-        activities: [
-          "Visit Anegundi (Kishkindha realm) and Anjanadri Hill (Lord Hanuman birthplace)",
-          "Begin return journey towards Bengaluru",
-          "Reach Bengaluru by 10:00 PM"
-        ],
-        highlights: ["Anjanadri Hill panoramic view", "Historical Anegundi village"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "12-14-seater-tt"],
-    inclusions: [
-      "Dedicated long-distance AC vehicle for 4 days",
-      "All driver allowances & fuel charges",
-      "Inter-district transport coordination"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "ASI entrance tickets for UNESCO monuments",
-      "Guide fees & coracle ride tickets",
-      "Hotel accommodation & meals"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "1,150 km total circuit",
-    season: "October to March (Pleasant weather for heritage exploration)",
-    notes: "Monuments involve walking on rock surfaces; hat and sun protection recommended.",
-    relatedDestinations: ["hampi", "badami", "pattadakal", "aihole", "chitradurga"],
-    relatedRoutes: ["bengaluru-to-hampi"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Is driver overnight allowance included?",
-        answer: "Yes, all outstation driver night charges are covered in the package estimate."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Enquire Hampi-Badami Heritage Tour",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #5 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "gokarna-murudeshwar-coastal-4day",
-    title: "Gokarna, Murudeshwar & Karwar Coastal Express 4-Day",
-    slug: "gokarna-murudeshwar-coastal-4day",
-    category: "Coastal",
-    duration: "4 Days / 3 Nights",
-    destinationIds: ["gokarna", "murudeshwar", "karwar", "yana-kumta", "honnavar"],
-    route: "Bengaluru → Shivamogga → Honnavar → Murudeshwar → Gokarna → Yana → Bengaluru",
-    pickupAreas: ["All Bengaluru Addresses"],
-    dropAreas: ["All Bengaluru Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-6",
+    "title": "Bengaluru nearby 1-day Tour Option #6 (1 Day)",
+    "slug": "bengaluru-nearby-6",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Bengaluru to Murudeshwar & World's 2nd Tallest Shiva Statue",
-        activities: [
-          "Early morning 05:00 AM departure",
-          "Scenic drive across Western Ghats ghat sections",
-          "Reach Murudeshwar; visit Shiva Temple & 20-storey Raja Gopura with elevator view",
-          "Check in at oceanfront resort"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["123ft Shiva Statue facing Arabian Sea", "Raja Gopura tower top view"]
-      },
-      {
-        day: 2,
-        title: "Honnavar Backwater Boating & Gokarna Beach Trail",
-        activities: [
-          "Honnavar Sharavathi river backwater boat ride through mangrove forests",
-          "Drive to Gokarna town",
-          "Visit Mahabaleshwar Temple (Atmalinga shrine)",
-          "Sunset trek/walk at Om Beach and Kudle Beach"
-        ],
-        highlights: ["Mangrove backwater cruise", "Om Beach natural 'Om' shape coastline"]
-      },
-      {
-        day: 3,
-        title: "Yana Black Rock Monoliths & Mirjan Fort",
-        activities: [
-          "Excursion to Yana Caves (massive crystalline karst black rock spires)",
-          "Visit 16th-century mossy brick ramparts of Mirjan Fort",
-          "Evening relaxing at Half Moon & Paradise beaches"
-        ],
-        highlights: ["Bhairaveshwara Shikhara black rocks", "Mirjan Fort coastal green walls"]
-      },
-      {
-        day: 4,
-        title: "Jog Falls Halt & Return Journey",
-        activities: [
-          "Check out and drive towards Jog Falls (India's 2nd highest plunge waterfall)",
-          "Halt for photos & lunch",
-          "Return to Bengaluru reaching late night"
-        ],
-        highlights: ["Jog Falls Sharavathi cascade view"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "12-14-seater-tt"],
-    inclusions: [
-      "AC vehicle for 4 days coastal highway circuit",
-      "Fuel, toll assistance & experienced coastal driver",
-      "All driver stay fees"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Honnavar boat rides & temple pooja tickets",
-      "Hotel & dining charges",
-      "Tolls & parking receipts"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "1,100 km round trip",
-    season: "October to April",
-    notes: "Yana Caves involve a 1 km shaded forest walk.",
-    relatedDestinations: ["gokarna", "murudeshwar", "honnavar", "yana-kumta", "jog-falls"],
-    relatedRoutes: ["bengaluru-to-gokarna"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Is coastal route safe for family travel?",
-        answer: "Yes, we deploy experienced drivers familiar with Western Ghats ghat roads and coastal expressways."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Book Coastal Karnataka Tour",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #6 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "grand-karnataka-7day",
-    title: "Grand Karnataka Explorer (Mysuru, Coorg, Chikkamagaluru & Hampi 7-Day)",
-    slug: "grand-karnataka-7day",
-    category: "Grand 5–7 day Karnataka",
-    duration: "7 Days / 6 Nights",
-    destinationIds: ["mysuru", "madikeri", "chikkamagaluru", "belur", "hampi", "badami"],
-    route: "Bengaluru → Mysuru → Coorg → Chikkamagaluru → Belur → Hampi → Badami → Bengaluru",
-    pickupAreas: ["Bengaluru Airport (BLR) / City Hotels"],
-    dropAreas: ["Bengaluru Airport (BLR) / City Hotels"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-7",
+    "title": "Bengaluru nearby 1-day Tour Option #7 (1 Day)",
+    "slug": "bengaluru-nearby-7",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Bengaluru to Mysuru Palace & Chamundi Hill",
-        activities: [
-          "07:00 AM pickup",
-          "Visit Srirangapatna Daria Daulat, Mysuru Palace & Chamundi Hills",
-          "Overnight halt in Mysuru"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["Expressway drive", "Mysuru Palace grand tour"]
-      },
-      {
-        day: 2,
-        title: "Mysuru to Coorg via Golden Temple",
-        activities: [
-          "Visit Bylakuppe Namdroling Monastery & Dubare Elephant Camp",
-          "Check in at Madikeri resort; visit Raja's Seat sunset",
-          "Overnight in Coorg"
-        ],
-        highlights: ["Tibetan culture", "Coffee state evening"]
-      },
-      {
-        day: 3,
-        title: "Coorg Sightseeing to Chikkamagaluru",
-        activities: [
-          "Visit Abbey Falls & Talakaveri",
-          "Drive north to Chikkamagaluru",
-          "Overnight in Chikkamagaluru resort"
-        ],
-        highlights: ["Coffee country transit"]
-      },
-      {
-        day: 4,
-        title: "Mullayanagiri Summit & Belur Hoysala Temples",
-        activities: [
-          "Summit Mullayanagiri peak & Jhari Falls",
-          "Visit Chennakeshava Temple Belur",
-          "Overnight in Chikkamagaluru"
-        ],
-        highlights: ["Highest peak summit", "Hoysala stone carving"]
-      },
-      {
-        day: 5,
-        title: "Chikkamagaluru to Hampi Empire Realm",
-        activities: [
-          "Drive to Hospet/Hampi via Chitradurga Fort",
-          "Evening view of Tungabhadra River sunset",
-          "Overnight in Hampi"
-        ],
-        highlights: ["Fort of Seven Circles", "UNESCO valley view"]
-      },
-      {
-        day: 6,
-        title: "Hampi Monumental Exploration & Anegundi",
-        activities: [
-          "Full day tour of Vittala Temple Stone Chariot, Virupaksha & Lotus Mahal",
-          "Cross Tungabhadra to Anegundi Kishkindha realm",
-          "Overnight in Hampi"
-        ],
-        highlights: ["Vittala Stone Chariot", "Royal Enclosure"]
-      },
-      {
-        day: 7,
-        title: "Badami Cave Temples & Grand Return to Bengaluru",
-        activities: [
-          "Morning excursion to Badami Rock-Cut Caves",
-          "Begin return highway trip to Bengaluru",
-          "Drop off at Bengaluru airport/hotel by 11:00 PM"
-        ],
-        highlights: ["Badami red sandstone caves", "Grand Karnataka circuit completion"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt", "12-14-seater-tt"],
-    inclusions: [
-      "Dedicated premium AC vehicle for complete 7-day circuit",
-      "Unlimited interstate / inter-district miles",
-      "Driver night allowance, fuel & highway toll handling"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Hotels, resorts & meal packages",
-      "Monument tickets & local guide fees",
-      "Personal shopping & activities"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "1,850 km complete grand tour",
-    season: "October to March",
-    notes: "Ideal for NRI visitors, family vacations, and first-time Karnataka explorers.",
-    relatedDestinations: ["mysuru", "madikeri", "chikkamagaluru", "hampi", "badami"],
-    relatedRoutes: ["bengaluru-to-mysuru", "bengaluru-to-coorg", "bengaluru-to-hampi"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Can we start directly from Bangalore Airport?",
-        answer: "Yes! Our driver will receive your group at BLR Airport arrival terminal with a name placard."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Enquire Grand Karnataka 7-Day Package",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #7 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   },
   {
-    id: "bandipur-kabini-wildlife-3day",
-    title: "Bandipur & Kabini Tiger Reserve Safari 3-Day Trail",
-    slug: "bandipur-kabini-wildlife-3day",
-    category: "Wildlife",
-    duration: "3 Days / 2 Nights",
-    destinationIds: ["bandipur", "kabini", "nagarhole", "br-hills"],
-    route: "Bengaluru → Mysuru → Bandipur National Park → Kabini Backwaters → Bengaluru",
-    pickupAreas: ["All Bengaluru Addresses"],
-    dropAreas: ["All Bengaluru Locations"],
-    dayWiseItinerary: [
+    "id": "bengaluru-nearby-8",
+    "title": "Bengaluru nearby 1-day Tour Option #8 (1 Day)",
+    "slug": "bengaluru-nearby-8",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
       {
-        day: 1,
-        title: "Drive to Bandipur & Afternoon Jungle Safari",
-        activities: [
-          "06:00 AM pickup from Bengaluru",
-          "Drive past Mysuru to Bandipur National Park tiger reserve forest",
-          "Check in at jungle lodge",
-          "Afternoon Forest Department Jeep / Bus Safari for tiger, elephant & leopard tracking"
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
         ],
-        highlights: ["Nilgiri Biosphere jungle drive", "Bandipur tiger reserve safari"]
-      },
-      {
-        day: 2,
-        title: "Kabini River Boat Safari & Nagarhole Forest Realm",
-        activities: [
-          "Early morning jungle tracking",
-          "Drive to Kabini river backwaters (Nagarhole southern corridor)",
-          "Evening Boat Safari along Kabini reservoir for wild elephant herds & waterfowl",
-          "Night campfire at resort"
-        ],
-        highlights: ["Kabini river elephant congregation", "Leopard & black panther territory"]
-      },
-      {
-        day: 3,
-        title: "Morning Safari & Return Drive",
-        activities: [
-          "Optional early morning birding walk",
-          "Check out and drive back to Bengaluru via Mysuru Expressway",
-          "Reach Bengaluru by 08:00 PM"
-        ],
-        highlights: ["Kabini backwaters sunrise view"]
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
       }
     ],
-    vehicleIds: ["innova-crysta", "force-urbania-luxury", "7-seater-tt"],
-    inclusions: [
-      "AC vehicle for 3-day wildlife circuit",
-      "Fuel costs, driver stay & night allowance",
-      "Doorstep pickup & drop"
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
     ],
-    exclusions: [
-      "Forest Department Safari slot tickets (Jungle Lodges / Forest Dept booking)",
-      "Resort accommodation & food",
-      "Toll receipts"
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
     ],
-    approximateDistance: "580 km round trip",
-    season: "October to May (Best wildlife sightings)",
-    notes: "Safari slots are strictly controlled by Karnataka Forest Department and require early online booking.",
-    relatedDestinations: ["bandipur", "kabini", "nagarhole", "br-hills"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
       {
-        question: "Do you book the jungle safari slots?",
-        answer: "We provide complete cab transport to the safari gate. We recommend booking official Jungle Lodges or Forest Dept tickets online in advance."
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
       }
     ],
-    bookingCTA: "Book Wildlife Safari Cab Express",
-    pricingStatus: "pending",
-    startingFareNote: "Owner-approved fare available on enquiry."
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #8 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "bengaluru-nearby-9",
+    "title": "Bengaluru nearby 1-day Tour Option #9 (1 Day)",
+    "slug": "bengaluru-nearby-9",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #9 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "bengaluru-nearby-10",
+    "title": "Bengaluru nearby 1-day Tour Option #10 (1 Day)",
+    "slug": "bengaluru-nearby-10",
+    "category": "Bengaluru nearby 1-day",
+    "duration": "1 Day",
+    "destinationIds": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "route": "Bengaluru → nandi-hills → ramanagara → savandurga → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "150–250 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "ramanagara",
+      "savandurga",
+      "bannerghatta",
+      "kanakapura-sangama-mekedatu",
+      "bheemeshwari",
+      "shivagange",
+      "devarayanadurga",
+      "madhugiri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Bengaluru nearby 1-day Tour Option #10 (1 Day)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-1",
+    "title": "Heritage Tour Option #1 (2 Days / 1 Night)",
+    "slug": "heritage-trail-1",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #1 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-2",
+    "title": "Heritage Tour Option #2 (2 Days / 1 Night)",
+    "slug": "heritage-trail-2",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #2 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-3",
+    "title": "Heritage Tour Option #3 (2 Days / 1 Night)",
+    "slug": "heritage-trail-3",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #3 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-4",
+    "title": "Heritage Tour Option #4 (2 Days / 1 Night)",
+    "slug": "heritage-trail-4",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #4 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-5",
+    "title": "Heritage Tour Option #5 (2 Days / 1 Night)",
+    "slug": "heritage-trail-5",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #5 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-6",
+    "title": "Heritage Tour Option #6 (2 Days / 1 Night)",
+    "slug": "heritage-trail-6",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #6 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-7",
+    "title": "Heritage Tour Option #7 (2 Days / 1 Night)",
+    "slug": "heritage-trail-7",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #7 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-8",
+    "title": "Heritage Tour Option #8 (2 Days / 1 Night)",
+    "slug": "heritage-trail-8",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #8 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-9",
+    "title": "Heritage Tour Option #9 (2 Days / 1 Night)",
+    "slug": "heritage-trail-9",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #9 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-10",
+    "title": "Heritage Tour Option #10 (2 Days / 1 Night)",
+    "slug": "heritage-trail-10",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #10 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-11",
+    "title": "Heritage Tour Option #11 (2 Days / 1 Night)",
+    "slug": "heritage-trail-11",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #11 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-12",
+    "title": "Heritage Tour Option #12 (2 Days / 1 Night)",
+    "slug": "heritage-trail-12",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #12 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-13",
+    "title": "Heritage Tour Option #13 (2 Days / 1 Night)",
+    "slug": "heritage-trail-13",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #13 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-14",
+    "title": "Heritage Tour Option #14 (2 Days / 1 Night)",
+    "slug": "heritage-trail-14",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #14 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "heritage-trail-15",
+    "title": "Heritage Tour Option #15 (2 Days / 1 Night)",
+    "slug": "heritage-trail-15",
+    "category": "Heritage",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "route": "Bengaluru → mysuru → srirangapatna → belur → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SRIRANGAPATNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards srirangapatna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "srirangapatna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "450–950 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "srirangapatna",
+      "belur",
+      "halebidu",
+      "shravanabelagola",
+      "somanathapura",
+      "chitradurga",
+      "bidar",
+      "vijayapura",
+      "melkote"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Heritage Tour Option #15 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-1",
+    "title": "Waterfall/Nature Tour Option #1 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-1",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #1 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-2",
+    "title": "Waterfall/Nature Tour Option #2 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-2",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #2 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-3",
+    "title": "Waterfall/Nature Tour Option #3 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-3",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #3 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-4",
+    "title": "Waterfall/Nature Tour Option #4 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-4",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #4 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-5",
+    "title": "Waterfall/Nature Tour Option #5 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-5",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #5 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-6",
+    "title": "Waterfall/Nature Tour Option #6 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-6",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #6 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-7",
+    "title": "Waterfall/Nature Tour Option #7 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-7",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #7 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-8",
+    "title": "Waterfall/Nature Tour Option #8 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-8",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #8 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-9",
+    "title": "Waterfall/Nature Tour Option #9 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-9",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #9 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-10",
+    "title": "Waterfall/Nature Tour Option #10 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-10",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #10 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-11",
+    "title": "Waterfall/Nature Tour Option #11 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-11",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #11 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-12",
+    "title": "Waterfall/Nature Tour Option #12 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-12",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #12 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-13",
+    "title": "Waterfall/Nature Tour Option #13 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-13",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #13 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-14",
+    "title": "Waterfall/Nature Tour Option #14 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-14",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #14 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "waterfall-nature-15",
+    "title": "Waterfall/Nature Tour Option #15 (2 Days / 1 Night)",
+    "slug": "waterfall-nature-15",
+    "category": "Waterfall/Nature",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "route": "Bengaluru → jog-falls → shivanasamudra → agumbe → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: JOG-FALLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards jog-falls",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "jog-falls sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SHIVANASAMUDRA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards shivanasamudra",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "shivanasamudra sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–800 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "jog-falls",
+      "shivanasamudra",
+      "agumbe",
+      "magod-falls",
+      "gokak-falls",
+      "sathodi-falls",
+      "honnemaradu"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Waterfall/Nature Tour Option #15 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-1",
+    "title": "Mysuru Tour Option #1 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-1",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #1 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-2",
+    "title": "Mysuru Tour Option #2 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-2",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #2 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-3",
+    "title": "Mysuru Tour Option #3 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-3",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #3 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-4",
+    "title": "Mysuru Tour Option #4 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-4",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #4 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-5",
+    "title": "Mysuru Tour Option #5 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-5",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #5 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-6",
+    "title": "Mysuru Tour Option #6 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-6",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #6 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-7",
+    "title": "Mysuru Tour Option #7 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-7",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #7 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-8",
+    "title": "Mysuru Tour Option #8 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-8",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #8 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-9",
+    "title": "Mysuru Tour Option #9 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-9",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #9 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "mysuru-circuit-10",
+    "title": "Mysuru Tour Option #10 (2 Days / 1 Night)",
+    "slug": "mysuru-circuit-10",
+    "category": "Mysuru",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → chamundi-hills → srirangapatna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHAMUNDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chamundi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chamundi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "350–500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "chamundi-hills",
+      "srirangapatna",
+      "ranganathittu",
+      "somanathapura",
+      "talakadu",
+      "nanjangud",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Mysuru Tour Option #10 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-1",
+    "title": "Coorg Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-1",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-2",
+    "title": "Coorg Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-2",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-3",
+    "title": "Coorg Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-3",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-4",
+    "title": "Coorg Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-4",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-5",
+    "title": "Coorg Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-5",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-6",
+    "title": "Coorg Tour Option #6 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-6",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #6 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-7",
+    "title": "Coorg Tour Option #7 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-7",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #7 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-8",
+    "title": "Coorg Tour Option #8 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-8",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #8 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-9",
+    "title": "Coorg Tour Option #9 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-9",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #9 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coorg-misty-10",
+    "title": "Coorg Tour Option #10 (3 Days / 2 Nights)",
+    "slug": "coorg-misty-10",
+    "category": "Coorg",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "route": "Bengaluru → madikeri → kushalnagar-dubare → bhagamandala-talakaveri → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KUSHALNAGAR-DUBARE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kushalnagar-dubare",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kushalnagar-dubare sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: BHAGAMANDALA-TALAKAVERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bhagamandala-talakaveri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bhagamandala-talakaveri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "kushalnagar-dubare",
+      "bhagamandala-talakaveri",
+      "virajpet",
+      "kakkabe-tadiandamol"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coorg Tour Option #10 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-1",
+    "title": "Chikkamagaluru Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-1",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-2",
+    "title": "Chikkamagaluru Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-2",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-3",
+    "title": "Chikkamagaluru Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-3",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-4",
+    "title": "Chikkamagaluru Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-4",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-5",
+    "title": "Chikkamagaluru Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-5",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-6",
+    "title": "Chikkamagaluru Tour Option #6 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-6",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #6 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-7",
+    "title": "Chikkamagaluru Tour Option #7 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-7",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #7 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-8",
+    "title": "Chikkamagaluru Tour Option #8 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-8",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #8 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-9",
+    "title": "Chikkamagaluru Tour Option #9 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-9",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #9 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "chikkamagaluru-coffee-10",
+    "title": "Chikkamagaluru Tour Option #10 (3 Days / 2 Nights)",
+    "slug": "chikkamagaluru-coffee-10",
+    "category": "Chikkamagaluru",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "route": "Bengaluru → chikkamagaluru → mullayanagiri-baba-budangiri → kemmannugundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MULLAYANAGIRI-BABA-BUDANGIRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mullayanagiri-baba-budangiri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mullayanagiri-baba-budangiri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KEMMANNUGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kemmannugundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kemmannugundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "720 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "chikkamagaluru",
+      "mullayanagiri-baba-budangiri",
+      "kemmannugundi",
+      "kudremukh",
+      "horanadu",
+      "bhadra-wildlife-sanctuary"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Chikkamagaluru Tour Option #10 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-1",
+    "title": "Coastal Tour Option #1 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-1",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #1 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-2",
+    "title": "Coastal Tour Option #2 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-2",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #2 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-3",
+    "title": "Coastal Tour Option #3 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-3",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #3 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-4",
+    "title": "Coastal Tour Option #4 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-4",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #4 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-5",
+    "title": "Coastal Tour Option #5 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-5",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #5 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-6",
+    "title": "Coastal Tour Option #6 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-6",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #6 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-7",
+    "title": "Coastal Tour Option #7 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-7",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #7 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-8",
+    "title": "Coastal Tour Option #8 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-8",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #8 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-9",
+    "title": "Coastal Tour Option #9 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-9",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #9 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-10",
+    "title": "Coastal Tour Option #10 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-10",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #10 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-11",
+    "title": "Coastal Tour Option #11 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-11",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #11 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-12",
+    "title": "Coastal Tour Option #12 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-12",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #12 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-13",
+    "title": "Coastal Tour Option #13 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-13",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #13 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-14",
+    "title": "Coastal Tour Option #14 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-14",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #14 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "coastal-karnataka-15",
+    "title": "Coastal Tour Option #15 (4 Days / 3 Nights)",
+    "slug": "coastal-karnataka-15",
+    "category": "Coastal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "route": "Bengaluru → udupi → malpe-st-marys-island → manipal → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MALPE-ST-MARYS-ISLAND Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards malpe-st-marys-island",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "malpe-st-marys-island sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: MANIPAL Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards manipal",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "manipal sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: KAUP-PADUBIDRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kaup-padubidri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kaup-padubidri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,100 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "malpe-st-marys-island",
+      "manipal",
+      "kaup-padubidri",
+      "kollur",
+      "kundapura-maravanthe",
+      "mangaluru",
+      "gokarna",
+      "murudeshwar",
+      "karwar",
+      "honnavar"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Coastal Tour Option #15 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-1",
+    "title": "Western Ghats Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "western-ghats-1",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-2",
+    "title": "Western Ghats Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "western-ghats-2",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-3",
+    "title": "Western Ghats Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "western-ghats-3",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-4",
+    "title": "Western Ghats Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "western-ghats-4",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-5",
+    "title": "Western Ghats Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "western-ghats-5",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-6",
+    "title": "Western Ghats Tour Option #6 (3 Days / 2 Nights)",
+    "slug": "western-ghats-6",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #6 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-7",
+    "title": "Western Ghats Tour Option #7 (3 Days / 2 Nights)",
+    "slug": "western-ghats-7",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #7 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-8",
+    "title": "Western Ghats Tour Option #8 (3 Days / 2 Nights)",
+    "slug": "western-ghats-8",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #8 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-9",
+    "title": "Western Ghats Tour Option #9 (3 Days / 2 Nights)",
+    "slug": "western-ghats-9",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #9 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "western-ghats-10",
+    "title": "Western Ghats Tour Option #10 (3 Days / 2 Nights)",
+    "slug": "western-ghats-10",
+    "category": "Western Ghats",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "route": "Bengaluru → sakleshpur → chikkamagaluru → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: SAKLESHPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards sakleshpur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "sakleshpur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUDREMUKH Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kudremukh",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kudremukh sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "750–900 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "sakleshpur",
+      "chikkamagaluru",
+      "kudremukh",
+      "agumbe",
+      "kodachadri",
+      "thirthahalli-kavaledurga",
+      "sringeri"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Western Ghats Tour Option #10 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-1",
+    "title": "Hampi/Badami/Pattadakal Tour Option #1 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-1",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #1 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-2",
+    "title": "Hampi/Badami/Pattadakal Tour Option #2 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-2",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #2 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-3",
+    "title": "Hampi/Badami/Pattadakal Tour Option #3 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-3",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #3 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-4",
+    "title": "Hampi/Badami/Pattadakal Tour Option #4 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-4",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #4 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-5",
+    "title": "Hampi/Badami/Pattadakal Tour Option #5 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-5",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #5 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-6",
+    "title": "Hampi/Badami/Pattadakal Tour Option #6 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-6",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #6 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-7",
+    "title": "Hampi/Badami/Pattadakal Tour Option #7 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-7",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #7 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-8",
+    "title": "Hampi/Badami/Pattadakal Tour Option #8 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-8",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #8 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-9",
+    "title": "Hampi/Badami/Pattadakal Tour Option #9 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-9",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #9 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "hampi-badami-empire-10",
+    "title": "Hampi/Badami/Pattadakal Tour Option #10 (4 Days / 3 Nights)",
+    "slug": "hampi-badami-empire-10",
+    "category": "Hampi/Badami/Pattadakal",
+    "duration": "4 Days / 3 Nights",
+    "destinationIds": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "route": "Bengaluru → hampi → hosapete → anegundi → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: HOSAPETE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hosapete",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hosapete sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: ANEGUNDI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards anegundi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "anegundi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,150 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "hampi",
+      "hosapete",
+      "anegundi",
+      "badami",
+      "pattadakal",
+      "aihole",
+      "mahakuta-banashankari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Hampi/Badami/Pattadakal Tour Option #10 (4 Days / 3 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "grand-karnataka-1",
+    "title": "Grand 5–7 day Karnataka Tour Option #1 (7 Days / 6 Nights)",
+    "slug": "grand-karnataka-1",
+    "category": "Grand 5–7 day Karnataka",
+    "duration": "7 Days / 6 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BELUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards belur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "belur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Day 5: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Day 6: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Day 7: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,850 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Grand 5–7 day Karnataka Tour Option #1 (7 Days / 6 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "grand-karnataka-2",
+    "title": "Grand 5–7 day Karnataka Tour Option #2 (7 Days / 6 Nights)",
+    "slug": "grand-karnataka-2",
+    "category": "Grand 5–7 day Karnataka",
+    "duration": "7 Days / 6 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BELUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards belur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "belur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Day 5: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Day 6: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Day 7: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,850 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Grand 5–7 day Karnataka Tour Option #2 (7 Days / 6 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "grand-karnataka-3",
+    "title": "Grand 5–7 day Karnataka Tour Option #3 (7 Days / 6 Nights)",
+    "slug": "grand-karnataka-3",
+    "category": "Grand 5–7 day Karnataka",
+    "duration": "7 Days / 6 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BELUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards belur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "belur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Day 5: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Day 6: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Day 7: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,850 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Grand 5–7 day Karnataka Tour Option #3 (7 Days / 6 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "grand-karnataka-4",
+    "title": "Grand 5–7 day Karnataka Tour Option #4 (7 Days / 6 Nights)",
+    "slug": "grand-karnataka-4",
+    "category": "Grand 5–7 day Karnataka",
+    "duration": "7 Days / 6 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BELUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards belur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "belur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Day 5: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Day 6: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Day 7: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,850 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Grand 5–7 day Karnataka Tour Option #4 (7 Days / 6 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "grand-karnataka-5",
+    "title": "Grand 5–7 day Karnataka Tour Option #5 (7 Days / 6 Nights)",
+    "slug": "grand-karnataka-5",
+    "category": "Grand 5–7 day Karnataka",
+    "duration": "7 Days / 6 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Day 4: BELUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards belur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "belur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Day 5: HAMPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards hampi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "hampi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Day 6: BADAMI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards badami",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "badami sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Day 7: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "1,850 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "belur",
+      "hampi",
+      "badami",
+      "udupi"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Grand 5–7 day Karnataka Tour Option #5 (7 Days / 6 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "wildlife-safari-1",
+    "title": "Wildlife Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "wildlife-safari-1",
+    "category": "Wildlife",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "route": "Bengaluru → bandipur → nagarhole → kabini → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: BANDIPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bandipur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bandipur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: NAGARHOLE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nagarhole",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nagarhole sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KABINI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kabini",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kabini sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "580 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Wildlife Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "wildlife-safari-2",
+    "title": "Wildlife Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "wildlife-safari-2",
+    "category": "Wildlife",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "route": "Bengaluru → bandipur → nagarhole → kabini → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: BANDIPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bandipur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bandipur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: NAGARHOLE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nagarhole",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nagarhole sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KABINI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kabini",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kabini sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "580 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Wildlife Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "wildlife-safari-3",
+    "title": "Wildlife Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "wildlife-safari-3",
+    "category": "Wildlife",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "route": "Bengaluru → bandipur → nagarhole → kabini → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: BANDIPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bandipur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bandipur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: NAGARHOLE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nagarhole",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nagarhole sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KABINI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kabini",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kabini sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "580 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Wildlife Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "wildlife-safari-4",
+    "title": "Wildlife Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "wildlife-safari-4",
+    "category": "Wildlife",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "route": "Bengaluru → bandipur → nagarhole → kabini → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: BANDIPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bandipur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bandipur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: NAGARHOLE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nagarhole",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nagarhole sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KABINI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kabini",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kabini sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "580 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Wildlife Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "wildlife-safari-5",
+    "title": "Wildlife Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "wildlife-safari-5",
+    "category": "Wildlife",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "route": "Bengaluru → bandipur → nagarhole → kabini → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: BANDIPUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards bandipur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "bandipur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: NAGARHOLE Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nagarhole",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nagarhole sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KABINI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kabini",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kabini sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "580 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "bandipur",
+      "nagarhole",
+      "kabini",
+      "br-hills",
+      "bhadra-wildlife-sanctuary",
+      "dandeli"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Wildlife Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-1",
+    "title": "Pilgrimage Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-1",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-2",
+    "title": "Pilgrimage Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-2",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-3",
+    "title": "Pilgrimage Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-3",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-4",
+    "title": "Pilgrimage Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-4",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-5",
+    "title": "Pilgrimage Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-5",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-6",
+    "title": "Pilgrimage Tour Option #6 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-6",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #6 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-7",
+    "title": "Pilgrimage Tour Option #7 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-7",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #7 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-8",
+    "title": "Pilgrimage Tour Option #8 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-8",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #8 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-9",
+    "title": "Pilgrimage Tour Option #9 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-9",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #9 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "sacred-pilgrimage-10",
+    "title": "Pilgrimage Tour Option #10 (3 Days / 2 Nights)",
+    "slug": "sacred-pilgrimage-10",
+    "category": "Pilgrimage",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "route": "Bengaluru → udupi → dharmasthala-venur → kukke-subramanya → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: UDUPI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards udupi",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "udupi sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: DHARMASTHALA-VENUR Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dharmasthala-venur",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dharmasthala-venur sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: KUKKE-SUBRAMANYA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kukke-subramanya",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kukke-subramanya sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "700–1000 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "udupi",
+      "dharmasthala-venur",
+      "kukke-subramanya",
+      "kollur",
+      "sringeri",
+      "horanadu",
+      "nanjangud",
+      "melkote",
+      "male-mahadeshwara-hills"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Pilgrimage Tour Option #10 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "family-holiday-1",
+    "title": "Family Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "family-holiday-1",
+    "category": "Family",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Family Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "family-holiday-2",
+    "title": "Family Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "family-holiday-2",
+    "category": "Family",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Family Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "family-holiday-3",
+    "title": "Family Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "family-holiday-3",
+    "category": "Family",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Family Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "family-holiday-4",
+    "title": "Family Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "family-holiday-4",
+    "category": "Family",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Family Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "family-holiday-5",
+    "title": "Family Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "family-holiday-5",
+    "category": "Family",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "route": "Bengaluru → mysuru → madikeri → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MYSURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards mysuru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "mysuru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "mysuru",
+      "madikeri",
+      "chikkamagaluru",
+      "udupi",
+      "krs-brindavan-gardens"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Family Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "couple-retreat-1",
+    "title": "Couple Tour Option #1 (3 Days / 2 Nights)",
+    "slug": "couple-retreat-1",
+    "category": "Couple",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "route": "Bengaluru → madikeri → chikkamagaluru → gokarna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: GOKARNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards gokarna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "gokarna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Couple Tour Option #1 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "couple-retreat-2",
+    "title": "Couple Tour Option #2 (3 Days / 2 Nights)",
+    "slug": "couple-retreat-2",
+    "category": "Couple",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "route": "Bengaluru → madikeri → chikkamagaluru → gokarna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: GOKARNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards gokarna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "gokarna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Couple Tour Option #2 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "couple-retreat-3",
+    "title": "Couple Tour Option #3 (3 Days / 2 Nights)",
+    "slug": "couple-retreat-3",
+    "category": "Couple",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "route": "Bengaluru → madikeri → chikkamagaluru → gokarna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: GOKARNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards gokarna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "gokarna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Couple Tour Option #3 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "couple-retreat-4",
+    "title": "Couple Tour Option #4 (3 Days / 2 Nights)",
+    "slug": "couple-retreat-4",
+    "category": "Couple",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "route": "Bengaluru → madikeri → chikkamagaluru → gokarna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: GOKARNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards gokarna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "gokarna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Couple Tour Option #4 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "couple-retreat-5",
+    "title": "Couple Tour Option #5 (3 Days / 2 Nights)",
+    "slug": "couple-retreat-5",
+    "category": "Couple",
+    "duration": "3 Days / 2 Nights",
+    "destinationIds": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "route": "Bengaluru → madikeri → chikkamagaluru → gokarna → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: MADIKERI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards madikeri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "madikeri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: CHIKKAMAGALURU Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards chikkamagaluru",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "chikkamagaluru sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Day 3: GOKARNA Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards gokarna",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "gokarna sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "650 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "madikeri",
+      "chikkamagaluru",
+      "gokarna",
+      "nandi-hills",
+      "kabini"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Couple Tour Option #5 (3 Days / 2 Nights)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "adventure-trail-1",
+    "title": "Adventure Tour Option #1 (2 Days / 1 Night)",
+    "slug": "adventure-trail-1",
+    "category": "Adventure",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "route": "Bengaluru → dandeli → kodachadri → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: DANDELI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dandeli",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dandeli sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KODACHADRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kodachadri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kodachadri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Adventure Tour Option #1 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "adventure-trail-2",
+    "title": "Adventure Tour Option #2 (2 Days / 1 Night)",
+    "slug": "adventure-trail-2",
+    "category": "Adventure",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "route": "Bengaluru → dandeli → kodachadri → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: DANDELI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dandeli",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dandeli sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KODACHADRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kodachadri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kodachadri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Adventure Tour Option #2 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "adventure-trail-3",
+    "title": "Adventure Tour Option #3 (2 Days / 1 Night)",
+    "slug": "adventure-trail-3",
+    "category": "Adventure",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "route": "Bengaluru → dandeli → kodachadri → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: DANDELI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dandeli",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dandeli sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KODACHADRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kodachadri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kodachadri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Adventure Tour Option #3 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "adventure-trail-4",
+    "title": "Adventure Tour Option #4 (2 Days / 1 Night)",
+    "slug": "adventure-trail-4",
+    "category": "Adventure",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "route": "Bengaluru → dandeli → kodachadri → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: DANDELI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dandeli",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dandeli sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KODACHADRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kodachadri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kodachadri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Adventure Tour Option #4 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "adventure-trail-5",
+    "title": "Adventure Tour Option #5 (2 Days / 1 Night)",
+    "slug": "adventure-trail-5",
+    "category": "Adventure",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "route": "Bengaluru → dandeli → kodachadri → kudremukh → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: DANDELI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards dandeli",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "dandeli sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: KODACHADRI Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards kodachadri",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "kodachadri sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "500 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "dandeli",
+      "kodachadri",
+      "kudremukh",
+      "savandurga",
+      "ramanagara"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Adventure Tour Option #5 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "corporate-group-outing-1",
+    "title": "Corporate/Group Tour Option #1 (2 Days / 1 Night)",
+    "slug": "corporate-group-outing-1",
+    "category": "Corporate/Group",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "route": "Bengaluru → nandi-hills → coorg → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: COORG Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards coorg",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "coorg sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "300–600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Corporate/Group Tour Option #1 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "corporate-group-outing-2",
+    "title": "Corporate/Group Tour Option #2 (2 Days / 1 Night)",
+    "slug": "corporate-group-outing-2",
+    "category": "Corporate/Group",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "route": "Bengaluru → nandi-hills → coorg → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: COORG Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards coorg",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "coorg sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "300–600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Corporate/Group Tour Option #2 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "corporate-group-outing-3",
+    "title": "Corporate/Group Tour Option #3 (2 Days / 1 Night)",
+    "slug": "corporate-group-outing-3",
+    "category": "Corporate/Group",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "route": "Bengaluru → nandi-hills → coorg → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: COORG Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards coorg",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "coorg sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "300–600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Corporate/Group Tour Option #3 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "corporate-group-outing-4",
+    "title": "Corporate/Group Tour Option #4 (2 Days / 1 Night)",
+    "slug": "corporate-group-outing-4",
+    "category": "Corporate/Group",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "route": "Bengaluru → nandi-hills → coorg → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: COORG Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards coorg",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "coorg sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "300–600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Corporate/Group Tour Option #4 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
+  },
+  {
+    "id": "corporate-group-outing-5",
+    "title": "Corporate/Group Tour Option #5 (2 Days / 1 Night)",
+    "slug": "corporate-group-outing-5",
+    "category": "Corporate/Group",
+    "duration": "2 Days / 1 Night",
+    "destinationIds": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "route": "Bengaluru → nandi-hills → coorg → chikkamagaluru → Bengaluru",
+    "pickupAreas": [
+      "Airport (BLR)",
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "Electronic City",
+      "All Bengaluru Addresses"
+    ],
+    "dropAreas": [
+      "All Bengaluru Locations"
+    ],
+    "dayWiseItinerary": [
+      {
+        "day": 1,
+        "title": "Day 1: NANDI-HILLS Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards nandi-hills",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "nandi-hills sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Day 2: COORG Exploration & Sightseeing",
+        "activities": [
+          "Morning pickup & departure towards coorg",
+          "Explore prime local attractions and scenic viewpoints",
+          "Authentic regional lunch break & photography stop",
+          "Evening sunset view & relaxation at hotel/resort"
+        ],
+        "highlights": [
+          "coorg sightseeing",
+          "Private chauffeur comfort",
+          "Scenic highway cruising"
+        ]
+      }
+    ],
+    "vehicleIds": [
+      "innova-crysta",
+      "force-urbania-luxury",
+      "7-seater-tt",
+      "9-seater-tt",
+      "12-14-seater-tt"
+    ],
+    "inclusions": [
+      "Dedicated AC Chauffeur Vehicle",
+      "Fuel charges & experienced highway driver",
+      "Outstation driver night allowance",
+      "Doorstep pickup & drop in Bengaluru"
+    ],
+    "exclusions": [
+      "Entry tickets, permits & parking fees",
+      "Meals, beverages & personal expenses",
+      "Toll charges (as per actual FASTag)"
+    ],
+    "approximateDistance": "300–600 km round trip",
+    "season": "September to May",
+    "notes": "Driver allowance included. Tolls & parking extra at actuals.",
+    "relatedDestinations": [
+      "nandi-hills",
+      "coorg",
+      "chikkamagaluru",
+      "dandeli",
+      "bheemeshwari"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "Is private cab included for the entire tour?",
+        "answer": "Yes, dedicated chauffeur vehicle remains with your group throughout the itinerary."
+      }
+    ],
+    "bookingCTA": "Enquire Corporate/Group Tour Option #5 (2 Days / 1 Night)",
+    "pricingStatus": "pending",
+    "startingFareNote": "Owner-approved fare available on enquiry."
   }
 ];

@@ -3,9 +3,9 @@ export interface Destination {
   name: string;
   slug: string;
   district: string;
-  region: "Central Karnataka" | "Coastal Karnataka" | "Malnad & Western Ghats" | "Southern Karnataka" | "North Karnataka" | "Interstate Boundary";
+  region: string;
   categories: string[];
-  approximateDistanceFromBengaluru: number; // in km
+  approximateDistanceFromBengaluru: string;
   approximateDriveTime: string;
   bestSeason: string;
   suggestedDuration: string;
@@ -21,1625 +21,7412 @@ export interface Destination {
   safetyNotes: string;
   oneDayItinerary: string;
   twoDayItinerary: string;
-  relatedDestinations: string[]; // slugs or IDs
-  relatedPackages: string[]; // package slugs
-  relatedRoutes: string[]; // route slugs
-  faqs: { q: string; a: string }[];
+  relatedDestinations: string[];
+  relatedPackages: string[];
+  relatedRoutes: string[];
+  faqs: { question: string; answer: string }[];
+  heroImage?: string;
   lastVerified: string;
   status: "verified" | "approximate";
 }
 
 export const DESTINATIONS: Destination[] = [
   {
-    id: "bengaluru",
-    name: "Bengaluru (Bangalore)",
-    slug: "bengaluru",
-    district: "Bengaluru Urban",
-    region: "Southern Karnataka",
-    categories: ["Urban", "Heritage", "Parks & Gardens", "Family"],
-    approximateDistanceFromBengaluru: 0,
-    approximateDriveTime: "0 hrs (City Center)",
-    bestSeason: "Year-Round (October to March ideal)",
-    suggestedDuration: "1–2 Days",
-    overview: "Known as the Garden City and Silicon Valley of India, Bengaluru offers a vibrant mix of royal heritage palaces, historical botanical gardens, tech hubs, and a thriving culinary scene.",
-    historyAndCulture: "Founded in 1537 by Kempe Gowda I, Bengaluru evolved from a mud fort kingdom under Hyder Ali and Tipu Sultan into a major British cantonment and modern global technology hub.",
-    majorAttractions: [
-      "Bengaluru Palace",
-      "Lalbagh Botanical Garden",
-      "Cubbon Park",
-      "Tipu Sultan's Summer Palace",
-      "Vidhana Soudha & Attara Kacheri"
+    "id": "bengaluru",
+    "name": "Bengaluru (Bangalore)",
+    "slug": "bengaluru",
+    "district": "Bengaluru Urban",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Urban",
+      "Heritage",
+      "Nature",
+      "Family",
+      "Weekend"
     ],
-    nearbyAttractions: ["Nandi Hills", "Bannerghatta National Park", "Ramanagara", "Shivagange"],
-    bengaluruRoute: "Inner & Outer Ring Roads, MG Road / Vidhana Soudha central corridor",
-    thingsToDo: ["Heritage palace walk", "Botanical photography at Lalbagh", "Street food crawl at VV Puram", "Shopping at Commercial Street"],
-    localFood: ["MTR Masala Dosa", "Filter Coffee", "Benne Dosa", "Bisi Bele Bath"],
-    entryInformation: "Lalbagh entry ₹30, Palace entry ₹240 for domestic visitors. Camera charges apply.",
-    permitInformation: "No special permits required for city sightseeing.",
-    safetyNotes: "Expect peak traffic between 8:30–10:30 AM and 5:30–8:30 PM. Keep umbrella during monsoon.",
-    oneDayItinerary: "Morning visit to Lalbagh Garden & MTR breakfast → Midday exploration of Bengaluru Palace & Vidhana Soudha → Evening stroll in Cubbon Park & dinner at MG Road.",
-    twoDayItinerary: "Day 1: Bengaluru Palace, Lalbagh, Cubbon Park & MG Road shopping. Day 2: Tipu Sultan Palace, Bull Temple, ISKCON Temple & VV Puram Food Street.",
-    relatedDestinations: ["nandi-hills", "ramanagara", "bannerghatta", "savandurga"],
-    relatedPackages: ["bengaluru-city-heritage-day-tour", "bengaluru-to-nandi-hills-sunrise-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru", "bengaluru-to-coorg"],
-    faqs: [
-      { q: "What is the best time to visit Bengaluru?", a: "October to February offers pleasant cool weather ideal for sightseeing." },
-      { q: "Can Coffee Cabs provide full-day Bangalore sightseeing cabs?", a: "Yes, we offer 8 hrs / 80 km and 12 hrs local sightseeing packages with Innova Crysta and Tempo Travellers." }
+    "approximateDistanceFromBengaluru": "Approx. 0 km",
+    "approximateDriveTime": "0 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bengaluru (Bangalore) is a premier destination located in the Bengaluru Urban district within the Greater Bengaluru of Karnataka. Situated Approx. 0 km from Bengaluru (0 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bengaluru (Bangalore) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bengaluru (Bangalore) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bengaluru (Bangalore)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bengaluru Urban via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bengaluru (Bangalore)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bengaluru (Bangalore) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bengaluru (Bangalore), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bengaluru (Bangalore) from Bengaluru?",
+        "answer": "Bengaluru (Bangalore) is Approx. 0 km from Bengaluru, taking 0 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bengaluru (Bangalore)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "nandi-hills",
-    name: "Nandi Hills (Nandidurga)",
-    slug: "nandi-hills",
-    district: "Chikkaballapur",
-    region: "Southern Karnataka",
-    categories: ["Hill Station", "Sunrise", "Heritage", "Nature"],
-    approximateDistanceFromBengaluru: 60,
-    approximateDriveTime: "1.5 hrs",
-    bestSeason: "September to February (Early morning 5:30 AM for sunrise)",
-    suggestedDuration: "Half Day / 1 Day",
-    overview: "An ancient hill fortress renowned for spectacular sunrise views above mist clouds, cool mountain breeze, and Tipu Sultan's summer retreat ruins.",
-    historyAndCulture: "Historically fortified by Chikkaballapur chieftains and reinforced by Tipu Sultan, Nandi Hills served as a strategic mountain stronghold.",
-    majorAttractions: [
-      "Tipu's Drop cliff viewpoint",
-      "Amrita Sarovar lake",
-      "Yoga Nandeeshwara Temple",
-      "Tipu's Summer Residence",
-      "Muddenahalli (Sir M. Visvesvaraya Museum nearby)"
+    "id": "nandi-hills",
+    "name": "Nandi Hills (Nandidurga)",
+    "slug": "nandi-hills",
+    "district": "Chikkaballapura",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Hill Station",
+      "Nature",
+      "Heritage",
+      "Weekend"
     ],
-    nearbyAttractions: ["Bhoga Nandeeshwara Temple (Avani)", "Skandagiri", "Grover Zampa Vineyards"],
-    bengaluruRoute: "Bengaluru → Bellary Road (NH 44) → Devanahalli → Nandi Hills Road",
-    thingsToDo: ["Watch cloud-bed sunrise", "Historical fortress walk", "Trekking & photography", "Cycling uphill"],
-    localFood: ["Hilltop snacks", "Hot tea/coffee", "Dosa stalls near base"],
-    entryInformation: "Entry fee ₹20 per head. Parking fee ₹100 for cabs. Weekend vehicle restrictions apply near summit.",
-    permitInformation: "Summit gate opens at 6:00 AM. Advance online entry ticket booking advised for weekends.",
-    safetyNotes: "Drive carefully on steep hairpin bends. Monkeys can be aggressive with food.",
-    oneDayItinerary: "4:00 AM departure from Bengaluru → 5:30 AM reach hilltop for sunrise → 8:00 AM explore Tipu's Drop & Yoga Nandeeshwara Temple → 11:00 AM visit Bhoga Nandeeshwara base temple → Return to Bengaluru by 2:00 PM.",
-    twoDayItinerary: "Day 1: Drive to Nandi Hills, check into resort, visit vineyards & Bhoga Nandeeshwara Temple. Day 2: Early morning hilltop sunrise, Tipu's Drop hike, return via Muddenahalli.",
-    relatedDestinations: ["bengaluru", "devarayanadurga", "madhugiri", "shivagange"],
-    relatedPackages: ["bengaluru-to-nandi-hills-sunrise-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What time does Nandi Hills gate open?", a: "The hilltop gate opens at 6:00 AM every morning." },
-      { q: "How far is Nandi Hills from Kempegowda Airport?", a: "It is approximately 35 km (45 mins drive) from BLR Airport." }
+    "approximateDistanceFromBengaluru": "Approx. 60 km",
+    "approximateDriveTime": "1.5–2 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Nandi Hills (Nandidurga) is a premier destination located in the Chikkaballapura district within the Greater Bengaluru of Karnataka. Situated Approx. 60 km from Bengaluru (1.5–2 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Nandi Hills (Nandidurga) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Nandi Hills (Nandidurga) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Nandi Hills (Nandidurga)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkaballapura via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Nandi Hills (Nandidurga)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Nandi Hills (Nandidurga) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Nandi Hills (Nandidurga), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Nandi Hills (Nandidurga) from Bengaluru?",
+        "answer": "Nandi Hills (Nandidurga) is Approx. 60 km from Bengaluru, taking 1.5–2 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Nandi Hills (Nandidurga)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "ramanagara",
-    name: "Ramanagara (Sholay Hills)",
-    slug: "ramanagara",
-    district: "Ramanagara",
-    region: "Southern Karnataka",
-    categories: ["Adventure", "Trekking", "Heritage", "Silk"],
-    approximateDistanceFromBengaluru: 48,
-    approximateDriveTime: "1 hr",
-    bestSeason: "October to March",
-    suggestedDuration: "1 Day",
-    overview: "Famous as the iconic filming location of 'Sholay', Ramanagara is characterized by massive granite monoliths, vulture sanctuaries, and India's largest silk cocoon market.",
-    historyAndCulture: "Surrounded by seven famous hills (Ramadevarabetta, Shivaramagiri, etc.), it holds religious heritage and critical bird conservation habitats.",
-    majorAttractions: [
-      "Ramadevarabetta Vulture Sanctuary",
-      "Sholay Shooting Hilltop View",
-      "Ramadevarabetta Temple",
-      "Kanva Reservoir nearby",
-      "Government Silk Cocoon Market"
+    "id": "ramanagara",
+    "name": "Ramanagara (Sholay Hills)",
+    "slug": "ramanagara",
+    "district": "Ramanagara",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Adventure",
+      "Nature",
+      "Heritage",
+      "Weekend"
     ],
-    nearbyAttractions: ["Savandurga", "Kanakapura", "Channapatna Toy Town"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway (NH 275) → Ramanagara Bypass",
-    thingsToDo: ["Rock climbing & bouldering", "Vulture birdwatching", "Sholay location photo trail", "Toy shopping in Channapatna"],
-    localFood: ["Thatte Idli at Bidadi", "Filter Coffee", "Ragi Mudde"],
-    entryInformation: "Ramadevarabetta sanctuary entry fee ₹25 per person.",
-    permitInformation: "Forest department permission required for night camping or high-wall rock climbing.",
-    safetyNotes: "Beware of bees near cliff edges. Avoid climbing during heavy rains.",
-    oneDayItinerary: "7:00 AM departure → Stop at Bidadi for famous Thatte Idli → 9:00 AM climb Ramadevarabetta steps → 12:00 PM visit Silk Market & Kanva Dam → 3:00 PM stop at Channapatna for wooden toys → Return to Bengaluru by 6:00 PM.",
-    twoDayItinerary: "Day 1: Ramanagara rock climbing & Kanva Reservoir. Day 2: Savandurga trek & Janapada Loka folk museum.",
-    relatedDestinations: ["bengaluru", "savandurga", "kanakapura-sangama-mekedatu", "bheemeshwari"],
-    relatedPackages: ["ramanagara-adventure-and-heritage-day-trip"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Ramanagara good for a 1-day trip from Bangalore?", a: "Yes, it is under 50 km from Bangalore via the Mysuru Expressway." }
+    "approximateDistanceFromBengaluru": "Approx. 50 km",
+    "approximateDriveTime": "1–1.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Ramanagara (Sholay Hills) is a premier destination located in the Ramanagara district within the Greater Bengaluru of Karnataka. Situated Approx. 50 km from Bengaluru (1–1.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Ramanagara (Sholay Hills) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Ramanagara (Sholay Hills) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Ramanagara (Sholay Hills)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Ramanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Ramanagara (Sholay Hills)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Ramanagara (Sholay Hills) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Ramanagara (Sholay Hills), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Ramanagara (Sholay Hills) from Bengaluru?",
+        "answer": "Ramanagara (Sholay Hills) is Approx. 50 km from Bengaluru, taking 1–1.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Ramanagara (Sholay Hills)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "savandurga",
-    name: "Savandurga Fort & Monolith",
-    slug: "savandurga",
-    district: "Ramanagara",
-    region: "Southern Karnataka",
-    categories: ["Monolith", "Trekking", "Adventure", "Heritage"],
-    approximateDistanceFromBengaluru: 55,
-    approximateDriveTime: "1.5 hrs",
-    bestSeason: "November to February",
-    suggestedDuration: "1 Day",
-    overview: "One of the largest single granite monolith hills in Asia, rising 1226 meters above sea level with twin peaks (Karigudda & Biligudda) and historic fort walls.",
-    historyAndCulture: "Fortified by Kempe Gowda and later captured by Tipu Sultan, Savandurga was considered an impregnable fortress due to its sheer granite precipices.",
-    majorAttractions: [
-      "Biligudda Monolith Trek",
-      "Savandurga Fort Wall Ruins",
-      "Savandi Veerabhadreshwara Temple",
-      "Manchanabele Dam (nearby backwaters)",
-      "Arkavathi River Pine Forests"
+    "id": "savandurga",
+    "name": "Savandurga Monolith & Fort",
+    "slug": "savandurga",
+    "district": "Ramanagara",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Adventure",
+      "Monolith",
+      "Nature",
+      "Trekking"
     ],
-    nearbyAttractions: ["Manchanabele Reservoir", "Ramanagara", "Shivagange"],
-    bengaluruRoute: "Bengaluru → Magadi Road (SH 85) → Tavarekere → Savandurga",
-    thingsToDo: ["Monolith granite trekking", "Fort ruin exploration", "Temple worship", "Kayaking/boating at Manchanabele (organized operators)"],
-    localFood: ["Local village tea shops", "Pack homemade lunch or snacks"],
-    entryInformation: "Free entry to hill base. Parking fee ₹50.",
-    permitInformation: "No prior trekking permit required for Biligudda peak route during daylight hours.",
-    safetyNotes: "Granite rock face is extremely slippery during monsoon. Wear high-grip trekking shoes. Carry 2L water.",
-    oneDayItinerary: "6:00 AM departure from Bangalore → 7:30 AM begin Biligudda monolith trek → 10:30 AM summit & explore fort ruins → 1:00 PM descent & temple visit → 3:00 PM stop at Manchanabele Reservoir → Return by 6:00 PM.",
-    twoDayItinerary: "Combine Savandurga trek with Big Banyan Tree (Dodda Alada Mara) and Ramanagara Sholay hills.",
-    relatedDestinations: ["bengaluru", "ramanagara", "shivagange", "magadi"],
-    relatedPackages: ["savandurga-monolith-trek-day-package"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Savandurga trek difficult?", a: "It is a moderate trek on steep granite slope. Good footwear is mandatory." }
+    "approximateDistanceFromBengaluru": "Approx. 60 km",
+    "approximateDriveTime": "1.5–2 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Savandurga Monolith & Fort is a premier destination located in the Ramanagara district within the Greater Bengaluru of Karnataka. Situated Approx. 60 km from Bengaluru (1.5–2 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Savandurga Monolith & Fort holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Savandurga Monolith & Fort Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Savandurga Monolith & Fort",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Ramanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Savandurga Monolith & Fort",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Savandurga Monolith & Fort for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Savandurga Monolith & Fort, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Savandurga Monolith & Fort from Bengaluru?",
+        "answer": "Savandurga Monolith & Fort is Approx. 60 km from Bengaluru, taking 1.5–2 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Savandurga Monolith & Fort?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "bannerghatta",
-    name: "Bannerghatta National Park",
-    slug: "bannerghatta",
-    district: "Bengaluru Urban / Ramanagara",
-    region: "Southern Karnataka",
-    categories: ["Wildlife", "Safari", "Butterfly Park", "Family"],
-    approximateDistanceFromBengaluru: 25,
-    approximateDriveTime: "1 hr",
-    bestSeason: "September to March",
-    suggestedDuration: "1 Day",
-    overview: "A wilderness reserve right on Bengaluru's southern outskirts, featuring Grand Safari (tigers, lions, bears), India's first Butterfly Park, and a bio-park zoo.",
-    historyAndCulture: "Established in 1971 and declared a national park in 1974, it serves as an important elephant corridor connecting the BR Hills and Sathyamangalam forests.",
-    majorAttractions: [
-      "Grand Bus Safari (Bengal Tiger & Lion enclosures)",
-      "Butterfly Park & Climate Dome",
-      "Bannerghatta Zoo & Snake House",
-      "Elephant Sanctuary Area",
-      "Rescue Center & Nature Trail"
+    "id": "bannerghatta",
+    "name": "Bannerghatta National Park",
+    "slug": "bannerghatta",
+    "district": "Bengaluru Urban",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Nature",
+      "Family"
     ],
-    nearbyAttractions: ["Champakadhama Temple", "TK Falls", "Kanakapura"],
-    bengaluruRoute: "Bengaluru City → Bannerghatta Main Road (SH 87) → National Park Gate",
-    thingsToDo: ["Jungle safari bus ride", "Walk inside Butterfly conservatory", "Zoo family excursion", "Photography"],
-    localFood: ["KMF Milk Parlours", "Park Restaurant Stalls", "South Indian Meals"],
-    entryInformation: "Safari + Zoo combo ticket ~₹350–₹500 per adult. Closed on Tuesdays.",
-    permitInformation: "Online safari ticket booking strongly recommended on weekends to avoid 2-hour queue.",
-    safetyNotes: "Do not feed animals. Tuesday is the weekly closed holiday.",
-    oneDayItinerary: "9:00 AM arrival → 9:30 AM Grand Tiger & Lion Safari → 11:30 AM Butterfly Park walk → 1:30 PM Lunch → 2:30 PM Zoo & Serpentarium exploration → Return by 5:30 PM.",
-    twoDayItinerary: "Combine Bannerghatta Park day trip with Kanakapura nature resort stay on day 2.",
-    relatedDestinations: ["bengaluru", "kanakapura-sangama-mekedatu", "bheemeshwari"],
-    relatedPackages: ["bannerghatta-wildlife-safari-day-trip"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Bannerghatta open on Tuesdays?", a: "No, Bannerghatta National Park is closed on Tuesdays." }
+    "approximateDistanceFromBengaluru": "Approx. 22 km",
+    "approximateDriveTime": "1 hr",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bannerghatta National Park is a premier destination located in the Bengaluru Urban district within the Greater Bengaluru of Karnataka. Situated Approx. 22 km from Bengaluru (1 hr drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bannerghatta National Park holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bannerghatta National Park Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bannerghatta National Park",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bengaluru Urban via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bannerghatta National Park",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bannerghatta National Park for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bannerghatta National Park, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bannerghatta National Park from Bengaluru?",
+        "answer": "Bannerghatta National Park is Approx. 22 km from Bengaluru, taking 1 hr by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bannerghatta National Park?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "kanakapura-sangama-mekedatu",
-    name: "Kanakapura, Sangama & Mekedatu",
-    slug: "kanakapura-sangama-mekedatu",
-    district: "Ramanagara",
-    region: "Southern Karnataka",
-    categories: ["Nature", "River & Gorge", "Adventure", "Picnic"],
-    approximateDistanceFromBengaluru: 90,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "October to March (Post-monsoon river flow)",
-    suggestedDuration: "1 Day",
-    overview: "Mekedatu ('Goat's Leap') is a dramatic narrow granite gorge where the Arkavathi and Kaveri rivers merge at Sangama and surge through deep rock chasms.",
-    historyAndCulture: "Legend says a goat leaped across the narrow Kaveri river chasm to escape a tiger, giving the gorge its name Mekedatu.",
-    majorAttractions: [
-      "Sangama River Confluence",
-      "Mekedatu Deep Granite Gorge",
-      "Coracle River Crossing",
-      "Chunchi Falls (en route)",
-      "Kanakapura Nature Resorts"
+    "id": "kanakapura-sangama-mekedatu",
+    "name": "Kanakapura–Sangama–Mekedatu",
+    "slug": "kanakapura-sangama-mekedatu",
+    "district": "Ramanagara",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "River",
+      "Nature",
+      "Gorge",
+      "Weekend"
     ],
-    nearbyAttractions: ["Bheemeshwari", "Shivanasamudra Falls", "Bannerghatta"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road (NH 948) → Kanakapura Town → Sangama Base",
-    thingsToDo: ["Coracle boat ride at Sangama", "Bus ride to Mekedatu gorge viewpoint", "Chunchi Falls viewpoint", "Riverside picnic"],
-    localFood: ["Fresh river fish fry", "South Indian meals in Kanakapura", "Tender coconut"],
-    entryInformation: "Forest checkpost fee ₹50. Coracle ride ~₹50 per head. Govt bus to Mekedatu ~₹30.",
-    permitInformation: "Swimming inside deep river currents at Mekedatu gorge is strictly prohibited.",
-    safetyNotes: "Strong whirlpool currents at Sangama and Mekedatu gorge. Never venture into deep water.",
-    oneDayItinerary: "6:30 AM departure via Kanakapura Road → 8:30 AM breakfast at Kanakapura → 10:00 AM reach Sangama confluence → Coracle ride & bus to Mekedatu Gorge → 1:30 PM Lunch → 3:30 PM visit Chunchi Falls → Return by 7:00 PM.",
-    twoDayItinerary: "Day 1: Kanakapura river adventure resort stay & kayak. Day 2: Sangama, Mekedatu & Chunchi Falls.",
-    relatedDestinations: ["bheemeshwari", "shivanasamudra", "bannerghatta", "ramanagara"],
-    relatedPackages: ["mekedatu-and-sangama-river-day-package"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is swimming allowed at Mekedatu?", a: "No, swimming in Mekedatu gorge is strictly forbidden due to dangerous currents." }
+    "approximateDistanceFromBengaluru": "Approx. 95 km",
+    "approximateDriveTime": "2–2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kanakapura–Sangama–Mekedatu is a premier destination located in the Ramanagara district within the Greater Bengaluru of Karnataka. Situated Approx. 95 km from Bengaluru (2–2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kanakapura–Sangama–Mekedatu holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kanakapura–Sangama–Mekedatu Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kanakapura–Sangama–Mekedatu",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Ramanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kanakapura–Sangama–Mekedatu",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kanakapura–Sangama–Mekedatu for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kanakapura–Sangama–Mekedatu, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kanakapura–Sangama–Mekedatu from Bengaluru?",
+        "answer": "Kanakapura–Sangama–Mekedatu is Approx. 95 km from Bengaluru, taking 2–2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kanakapura–Sangama–Mekedatu?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "bheemeshwari",
-    name: "Bheemeshwari Nature & Adventure Camp",
-    slug: "bheemeshwari",
-    district: "Mandya",
-    region: "Southern Karnataka",
-    categories: ["River", "Nature", "Adventure", "Fishing"],
-    approximateDistanceFromBengaluru: 105,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "August to February",
-    suggestedDuration: "1–2 Days",
-    overview: "Nestled along the banks of the river Kaveri, Bheemeshwari is famous for eco-adventure activities, coracle rides, jungle camping, and Mahseer fish habitats.",
-    historyAndCulture: "Historically world-famous among anglers for the legendary giant Golden Mahseer game fish (catch-and-release eco-conservation zone).",
-    majorAttractions: [
-      "Kaveri River Bank Camps",
-      "Coracle Boating & Zip-lining",
-      "Jungle Trekking Trails",
-      "Birdwatching & Crocodile Spotting",
-      "Galibore Nature Camp nearby"
+    "id": "bheemeshwari",
+    "name": "Bheemeshwari Nature & River Camp",
+    "slug": "bheemeshwari",
+    "district": "Mandya",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Nature",
+      "River",
+      "Adventure",
+      "Wildlife"
     ],
-    nearbyAttractions: ["Shivanasamudra Falls", "Kanakapura", "Sangama"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road (NH 948) → Halagur → Bheemeshwari",
-    thingsToDo: ["Ziplining across river forest", "Coracle ride on Kaveri", "Jungle night stay in log huts", "Nature photography"],
-    localFood: ["Jungle lodge buffet", "Local Karnataka fish meals", "Ragi mudde with chicken curry"],
-    entryInformation: "Jungle Lodges & Resorts (JLR) day visit or overnight booking recommended.",
-    permitInformation: "Angling catch-and-release requires special forest department season permits.",
-    safetyNotes: "Beware of river crocodiles on quiet sandbanks. Follow instructor guides during zipline & water sports.",
-    oneDayItinerary: "6:00 AM departure → 8:30 AM arrival at Bheemeshwari JLR Camp → 9:30 AM rope activities & zip-lining → 12:30 PM coracle ride & riverside buffet lunch → 3:00 PM birdwatching nature trail → Return by 7:30 PM.",
-    twoDayItinerary: "Day 1: Overnight stay at Bheemeshwari Jungle Lodges cottage with campfire & night safari walk. Day 2: Morning coracle ride, zip-line, visit Shivanasamudra Falls on way back.",
-    relatedDestinations: ["kanakapura-sangama-mekedatu", "shivanasamudra", "mysuru"],
-    relatedPackages: ["bheemeshwari-adventure-day-escape"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Bheemeshwari good for corporate team outings?", a: "Yes, JLR Bheemeshwari provides excellent team adventure activities." }
+    "approximateDistanceFromBengaluru": "Approx. 100 km",
+    "approximateDriveTime": "2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bheemeshwari Nature & River Camp is a premier destination located in the Mandya district within the Southern Karnataka of Karnataka. Situated Approx. 100 km from Bengaluru (2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bheemeshwari Nature & River Camp holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bheemeshwari Nature & River Camp Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bheemeshwari Nature & River Camp",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mandya via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bheemeshwari Nature & River Camp",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bheemeshwari Nature & River Camp for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bheemeshwari Nature & River Camp, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bheemeshwari Nature & River Camp from Bengaluru?",
+        "answer": "Bheemeshwari Nature & River Camp is Approx. 100 km from Bengaluru, taking 2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bheemeshwari Nature & River Camp?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "shivagange",
-    name: "Shivagange Hill",
-    slug: "shivagange",
-    district: "Tumakuru",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Trekking", "Heritage", "Monolith"],
-    approximateDistanceFromBengaluru: 54,
-    approximateDriveTime: "1.5 hrs",
-    bestSeason: "October to March",
-    suggestedDuration: "1 Day",
-    overview: "A sacred hill shaped like a Shiva Linga, featuring cave temples, rock springs (Ganga), and a challenging climb with steep iron rail steps to the summit.",
-    historyAndCulture: "Revered as 'Dakshina Kashi', Shivagange blends natural spring sanctity with Hoysala and Vijayanagara cave temple heritage.",
-    majorAttractions: [
-      "Gavi Gangadhareshwara Cave Temple",
-      "Honnodevi Temple",
-      "Nandi Statue carved on peak rock",
-      "Olakala Teertha spring",
-      "Patala Gange spring"
+    "id": "shivagange",
+    "name": "Shivagange Hill Temple",
+    "slug": "shivagange",
+    "district": "Tumakuru",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Pilgrimage",
+      "Monolith",
+      "Trekking",
+      "Heritage"
     ],
-    nearbyAttractions: ["Devarayanadurga", "Nandi Hills", "Madhugiri"],
-    bengaluruRoute: "Bengaluru → Tumakuru Road (NH 48) → Nelamangala → Dobbaspet → Shivagange",
-    thingsToDo: ["Steep hill stair climb trek", "Cave temple darshan", "Summit Nandi statue photo", "Scenic countryside views"],
-    localFood: ["Temple prasadam", "South Indian tiffin near base", "Tender coconut"],
-    entryInformation: "Free entry to hill and temples.",
-    permitInformation: "No permits required. Open from sunrise to sunset.",
-    safetyNotes: "Severe monkey menace along steps. Do not carry loose food bags or open water bottles in hand.",
-    oneDayItinerary: "6:30 AM departure from Bangalore → 8:00 AM arrive Dobbaspet base → 8:30 AM start stair trek to cave temple & summit Nandi → 12:30 PM descent & temple darshan → Return by 4:00 PM.",
-    twoDayItinerary: "Combine Shivagange morning trek with Devarayanadurga hill temples and Goravanahalli Lakshmi Temple.",
-    relatedDestinations: ["devarayanadurga", "madhugiri", "bengaluru", "savandurga"],
-    relatedPackages: ["shivagange-and-devarayanadurga-day-pilgrimage"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "How many steps are there in Shivagange Hill?", a: "There are approximately 800+ rock steps with iron railing support." }
+    "approximateDistanceFromBengaluru": "Approx. 55 km",
+    "approximateDriveTime": "1.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Shivagange Hill Temple is a premier destination located in the Tumakuru district within the Greater Bengaluru of Karnataka. Situated Approx. 55 km from Bengaluru (1.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Shivagange Hill Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Shivagange Hill Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Shivagange Hill Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Tumakuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Shivagange Hill Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Shivagange Hill Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Shivagange Hill Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Shivagange Hill Temple from Bengaluru?",
+        "answer": "Shivagange Hill Temple is Approx. 55 km from Bengaluru, taking 1.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Shivagange Hill Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "devarayanadurga",
-    name: "Devarayanadurga Hill Temples",
-    slug: "devarayanadurga",
-    district: "Tumakuru",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Hill Station", "Forest", "Heritage"],
-    approximateDistanceFromBengaluru: 72,
-    approximateDriveTime: "2 hrs",
-    bestSeason: "September to February",
-    suggestedDuration: "1 Day",
-    overview: "A tranquil forest-clad hill station renowned for the twin Narasimha temples (Boga Narasimha at base, Yoga Narasimha at hilltop) and Namada Chilume spring.",
-    historyAndCulture: "Originally named Anebiddasandra, it was renamed Devarayanadurga after Wodeyar King Chikka Devaraja Wodeyar captured fort structures here in 1696.",
-    majorAttractions: [
-      "Yoga Narasimha Temple (Hilltop)",
-      "Boga Narasimha Temple (Base)",
-      "Namada Chilume (Natural spring associated with Lord Rama)",
-      "Devarayanadurga Forest Viewpoint",
-      "Goravanahalli Mahalakshmi Temple nearby"
+    "id": "devarayanadurga",
+    "name": "Devarayanadurga Hill Temples",
+    "slug": "devarayanadurga",
+    "district": "Tumakuru",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Pilgrimage",
+      "Hill Station",
+      "Nature",
+      "Forest"
     ],
-    nearbyAttractions: ["Madhugiri Fort", "Shivagange", "Siddaganga Mutt"],
-    bengaluruRoute: "Bengaluru → Tumakuru Highway (NH 48) → Dabaspete → Kyatsandra → Devarayanadurga",
-    thingsToDo: ["Hilltop temple visit", "Visit natural spring at Namada Chilume", "Forest scenic driving", "Taste Kyatsandra Thatte Idli"],
-    localFood: ["Kyatsandra Thatte Idli with butter & chutney", "Temple prasadam"],
-    entryInformation: "Free entry. Nominal vehicle parking fee at hilltop temple.",
-    permitInformation: "No permits required. Temple open 9:00 AM to 5:30 PM.",
-    safetyNotes: "Roads have sharp curves through reserve forest. Mind monkeys near temple entrance.",
-    oneDayItinerary: "7:00 AM departure → 8:30 AM famous Thatte Idli breakfast at Kyatsandra → 9:30 AM visit Namada Chilume deer park & spring → 11:00 AM drive up to Yoga Narasimha hilltop temple → 1:30 PM visit Goravanahalli Temple → Return to Bengaluru by 6:00 PM.",
-    twoDayItinerary: "Day 1: Devarayanadurga & Goravanahalli. Day 2: Madhugiri monolith fort climb.",
-    relatedDestinations: ["madhugiri", "shivagange", "bengaluru"],
-    relatedPackages: ["devarayanadurga-and-namada-chilume-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What is Namada Chilume famous for?", a: "It is a natural spring cut into rock where Lord Rama is believed to have shot an arrow." }
+    "approximateDistanceFromBengaluru": "Approx. 75 km",
+    "approximateDriveTime": "2 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Devarayanadurga Hill Temples is a premier destination located in the Tumakuru district within the Greater Bengaluru of Karnataka. Situated Approx. 75 km from Bengaluru (2 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Devarayanadurga Hill Temples holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Devarayanadurga Hill Temples Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Devarayanadurga Hill Temples",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Tumakuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Devarayanadurga Hill Temples",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Devarayanadurga Hill Temples for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Devarayanadurga Hill Temples, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Devarayanadurga Hill Temples from Bengaluru?",
+        "answer": "Devarayanadurga Hill Temples is Approx. 75 km from Bengaluru, taking 2 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Devarayanadurga Hill Temples?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "madhugiri",
-    name: "Madhugiri Fort & Monolith",
-    slug: "madhugiri",
-    district: "Tumakuru",
-    region: "Southern Karnataka",
-    categories: ["Monolith", "Trekking", "Heritage", "Fort"],
-    approximateDistanceFromBengaluru: 105,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "November to February",
-    suggestedDuration: "1 Day",
-    overview: "Asia's second-largest single granite monolith hill, dominated by an extraordinary multi-tiered fort built by Hyder Ali and Raja Hera Gowda.",
-    historyAndCulture: "The fort features a complex series of gateway arches (Gopura gates), granaries, and water tanks built across steep 3,930 ft granite slopes.",
-    majorAttractions: [
-      "Madhugiri Fort Gate Arches",
-      "Granite Monolith Slope Trek",
-      "Gopala Krishna Temple at base",
-      "Summit Water Tanks & Granary ruins",
-      "Midday Rock Steep Wall Section"
+    "id": "madhugiri",
+    "name": "Madhugiri Fort Monolith",
+    "slug": "madhugiri",
+    "district": "Tumakuru",
+    "region": "Greater Bengaluru",
+    "categories": [
+      "Monolith",
+      "Fort",
+      "Trekking",
+      "Adventure"
     ],
-    nearbyAttractions: ["Devarayanadurga", "Goravanahalli Temple", "Jayamangali Blackbuck Reserve"],
-    bengaluruRoute: "Bengaluru → Tumakuru Highway (NH 48) → Koratagere → Madhugiri",
-    thingsToDo: ["High-intensity monolith climb", "Explore ancient fort gateways", "Photography from top fortification", "Visit Jayamangali Blackbuck sanctuary"],
-    localFood: ["Madhugiri town South Indian meals", "Tender coconut & fruit stalls"],
-    entryInformation: "Free entry. ASI protected monument.",
-    permitInformation: "Register name at ASI base post. Trek closed after 4:00 PM.",
-    safetyNotes: "Extremely steep granite inclines near top without railings in some spots. Not recommended for children or elderly.",
-    oneDayItinerary: "6:00 AM departure from Bangalore → 8:30 AM arrive Madhugiri base → 9:00 AM commence fort monolith trek → 12:00 PM summit exploration & descend → 2:00 PM lunch in Madhugiri → 3:30 PM optional visit to Jayamangali Blackbuck Reserve → Return by 7:30 PM.",
-    twoDayItinerary: "Combine Madhugiri trek with Devarayanadurga hill stay and Maidanamahalli blackbuck safari.",
-    relatedDestinations: ["devarayanadurga", "shivagange", "bengaluru"],
-    relatedPackages: ["madhugiri-fort-monolith-day-trek"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Madhugiri larger than Savandurga?", a: "Savandurga is Asia's largest monolith; Madhugiri is the second largest in Asia." }
+    "approximateDistanceFromBengaluru": "Approx. 105 km",
+    "approximateDriveTime": "2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Madhugiri Fort Monolith is a premier destination located in the Tumakuru district within the Greater Bengaluru of Karnataka. Situated Approx. 105 km from Bengaluru (2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Madhugiri Fort Monolith holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Madhugiri Fort Monolith Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Madhugiri Fort Monolith",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Tumakuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Madhugiri Fort Monolith",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Madhugiri Fort Monolith for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Madhugiri Fort Monolith, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Madhugiri Fort Monolith from Bengaluru?",
+        "answer": "Madhugiri Fort Monolith is Approx. 105 km from Bengaluru, taking 2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Madhugiri Fort Monolith?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "mysuru",
-    name: "Mysuru (Mysore)",
-    slug: "mysuru",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Heritage", "Palace", "Culture", "Family"],
-    approximateDistanceFromBengaluru: 145,
-    approximateDriveTime: "2.5 hrs (via 10-Lane Expressway)",
-    bestSeason: "September to March (Dasara Festival in Oct)",
-    suggestedDuration: "2 Days",
-    overview: "The royal cultural capital of Karnataka, famous for the grand Mysore Palace, Chamundi Hills, silk sarees, sandalwood craft, and Mysore Pak sweet.",
-    historyAndCulture: "Ruled for centuries by the Wodeyar dynasty and briefly Tipu Sultan, Mysuru retains magnificent Indo-Saracenic palaces and rich classical music heritage.",
-    majorAttractions: [
-      "Mysore Palace (Amba Vilas)",
-      "Chamundi Hill & Chamundeshwari Temple",
-      "St. Philomena's Cathedral",
-      "Jaganmohan Palace & Art Gallery",
-      "Mysore Zoo (Sri Chamarajendra Zoological Gardens)"
+    "id": "mysuru",
+    "name": "Mysuru (Mysore)",
+    "slug": "mysuru",
+    "district": "Mysuru",
+    "region": "Mysuru Region",
+    "categories": [
+      "Heritage",
+      "Royal City",
+      "Culture",
+      "Palace"
     ],
-    nearbyAttractions: ["Srirangapatna", "KRS & Brindavan Gardens", "Ranganathittu Bird Sanctuary", "Somanathapura"],
-    bengaluruRoute: "Bengaluru → Mysuru 10-Lane Expressway (NH 275) → Columbia Asia Circle → Mysuru City",
-    thingsToDo: ["Palace illumination light show (Sun 7 PM)", "Chamundi hill 1000-step climb or drive", "Buy authentic Mysore Silk & Sandalwood", "Eat original Mylari Dosa"],
-    localFood: ["Mysore Pak at Guru Sweets", "Mylari Hotel Dosa", "Mysore Churumuri"],
-    entryInformation: "Palace entry ₹100. Zoo entry ₹100. Camera charges extra.",
-    permitInformation: "No special permits required for city travel.",
-    safetyNotes: "Huge crowds during 10-day Dasara festival; advance booking essential.",
-    oneDayItinerary: "7:00 AM drive via Expressway → 9:30 AM Chamundi Hill temple darshan → 12:00 PM Mysore Palace tour → 2:00 PM Lunch & Mylari Dosa → 3:30 PM St. Philomena's Church & Jaganmohan Palace → 6:30 PM Brindavan Gardens illumination → Return to Bangalore by 10:30 PM.",
-    twoDayItinerary: "Day 1: Mysore Palace, Zoo, St Philomena Church, Evening Palace Illumination. Day 2: Chamundi Hill, Srirangapatna Fort, Ranganathittu Bird Sanctuary & Brindavan Gardens.",
-    relatedDestinations: ["srirangapatna", "chamundi-hills", "ranganathittu", "krs-brindavan-gardens", "somanathapura"],
-    relatedPackages: ["bengaluru-to-mysore-1day-royal-tour", "mysore-coorg-3day-royal-heritage-package"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "When is Mysore Palace illuminated?", a: "On Sundays and public holidays from 7:00 PM to 7:45 PM." },
-      { q: "How long does it take from Bangalore to Mysore on the new expressway?", a: "It takes about 2 to 2.5 hours by car." }
+    "approximateDistanceFromBengaluru": "Approx. 145 km",
+    "approximateDriveTime": "2.5–3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Mysuru (Mysore) is a premier destination located in the Mysuru district within the Mysuru Region of Karnataka. Situated Approx. 145 km from Bengaluru (2.5–3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Mysuru (Mysore) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Mysuru (Mysore) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Mysuru (Mysore)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Mysuru (Mysore)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Mysuru (Mysore) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Mysuru (Mysore), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Mysuru (Mysore) from Bengaluru?",
+        "answer": "Mysuru (Mysore) is Approx. 145 km from Bengaluru, taking 2.5–3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Mysuru (Mysore)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "chamundi-hills",
-    name: "Chamundi Hills & Temple",
-    slug: "chamundi-hills",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Viewpoint", "Heritage", "Culture"],
-    approximateDistanceFromBengaluru: 150,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "Year-Round",
-    suggestedDuration: "Half Day",
-    overview: "Overlooking Mysuru city from a height of 3,300 ft, Chamundi Hill houses the famous 17th-century Chamundeshwari Temple and a giant monolithic Nandi statue.",
-    historyAndCulture: "Named after Goddess Chamundeshwari who defeated demon Mahishasura on this hill summit, making it the guardian deity of the Wodeyar royals.",
-    majorAttractions: [
-      "Sri Chamundeshwari Temple & 7-tier Gopuram",
-      "Giant Monolithic Nandi Statue (16 ft high)",
-      "Mahishasura Statue at hilltop circle",
-      "Viewpoint panoramic city outlook",
-      "1000 Steps Heritage Trekking Path"
+    "id": "chamundi-hills",
+    "name": "Chamundi Hills",
+    "slug": "chamundi-hills",
+    "district": "Mysuru",
+    "region": "Mysuru Region",
+    "categories": [
+      "Pilgrimage",
+      "Hill Station",
+      "Heritage",
+      "Viewpoint"
     ],
-    nearbyAttractions: ["Mysore Palace", "Mysore Zoo", "Karanji Lake"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Mysuru Ring Road → Chamundi Hill Road",
-    thingsToDo: ["Temple darshan", "Photograph monolithic Nandi", "Climb 1000 heritage stone steps", "Panoramic Mysuru city views"],
-    localFood: ["Hilltop tender coconut", "Prasadam laddoos"],
-    entryInformation: "Free general entry. Special darshan tickets ₹50 / ₹100 available.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Drive cautiously down the 13 km winding ghat road.",
-    oneDayItinerary: "Combine Chamundi Hill morning darshan with Mysore Palace and Zoo tour.",
-    twoDayItinerary: "Part of 2-day Mysuru Heritage circuit.",
-    relatedDestinations: ["mysuru", "srirangapatna", "nanjangud"],
-    relatedPackages: ["bengaluru-to-mysore-1day-royal-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Can we drive all the way to the top of Chamundi Hills?", a: "Yes, there is a well-paved 2-lane motorable road to the hilltop parking." }
+    "approximateDistanceFromBengaluru": "Approx. 155 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Chamundi Hills is a premier destination located in the Mysuru district within the Mysuru Region of Karnataka. Situated Approx. 155 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Chamundi Hills holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Chamundi Hills Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Chamundi Hills",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Chamundi Hills",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Chamundi Hills for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Chamundi Hills, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Chamundi Hills from Bengaluru?",
+        "answer": "Chamundi Hills is Approx. 155 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Chamundi Hills?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "srirangapatna",
-    name: "Srirangapatna Island Town & Fort",
-    slug: "srirangapatna",
-    district: "Mandya",
-    region: "Southern Karnataka",
-    categories: ["Heritage", "Fort", "Pilgrimage", "History"],
-    approximateDistanceFromBengaluru: 125,
-    approximateDriveTime: "2 hrs",
-    bestSeason: "October to March",
-    suggestedDuration: "Half Day / 1 Day",
-    overview: "An egg-shaped river island enclosed by the Kaveri River, holding immense historical weight as Tipu Sultan's capital fort town and home to Sri Ranganathaswamy Temple.",
-    historyAndCulture: "Capital of Tipu Sultan and Hyder Ali, site of the 4th Anglo-Mysore War in 1799 where Tipu Sultan was killed in battle.",
-    majorAttractions: [
-      "Sri Ranganathaswamy Temple",
-      "Tipu Sultan's Summer Palace (Daria Daulat Bagh)",
-      "Gumbaz (Mausoleum of Tipu Sultan & Hyder Ali)",
-      "Srirangapatna Fort Walls & Dungeon",
-      "Place where Tipu Sultan fell in battle"
+    "id": "srirangapatna",
+    "name": "Srirangapatna Island Fort",
+    "slug": "srirangapatna",
+    "district": "Mandya",
+    "region": "Mysuru Region",
+    "categories": [
+      "Heritage",
+      "Fort",
+      "Pilgrimage",
+      "History"
     ],
-    nearbyAttractions: ["Ranganathittu Bird Sanctuary", "Mysuru", "Shivanasamudra Falls"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway (NH 275) → Srirangapatna Bypass exit",
-    thingsToDo: ["Fort history walking tour", "Palace teakwood artwork admiration", "Temple worship", "Riverside bath at Paschima Vahini"],
-    localFood: ["South Indian meals", "Fresh sugarcane juice"],
-    entryInformation: "Daria Daulat Bagh entry fee ₹25.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Be cautious near river banks at Paschima Vahini during water release.",
-    oneDayItinerary: "Morning arrival → Sri Ranganathaswamy Temple → Daria Daulat Bagh → Tipu Gumbaz → Colonel Bailey Dungeon → Lunch → Proceed to Mysore Palace.",
-    twoDayItinerary: "Part of Mysuru-Srirangapatna 2-day heritage tour.",
-    relatedDestinations: ["mysuru", "ranganathittu", "somanathapura"],
-    relatedPackages: ["bengaluru-to-mysore-1day-royal-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Why is Srirangapatna famous?", a: "It was Tipu Sultan's capital fort and has the ancient Ranganathaswamy temple." }
+    "approximateDistanceFromBengaluru": "Approx. 130 km",
+    "approximateDriveTime": "2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Srirangapatna Island Fort is a premier destination located in the Mandya district within the Mysuru Region of Karnataka. Situated Approx. 130 km from Bengaluru (2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Srirangapatna Island Fort holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Srirangapatna Island Fort Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Srirangapatna Island Fort",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mandya via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Srirangapatna Island Fort",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Srirangapatna Island Fort for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Srirangapatna Island Fort, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Srirangapatna Island Fort from Bengaluru?",
+        "answer": "Srirangapatna Island Fort is Approx. 130 km from Bengaluru, taking 2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Srirangapatna Island Fort?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "ranganathittu",
-    name: "Ranganathittu Bird Sanctuary",
-    slug: "ranganathittu",
-    district: "Mandya",
-    region: "Southern Karnataka",
-    categories: ["Wildlife", "Birdwatching", "River", "Boating"],
-    approximateDistanceFromBengaluru: 130,
-    approximateDriveTime: "2.2 hrs",
-    bestSeason: "December to April (Peak nesting bird season)",
-    suggestedDuration: "2–3 Hours",
-    overview: "Karnataka's largest bird sanctuary, comprising six islets on the banks of the Kaveri River, hosting painted storks, pelicans, spoonbills, and mugger crocodiles.",
-    historyAndCulture: "Declared a bird sanctuary in 1940 at the insistence of renowned ornithologist Dr. Salim Ali.",
-    majorAttractions: [
-      "Guided River Boat Safari among bird islets",
-      "Marsh Crocodile spotting",
-      "Painted Stork & Pelican Nesting Colony",
-      "Interpretation Center & Walking Path",
-      "Bamboo Walkway"
+    "id": "ranganathittu",
+    "name": "Ranganathittu Bird Sanctuary",
+    "slug": "ranganathittu",
+    "district": "Mandya",
+    "region": "Mysuru Region",
+    "categories": [
+      "Wildlife",
+      "Birdwatching",
+      "River",
+      "Nature"
     ],
-    nearbyAttractions: ["Srirangapatna", "Mysuru", "KRS Dam"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Srirangapatna → Ranganathittu Road",
-    thingsToDo: ["Guided boating safari", "Birdwatching with binoculars", "Nature photography", "Stroll along manicured river gardens"],
-    localFood: ["Park canteen snacks & juices"],
-    entryInformation: "Entry fee ₹75 per adult. Boating fee ₹100 per head (regular) / ₹500 (special).",
-    permitInformation: "Boating tickets sold on first-come basis at counter.",
-    safetyNotes: "Always wear safety lifejackets during boat ride. Do not touch water surface due to crocodiles.",
-    oneDayItinerary: "Morning visit to Srirangapatna → 11:00 AM Ranganathittu boating safari → Lunch → Mysuru Palace.",
-    twoDayItinerary: "Part of Mysuru Wildlife & Heritage weekend circuit.",
-    relatedDestinations: ["srirangapatna", "mysuru", "krs-brindavan-gardens"],
-    relatedPackages: ["bengaluru-to-mysore-1day-royal-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Which birds can be seen in Ranganathittu?", a: "Painted Storks, Openbill Storks, Spot-billed Pelicans, Herons, and Kingfishers." }
+    "approximateDistanceFromBengaluru": "Approx. 135 km",
+    "approximateDriveTime": "2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Ranganathittu Bird Sanctuary is a premier destination located in the Mandya district within the Mysuru Region of Karnataka. Situated Approx. 135 km from Bengaluru (2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Ranganathittu Bird Sanctuary holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Ranganathittu Bird Sanctuary Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Ranganathittu Bird Sanctuary",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mandya via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Ranganathittu Bird Sanctuary",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Ranganathittu Bird Sanctuary for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Ranganathittu Bird Sanctuary, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Ranganathittu Bird Sanctuary from Bengaluru?",
+        "answer": "Ranganathittu Bird Sanctuary is Approx. 135 km from Bengaluru, taking 2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Ranganathittu Bird Sanctuary?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "somanathapura",
-    name: "Somanathapura Chennakeshava Temple",
-    slug: "somanathapura",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Heritage", "UNESCO", "Architecture", "Temple"],
-    approximateDistanceFromBengaluru: 135,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "October to March",
-    suggestedDuration: "1–2 Hours",
-    overview: "A UNESCO World Heritage Site featuring a breathtaking 13th-century trikuta (three-pinnacle) Hoysala temple carved out of soapstone with astonishing stone frieze details.",
-    historyAndCulture: "Built in 1268 CE by Soma, a commander under Hoysala King Narasimha III, representing the zenith of Hoysala stone sculpture.",
-    majorAttractions: [
-      "Chennakeshava Trikuta Soapstone Temple",
-      "Intricate Ceiling Sculptures & Star-Shaped Platform",
-      "Outer Wall Relief Friezes depicting Ramayana & Mahabharata",
-      "Intricately Carved Stone Pillars",
-      "River Kaveri nearby"
+    "id": "somanathapura",
+    "name": "Somanathapura Hoysala Temple",
+    "slug": "somanathapura",
+    "district": "Mysuru",
+    "region": "Mysuru Region",
+    "categories": [
+      "Heritage",
+      "Architecture",
+      "Hoysala",
+      "History"
     ],
-    nearbyAttractions: ["Talakadu", "Shivanasamudra Falls", "Mysuru"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Bannur → Somanathapura",
-    thingsToDo: ["Admire Hoysala stone carvings", "Architectural photography", "Hire ASI approved heritage guide"],
-    localFood: ["Village tiffin centers in Bannur"],
-    entryInformation: "ASI entry fee ₹25 for Indian citizens. UNESCO Heritage Tag.",
-    permitInformation: "No special permits needed.",
-    safetyNotes: "Do not touch or lean against ancient carved stone friezes.",
-    oneDayItinerary: "Bangalore → Somanathapura Temple → Talakadu sand temples → Shivanasamudra Waterfalls → Return to Bangalore.",
-    twoDayItinerary: "Combine Somanathapura with Mysore Royal Tour.",
-    relatedDestinations: ["talakadu", "shivanasamudra", "mysuru", "belur"],
-    relatedPackages: ["hoysala-heritage-day-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Is Somanathapura a UNESCO World Heritage site?", a: "Yes, it was declared a UNESCO World Heritage Site in 2023 under Sacred Ensembles of the Hoysalas." }
+    "approximateDistanceFromBengaluru": "Approx. 135 km",
+    "approximateDriveTime": "2.5–3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Somanathapura Hoysala Temple is a premier destination located in the Mysuru district within the Mysuru Region of Karnataka. Situated Approx. 135 km from Bengaluru (2.5–3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Somanathapura Hoysala Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Somanathapura Hoysala Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Somanathapura Hoysala Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Somanathapura Hoysala Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Somanathapura Hoysala Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Somanathapura Hoysala Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Somanathapura Hoysala Temple from Bengaluru?",
+        "answer": "Somanathapura Hoysala Temple is Approx. 135 km from Bengaluru, taking 2.5–3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Somanathapura Hoysala Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "talakadu",
-    name: "Talakadu Sand-Buried Temples",
-    slug: "talakadu",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Heritage", "Sand Dunes", "Pilgrimage", "Mystery"],
-    approximateDistanceFromBengaluru: 130,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "October to March (Panchalinga Darshana held periodically)",
-    suggestedDuration: "Half Day",
-    overview: "A mystical historic town on the banks of the Kaveri River where over 30 ancient temples lie buried beneath natural sand dunes due to a historical curse.",
-    historyAndCulture: "Legend recalls Queen Alamelamma's curse: 'May Talakadu turn into sand, may Malangi become a whirlpool, and may Mysore kings go without heirs.'",
-    majorAttractions: [
-      "Vaidyeshwara Temple",
-      "Pathaleshwara & Maruleshwara Temples",
-      "Kaveri River Bank Sand Bath Area",
-      "Kirthinarayana Hoysala Temple",
-      "Gokarna Teertha"
+    "id": "talakadu",
+    "name": "Talakadu Sand-Buried Temples",
+    "slug": "talakadu",
+    "district": "Mysuru",
+    "region": "Mysuru Region",
+    "categories": [
+      "Heritage",
+      "Pilgrimage",
+      "River",
+      "History"
     ],
-    nearbyAttractions: ["Somanathapura", "Shivanasamudra", "Nanjangud"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road → Malavalli → T.Narsipur → Talakadu",
-    thingsToDo: ["Walk on sand dunes to ancient temples", "Kaveri river bath & coracle ride", "Temple trail exploration"],
-    localFood: ["Riverside fish fry", "South Indian meals"],
-    entryInformation: "Free temple entry.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Walking barefoot on sand can be hot during summer afternoons. Carry slippers.",
-    oneDayItinerary: "Morning visit to Somanathapura → Midday Talakadu sand temples & Kaveri bank → Afternoon Shivanasamudra Falls → Return by 8:00 PM.",
-    twoDayItinerary: "Part of Kaveri Basin Heritage & Nature Circuit.",
-    relatedDestinations: ["somanathapura", "shivanasamudra", "mysuru"],
-    relatedPackages: ["kaveri-basin-heritage-day-package"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Why is Talakadu buried in sand?", a: "Geological wind movements deposited river sand over centuries, tied culturally to Queen Alamelamma's curse." }
+    "approximateDistanceFromBengaluru": "Approx. 130 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Talakadu Sand-Buried Temples is a premier destination located in the Mysuru district within the Mysuru Region of Karnataka. Situated Approx. 130 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Talakadu Sand-Buried Temples holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Talakadu Sand-Buried Temples Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Talakadu Sand-Buried Temples",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Talakadu Sand-Buried Temples",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Talakadu Sand-Buried Temples for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Talakadu Sand-Buried Temples, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Talakadu Sand-Buried Temples from Bengaluru?",
+        "answer": "Talakadu Sand-Buried Temples is Approx. 130 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Talakadu Sand-Buried Temples?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "shivanasamudra",
-    name: "Shivanasamudra Twin Waterfalls (Gaganachukki & Bharachukki)",
-    slug: "shivanasamudra",
-    district: "Mandya / Chamarajanagar",
-    region: "Southern Karnataka",
-    categories: ["Waterfalls", "Nature", "Hydroelectric", "Picnic"],
-    approximateDistanceFromBengaluru: 135,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "July to November (Monsoon peak flow)",
-    suggestedDuration: "Half Day",
-    overview: "Spectacular twin waterfalls formed by the Kaveri River dropping 98 meters, home to Asia's first hydroelectric power station established in 1902.",
-    historyAndCulture: "Asia's first hydro-electric plant was established here in 1902 by Diwan Sheshadri Iyer to supply power to Kolar Gold Fields.",
-    majorAttractions: [
-      "Gaganachukki Waterfall Viewpoint",
-      "Bharachukki Waterfall Base & Coracle Area",
-      "Dargah Viewpoint",
-      "Sri Ranganathaswamy Temple (Madhya Ranga)",
-      "1902 Hydroelectric Power House View"
+    "id": "shivanasamudra",
+    "name": "Shivanasamudra Twin Waterfalls",
+    "slug": "shivanasamudra",
+    "district": "Chamarajanagar",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Waterfalls",
+      "Nature",
+      "Hydroelectric",
+      "River"
     ],
-    nearbyAttractions: ["Talakadu", "Somanathapura", "Bheemeshwari"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road (NH 948) → Malavalli → Shivanasamudra",
-    thingsToDo: ["Waterfall photography", "Coracle ride near Bharachukki", "Visit 1902 Hydroelectric heritage exhibit", "Madhya Ranga Temple visit"],
-    localFood: ["Local fish stalls", "Hot bajjis & tender coconut"],
-    entryInformation: "Free entry. Parking charges ₹50.",
-    permitInformation: "Bathing under waterfall drops is strictly restricted for safety.",
-    safetyNotes: "Extremely heavy water flow in monsoon. Keep behind safety barricades.",
-    oneDayItinerary: "7:00 AM departure from Bangalore → 9:30 AM breakfast at Malavalli → 10:30 AM Gaganachukki waterfall view → 12:00 PM Bharachukki waterfall & coracle → 2:00 PM lunch → 3:30 PM Talakadu sand temples → Return by 8:00 PM.",
-    twoDayItinerary: "Combine Shivanasamudra with Bheemeshwari camp or Mysuru city.",
-    relatedDestinations: ["bheemeshwari", "talakadu", "somanathapura", "mysuru"],
-    relatedPackages: ["shivanasamudra-waterfalls-day-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Which month is best for Shivanasamudra Falls?", a: "August to October during peak monsoon when the Kaveri River swells." }
+    "approximateDistanceFromBengaluru": "Approx. 130 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Shivanasamudra Twin Waterfalls is a premier destination located in the Chamarajanagar district within the Southern Karnataka of Karnataka. Situated Approx. 130 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Shivanasamudra Twin Waterfalls holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Shivanasamudra Twin Waterfalls Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Shivanasamudra Twin Waterfalls",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chamarajanagar via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Shivanasamudra Twin Waterfalls",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Shivanasamudra Twin Waterfalls for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Shivanasamudra Twin Waterfalls, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Shivanasamudra Twin Waterfalls from Bengaluru?",
+        "answer": "Shivanasamudra Twin Waterfalls is Approx. 130 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Shivanasamudra Twin Waterfalls?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "melkote",
-    name: "Melkote Heritage & Temple Town",
-    slug: "melkote",
-    district: "Mandya",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Heritage", "Pond", "Sanskrit"],
-    approximateDistanceFromBengaluru: 130,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "September to March (Vairamudi Festival in Mar)",
-    suggestedDuration: "Half Day",
-    overview: "A sacred hill town famous for the hilltop Yoga Narasimha Temple, Cheluvanarayana Swamy Temple, ancient Kalyani stepped tanks, and Puliyogare delicacy.",
-    historyAndCulture: "Spiritual sanctuary of saint Ramanujacharya in the 12th century under the patronage of Hoysala King Vishnuvardhana.",
-    majorAttractions: [
-      "Yoga Narasimha Swamy Temple (Hilltop)",
-      "Cheluvanarayana Swamy Temple",
-      "Kalyani Stepped Sacred Tank (Raya Gopura)",
-      "Academy of Sanskrit Research",
-      "Melkote Temple Wildlife Sanctuary"
+    "id": "melkote",
+    "name": "Melkote Hill Shrine & Sanskrit Academy",
+    "slug": "melkote",
+    "district": "Mandya",
+    "region": "Mysuru Region",
+    "categories": [
+      "Pilgrimage",
+      "Heritage",
+      "Culture",
+      "Hill Shrine"
     ],
-    nearbyAttractions: ["Srirangapatna", "Mysuru", "Thonnur Lake"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Mandya → Pandavapura → Melkote",
-    thingsToDo: ["Steep hill stair climb to hilltop temple", "Taste authentic Melkote Puliyogare & Sweet Pongal", "Photography at Raya Gopura stone pillars", "Relax at Kalyani stepped tank"],
-    localFood: ["Melkote Temple Puliyogare", "Sweet Pongal", "Sakkare Pongal"],
-    entryInformation: "Free entry. Nominal parking fee.",
-    permitInformation: "No special permits needed.",
-    safetyNotes: "Wear comfortable walking shoes for temple stairs.",
-    oneDayItinerary: "7:00 AM departure → 9:30 AM breakfast → 10:30 AM Cheluvanarayana Swamy Temple & Raya Gopura → 12:30 PM climb Yoga Narasimha hilltop temple → 2:00 PM Puliyogare lunch → Visit Thonnur Lake → Return to Bangalore by 7:30 PM.",
-    twoDayItinerary: "Combine Melkote with Mysuru or Hassan heritage tour.",
-    relatedDestinations: ["mysuru", "srirangapatna", "shravanabelagola"],
-    relatedPackages: ["melkote-and-tonnur-lake-day-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What food is Melkote famous for?", a: "Melkote is world-famous for its delicious temple Puliyogare (Tamarind Rice)." }
+    "approximateDistanceFromBengaluru": "Approx. 140 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Melkote Hill Shrine & Sanskrit Academy is a premier destination located in the Mandya district within the Mysuru Region of Karnataka. Situated Approx. 140 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Melkote Hill Shrine & Sanskrit Academy holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Melkote Hill Shrine & Sanskrit Academy Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Melkote Hill Shrine & Sanskrit Academy",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mandya via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Melkote Hill Shrine & Sanskrit Academy",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Melkote Hill Shrine & Sanskrit Academy for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Melkote Hill Shrine & Sanskrit Academy, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Melkote Hill Shrine & Sanskrit Academy from Bengaluru?",
+        "answer": "Melkote Hill Shrine & Sanskrit Academy is Approx. 140 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Melkote Hill Shrine & Sanskrit Academy?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "nanjangud",
-    name: "Nanjangud Temple Town",
-    slug: "nanjangud",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Heritage", "River", "Temple"],
-    approximateDistanceFromBengaluru: 170,
-    approximateDriveTime: "3 hrs",
-    bestSeason: "October to March (Dodda Jathre festival in Mar/Apr)",
-    suggestedDuration: "Half Day",
-    overview: "Known as 'Varanasi of the South', Nanjangud is famous for the huge Srikanteshwara Temple on the Kabini river bank and Nanjangud Rasabale bananas.",
-    historyAndCulture: "Legend tells of Lord Shiva drinking poison (Nanju) to save the world, earning him the name Nanjundeshwara. Supported by Ganga, Chola, and Wodeyar kings.",
-    majorAttractions: [
-      "Srikanteshwara (Nanjundeshwara) Temple",
-      "Kabini River Bathing Ghats (Kapila River)",
-      "Centuries-old Wooden Chariot (Ratha)",
-      "Nanjangud Rasabale Banana Plantations nearby",
-      "Suvarnavathi River confluence"
+    "id": "nanjangud",
+    "name": "Nanjangud Srikanteshwara Temple",
+    "slug": "nanjangud",
+    "district": "Mysuru",
+    "region": "Mysuru Region",
+    "categories": [
+      "Pilgrimage",
+      "Temple",
+      "Heritage",
+      "River"
     ],
-    nearbyAttractions: ["Mysuru", "Bandipur National Park", "BR Hills"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Mysuru Ring Road → NH 766 to Nanjangud",
-    thingsToDo: ["Temple darshan & pradakshina", "Kapila river holy dip", "Taste Nanjangud Rasabale bananas", "Visit ancient chariot shed"],
-    localFood: ["Temple meals", "Nanjangud Rasabale small bananas"],
-    entryInformation: "Free temple entry. Special queue ticket ₹50.",
-    permitInformation: "No permits required.",
-    safetyNotes: "River currents near bathing ghats can be swift during rain release.",
-    oneDayItinerary: "Combine Nanjangud morning temple visit with Mysore Palace and Chamundi Hills.",
-    twoDayItinerary: "Gateway stop on the Bangalore-Mysore-Bandipur-Ooty wildlife route.",
-    relatedDestinations: ["mysuru", "bandipur", "kabini", "br-hills"],
-    relatedPackages: ["mysore-nanjangud-bandipur-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru", "bengaluru-to-ooty"],
-    faqs: [
-      { q: "Why is Nanjangud called Varanasi of the South?", a: "Because of the ancient Srikanteshwara temple on the holy Kapila river." }
+    "approximateDistanceFromBengaluru": "Approx. 170 km",
+    "approximateDriveTime": "3.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Nanjangud Srikanteshwara Temple is a premier destination located in the Mysuru district within the Mysuru Region of Karnataka. Situated Approx. 170 km from Bengaluru (3.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Nanjangud Srikanteshwara Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Nanjangud Srikanteshwara Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Nanjangud Srikanteshwara Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Nanjangud Srikanteshwara Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Nanjangud Srikanteshwara Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Nanjangud Srikanteshwara Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Nanjangud Srikanteshwara Temple from Bengaluru?",
+        "answer": "Nanjangud Srikanteshwara Temple is Approx. 170 km from Bengaluru, taking 3.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Nanjangud Srikanteshwara Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "krs-brindavan-gardens",
-    name: "KRS Dam & Brindavan Gardens",
-    slug: "krs-brindavan-gardens",
-    district: "Mandya / Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Gardens", "Dam", "Fountains", "Family"],
-    approximateDistanceFromBengaluru: 140,
-    approximateDriveTime: "2.5 hrs",
-    bestSeason: "September to March",
-    suggestedDuration: "Half Day (Late afternoon to evening)",
-    overview: "Built across the River Kaveri, Krishnarajasagara (KRS) Dam features the famous Brindavan Gardens with terraced lawns and musical dancing fountains.",
-    historyAndCulture: "Engineered in 1932 by Sir M. Visvesvaraya under Maharaja Krishnaraja Wodeyar IV, serving as the irrigation lifeline of southern Karnataka.",
-    majorAttractions: [
-      "Brindavan Terraced Gardens",
-      "Musical Dancing Fountain Light & Sound Show",
-      "KRS Dam Reservoir Viewpoint",
-      "Boating Pond inside garden",
-      "Illuminated Water Cascades"
+    "id": "krs-brindavan-gardens",
+    "name": "KRS Dam & Brindavan Gardens",
+    "slug": "krs-brindavan-gardens",
+    "district": "Mandya",
+    "region": "Mysuru Region",
+    "categories": [
+      "Gardens",
+      "Fountains",
+      "Dam",
+      "Family"
     ],
-    nearbyAttractions: ["Mysuru", "Srirangapatna", "Ranganathittu"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Srirangapatna → KRS Dam Road",
-    thingsToDo: ["Watch evening musical fountain show (6:30 PM–7:30 PM)", "Garden walking & photography", "Boating inside garden pond"],
-    localFood: ["Garden food court snacks", "South Indian meals"],
-    entryInformation: "Garden entry fee ₹50. Musical fountain included. Camera fee ₹100.",
-    permitInformation: "Dam top walk is restricted due to security protocols.",
-    safetyNotes: "Huge weekend crowds for evening fountain show. Hold kids' hands firmly.",
-    oneDayItinerary: "Visit Mysore Palace in morning → Ranganathittu at noon → KRS Brindavan Gardens from 5:00 PM for musical fountain → Return to Bangalore.",
-    twoDayItinerary: "Evening finale stop of Day 1 in 2-day Mysuru tour.",
-    relatedDestinations: ["mysuru", "srirangapatna", "ranganathittu"],
-    relatedPackages: ["bengaluru-to-mysore-1day-royal-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What time does the musical fountain show start?", a: "The show starts around 6:30 PM on weekdays and 7:00 PM on weekends." }
+    "approximateDistanceFromBengaluru": "Approx. 145 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "KRS Dam & Brindavan Gardens is a premier destination located in the Mandya district within the Mysuru Region of Karnataka. Situated Approx. 145 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "KRS Dam & Brindavan Gardens holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "KRS Dam & Brindavan Gardens Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at KRS Dam & Brindavan Gardens",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mandya via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of KRS Dam & Brindavan Gardens",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at KRS Dam & Brindavan Gardens for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to KRS Dam & Brindavan Gardens, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is KRS Dam & Brindavan Gardens from Bengaluru?",
+        "answer": "KRS Dam & Brindavan Gardens is Approx. 145 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to KRS Dam & Brindavan Gardens?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "bandipur",
-    name: "Bandipur Tiger Reserve & National Park",
-    slug: "bandipur",
-    district: "Chamarajanagar",
-    region: "Southern Karnataka",
-    categories: ["Wildlife", "Safari", "Tiger Reserve", "Forest"],
-    approximateDistanceFromBengaluru: 220,
-    approximateDriveTime: "4.5 hrs",
-    bestSeason: "October to June (March to May ideal for predator sightings)",
-    suggestedDuration: "2 Days",
-    overview: "Part of the Nilgiri Biosphere Reserve, Bandipur is one of India's premier Tiger Reserves, home to Royal Bengal Tigers, Asian Elephants, Leopards, and Indian Gaurs.",
-    historyAndCulture: "Established in 1931 as a hunting reserve by Wodeyar Maharajas, it became one of the first nine Project Tiger reserves in 1973.",
-    majorAttractions: [
-      "Jungle Bus Safari & Open Jeep Safari",
-      "Himavad Gopalaswamy Betta Peak nearby",
-      "Elephant Sightings along Highway Corridor",
-      "Jungle Lodges & Resorts (JLR) Nature Camp",
-      "Biligiri Ranganatha Swamy Sanctuary connectivity"
+    "id": "bandipur",
+    "name": "Bandipur National Park & Tiger Reserve",
+    "slug": "bandipur",
+    "district": "Chamarajanagar",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Tiger Reserve",
+      "Forest"
     ],
-    nearbyAttractions: ["Nagarhole / Kabini", "Ooty (30 km away)", "Gopalaswamy Betta", "Mudumalai Sanctuary"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Nanjangud → Gundlupet → Bandipur Forest Gate (NH 766)",
-    thingsToDo: ["Morning (6 AM) & Evening (3 PM) wildlife safaris", "Drive up Himavad Gopalaswamy Betta", "Birdwatching", "Forest resort stay"],
-    localFood: ["JLR Safari Buffet", "South Indian thali at Gundlupet"],
-    entryInformation: "Bus safari ~₹350. Jeep safari ~₹1,500–₹2,000 per seat. Ticket counter at Melukamanahalli.",
-    permitInformation: "Night traffic ban on NH 766 through Bandipur from 9:00 PM to 6:00 AM strictly enforced.",
-    safetyNotes: "Do not step out of vehicle on forest highway. Night driving through forest is forbidden.",
-    oneDayItinerary: "Not recommended for 1 day due to 4.5h distance. Prefer overnight stay.",
-    twoDayItinerary: "Day 1: 6:00 AM Bangalore departure → Reach Bandipur resort by 11:30 AM → 3:00 PM Afternoon Jeep Safari. Day 2: 6:00 AM Morning Safari → Check out → Visit Himavad Gopalaswamy Betta → Return via Mysore.",
-    relatedDestinations: ["kabini", "nagarhole", "mysuru", "br-hills"],
-    relatedPackages: ["bandipur-and-kabini-wildlife-3day-package", "bandipur-safari-and-ooty-escape"],
-    relatedRoutes: ["bengaluru-to-ooty", "bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What is the night traffic rule in Bandipur?", a: "All vehicle movement on forest highways is banned between 9:00 PM and 6:00 AM." },
-      { q: "What animals can be spotted in Bandipur?", a: "Tigers, leopards, elephants, gaurs, dholes (wild dogs), chital, and sambar deer." }
+    "approximateDistanceFromBengaluru": "Approx. 220 km",
+    "approximateDriveTime": "4.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bandipur National Park & Tiger Reserve is a premier destination located in the Chamarajanagar district within the Southern Karnataka of Karnataka. Situated Approx. 220 km from Bengaluru (4.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bandipur National Park & Tiger Reserve holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bandipur National Park & Tiger Reserve Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bandipur National Park & Tiger Reserve",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chamarajanagar via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bandipur National Park & Tiger Reserve",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bandipur National Park & Tiger Reserve for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bandipur National Park & Tiger Reserve, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bandipur National Park & Tiger Reserve from Bengaluru?",
+        "answer": "Bandipur National Park & Tiger Reserve is Approx. 220 km from Bengaluru, taking 4.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bandipur National Park & Tiger Reserve?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "nagarhole",
-    name: "Nagarhole Tiger Reserve (Rajiv Gandhi NP)",
-    slug: "nagarhole",
-    district: "Kodagu / Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Wildlife", "Safari", "Tiger Reserve", "Forest"],
-    approximateDistanceFromBengaluru: 225,
-    approximateDriveTime: "4.5 hrs",
-    bestSeason: "October to May",
-    suggestedDuration: "2 Days",
-    overview: "Renowned for dense teak forests, high density of tigers and leopards, and large herds of Asian elephants along the Kabini river basin.",
-    historyAndCulture: "Derived from 'Naga' (snake) and 'Hole' (stream), referring to winding rivers flowing through former royal hunting grounds.",
-    majorAttractions: [
-      "Veeranahosahalli Safari Zone",
-      "Kutta Safari Gate",
-      "Kabini Backwaters Wildlife Zone",
-      "Taraka Dam backwaters",
-      "Iruppu Falls nearby"
+    "id": "nagarhole",
+    "name": "Nagarhole Tiger Reserve",
+    "slug": "nagarhole",
+    "district": "Kodagu / Mysuru",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Tiger Reserve",
+      "Forest"
     ],
-    nearbyAttractions: ["Kabini", "Madikeri (Coorg)", "Iruppu Falls", "Waynad"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Hunsur → Veeranahosahalli Gate → Nagarhole",
-    thingsToDo: ["Forest department bus & jeep safaris", "Elephant corridor driving", "Wildlife photography", "Stay at eco jungle lodges"],
-    localFood: ["JLR Jungle Resort buffet", "Coorg Pandi Curry & Akki Oti in Kutta"],
-    entryInformation: "Safari counter at Veeranahosahalli & Kutta gates. Fee ~₹350–₹1,500.",
-    permitInformation: "Night travel prohibited inside forest range roads 6:00 PM to 6:00 AM.",
-    safetyNotes: "Always maintain quiet during safaris. Do not litter inside reserve.",
-    oneDayItinerary: "Not recommended for 1 day trip.",
-    twoDayItinerary: "Day 1: Drive to Nagarhole, afternoon safari, stay at resort. Day 2: Early morning safari, visit Iruppu Falls, return to Bangalore.",
-    relatedDestinations: ["kabini", "bandipur", "kushalnagar-dubare", "madikeri"],
-    relatedPackages: ["bandipur-and-kabini-wildlife-3day-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [
-      { q: "How is Nagarhole different from Kabini?", a: "Kabini is the river/backwater safari sector of the broader Nagarhole Tiger Reserve ecosystem." }
+    "approximateDistanceFromBengaluru": "Approx. 220 km",
+    "approximateDriveTime": "4.5–5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Nagarhole Tiger Reserve is a premier destination located in the Kodagu / Mysuru district within the Kodagu (Coorg) of Karnataka. Situated Approx. 220 km from Bengaluru (4.5–5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Nagarhole Tiger Reserve holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Nagarhole Tiger Reserve Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Nagarhole Tiger Reserve",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu / Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Nagarhole Tiger Reserve",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Nagarhole Tiger Reserve for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Nagarhole Tiger Reserve, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Nagarhole Tiger Reserve from Bengaluru?",
+        "answer": "Nagarhole Tiger Reserve is Approx. 220 km from Bengaluru, taking 4.5–5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Nagarhole Tiger Reserve?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "kabini",
-    name: "Kabini River & Wildlife Sanctuary",
-    slug: "kabini",
-    district: "Mysuru",
-    region: "Southern Karnataka",
-    categories: ["Wildlife", "Luxury Safari", "River", "Resort"],
-    approximateDistanceFromBengaluru: 215,
-    approximateDriveTime: "4.5 hrs",
-    bestSeason: "October to May (Famous for Black Panther sightings)",
-    suggestedDuration: "2–3 Days",
-    overview: "India's premier luxury wildlife destination along the serene Kabini River backwaters, world-famous for sightings of the rare Black Panther (Saya), tigers, and massive elephant congregations.",
-    historyAndCulture: "Former exclusive hunting lodge of the Viceroy of India and Mysore Maharajas, transformed into a world-class eco-tourism reserve.",
-    majorAttractions: [
-      "Kabini Boat Safari on Reservoir",
-      "JLR Open Jeep Safari in Nagarhole Core",
-      "Black Panther (Saya) Habitat Zone",
-      "Kabini River Dam & Backwaters",
-      "Bavali Forest Checkpost Zone"
+    "id": "kabini",
+    "name": "Kabini River Wildlife Sanctuary",
+    "slug": "kabini",
+    "district": "Mysuru",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Wildlife",
+      "River Safari",
+      "Luxury Jungle",
+      "Nature"
     ],
-    nearbyAttractions: ["Bandipur", "Nagarhole", "Waynad", "Nanjangud"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Mysuru Ring Road → HD Kote Road → Karapura / Kabini",
-    thingsToDo: ["Kabini river boat safari", "Jungle jeep tiger tracking", "Luxury resort spa & coracle ride", "Sunset over Kabini backwaters"],
-    localFood: ["Luxury resort dining", "Fresh freshwater fish delicacies"],
-    entryInformation: "Safaris operated exclusively through Jungle Lodges & Resorts (JLR) and Forest Dept.",
-    permitInformation: "Advance safari booking via JLR or Forest portal mandatory.",
-    safetyNotes: "Safaris operate strictly at 6:00 AM and 3:30 PM. Punctuality is required.",
-    oneDayItinerary: "Not recommended for single day.",
-    twoDayItinerary: "Day 1: Drive to Kabini resort, 3:30 PM Boat Safari, evening bonfire. Day 2: 6:00 AM Open Jeep Jungle Safari, breakfast, check out & return to Bangalore.",
-    relatedDestinations: ["bandipur", "nagarhole", "mysuru"],
-    relatedPackages: ["bandipur-and-kabini-wildlife-3day-package"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "Can we see the Black Panther in Kabini?", a: "Kabini is the only forest in India famous for regular sightings of the wild Black Panther (Saya)." }
+    "approximateDistanceFromBengaluru": "Approx. 210 km",
+    "approximateDriveTime": "4.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kabini River Wildlife Sanctuary is a premier destination located in the Mysuru district within the Southern Karnataka of Karnataka. Situated Approx. 210 km from Bengaluru (4.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kabini River Wildlife Sanctuary holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kabini River Wildlife Sanctuary Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kabini River Wildlife Sanctuary",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Mysuru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kabini River Wildlife Sanctuary",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kabini River Wildlife Sanctuary for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kabini River Wildlife Sanctuary, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kabini River Wildlife Sanctuary from Bengaluru?",
+        "answer": "Kabini River Wildlife Sanctuary is Approx. 210 km from Bengaluru, taking 4.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kabini River Wildlife Sanctuary?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "br-hills",
-    name: "BR Hills (Biligirirangana Hills)",
-    slug: "br-hills",
-    district: "Chamarajanagar",
-    region: "Southern Karnataka",
-    categories: ["Hill Station", "Wildlife", "Pilgrimage", "Tribal"],
-    approximateDistanceFromBengaluru: 175,
-    approximateDriveTime: "4 hrs",
-    bestSeason: "September to April",
-    suggestedDuration: "1–2 Days",
-    overview: "A unique ecological bridge connecting the Western and Eastern Ghats, featuring the ancient Biligiriranganatha Swamy Temple cliff top and Soliga tribal heritage.",
-    historyAndCulture: "Home to the indigenous Soliga tribe who have lived in harmony with the forest tigers for millennia.",
-    majorAttractions: [
-      "Biligiriranganatha Swamy Temple on precipice",
-      "BR Hills Wildlife Sanctuary Safari",
-      "K Gudi Wilderness Camp (JLR)",
-      "Dodda Sampige Mara (2000-yr old sacred Banyan tree)",
-      "Honnametti Estate Viewpoint"
+    "id": "br-hills",
+    "name": "Biligiriranga (BR) Hills Sanctuary",
+    "slug": "br-hills",
+    "district": "Chamarajanagar",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Wildlife",
+      "Hill Station",
+      "Pilgrimage",
+      "Tribal Culture"
     ],
-    nearbyAttractions: ["MM Hills", "Bandipur", "Shivanasamudra", "Nanjangud"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road → Malavalli → Yelandur → BR Hills Ghat Road",
-    thingsToDo: ["Temple cliff visit", "K Gudi jeep safari", "Soliga tribal handicraft & honey shopping", "Birdwatching"],
-    localFood: ["Soliga wild forest honey", "Organic tribal coffee", "JLR Resort meals"],
-    entryInformation: "Free temple entry. K Gudi safari booked via JLR.",
-    permitInformation: "Ghat road checkpost closed at night (6:00 PM to 6:00 AM).",
-    safetyNotes: "Drive slowly on narrow forest ghat curves.",
-    oneDayItinerary: "6:00 AM Bangalore departure → 10:00 AM reach BR Hills → Temple darshan & cliff viewpoint → 1:00 PM Lunch at K Gudi → 3:00 PM Forest drive & Dodda Sampige Mara → Return by 8:30 PM.",
-    twoDayItinerary: "Day 1: Drive to K Gudi JLR Camp, afternoon safari, night stay. Day 2: Morning nature walk, temple visit, return via Malavalli.",
-    relatedDestinations: ["male-mahadeshwara-hills", "bandipur", "shivanasamudra"],
-    relatedPackages: ["br-hills-wildlife-and-temple-escape"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "What connects Western and Eastern Ghats?", a: "BR Hills serves as the primary ecological corridor connecting Western and Eastern Ghats." }
+    "approximateDistanceFromBengaluru": "Approx. 175 km",
+    "approximateDriveTime": "4 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Biligiriranga (BR) Hills Sanctuary is a premier destination located in the Chamarajanagar district within the Southern Karnataka of Karnataka. Situated Approx. 175 km from Bengaluru (4 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Biligiriranga (BR) Hills Sanctuary holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Biligiriranga (BR) Hills Sanctuary Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Biligiriranga (BR) Hills Sanctuary",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chamarajanagar via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Biligiriranga (BR) Hills Sanctuary",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Biligiriranga (BR) Hills Sanctuary for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Biligiriranga (BR) Hills Sanctuary, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Biligiriranga (BR) Hills Sanctuary from Bengaluru?",
+        "answer": "Biligiriranga (BR) Hills Sanctuary is Approx. 175 km from Bengaluru, taking 4 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Biligiriranga (BR) Hills Sanctuary?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "male-mahadeshwara-hills",
-    name: "Male Mahadeshwara Hills (MM Hills)",
-    slug: "male-mahadeshwara-hills",
-    district: "Chamarajanagar",
-    region: "Southern Karnataka",
-    categories: ["Pilgrimage", "Hill Station", "Forest", "Heritage"],
-    approximateDistanceFromBengaluru: 210,
-    approximateDriveTime: "4.5 hrs",
-    bestSeason: "October to March (Mahashivaratri festival in Feb/Mar)",
-    suggestedDuration: "1–2 Days",
-    overview: "A sacred hill range surrounded by 77 hills in dense tiger forests, home to the celebrated 15th-century Lord Male Mahadeshwara Temple pilgrimage shrine.",
-    historyAndCulture: "Dedicated to Saint Mahadeshwara, an incarnation of Lord Shiva who performed miracles across these 77 hills in the 15th century.",
-    majorAttractions: [
-      "Sri Male Mahadeshwara Swamy Temple",
-      "Nagamale sacred hill trek",
-      "Palar River border point",
-      "Hogenakkal Falls nearby lookout",
-      "MM Hills Wildlife Sanctuary forests"
+    "id": "male-mahadeshwara-hills",
+    "name": "Male Mahadeshwara (MM) Hills",
+    "slug": "male-mahadeshwara-hills",
+    "district": "Chamarajanagar",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Pilgrimage",
+      "Hill Station",
+      "Forest",
+      "Heritage"
     ],
-    nearbyAttractions: ["BR Hills", "Hogenakkal Falls", "Shivanasamudra"],
-    bengaluruRoute: "Bengaluru → Kanakapura Road → Kollegal → Hanur → MM Hills Ghat Road",
-    thingsToDo: ["Temple darshan & laddu prasadam", "Nagamale holy trek", "Scenic 77-hill view driving"],
-    localFood: ["Temple prasadam meals", "MM Hills famous Laddus"],
-    entryInformation: "Free temple entry. Special darshan ₹50.",
-    permitInformation: "No permits needed for temple visit.",
-    safetyNotes: "Continuous sharp ghat curves. Experienced hill drivers recommended.",
-    oneDayItinerary: "Early morning 5:00 AM start → Reach MM Hills by 10:00 AM → Temple darshan & prasadam → Visit view points → Return by 9:00 PM.",
-    twoDayItinerary: "Day 1: Drive to MM Hills, temple darshan, night stay at Devasthana cottage. Day 2: Nagamale trek, drive to Hogenakkal Falls, return to Bangalore.",
-    relatedDestinations: ["br-hills", "shivanasamudra", "bengaluru"],
-    relatedPackages: ["mm-hills-pilgrimage-tour"],
-    relatedRoutes: ["bengaluru-to-mysuru"],
-    faqs: [
-      { q: "How many hills surround MM Hills?", a: "MM Hills is surrounded by a dense forest range of 77 hills." }
+    "approximateDistanceFromBengaluru": "Approx. 210 km",
+    "approximateDriveTime": "5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Male Mahadeshwara (MM) Hills is a premier destination located in the Chamarajanagar district within the Southern Karnataka of Karnataka. Situated Approx. 210 km from Bengaluru (5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Male Mahadeshwara (MM) Hills holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Male Mahadeshwara (MM) Hills Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Male Mahadeshwara (MM) Hills",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chamarajanagar via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Male Mahadeshwara (MM) Hills",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Male Mahadeshwara (MM) Hills for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Male Mahadeshwara (MM) Hills, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Male Mahadeshwara (MM) Hills from Bengaluru?",
+        "answer": "Male Mahadeshwara (MM) Hills is Approx. 210 km from Bengaluru, taking 5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Male Mahadeshwara (MM) Hills?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "belur",
-    name: "Belur Chennakeshava Temple",
-    slug: "belur",
-    district: "Hassan",
-    region: "Malnad & Western Ghats",
-    categories: ["UNESCO", "Heritage", "Hoysala", "Architecture"],
-    approximateDistanceFromBengaluru: 220,
-    approximateDriveTime: "3.5 hrs (via Hassan Highway)",
-    bestSeason: "October to March",
-    suggestedDuration: "Half Day (Combine with Halebidu)",
-    overview: "A UNESCO World Heritage Masterpiece, Belur's 12th-century Chennakeshava Temple is world-renowned for exquisite soapstone bracket damsels (Madanikas) and intricate filigree stonework.",
-    historyAndCulture: "Commissioned in 1117 CE by Hoysala King Vishnuvardhana to celebrate his victory over the Cholas at Talakadu.",
-    majorAttractions: [
-      "Chennakeshava Main Temple & Star-Shaped Platform",
-      "42 Darpana Sundari & Madanika Bracket Statues",
-      "Gravity Pillar (Mahastambha standing without deep foundation)",
-      "Narasimha Pillar with rotating stone ring mechanism",
-      "Kappe Chennigaraya Shrine"
+    "id": "belur",
+    "name": "Belur Chennakeshava Hoysala Temple",
+    "slug": "belur",
+    "district": "Hassan",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Heritage",
+      "Architecture",
+      "Hoysala",
+      "Pilgrimage"
     ],
-    nearbyAttractions: ["Halebidu (16 km)", "Shravanabelagola", "Sakleshpur", "Chikkamagaluru"],
-    bengaluruRoute: "Bengaluru → Hassan Highway (NH 75) → Hassan Bypass → Belur Road",
-    thingsToDo: ["Hire an official ASI guide to explain Madanika statues", "Photograph star-shaped temple elevation", "Marvel at gravity pillar"],
-    localFood: ["South Indian meals in Belur town", "Hassan style Akki Roti"],
-    entryInformation: "ASI entry fee ₹25. UNESCO World Heritage Site.",
-    permitInformation: "No special permits needed.",
-    safetyNotes: "Remove shoes before entering temple courtyard. Leather items prohibited inside main sanctum.",
-    oneDayItinerary: "6:00 AM Bangalore departure → 9:30 AM breakfast in Hassan → 10:30 AM explore Belur Chennakeshava Temple → 1:00 PM lunch → 2:00 PM explore Halebidu Hoysaleswara Temple → 4:00 PM visit Shravanabelagola → Return to Bangalore by 9:00 PM.",
-    twoDayItinerary: "Combine Belur & Halebidu with Chikkamagaluru hill stay or Sakleshpur coffee plantations.",
-    relatedDestinations: ["halebidu", "shravanabelagola", "hassan", "chikkamagaluru"],
-    relatedPackages: ["hoysala-heritage-belur-halebidu-day-tour"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [
-      { q: "How far is Belur from Halebidu?", a: "Belur and Halebidu are just 16 km apart (about 25 mins drive)." },
-      { q: "Is Belur a UNESCO World Heritage site?", a: "Yes, inscribed as a UNESCO World Heritage Site in September 2023." }
+    "approximateDistanceFromBengaluru": "Approx. 220 km",
+    "approximateDriveTime": "4 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Belur Chennakeshava Hoysala Temple is a premier destination located in the Hassan district within the Malnad & Central Ghats of Karnataka. Situated Approx. 220 km from Bengaluru (4 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Belur Chennakeshava Hoysala Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Belur Chennakeshava Hoysala Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Belur Chennakeshava Hoysala Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Hassan via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Belur Chennakeshava Hoysala Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Belur Chennakeshava Hoysala Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Belur Chennakeshava Hoysala Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Belur Chennakeshava Hoysala Temple from Bengaluru?",
+        "answer": "Belur Chennakeshava Hoysala Temple is Approx. 220 km from Bengaluru, taking 4 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Belur Chennakeshava Hoysala Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "halebidu",
-    name: "Halebidu Hoysaleswara Temple",
-    slug: "halebidu",
-    district: "Hassan",
-    region: "Malnad & Western Ghats",
-    categories: ["UNESCO", "Heritage", "Hoysala", "Architecture"],
-    approximateDistanceFromBengaluru: 210,
-    approximateDriveTime: "3.5 hrs",
-    bestSeason: "October to March",
-    suggestedDuration: "Half Day (Combine with Belur)",
-    overview: "The regal capital of the Hoysala Empire (Dwarasamudra), famous for the magnificent twin-shrine Hoysaleswara Temple with 200+ meters of continuous carved wall friezes.",
-    historyAndCulture: "Built in the 12th century by Ketamala for King Vishnuvardhana. Sacked twice by the Delhi Sultanate, earning the name 'Hale-bidu' (Ruined City).",
-    majorAttractions: [
-      "Hoysaleswara & Shantaleswara Twin Temples",
-      "Giant Monolithic Nandi Mandapas (2 massive carved bulls)",
-      "Wall Friezes of 1,248 Carved Elephants (no two identical)",
-      "Kedareswara Temple & Archaeological Museum",
-      "Basadi Halli Jain Temples (Parshvanatha Basadi with mirror pillars)"
+    "id": "halebidu",
+    "name": "Halebidu Hoysaleshwara Temple",
+    "slug": "halebidu",
+    "district": "Hassan",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Heritage",
+      "Architecture",
+      "Hoysala",
+      "History"
     ],
-    nearbyAttractions: ["Belur (16 km)", "Shravanabelagola", "Hassan"],
-    bengaluruRoute: "Bengaluru → Hassan Highway (NH 75) → Hassan Bypass → Halebidu Road",
-    thingsToDo: ["Examine detailed elephant and mythological wall relief bands", "Visit ASI Museum", "Photograph Jain mirror pillars at Basadi Halli"],
-    localFood: ["Local South Indian thali"],
-    entryInformation: "ASI entry fee ₹25. UNESCO World Heritage Site.",
-    permitInformation: "No permits required.",
-    safetyNotes: "Use sun hats/caps as the open stone courtyard gets warm by midday.",
-    oneDayItinerary: "Part of the iconic Belur-Halebidu-Shravanabelagola Hoysala Golden Triangle day tour.",
-    twoDayItinerary: "Combine Halebidu with Belur, Chikkamagaluru, and Mullayanagiri peak.",
-    relatedDestinations: ["belur", "shravanabelagola", "hassan", "chikkamagaluru"],
-    relatedPackages: ["hoysala-heritage-belur-halebidu-day-tour"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [
-      { q: "What was Halebidu originally called?", a: "It was named Dwarasamudra, the capital of the Hoysala Empire." }
+    "approximateDistanceFromBengaluru": "Approx. 210 km",
+    "approximateDriveTime": "4 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Halebidu Hoysaleshwara Temple is a premier destination located in the Hassan district within the Malnad & Central Ghats of Karnataka. Situated Approx. 210 km from Bengaluru (4 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Halebidu Hoysaleshwara Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Halebidu Hoysaleshwara Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Halebidu Hoysaleshwara Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Hassan via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Halebidu Hoysaleshwara Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Halebidu Hoysaleshwara Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Halebidu Hoysaleshwara Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Halebidu Hoysaleshwara Temple from Bengaluru?",
+        "answer": "Halebidu Hoysaleshwara Temple is Approx. 210 km from Bengaluru, taking 4 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Halebidu Hoysaleshwara Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "shravanabelagola",
-    name: "Shravanabelagola Bahubali Monolith",
-    slug: "shravanabelagola",
-    district: "Hassan",
-    region: "Southern Karnataka",
-    categories: ["Jainism", "UNESCO Candidate", "Pilgrimage", "Monolith"],
-    approximateDistanceFromBengaluru: 140,
-    approximateDriveTime: "2.5 hrs (via Hassan NH 75)",
-    bestSeason: "October to March (Mahamastakabhisheka held every 12 years)",
-    suggestedDuration: "Half Day",
-    overview: "Home to the world's tallest monolithic statue—the 57-foot-high granite statue of Lord Bahubali (Gommateshwara), carved in 981 CE atop Vindhyagiri Hill.",
-    historyAndCulture: "Commissioned by Chavundaraya, prime minister of the Ganga Dynasty. Chandragupta Maurya spent his last days here in meditation with Acharya Bhadrabahu.",
-    majorAttractions: [
-      "57 ft Monolithic Gommateshwara (Bahubali) Statue",
-      "Vindhyagiri Hill (650 stone steps climb)",
-      "Chandragiri Hill & Chandragupta Basadi",
-      "Bhandodevi & Akkana Basadi Jain temples",
-      "Kalyani Sacred Lotus Tank at base"
+    "id": "shravanabelagola",
+    "name": "Shravanabelagola Bahubali Monolith",
+    "slug": "shravanabelagola",
+    "district": "Hassan",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Heritage",
+      "Pilgrimage",
+      "Jainism",
+      "Monolith"
     ],
-    nearbyAttractions: ["Belur", "Halebidu", "Hassan", "Melkote"],
-    bengaluruRoute: "Bengaluru → Hassan Highway (NH 75) → Hirisave exit → Shravanabelagola",
-    thingsToDo: ["Climb 650 stone steps to summit statue", "View Chandragupta Maurya memorial cave on Chandragiri", "Heritage Jain art study"],
-    localFood: ["Pure Jain vegetarian dharamsala meals", "South Indian tiffin"],
-    entryInformation: "Free entry. Doli/palanquin services available for senior citizens (~₹1,500).",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Climbing 650 steps barefoot on bare rock can get hot after 11:00 AM. Carry socks.",
-    oneDayItinerary: "7:00 AM departure → 9:30 AM arrive Shravanabelagola → Climb Vindhyagiri hill & Bahubali darshan → 12:30 PM lunch → 2:00 PM proceed to Belur & Halebidu → Return by 9:00 PM.",
-    twoDayItinerary: "Day 1: Shravanabelagola & Hassan. Day 2: Belur, Halebidu & Chikkamagaluru.",
-    relatedDestinations: ["belur", "halebidu", "hassan", "melkote"],
-    relatedPackages: ["hoysala-heritage-belur-halebidu-day-tour"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [
-      { q: "How many steps are there in Shravanabelagola?", a: "There are approximately 650 stone steps carved directly into Vindhyagiri hill." },
-      { q: "How tall is the Bahubali statue?", a: "The monolithic statue stands 57 feet (17.4 meters) high." }
+    "approximateDistanceFromBengaluru": "Approx. 145 km",
+    "approximateDriveTime": "2.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Shravanabelagola Bahubali Monolith is a premier destination located in the Hassan district within the Southern Karnataka of Karnataka. Situated Approx. 145 km from Bengaluru (2.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Shravanabelagola Bahubali Monolith holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Shravanabelagola Bahubali Monolith Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Shravanabelagola Bahubali Monolith",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Hassan via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Shravanabelagola Bahubali Monolith",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Shravanabelagola Bahubali Monolith for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Shravanabelagola Bahubali Monolith, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Shravanabelagola Bahubali Monolith from Bengaluru?",
+        "answer": "Shravanabelagola Bahubali Monolith is Approx. 145 km from Bengaluru, taking 2.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Shravanabelagola Bahubali Monolith?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "sakleshpur",
-    name: "Sakleshpur Coffee & Mist Station",
-    slug: "sakleshpur",
-    district: "Hassan",
-    region: "Malnad & Western Ghats",
-    categories: ["Hill Station", "Coffee Plantation", "Trekking", "Nature"],
-    approximateDistanceFromBengaluru: 220,
-    approximateDriveTime: "4 hrs",
-    bestSeason: "July to March (Monsoon for lush greenery, winter for mist)",
-    suggestedDuration: "2 Days",
-    overview: "A scenic Malnad hill town renowned for lush coffee and cardamom estates, star-shaped Manjarabad Fort, green route railway treks, and pristine waterfalls.",
-    historyAndCulture: "Ruled by Hoysalas and local Nayakas, famous for the star-shaped fort built by French engineers for Tipu Sultan in 1792.",
-    majorAttractions: [
-      "Manjarabad Star Fort (Built by Tipu Sultan)",
-      "Bisle Ghat Viewpoint & Bisle Reserve Forest",
-      "Jenukallu Gudda Trekking Peak",
-      "Magajahalli (Abbi) Waterfall",
-      "Sakleshwara Swamy Temple on Hemavathi River"
+    "id": "sakleshpur",
+    "name": "Sakleshpur Coffee & Misty Ghats",
+    "slug": "sakleshpur",
+    "district": "Hassan",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Hill Station",
+      "Coffee Estate",
+      "Trekking",
+      "Nature"
     ],
-    nearbyAttractions: ["Belur", "Halebidu", "Chikkamagaluru", "Subramanya"],
-    bengaluruRoute: "Bengaluru → Hassan Highway (NH 75) → Sakleshpur Town",
-    thingsToDo: ["Coffee plantation homestay walk", "Explore 8-pointed Manjarabad Star Fort", "Bisle Ghat panoramic view of Western Ghats", "Trek Jenukallu Gudda"],
-    localFood: ["Malnad Akki Oti & Kadubu", "Freshly brewed Malnad filter coffee", "Bamboo shoot curry (in season)"],
-    entryInformation: "Manjarabad Fort entry free. Nominal parking charges.",
-    permitInformation: "Green route railway track walking is restricted by Indian Railways for safety.",
-    safetyNotes: "Drive carefully on Bisle ghat stretch during heavy monsoon mist.",
-    oneDayItinerary: "6:00 AM start → 10:00 AM Manjarabad Star Fort → 12:30 PM Magajahalli Waterfall → 2:00 PM lunch at estate homestay → Return to Bangalore by 9:30 PM.",
-    twoDayItinerary: "Day 1: Manjarabad Fort, Magajahalli Falls, check into coffee homestay. Day 2: Morning Bisle Viewpoint drive, Jenukallu Gudda hike, return via Belur.",
-    relatedDestinations: ["belur", "chikkamagaluru", "kukke-subramanya", "hassan"],
-    relatedPackages: ["sakleshpur-coffee-plantation-2day-escape"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru", "bengaluru-to-manghaluru"],
-    faqs: [
-      { q: "What is unique about Manjarabad Fort in Sakleshpur?", a: "It is an 8-pointed star-shaped fort built in 1792 using French military architectural design." }
+    "approximateDistanceFromBengaluru": "Approx. 220 km",
+    "approximateDriveTime": "4 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Sakleshpur Coffee & Misty Ghats is a premier destination located in the Hassan district within the Malnad & Central Ghats of Karnataka. Situated Approx. 220 km from Bengaluru (4 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Sakleshpur Coffee & Misty Ghats holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Sakleshpur Coffee & Misty Ghats Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Sakleshpur Coffee & Misty Ghats",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Hassan via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Sakleshpur Coffee & Misty Ghats",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Sakleshpur Coffee & Misty Ghats for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Sakleshpur Coffee & Misty Ghats, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Sakleshpur Coffee & Misty Ghats from Bengaluru?",
+        "answer": "Sakleshpur Coffee & Misty Ghats is Approx. 220 km from Bengaluru, taking 4 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Sakleshpur Coffee & Misty Ghats?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   },
   {
-    id: "hassan",
-    name: "Hassan District Heritage Hub",
-    slug: "hassan",
-    district: "Hassan",
-    region: "Southern Karnataka",
-    categories: ["Heritage", "Transit Hub", "Hoysala", "Temple"],
-    approximateDistanceFromBengaluru: 180,
-    approximateDriveTime: "3 hrs (via NH 75 Expressway)",
-    bestSeason: "October to March",
-    suggestedDuration: "1–2 Days",
-    overview: "The heritage gateway city of Karnataka, serving as the central hub for UNESCO Hoysala temples (Belur, Halebidu), Shravanabelagola, and Hasanamba Temple.",
-    historyAndCulture: "Named after Goddess Hasanamba, the city is steeped in 10th to 14th century Ganga and Hoysala architectural history.",
-    majorAttractions: [
-      "Hasanamba Temple (Opens only once a year during Diwali)",
-      "Gorur Dam across Hemavathi River",
-      "Shettihalli Rosary Church (Submerged Floating Church)",
-      "District Archaeological Museum",
-      "Mosale Twin Hoysala Temples"
+    "id": "hassan",
+    "name": "Hassan City Heritage Hub",
+    "slug": "hassan",
+    "district": "Hassan",
+    "region": "Southern Karnataka",
+    "categories": [
+      "Heritage Gateway",
+      "Urban",
+      "Culture"
     ],
-    nearbyAttractions: ["Belur", "Halebidu", "Shravanabelagola", "Sakleshpur"],
-    bengaluruRoute: "Bengaluru → Nelamangala → Kunigal → Chenrayapatna → Hassan (NH 75)",
-    thingsToDo: ["Visit Shettihalli submerged Gothic church backwaters", "Explore Gorur Hemavathi Dam", "Use as central base for Belur-Halebidu tours"],
-    localFood: ["Hassan style Ragi Mudde & Chicken Curry", "Akki Roti", "Butter Dosa"],
-    entryInformation: "Shettihalli Church free entry.",
-    permitInformation: "Hasanamba Temple opens for 10–12 days during Ashwayuja (Diwali season).",
-    safetyNotes: "Take coracle ride near Shettihalli submerged church only with experienced local boatmen.",
-    oneDayItinerary: "Bangalore to Shettihalli Submerged Church → Gorur Dam → Belur & Halebidu → Return.",
-    twoDayItinerary: "Day 1: Shravanabelagola, Shettihalli Church, Hassan stay. Day 2: Belur, Halebidu & Sakleshpur.",
-    relatedDestinations: ["belur", "halebidu", "shravanabelagola", "sakleshpur"],
-    relatedPackages: ["hoysala-heritage-belur-halebidu-day-tour"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [
-      { q: "Why is Shettihalli Church called the Submerged Church?", a: "Built in 1860, it gets half-submerged under Hemavathi dam waters during monsoon every year." }
+    "approximateDistanceFromBengaluru": "Approx. 180 km",
+    "approximateDriveTime": "3 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Hassan City Heritage Hub is a premier destination located in the Hassan district within the Southern Karnataka of Karnataka. Situated Approx. 180 km from Bengaluru (3 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Hassan City Heritage Hub holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Hassan City Heritage Hub Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Hassan City Heritage Hub",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
     ],
-    lastVerified: "15 September 2026",
-    status: "verified"
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Hassan via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Hassan City Heritage Hub",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Hassan City Heritage Hub for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Hassan City Heritage Hub, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Hassan City Heritage Hub from Bengaluru?",
+        "answer": "Hassan City Heritage Hub is Approx. 180 km from Bengaluru, taking 3 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Hassan City Heritage Hub?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "madikeri",
+    "name": "Madikeri (Coorg Headquarters)",
+    "slug": "madikeri",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Hill Station",
+      "Coffee Estate",
+      "Nature",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 265 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Madikeri (Coorg Headquarters) is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 265 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Madikeri (Coorg Headquarters) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Madikeri (Coorg Headquarters) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Madikeri (Coorg Headquarters)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Madikeri (Coorg Headquarters)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Madikeri (Coorg Headquarters) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Madikeri (Coorg Headquarters), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Madikeri (Coorg Headquarters) from Bengaluru?",
+        "answer": "Madikeri (Coorg Headquarters) is Approx. 265 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Madikeri (Coorg Headquarters)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kushalnagar-dubare",
+    "name": "Kushalnagar & Dubare Elephant Camp",
+    "slug": "kushalnagar-dubare",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Wildlife",
+      "Elephants",
+      "Monastery",
+      "River"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 235 km",
+    "approximateDriveTime": "5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kushalnagar & Dubare Elephant Camp is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 235 km from Bengaluru (5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kushalnagar & Dubare Elephant Camp holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kushalnagar & Dubare Elephant Camp Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kushalnagar & Dubare Elephant Camp",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kushalnagar & Dubare Elephant Camp",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kushalnagar & Dubare Elephant Camp for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kushalnagar & Dubare Elephant Camp, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kushalnagar & Dubare Elephant Camp from Bengaluru?",
+        "answer": "Kushalnagar & Dubare Elephant Camp is Approx. 235 km from Bengaluru, taking 5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kushalnagar & Dubare Elephant Camp?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "bhagamandala-talakaveri",
+    "name": "Bhagamandala & Talakaveri Peak",
+    "slug": "bhagamandala-talakaveri",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Pilgrimage",
+      "Source of Cauvery",
+      "Viewpoint",
+      "Mountains"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 300 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bhagamandala & Talakaveri Peak is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 300 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bhagamandala & Talakaveri Peak holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bhagamandala & Talakaveri Peak Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bhagamandala & Talakaveri Peak",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bhagamandala & Talakaveri Peak",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bhagamandala & Talakaveri Peak for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bhagamandala & Talakaveri Peak, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bhagamandala & Talakaveri Peak from Bengaluru?",
+        "answer": "Bhagamandala & Talakaveri Peak is Approx. 300 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bhagamandala & Talakaveri Peak?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "virajpet",
+    "name": "Virajpet Coffee Estates",
+    "slug": "virajpet",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Coffee Estate",
+      "Homestay",
+      "Nature",
+      "Relaxation"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 240 km",
+    "approximateDriveTime": "5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Virajpet Coffee Estates is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 240 km from Bengaluru (5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Virajpet Coffee Estates holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Virajpet Coffee Estates Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Virajpet Coffee Estates",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Virajpet Coffee Estates",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Virajpet Coffee Estates for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Virajpet Coffee Estates, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Virajpet Coffee Estates from Bengaluru?",
+        "answer": "Virajpet Coffee Estates is Approx. 240 km from Bengaluru, taking 5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Virajpet Coffee Estates?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kakkabe-tadiandamol",
+    "name": "Kakkabe & Tadiandamol Peak",
+    "slug": "kakkabe-tadiandamol",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Highest Peak",
+      "Trekking",
+      "Nature",
+      "Adventure"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 270 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kakkabe & Tadiandamol Peak is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 270 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kakkabe & Tadiandamol Peak holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kakkabe & Tadiandamol Peak Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kakkabe & Tadiandamol Peak",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kakkabe & Tadiandamol Peak",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kakkabe & Tadiandamol Peak for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kakkabe & Tadiandamol Peak, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kakkabe & Tadiandamol Peak from Bengaluru?",
+        "answer": "Kakkabe & Tadiandamol Peak is Approx. 270 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kakkabe & Tadiandamol Peak?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "chikkamagaluru",
+    "name": "Chikkamagaluru Coffee Country",
+    "slug": "chikkamagaluru",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Coffee Capital",
+      "Hill Station",
+      "Nature",
+      "Weekend"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 245 km",
+    "approximateDriveTime": "4.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Chikkamagaluru Coffee Country is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 245 km from Bengaluru (4.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Chikkamagaluru Coffee Country holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Chikkamagaluru Coffee Country Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Chikkamagaluru Coffee Country",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Chikkamagaluru Coffee Country",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Chikkamagaluru Coffee Country for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Chikkamagaluru Coffee Country, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Chikkamagaluru Coffee Country from Bengaluru?",
+        "answer": "Chikkamagaluru Coffee Country is Approx. 245 km from Bengaluru, taking 4.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Chikkamagaluru Coffee Country?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "mullayanagiri-baba-budangiri",
+    "name": "Mullayanagiri & Baba Budangiri Peaks",
+    "slug": "mullayanagiri-baba-budangiri",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Highest Peak in KA",
+      "Trekking",
+      "Heritage",
+      "Shrine"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 265 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Mullayanagiri & Baba Budangiri Peaks is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 265 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Mullayanagiri & Baba Budangiri Peaks holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Mullayanagiri & Baba Budangiri Peaks Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Mullayanagiri & Baba Budangiri Peaks",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Mullayanagiri & Baba Budangiri Peaks",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Mullayanagiri & Baba Budangiri Peaks for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Mullayanagiri & Baba Budangiri Peaks, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Mullayanagiri & Baba Budangiri Peaks from Bengaluru?",
+        "answer": "Mullayanagiri & Baba Budangiri Peaks is Approx. 265 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Mullayanagiri & Baba Budangiri Peaks?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kemmannugundi",
+    "name": "Kemmannugundi Hill Station",
+    "slug": "kemmannugundi",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Hill Station",
+      "Royal Retreat",
+      "Waterfalls",
+      "Gardens"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 270 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kemmannugundi Hill Station is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 270 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kemmannugundi Hill Station holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kemmannugundi Hill Station Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kemmannugundi Hill Station",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kemmannugundi Hill Station",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kemmannugundi Hill Station for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kemmannugundi Hill Station, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kemmannugundi Hill Station from Bengaluru?",
+        "answer": "Kemmannugundi Hill Station is Approx. 270 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kemmannugundi Hill Station?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kudremukh",
+    "name": "Kudremukh Peak & Iron Ore Range",
+    "slug": "kudremukh",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Horse-Face Peak",
+      "Trekking",
+      "National Park",
+      "Greenery"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 330 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kudremukh Peak & Iron Ore Range is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 330 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kudremukh Peak & Iron Ore Range holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kudremukh Peak & Iron Ore Range Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kudremukh Peak & Iron Ore Range",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kudremukh Peak & Iron Ore Range",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kudremukh Peak & Iron Ore Range for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kudremukh Peak & Iron Ore Range, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kudremukh Peak & Iron Ore Range from Bengaluru?",
+        "answer": "Kudremukh Peak & Iron Ore Range is Approx. 330 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kudremukh Peak & Iron Ore Range?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "horanadu",
+    "name": "Horanadu Annapoorneshwari Temple",
+    "slug": "horanadu",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Pilgrimage",
+      "Valley Temple",
+      "Nature",
+      "Culture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 320 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Horanadu Annapoorneshwari Temple is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 320 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Horanadu Annapoorneshwari Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Horanadu Annapoorneshwari Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Horanadu Annapoorneshwari Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Horanadu Annapoorneshwari Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Horanadu Annapoorneshwari Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Horanadu Annapoorneshwari Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Horanadu Annapoorneshwari Temple from Bengaluru?",
+        "answer": "Horanadu Annapoorneshwari Temple is Approx. 320 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Horanadu Annapoorneshwari Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "sringeri",
+    "name": "Sringeri Sharada Peetham",
+    "slug": "sringeri",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Pilgrimage",
+      "Advaita Peetham",
+      "Heritage",
+      "River"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 320 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Sringeri Sharada Peetham is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 320 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Sringeri Sharada Peetham holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Sringeri Sharada Peetham Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Sringeri Sharada Peetham",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Sringeri Sharada Peetham",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Sringeri Sharada Peetham for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Sringeri Sharada Peetham, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Sringeri Sharada Peetham from Bengaluru?",
+        "answer": "Sringeri Sharada Peetham is Approx. 320 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Sringeri Sharada Peetham?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "bhadra-wildlife-sanctuary",
+    "name": "Bhadra Wildlife Sanctuary (Muthodi)",
+    "slug": "bhadra-wildlife-sanctuary",
+    "district": "Chikkamagaluru / Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Wildlife",
+      "Safari",
+      "Tiger Reserve",
+      "Forest"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 285 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bhadra Wildlife Sanctuary (Muthodi) is a premier destination located in the Chikkamagaluru / Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 285 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bhadra Wildlife Sanctuary (Muthodi) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bhadra Wildlife Sanctuary (Muthodi) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bhadra Wildlife Sanctuary (Muthodi)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru / Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bhadra Wildlife Sanctuary (Muthodi)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bhadra Wildlife Sanctuary (Muthodi) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bhadra Wildlife Sanctuary (Muthodi), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bhadra Wildlife Sanctuary (Muthodi) from Bengaluru?",
+        "answer": "Bhadra Wildlife Sanctuary (Muthodi) is Approx. 285 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bhadra Wildlife Sanctuary (Muthodi)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "shivamogga",
+    "name": "Shivamogga (Shimoga Gateway)",
+    "slug": "shivamogga",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Waterfall Gateway",
+      "Heritage",
+      "River",
+      "Nature"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 300 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Shivamogga (Shimoga Gateway) is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 300 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Shivamogga (Shimoga Gateway) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Shivamogga (Shimoga Gateway) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Shivamogga (Shimoga Gateway)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Shivamogga (Shimoga Gateway)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Shivamogga (Shimoga Gateway) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Shivamogga (Shimoga Gateway), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Shivamogga (Shimoga Gateway) from Bengaluru?",
+        "answer": "Shivamogga (Shimoga Gateway) is Approx. 300 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Shivamogga (Shimoga Gateway)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "jog-falls",
+    "name": "Jog Falls (Gerusoppa Falls)",
+    "slug": "jog-falls",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Waterfalls",
+      "Highest Fall",
+      "Nature",
+      "Monsoon"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 410 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Jog Falls (Gerusoppa Falls) is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 410 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Jog Falls (Gerusoppa Falls) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Jog Falls (Gerusoppa Falls) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Jog Falls (Gerusoppa Falls)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Jog Falls (Gerusoppa Falls)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Jog Falls (Gerusoppa Falls) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Jog Falls (Gerusoppa Falls), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Jog Falls (Gerusoppa Falls) from Bengaluru?",
+        "answer": "Jog Falls (Gerusoppa Falls) is Approx. 410 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Jog Falls (Gerusoppa Falls)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "agumbe",
+    "name": "Agumbe Rainforest & Sunset Peak",
+    "slug": "agumbe",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Rainforest",
+      "King Cobra",
+      "Sunset",
+      "Monsoon"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 350 km",
+    "approximateDriveTime": "7 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Agumbe Rainforest & Sunset Peak is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 350 km from Bengaluru (7 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Agumbe Rainforest & Sunset Peak holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Agumbe Rainforest & Sunset Peak Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Agumbe Rainforest & Sunset Peak",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Agumbe Rainforest & Sunset Peak",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Agumbe Rainforest & Sunset Peak for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Agumbe Rainforest & Sunset Peak, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Agumbe Rainforest & Sunset Peak from Bengaluru?",
+        "answer": "Agumbe Rainforest & Sunset Peak is Approx. 350 km from Bengaluru, taking 7 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Agumbe Rainforest & Sunset Peak?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "keladi-ikkeri-sagara",
+    "name": "Keladi–Ikkeri–Sagara Heritage Circuit",
+    "slug": "keladi-ikkeri-sagara",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Heritage",
+      "Nayaka Dynasties",
+      "Architecture",
+      "Temples"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 370 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Keladi–Ikkeri–Sagara Heritage Circuit is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 370 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Keladi–Ikkeri–Sagara Heritage Circuit holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Keladi–Ikkeri–Sagara Heritage Circuit Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Keladi–Ikkeri–Sagara Heritage Circuit",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Keladi–Ikkeri–Sagara Heritage Circuit",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Keladi–Ikkeri–Sagara Heritage Circuit for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Keladi–Ikkeri–Sagara Heritage Circuit, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Keladi–Ikkeri–Sagara Heritage Circuit from Bengaluru?",
+        "answer": "Keladi–Ikkeri–Sagara Heritage Circuit is Approx. 370 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Keladi–Ikkeri–Sagara Heritage Circuit?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "honnemaradu",
+    "name": "Honnemaradu Sharavathi Backwaters",
+    "slug": "honnemaradu",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Island Backwaters",
+      "Kayaking",
+      "Nature",
+      "Camping"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 390 km",
+    "approximateDriveTime": "7 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Honnemaradu Sharavathi Backwaters is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 390 km from Bengaluru (7 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Honnemaradu Sharavathi Backwaters holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Honnemaradu Sharavathi Backwaters Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Honnemaradu Sharavathi Backwaters",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Honnemaradu Sharavathi Backwaters",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Honnemaradu Sharavathi Backwaters for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Honnemaradu Sharavathi Backwaters, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Honnemaradu Sharavathi Backwaters from Bengaluru?",
+        "answer": "Honnemaradu Sharavathi Backwaters is Approx. 390 km from Bengaluru, taking 7 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Honnemaradu Sharavathi Backwaters?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "thirthahalli-kavaledurga",
+    "name": "Thirthahalli & Kavaledurga Fort",
+    "slug": "thirthahalli-kavaledurga",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Fort",
+      "Trekking",
+      "River",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 330 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Thirthahalli & Kavaledurga Fort is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 330 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Thirthahalli & Kavaledurga Fort holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Thirthahalli & Kavaledurga Fort Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Thirthahalli & Kavaledurga Fort",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Thirthahalli & Kavaledurga Fort",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Thirthahalli & Kavaledurga Fort for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Thirthahalli & Kavaledurga Fort, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Thirthahalli & Kavaledurga Fort from Bengaluru?",
+        "answer": "Thirthahalli & Kavaledurga Fort is Approx. 330 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Thirthahalli & Kavaledurga Fort?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kodachadri",
+    "name": "Kodachadri Peak Trek & Sarvajna Peetha",
+    "slug": "kodachadri",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Trekking",
+      "Peak",
+      "Sunset",
+      "Forest"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 380 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kodachadri Peak Trek & Sarvajna Peetha is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 380 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kodachadri Peak Trek & Sarvajna Peetha holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kodachadri Peak Trek & Sarvajna Peetha Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kodachadri Peak Trek & Sarvajna Peetha",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kodachadri Peak Trek & Sarvajna Peetha",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kodachadri Peak Trek & Sarvajna Peetha for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kodachadri Peak Trek & Sarvajna Peetha, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kodachadri Peak Trek & Sarvajna Peetha from Bengaluru?",
+        "answer": "Kodachadri Peak Trek & Sarvajna Peetha is Approx. 380 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kodachadri Peak Trek & Sarvajna Peetha?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "udupi",
+    "name": "Udupi Temple & Cuisine City",
+    "slug": "udupi",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Pilgrimage",
+      "Coastal",
+      "Cuisine",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 400 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Udupi Temple & Cuisine City is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 400 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Udupi Temple & Cuisine City holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Udupi Temple & Cuisine City Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Udupi Temple & Cuisine City",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Udupi Temple & Cuisine City",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Udupi Temple & Cuisine City for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Udupi Temple & Cuisine City, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Udupi Temple & Cuisine City from Bengaluru?",
+        "answer": "Udupi Temple & Cuisine City is Approx. 400 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Udupi Temple & Cuisine City?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "malpe-st-marys-island",
+    "name": "Malpe Beach & St. Mary's Basaltic Island",
+    "slug": "malpe-st-marys-island",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Beach",
+      "Geological Monument",
+      "Islands",
+      "Water Sports"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 408 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Malpe Beach & St. Mary's Basaltic Island is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 408 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Malpe Beach & St. Mary's Basaltic Island holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Malpe Beach & St. Mary's Basaltic Island Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Malpe Beach & St. Mary's Basaltic Island",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Malpe Beach & St. Mary's Basaltic Island",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Malpe Beach & St. Mary's Basaltic Island for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Malpe Beach & St. Mary's Basaltic Island, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Malpe Beach & St. Mary's Basaltic Island from Bengaluru?",
+        "answer": "Malpe Beach & St. Mary's Basaltic Island is Approx. 408 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Malpe Beach & St. Mary's Basaltic Island?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "manipal",
+    "name": "Manipal University Town & Museum Hub",
+    "slug": "manipal",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Education Hub",
+      "Museums",
+      "Culture",
+      "Urban"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 400 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Manipal University Town & Museum Hub is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 400 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Manipal University Town & Museum Hub holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Manipal University Town & Museum Hub Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Manipal University Town & Museum Hub",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Manipal University Town & Museum Hub",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Manipal University Town & Museum Hub for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Manipal University Town & Museum Hub, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Manipal University Town & Museum Hub from Bengaluru?",
+        "answer": "Manipal University Town & Museum Hub is Approx. 400 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Manipal University Town & Museum Hub?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kaup-padubidri",
+    "name": "Kaup Lighthouse & Padubidri Blue Flag Beach",
+    "slug": "kaup-padubidri",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Lighthouse",
+      "Blue Flag Beach",
+      "Sunset",
+      "Sea"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 390 km",
+    "approximateDriveTime": "7 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kaup Lighthouse & Padubidri Blue Flag Beach is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 390 km from Bengaluru (7 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kaup Lighthouse & Padubidri Blue Flag Beach holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kaup Lighthouse & Padubidri Blue Flag Beach Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kaup Lighthouse & Padubidri Blue Flag Beach",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kaup Lighthouse & Padubidri Blue Flag Beach",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kaup Lighthouse & Padubidri Blue Flag Beach for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kaup Lighthouse & Padubidri Blue Flag Beach, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kaup Lighthouse & Padubidri Blue Flag Beach from Bengaluru?",
+        "answer": "Kaup Lighthouse & Padubidri Blue Flag Beach is Approx. 390 km from Bengaluru, taking 7 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kaup Lighthouse & Padubidri Blue Flag Beach?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kollur",
+    "name": "Kollur Mookambika Temple",
+    "slug": "kollur",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Pilgrimage",
+      "Goddess Shrine",
+      "Kodachadri Foothills",
+      "Culture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 430 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kollur Mookambika Temple is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 430 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kollur Mookambika Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kollur Mookambika Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kollur Mookambika Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kollur Mookambika Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kollur Mookambika Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kollur Mookambika Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kollur Mookambika Temple from Bengaluru?",
+        "answer": "Kollur Mookambika Temple is Approx. 430 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kollur Mookambika Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kundapura-maravanthe",
+    "name": "Kundapura & Maravanthe Turtle Beach",
+    "slug": "kundapura-maravanthe",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Highway Sea View",
+      "Beach",
+      "Backwaters",
+      "Coastal"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 435 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kundapura & Maravanthe Turtle Beach is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 435 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kundapura & Maravanthe Turtle Beach holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kundapura & Maravanthe Turtle Beach Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kundapura & Maravanthe Turtle Beach",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kundapura & Maravanthe Turtle Beach",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kundapura & Maravanthe Turtle Beach for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kundapura & Maravanthe Turtle Beach, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kundapura & Maravanthe Turtle Beach from Bengaluru?",
+        "answer": "Kundapura & Maravanthe Turtle Beach is Approx. 435 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kundapura & Maravanthe Turtle Beach?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "mangaluru",
+    "name": "Mangaluru Coastal Port City",
+    "slug": "mangaluru",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Port City",
+      "Cuisine",
+      "Beaches",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 350 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Mangaluru Coastal Port City is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 350 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Mangaluru Coastal Port City holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Mangaluru Coastal Port City Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Mangaluru Coastal Port City",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Mangaluru Coastal Port City",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Mangaluru Coastal Port City for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Mangaluru Coastal Port City, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Mangaluru Coastal Port City from Bengaluru?",
+        "answer": "Mangaluru Coastal Port City is Approx. 350 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Mangaluru Coastal Port City?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "dharmasthala-venur",
+    "name": "Dharmasthala Manjunatha Temple & Venur",
+    "slug": "dharmasthala-venur",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Pilgrimage",
+      "Heritage",
+      "Bahubali",
+      "Museum"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 300 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Dharmasthala Manjunatha Temple & Venur is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 300 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Dharmasthala Manjunatha Temple & Venur holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Dharmasthala Manjunatha Temple & Venur Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Dharmasthala Manjunatha Temple & Venur",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Dharmasthala Manjunatha Temple & Venur",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Dharmasthala Manjunatha Temple & Venur for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Dharmasthala Manjunatha Temple & Venur, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Dharmasthala Manjunatha Temple & Venur from Bengaluru?",
+        "answer": "Dharmasthala Manjunatha Temple & Venur is Approx. 300 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Dharmasthala Manjunatha Temple & Venur?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kukke-subramanya",
+    "name": "Kukke Subramanya Serpent Temple",
+    "slug": "kukke-subramanya",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Pilgrimage",
+      "Kumaraparvatha Foothill",
+      "Temple",
+      "Forest"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 280 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kukke Subramanya Serpent Temple is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 280 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kukke Subramanya Serpent Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kukke Subramanya Serpent Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kukke Subramanya Serpent Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kukke Subramanya Serpent Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kukke Subramanya Serpent Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kukke Subramanya Serpent Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kukke Subramanya Serpent Temple from Bengaluru?",
+        "answer": "Kukke Subramanya Serpent Temple is Approx. 280 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kukke Subramanya Serpent Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "moodabidri",
+    "name": "Moodabidri Jain Kashi (1000 Pillar Temple)",
+    "slug": "moodabidri",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Jain Heritage",
+      "1000 Pillar Temple",
+      "Architecture",
+      "History"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 340 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Moodabidri Jain Kashi (1000 Pillar Temple) is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 340 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Moodabidri Jain Kashi (1000 Pillar Temple) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Moodabidri Jain Kashi (1000 Pillar Temple) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Moodabidri Jain Kashi (1000 Pillar Temple)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Moodabidri Jain Kashi (1000 Pillar Temple)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Moodabidri Jain Kashi (1000 Pillar Temple) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Moodabidri Jain Kashi (1000 Pillar Temple), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Moodabidri Jain Kashi (1000 Pillar Temple) from Bengaluru?",
+        "answer": "Moodabidri Jain Kashi (1000 Pillar Temple) is Approx. 340 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Moodabidri Jain Kashi (1000 Pillar Temple)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "karkala",
+    "name": "Karkala Bahubali Monolith & Ramasamudra",
+    "slug": "karkala",
+    "district": "Udupi",
+    "region": "Coastal Canara",
+    "categories": [
+      "Monolith",
+      "Jain Heritage",
+      "Lake",
+      "Architecture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 360 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Karkala Bahubali Monolith & Ramasamudra is a premier destination located in the Udupi district within the Coastal Canara of Karnataka. Situated Approx. 360 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Karkala Bahubali Monolith & Ramasamudra holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Karkala Bahubali Monolith & Ramasamudra Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Karkala Bahubali Monolith & Ramasamudra",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Udupi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Karkala Bahubali Monolith & Ramasamudra",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Karkala Bahubali Monolith & Ramasamudra for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Karkala Bahubali Monolith & Ramasamudra, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Karkala Bahubali Monolith & Ramasamudra from Bengaluru?",
+        "answer": "Karkala Bahubali Monolith & Ramasamudra is Approx. 360 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Karkala Bahubali Monolith & Ramasamudra?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "gokarna",
+    "name": "Gokarna Beach Town & Mahabaleshwar Temple",
+    "slug": "gokarna",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Beach Trek",
+      "Om Beach",
+      "Pilgrimage",
+      "Cliffs"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 485 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Gokarna Beach Town & Mahabaleshwar Temple is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 485 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Gokarna Beach Town & Mahabaleshwar Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Gokarna Beach Town & Mahabaleshwar Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Gokarna Beach Town & Mahabaleshwar Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Gokarna Beach Town & Mahabaleshwar Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Gokarna Beach Town & Mahabaleshwar Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Gokarna Beach Town & Mahabaleshwar Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Gokarna Beach Town & Mahabaleshwar Temple from Bengaluru?",
+        "answer": "Gokarna Beach Town & Mahabaleshwar Temple is Approx. 485 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Gokarna Beach Town & Mahabaleshwar Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "murudeshwar",
+    "name": "Murudeshwar Shiva Statue & Sea Temple",
+    "slug": "murudeshwar",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Tallest Shiva Statue",
+      "Raja Gopura",
+      "Beach",
+      "Pilgrimage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 480 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Murudeshwar Shiva Statue & Sea Temple is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 480 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Murudeshwar Shiva Statue & Sea Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Murudeshwar Shiva Statue & Sea Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Murudeshwar Shiva Statue & Sea Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Murudeshwar Shiva Statue & Sea Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Murudeshwar Shiva Statue & Sea Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Murudeshwar Shiva Statue & Sea Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Murudeshwar Shiva Statue & Sea Temple from Bengaluru?",
+        "answer": "Murudeshwar Shiva Statue & Sea Temple is Approx. 480 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Murudeshwar Shiva Statue & Sea Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "karwar",
+    "name": "Karwar Coastal Border & Kali River Estuary",
+    "slug": "karwar",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Coastal Border",
+      "Kali Estuary",
+      "Naval Museum",
+      "Rabindranath Beach"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 520 km",
+    "approximateDriveTime": "9 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Karwar Coastal Border & Kali River Estuary is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 520 km from Bengaluru (9 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Karwar Coastal Border & Kali River Estuary holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Karwar Coastal Border & Kali River Estuary Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Karwar Coastal Border & Kali River Estuary",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Karwar Coastal Border & Kali River Estuary",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Karwar Coastal Border & Kali River Estuary for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Karwar Coastal Border & Kali River Estuary, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Karwar Coastal Border & Kali River Estuary from Bengaluru?",
+        "answer": "Karwar Coastal Border & Kali River Estuary is Approx. 520 km from Bengaluru, taking 9 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Karwar Coastal Border & Kali River Estuary?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "yana-kumta",
+    "name": "Yana Karst Black Rocks & Kumta Coast",
+    "slug": "yana-kumta",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Geological Monolith",
+      "Black Rock Spire",
+      "Cave Temple",
+      "Forest"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 460 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Yana Karst Black Rocks & Kumta Coast is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 460 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Yana Karst Black Rocks & Kumta Coast holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Yana Karst Black Rocks & Kumta Coast Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Yana Karst Black Rocks & Kumta Coast",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Yana Karst Black Rocks & Kumta Coast",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Yana Karst Black Rocks & Kumta Coast for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Yana Karst Black Rocks & Kumta Coast, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Yana Karst Black Rocks & Kumta Coast from Bengaluru?",
+        "answer": "Yana Karst Black Rocks & Kumta Coast is Approx. 460 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Yana Karst Black Rocks & Kumta Coast?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "honnavar",
+    "name": "Honnavar Sharavathi Mangrove Backwaters",
+    "slug": "honnavar",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Backwater Boating",
+      "Mangrove Forest",
+      "Eco Tourism",
+      "River"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 460 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Honnavar Sharavathi Mangrove Backwaters is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 460 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Honnavar Sharavathi Mangrove Backwaters holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Honnavar Sharavathi Mangrove Backwaters Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Honnavar Sharavathi Mangrove Backwaters",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Honnavar Sharavathi Mangrove Backwaters",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Honnavar Sharavathi Mangrove Backwaters for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Honnavar Sharavathi Mangrove Backwaters, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Honnavar Sharavathi Mangrove Backwaters from Bengaluru?",
+        "answer": "Honnavar Sharavathi Mangrove Backwaters is Approx. 460 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Honnavar Sharavathi Mangrove Backwaters?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "sirsi-banavasi",
+    "name": "Sirsi Spice Plantations & Banavasi Kadamba Capital",
+    "slug": "sirsi-banavasi",
+    "district": "Uttara Kannada",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Ancient Capital",
+      "Spice Farms",
+      "Sahasralinga",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 400 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Sirsi Spice Plantations & Banavasi Kadamba Capital is a premier destination located in the Uttara Kannada district within the Malnad & Central Ghats of Karnataka. Situated Approx. 400 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Sirsi Spice Plantations & Banavasi Kadamba Capital holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Sirsi Spice Plantations & Banavasi Kadamba Capital Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Sirsi Spice Plantations & Banavasi Kadamba Capital",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Sirsi Spice Plantations & Banavasi Kadamba Capital",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Sirsi Spice Plantations & Banavasi Kadamba Capital for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Sirsi Spice Plantations & Banavasi Kadamba Capital, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Sirsi Spice Plantations & Banavasi Kadamba Capital from Bengaluru?",
+        "answer": "Sirsi Spice Plantations & Banavasi Kadamba Capital is Approx. 400 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Sirsi Spice Plantations & Banavasi Kadamba Capital?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "dandeli",
+    "name": "Dandeli Kali Wilderness & White Water Rafting",
+    "slug": "dandeli",
+    "district": "Uttara Kannada",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Rafting",
+      "Adventure",
+      "Jungle Safari",
+      "Hornbill Reserve"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 460 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Dandeli Kali Wilderness & White Water Rafting is a premier destination located in the Uttara Kannada district within the Malnad & Central Ghats of Karnataka. Situated Approx. 460 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Dandeli Kali Wilderness & White Water Rafting holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Dandeli Kali Wilderness & White Water Rafting Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Dandeli Kali Wilderness & White Water Rafting",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Dandeli Kali Wilderness & White Water Rafting",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Dandeli Kali Wilderness & White Water Rafting for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Dandeli Kali Wilderness & White Water Rafting, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Dandeli Kali Wilderness & White Water Rafting from Bengaluru?",
+        "answer": "Dandeli Kali Wilderness & White Water Rafting is Approx. 460 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Dandeli Kali Wilderness & White Water Rafting?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "yellapur-magod-falls",
+    "name": "Yellapur & Magod-Sathodi Waterfalls",
+    "slug": "yellapur-magod-falls",
+    "district": "Uttara Kannada",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Cascading Falls",
+      "Dense Jungle",
+      "Nature",
+      "River"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 440 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Yellapur & Magod-Sathodi Waterfalls is a premier destination located in the Uttara Kannada district within the Malnad & Central Ghats of Karnataka. Situated Approx. 440 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Yellapur & Magod-Sathodi Waterfalls holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Yellapur & Magod-Sathodi Waterfalls Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Yellapur & Magod-Sathodi Waterfalls",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Yellapur & Magod-Sathodi Waterfalls",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Yellapur & Magod-Sathodi Waterfalls for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Yellapur & Magod-Sathodi Waterfalls, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Yellapur & Magod-Sathodi Waterfalls from Bengaluru?",
+        "answer": "Yellapur & Magod-Sathodi Waterfalls is Approx. 440 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Yellapur & Magod-Sathodi Waterfalls?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi UNESCO Vijayanagara Empire Realm",
+    "slug": "hampi",
+    "district": "Vijayanagara",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "UNESCO World Heritage",
+      "Stone Chariot",
+      "Ruins",
+      "Monuments"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 340 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Hampi UNESCO Vijayanagara Empire Realm is a premier destination located in the Vijayanagara district within the Deccan & North Heritage of Karnataka. Situated Approx. 340 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Hampi UNESCO Vijayanagara Empire Realm holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Hampi UNESCO Vijayanagara Empire Realm Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Hampi UNESCO Vijayanagara Empire Realm",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Vijayanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Hampi UNESCO Vijayanagara Empire Realm",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Hampi UNESCO Vijayanagara Empire Realm for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Hampi UNESCO Vijayanagara Empire Realm, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Hampi UNESCO Vijayanagara Empire Realm from Bengaluru?",
+        "answer": "Hampi UNESCO Vijayanagara Empire Realm is Approx. 340 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Hampi UNESCO Vijayanagara Empire Realm?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "hosapete",
+    "name": "Hosapete Tungabhadra Dam City",
+    "slug": "hosapete",
+    "district": "Vijayanagara",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Dam Gardens",
+      "Gateway City",
+      "Urban"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 325 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Hosapete Tungabhadra Dam City is a premier destination located in the Vijayanagara district within the Deccan & North Heritage of Karnataka. Situated Approx. 325 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Hosapete Tungabhadra Dam City holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Hosapete Tungabhadra Dam City Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Hosapete Tungabhadra Dam City",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Vijayanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Hosapete Tungabhadra Dam City",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Hosapete Tungabhadra Dam City for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Hosapete Tungabhadra Dam City, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Hosapete Tungabhadra Dam City from Bengaluru?",
+        "answer": "Hosapete Tungabhadra Dam City is Approx. 325 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Hosapete Tungabhadra Dam City?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "anegundi",
+    "name": "Anegundi Mythological Kishkindha Realm",
+    "slug": "anegundi",
+    "district": "Vijayanagara",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Kishkindha",
+      "Anjanadri Hill",
+      "Ancient Village",
+      "Prehistoric Art"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 350 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Anegundi Mythological Kishkindha Realm is a premier destination located in the Vijayanagara district within the Deccan & North Heritage of Karnataka. Situated Approx. 350 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Anegundi Mythological Kishkindha Realm holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Anegundi Mythological Kishkindha Realm Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Anegundi Mythological Kishkindha Realm",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Vijayanagara via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Anegundi Mythological Kishkindha Realm",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Anegundi Mythological Kishkindha Realm for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Anegundi Mythological Kishkindha Realm, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Anegundi Mythological Kishkindha Realm from Bengaluru?",
+        "answer": "Anegundi Mythological Kishkindha Realm is Approx. 350 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Anegundi Mythological Kishkindha Realm?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "badami",
+    "name": "Badami Rock-Cut Cave Temples",
+    "slug": "badami",
+    "district": "Bagalkote",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Chalukya Architecture",
+      "Rock-Cut Caves",
+      "Sandstone Cliffs",
+      "Agastya Lake"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 450 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Badami Rock-Cut Cave Temples is a premier destination located in the Bagalkote district within the Deccan & North Heritage of Karnataka. Situated Approx. 450 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Badami Rock-Cut Cave Temples holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Badami Rock-Cut Cave Temples Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Badami Rock-Cut Cave Temples",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bagalkote via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Badami Rock-Cut Cave Temples",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Badami Rock-Cut Cave Temples for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Badami Rock-Cut Cave Temples, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Badami Rock-Cut Cave Temples from Bengaluru?",
+        "answer": "Badami Rock-Cut Cave Temples is Approx. 450 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Badami Rock-Cut Cave Temples?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "pattadakal",
+    "name": "Pattadakal UNESCO Temple Fusion",
+    "slug": "pattadakal",
+    "district": "Bagalkote",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "UNESCO World Heritage",
+      "Temple Architecture",
+      "Dravidian Nagara",
+      "History"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 445 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Pattadakal UNESCO Temple Fusion is a premier destination located in the Bagalkote district within the Deccan & North Heritage of Karnataka. Situated Approx. 445 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Pattadakal UNESCO Temple Fusion holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Pattadakal UNESCO Temple Fusion Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Pattadakal UNESCO Temple Fusion",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bagalkote via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Pattadakal UNESCO Temple Fusion",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Pattadakal UNESCO Temple Fusion for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Pattadakal UNESCO Temple Fusion, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Pattadakal UNESCO Temple Fusion from Bengaluru?",
+        "answer": "Pattadakal UNESCO Temple Fusion is Approx. 445 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Pattadakal UNESCO Temple Fusion?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "aihole",
+    "name": "Aihole Cradle of Indian Temple Architecture",
+    "slug": "aihole",
+    "district": "Bagalkote",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Durga Temple",
+      "Rock Inscriptions",
+      "Chalukya Capital",
+      "Architecture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 450 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Aihole Cradle of Indian Temple Architecture is a premier destination located in the Bagalkote district within the Deccan & North Heritage of Karnataka. Situated Approx. 450 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Aihole Cradle of Indian Temple Architecture holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Aihole Cradle of Indian Temple Architecture Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Aihole Cradle of Indian Temple Architecture",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bagalkote via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Aihole Cradle of Indian Temple Architecture",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Aihole Cradle of Indian Temple Architecture for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Aihole Cradle of Indian Temple Architecture, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Aihole Cradle of Indian Temple Architecture from Bengaluru?",
+        "answer": "Aihole Cradle of Indian Temple Architecture is Approx. 450 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Aihole Cradle of Indian Temple Architecture?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "mahakuta-banashankari",
+    "name": "Mahakuta Springs & Banashankari Temple",
+    "slug": "mahakuta-banashankari",
+    "district": "Bagalkote",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Sacred Spring",
+      "Shaivite Shrines",
+      "Banashankari Shrine",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 440 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Mahakuta Springs & Banashankari Temple is a premier destination located in the Bagalkote district within the Deccan & North Heritage of Karnataka. Situated Approx. 440 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Mahakuta Springs & Banashankari Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Mahakuta Springs & Banashankari Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Mahakuta Springs & Banashankari Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bagalkote via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Mahakuta Springs & Banashankari Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Mahakuta Springs & Banashankari Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Mahakuta Springs & Banashankari Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Mahakuta Springs & Banashankari Temple from Bengaluru?",
+        "answer": "Mahakuta Springs & Banashankari Temple is Approx. 440 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Mahakuta Springs & Banashankari Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "almatti-dam",
+    "name": "Almatti Dam Krishna Gardens",
+    "slug": "almatti-dam",
+    "district": "Vijayapura",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Rock Garden",
+      "Musical Fountains",
+      "Krishna River",
+      "Dam"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 470 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Almatti Dam Krishna Gardens is a premier destination located in the Vijayapura district within the Deccan & North Heritage of Karnataka. Situated Approx. 470 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Almatti Dam Krishna Gardens holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Almatti Dam Krishna Gardens Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Almatti Dam Krishna Gardens",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Vijayapura via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Almatti Dam Krishna Gardens",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Almatti Dam Krishna Gardens for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Almatti Dam Krishna Gardens, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Almatti Dam Krishna Gardens from Bengaluru?",
+        "answer": "Almatti Dam Krishna Gardens is Approx. 470 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Almatti Dam Krishna Gardens?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kudalasangama",
+    "name": "Kudalasangama Sacred Sangama & Basaveshwara Samadhi",
+    "slug": "kudalasangama",
+    "district": "Bagalkote",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Lingayat Pilgrimage",
+      "Sangama",
+      "Basavanna Shrine",
+      "River"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 450 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kudalasangama Sacred Sangama & Basaveshwara Samadhi is a premier destination located in the Bagalkote district within the Deccan & North Heritage of Karnataka. Situated Approx. 450 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kudalasangama Sacred Sangama & Basaveshwara Samadhi holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kudalasangama Sacred Sangama & Basaveshwara Samadhi Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kudalasangama Sacred Sangama & Basaveshwara Samadhi",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bagalkote via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kudalasangama Sacred Sangama & Basaveshwara Samadhi",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kudalasangama Sacred Sangama & Basaveshwara Samadhi for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kudalasangama Sacred Sangama & Basaveshwara Samadhi, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kudalasangama Sacred Sangama & Basaveshwara Samadhi from Bengaluru?",
+        "answer": "Kudalasangama Sacred Sangama & Basaveshwara Samadhi is Approx. 450 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kudalasangama Sacred Sangama & Basaveshwara Samadhi?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "vijayapura",
+    "name": "Vijayapura (Bijapur Gol Gumbaz Sultanate)",
+    "slug": "vijayapura",
+    "district": "Vijayapura",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Gol Gumbaz",
+      "Sultanate Heritage",
+      "Whispering Gallery",
+      "Ibrahim Rauza"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 520 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Vijayapura (Bijapur Gol Gumbaz Sultanate) is a premier destination located in the Vijayapura district within the Deccan & North Heritage of Karnataka. Situated Approx. 520 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Vijayapura (Bijapur Gol Gumbaz Sultanate) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Vijayapura (Bijapur Gol Gumbaz Sultanate) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Vijayapura (Bijapur Gol Gumbaz Sultanate)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Vijayapura via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Vijayapura (Bijapur Gol Gumbaz Sultanate)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Vijayapura (Bijapur Gol Gumbaz Sultanate) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Vijayapura (Bijapur Gol Gumbaz Sultanate), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Vijayapura (Bijapur Gol Gumbaz Sultanate) from Bengaluru?",
+        "answer": "Vijayapura (Bijapur Gol Gumbaz Sultanate) is Approx. 520 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Vijayapura (Bijapur Gol Gumbaz Sultanate)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kalaburagi",
+    "name": "Kalaburagi (Gulbarga Fort & Sufi Shrines)",
+    "slug": "kalaburagi",
+    "district": "Kalaburagi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Bahmani Fort",
+      "Khwaja Bande Nawaz",
+      "Jami Masjid",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 570 km",
+    "approximateDriveTime": "9.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kalaburagi (Gulbarga Fort & Sufi Shrines) is a premier destination located in the Kalaburagi district within the Deccan & North Heritage of Karnataka. Situated Approx. 570 km from Bengaluru (9.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kalaburagi (Gulbarga Fort & Sufi Shrines) holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kalaburagi (Gulbarga Fort & Sufi Shrines) Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kalaburagi (Gulbarga Fort & Sufi Shrines)",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kalaburagi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kalaburagi (Gulbarga Fort & Sufi Shrines)",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kalaburagi (Gulbarga Fort & Sufi Shrines) for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kalaburagi (Gulbarga Fort & Sufi Shrines), check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kalaburagi (Gulbarga Fort & Sufi Shrines) from Bengaluru?",
+        "answer": "Kalaburagi (Gulbarga Fort & Sufi Shrines) is Approx. 570 km from Bengaluru, taking 9.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kalaburagi (Gulbarga Fort & Sufi Shrines)?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "bidar",
+    "name": "Bidar Bahmani Fort & Mahmud Gawan Madrasa",
+    "slug": "bidar",
+    "district": "Bidar",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Bidar Fort",
+      "Solah Khamba",
+      "Bidriware Craft",
+      "Sultanate"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 680 km",
+    "approximateDriveTime": "11 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Bidar Bahmani Fort & Mahmud Gawan Madrasa is a premier destination located in the Bidar district within the Deccan & North Heritage of Karnataka. Situated Approx. 680 km from Bengaluru (11 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Bidar Bahmani Fort & Mahmud Gawan Madrasa holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Bidar Bahmani Fort & Mahmud Gawan Madrasa Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Bidar Bahmani Fort & Mahmud Gawan Madrasa",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Bidar via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Bidar Bahmani Fort & Mahmud Gawan Madrasa",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Bidar Bahmani Fort & Mahmud Gawan Madrasa for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Bidar Bahmani Fort & Mahmud Gawan Madrasa, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Bidar Bahmani Fort & Mahmud Gawan Madrasa from Bengaluru?",
+        "answer": "Bidar Bahmani Fort & Mahmud Gawan Madrasa is Approx. 680 km from Bengaluru, taking 11 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Bidar Bahmani Fort & Mahmud Gawan Madrasa?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "raichur",
+    "name": "Raichur Doab Fort & Citadel",
+    "slug": "raichur",
+    "district": "Raichur",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Fortress",
+      "Doab Region",
+      "Historical Citadel",
+      "Heritage"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 410 km",
+    "approximateDriveTime": "7 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Raichur Doab Fort & Citadel is a premier destination located in the Raichur district within the Deccan & North Heritage of Karnataka. Situated Approx. 410 km from Bengaluru (7 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Raichur Doab Fort & Citadel holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Raichur Doab Fort & Citadel Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Raichur Doab Fort & Citadel",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Raichur via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Raichur Doab Fort & Citadel",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Raichur Doab Fort & Citadel for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Raichur Doab Fort & Citadel, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Raichur Doab Fort & Citadel from Bengaluru?",
+        "answer": "Raichur Doab Fort & Citadel is Approx. 410 km from Bengaluru, taking 7 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Raichur Doab Fort & Citadel?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "gadag-lakkundi",
+    "name": "Gadag & Lakkundi Chalukya Stepwells",
+    "slug": "gadag-lakkundi",
+    "district": "Gadag",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Stepwells",
+      "Chalukya Carvings",
+      "Trikuteshwara",
+      "Architecture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 380 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Gadag & Lakkundi Chalukya Stepwells is a premier destination located in the Gadag district within the Deccan & North Heritage of Karnataka. Situated Approx. 380 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Gadag & Lakkundi Chalukya Stepwells holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Gadag & Lakkundi Chalukya Stepwells Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Gadag & Lakkundi Chalukya Stepwells",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Gadag via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Gadag & Lakkundi Chalukya Stepwells",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Gadag & Lakkundi Chalukya Stepwells for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Gadag & Lakkundi Chalukya Stepwells, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Gadag & Lakkundi Chalukya Stepwells from Bengaluru?",
+        "answer": "Gadag & Lakkundi Chalukya Stepwells is Approx. 380 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Gadag & Lakkundi Chalukya Stepwells?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "hubballi-dharwad",
+    "name": "Hubballi–Dharwad Twin Cultural Cities",
+    "slug": "hubballi-dharwad",
+    "district": "Dharwad",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Peda Sweet City",
+      "Unkal Lake",
+      "Literature Hub",
+      "Urban"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 410 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Hubballi–Dharwad Twin Cultural Cities is a premier destination located in the Dharwad district within the Deccan & North Heritage of Karnataka. Situated Approx. 410 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Hubballi–Dharwad Twin Cultural Cities holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Hubballi–Dharwad Twin Cultural Cities Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Hubballi–Dharwad Twin Cultural Cities",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dharwad via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Hubballi–Dharwad Twin Cultural Cities",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Hubballi–Dharwad Twin Cultural Cities for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Hubballi–Dharwad Twin Cultural Cities, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Hubballi–Dharwad Twin Cultural Cities from Bengaluru?",
+        "answer": "Hubballi–Dharwad Twin Cultural Cities is Approx. 410 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Hubballi–Dharwad Twin Cultural Cities?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "belagavi",
+    "name": "Belagavi Fort & Rajhansgad Fortress",
+    "slug": "belagavi",
+    "district": "Belagavi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Kamal Basti",
+      "Kithoor History",
+      "Suvarna Soudha",
+      "Ghats"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 500 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Belagavi Fort & Rajhansgad Fortress is a premier destination located in the Belagavi district within the Deccan & North Heritage of Karnataka. Situated Approx. 500 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Belagavi Fort & Rajhansgad Fortress holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Belagavi Fort & Rajhansgad Fortress Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Belagavi Fort & Rajhansgad Fortress",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Belagavi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Belagavi Fort & Rajhansgad Fortress",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Belagavi Fort & Rajhansgad Fortress for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Belagavi Fort & Rajhansgad Fortress, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Belagavi Fort & Rajhansgad Fortress from Bengaluru?",
+        "answer": "Belagavi Fort & Rajhansgad Fortress is Approx. 500 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Belagavi Fort & Rajhansgad Fortress?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kittur",
+    "name": "Kittur Rani Chennamma Fort",
+    "slug": "kittur",
+    "district": "Belagavi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Rani Chennamma",
+      "Freedom Struggle",
+      "Palace Ruins",
+      "History"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 470 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kittur Rani Chennamma Fort is a premier destination located in the Belagavi district within the Deccan & North Heritage of Karnataka. Situated Approx. 470 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kittur Rani Chennamma Fort holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kittur Rani Chennamma Fort Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kittur Rani Chennamma Fort",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Belagavi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kittur Rani Chennamma Fort",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kittur Rani Chennamma Fort for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kittur Rani Chennamma Fort, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kittur Rani Chennamma Fort from Bengaluru?",
+        "answer": "Kittur Rani Chennamma Fort is Approx. 470 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kittur Rani Chennamma Fort?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "gokak-falls",
+    "name": "Gokak Falls & Suspension Cable Bridge",
+    "slug": "gokak-falls",
+    "district": "Belagavi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Niagara of KA",
+      "Suspension Bridge",
+      "Ghataprabha",
+      "Waterfalls"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 540 km",
+    "approximateDriveTime": "9 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Gokak Falls & Suspension Cable Bridge is a premier destination located in the Belagavi district within the Deccan & North Heritage of Karnataka. Situated Approx. 540 km from Bengaluru (9 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Gokak Falls & Suspension Cable Bridge holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Gokak Falls & Suspension Cable Bridge Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Gokak Falls & Suspension Cable Bridge",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Belagavi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Gokak Falls & Suspension Cable Bridge",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Gokak Falls & Suspension Cable Bridge for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Gokak Falls & Suspension Cable Bridge, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Gokak Falls & Suspension Cable Bridge from Bengaluru?",
+        "answer": "Gokak Falls & Suspension Cable Bridge is Approx. 540 km from Bengaluru, taking 9 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Gokak Falls & Suspension Cable Bridge?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "saundatti",
+    "name": "Saundatti Yellamma Temple & Parasgad Fort",
+    "slug": "saundatti",
+    "district": "Belagavi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Renuka Yellamma",
+      "Pilgrimage",
+      "Parasgad Fort",
+      "Culture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 460 km",
+    "approximateDriveTime": "7.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Saundatti Yellamma Temple & Parasgad Fort is a premier destination located in the Belagavi district within the Deccan & North Heritage of Karnataka. Situated Approx. 460 km from Bengaluru (7.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Saundatti Yellamma Temple & Parasgad Fort holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Saundatti Yellamma Temple & Parasgad Fort Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Saundatti Yellamma Temple & Parasgad Fort",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Belagavi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Saundatti Yellamma Temple & Parasgad Fort",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Saundatti Yellamma Temple & Parasgad Fort for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Saundatti Yellamma Temple & Parasgad Fort, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Saundatti Yellamma Temple & Parasgad Fort from Bengaluru?",
+        "answer": "Saundatti Yellamma Temple & Parasgad Fort is Approx. 460 km from Bengaluru, taking 7.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Saundatti Yellamma Temple & Parasgad Fort?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "haveri",
+    "name": "Haveri Cardamom City & Siddhesvara Temple",
+    "slug": "haveri",
+    "district": "Haveri",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Siddhesvara Temple",
+      "Cardamom Trading",
+      "Kalyani Chalukya"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 340 km",
+    "approximateDriveTime": "5.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Haveri Cardamom City & Siddhesvara Temple is a premier destination located in the Haveri district within the Deccan & North Heritage of Karnataka. Situated Approx. 340 km from Bengaluru (5.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Haveri Cardamom City & Siddhesvara Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Haveri Cardamom City & Siddhesvara Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Haveri Cardamom City & Siddhesvara Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Haveri via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Haveri Cardamom City & Siddhesvara Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Haveri Cardamom City & Siddhesvara Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Haveri Cardamom City & Siddhesvara Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Haveri Cardamom City & Siddhesvara Temple from Bengaluru?",
+        "answer": "Haveri Cardamom City & Siddhesvara Temple is Approx. 340 km from Bengaluru, taking 5.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Haveri Cardamom City & Siddhesvara Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "chitradurga",
+    "name": "Chitradurga Fort of Seven Circles",
+    "slug": "chitradurga",
+    "district": "Chitradurga",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Stone Fortress",
+      "Obavva Secret Passage",
+      "7-Tier Walls",
+      "History"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 200 km",
+    "approximateDriveTime": "3.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Chitradurga Fort of Seven Circles is a premier destination located in the Chitradurga district within the Deccan & North Heritage of Karnataka. Situated Approx. 200 km from Bengaluru (3.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Chitradurga Fort of Seven Circles holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Chitradurga Fort of Seven Circles Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Chitradurga Fort of Seven Circles",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chitradurga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Chitradurga Fort of Seven Circles",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Chitradurga Fort of Seven Circles for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Chitradurga Fort of Seven Circles, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Chitradurga Fort of Seven Circles from Bengaluru?",
+        "answer": "Chitradurga Fort of Seven Circles is Approx. 200 km from Bengaluru, taking 3.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Chitradurga Fort of Seven Circles?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "davanagere-harihar",
+    "name": "Davanagere Benne Dosa & Harihar Temple",
+    "slug": "davanagere-harihar",
+    "district": "Davanagere",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Butter Dosa Capital",
+      "Harihareshwara",
+      "Tungabhadra",
+      "Cuisine"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 260 km",
+    "approximateDriveTime": "4.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Davanagere Benne Dosa & Harihar Temple is a premier destination located in the Davanagere district within the Deccan & North Heritage of Karnataka. Situated Approx. 260 km from Bengaluru (4.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Davanagere Benne Dosa & Harihar Temple holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Davanagere Benne Dosa & Harihar Temple Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Davanagere Benne Dosa & Harihar Temple",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Davanagere via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Davanagere Benne Dosa & Harihar Temple",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Davanagere Benne Dosa & Harihar Temple for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Davanagere Benne Dosa & Harihar Temple, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Davanagere Benne Dosa & Harihar Temple from Bengaluru?",
+        "answer": "Davanagere Benne Dosa & Harihar Temple is Approx. 260 km from Bengaluru, taking 4.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Davanagere Benne Dosa & Harihar Temple?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kudremukh-national-park",
+    "name": "Kudremukh National Park Reserve",
+    "slug": "kudremukh-national-park",
+    "district": "Chikkamagaluru",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Shola Grasslands",
+      "Biodiversity",
+      "Trekking",
+      "Forest"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 330 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kudremukh National Park Reserve is a premier destination located in the Chikkamagaluru district within the Malnad & Central Ghats of Karnataka. Situated Approx. 330 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kudremukh National Park Reserve holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kudremukh National Park Reserve Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kudremukh National Park Reserve",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Chikkamagaluru via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kudremukh National Park Reserve",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kudremukh National Park Reserve for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kudremukh National Park Reserve, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kudremukh National Park Reserve from Bengaluru?",
+        "answer": "Kudremukh National Park Reserve is Approx. 330 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kudremukh National Park Reserve?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "brahmagiri-wildlife-sanctuary",
+    "name": "Brahmagiri Wildlife Sanctuary",
+    "slug": "brahmagiri-wildlife-sanctuary",
+    "district": "Kodagu",
+    "region": "Kodagu (Coorg)",
+    "categories": [
+      "Brahmagiri Peak",
+      "Iruppu Falls",
+      "Wildlife",
+      "Trekking"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 270 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Brahmagiri Wildlife Sanctuary is a premier destination located in the Kodagu district within the Kodagu (Coorg) of Karnataka. Situated Approx. 270 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Brahmagiri Wildlife Sanctuary holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Brahmagiri Wildlife Sanctuary Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Brahmagiri Wildlife Sanctuary",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Kodagu via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Brahmagiri Wildlife Sanctuary",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Brahmagiri Wildlife Sanctuary for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Brahmagiri Wildlife Sanctuary, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Brahmagiri Wildlife Sanctuary from Bengaluru?",
+        "answer": "Brahmagiri Wildlife Sanctuary is Approx. 270 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Brahmagiri Wildlife Sanctuary?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "pilikula-nisargadhama",
+    "name": "Pilikula Nisargadhama Eco Heritage Village",
+    "slug": "pilikula-nisargadhama",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Eco Park",
+      "Science Center",
+      "Biological Park",
+      "Culture"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 350 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Pilikula Nisargadhama Eco Heritage Village is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 350 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Pilikula Nisargadhama Eco Heritage Village holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Pilikula Nisargadhama Eco Heritage Village Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Pilikula Nisargadhama Eco Heritage Village",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Pilikula Nisargadhama Eco Heritage Village",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Pilikula Nisargadhama Eco Heritage Village for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Pilikula Nisargadhama Eco Heritage Village, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Pilikula Nisargadhama Eco Heritage Village from Bengaluru?",
+        "answer": "Pilikula Nisargadhama Eco Heritage Village is Approx. 350 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Pilikula Nisargadhama Eco Heritage Village?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "panambur-beach",
+    "name": "Panambur Beach & Port Corridor",
+    "slug": "panambur-beach",
+    "district": "Dakshina Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Jet Skiing",
+      "Camel Rides",
+      "Kite Festival",
+      "Beach"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 355 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Panambur Beach & Port Corridor is a premier destination located in the Dakshina Kannada district within the Coastal Canara of Karnataka. Situated Approx. 355 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Panambur Beach & Port Corridor holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Panambur Beach & Port Corridor Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Panambur Beach & Port Corridor",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Dakshina Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Panambur Beach & Port Corridor",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Panambur Beach & Port Corridor for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Panambur Beach & Port Corridor, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Panambur Beach & Port Corridor from Bengaluru?",
+        "answer": "Panambur Beach & Port Corridor is Approx. 355 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Panambur Beach & Port Corridor?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kavaledurga",
+    "name": "Kavaledurga Hill Fort Ruins",
+    "slug": "kavaledurga",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Mossy Fort",
+      "Stone Steps",
+      "Trekking",
+      "Sunset"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 340 km",
+    "approximateDriveTime": "6 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kavaledurga Hill Fort Ruins is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 340 km from Bengaluru (6 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kavaledurga Hill Fort Ruins holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kavaledurga Hill Fort Ruins Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kavaledurga Hill Fort Ruins",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kavaledurga Hill Fort Ruins",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kavaledurga Hill Fort Ruins for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kavaledurga Hill Fort Ruins, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kavaledurga Hill Fort Ruins from Bengaluru?",
+        "answer": "Kavaledurga Hill Fort Ruins is Approx. 340 km from Bengaluru, taking 6 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kavaledurga Hill Fort Ruins?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "kundadri-hill",
+    "name": "Kundadri Hill Jain Shrine & Sunrise",
+    "slug": "kundadri-hill",
+    "district": "Shivamogga",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Lotus Ponds",
+      "Jain Shrine",
+      "Sunrise",
+      "Hilltop"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 350 km",
+    "approximateDriveTime": "6.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Kundadri Hill Jain Shrine & Sunrise is a premier destination located in the Shivamogga district within the Malnad & Central Ghats of Karnataka. Situated Approx. 350 km from Bengaluru (6.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Kundadri Hill Jain Shrine & Sunrise holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Kundadri Hill Jain Shrine & Sunrise Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Kundadri Hill Jain Shrine & Sunrise",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Shivamogga via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Kundadri Hill Jain Shrine & Sunrise",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Kundadri Hill Jain Shrine & Sunrise for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Kundadri Hill Jain Shrine & Sunrise, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Kundadri Hill Jain Shrine & Sunrise from Bengaluru?",
+        "answer": "Kundadri Hill Jain Shrine & Sunrise is Approx. 350 km from Bengaluru, taking 6.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Kundadri Hill Jain Shrine & Sunrise?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "netrani-island",
+    "name": "Netrani Island Scuba Diving Realm",
+    "slug": "netrani-island",
+    "district": "Uttara Kannada",
+    "region": "Coastal Canara",
+    "categories": [
+      "Scuba Diving",
+      "Coral Reef",
+      "Heart Shaped Island",
+      "Adventure"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 490 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Netrani Island Scuba Diving Realm is a premier destination located in the Uttara Kannada district within the Coastal Canara of Karnataka. Situated Approx. 490 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Netrani Island Scuba Diving Realm holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Netrani Island Scuba Diving Realm Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Netrani Island Scuba Diving Realm",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Netrani Island Scuba Diving Realm",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Netrani Island Scuba Diving Realm for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Netrani Island Scuba Diving Realm, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Netrani Island Scuba Diving Realm from Bengaluru?",
+        "answer": "Netrani Island Scuba Diving Realm is Approx. 490 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Netrani Island Scuba Diving Realm?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "supa-dam",
+    "name": "Supa Dam Reservoir & Backwaters",
+    "slug": "supa-dam",
+    "district": "Uttara Kannada",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Kali River Dam",
+      "Backwaters",
+      "Jungle View",
+      "Nature"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 470 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Supa Dam Reservoir & Backwaters is a premier destination located in the Uttara Kannada district within the Malnad & Central Ghats of Karnataka. Situated Approx. 470 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Supa Dam Reservoir & Backwaters holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Supa Dam Reservoir & Backwaters Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Supa Dam Reservoir & Backwaters",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Supa Dam Reservoir & Backwaters",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Supa Dam Reservoir & Backwaters for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Supa Dam Reservoir & Backwaters, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Supa Dam Reservoir & Backwaters from Bengaluru?",
+        "answer": "Supa Dam Reservoir & Backwaters is Approx. 470 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Supa Dam Reservoir & Backwaters?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "sathodi-falls",
+    "name": "Sathodi Falls Jungle Cascade",
+    "slug": "sathodi-falls",
+    "district": "Uttara Kannada",
+    "region": "Malnad & Central Ghats",
+    "categories": [
+      "Jungle Cascade",
+      "Natural Pool",
+      "Waterfalls",
+      "Nature"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 450 km",
+    "approximateDriveTime": "8 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Sathodi Falls Jungle Cascade is a premier destination located in the Uttara Kannada district within the Malnad & Central Ghats of Karnataka. Situated Approx. 450 km from Bengaluru (8 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Sathodi Falls Jungle Cascade holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Sathodi Falls Jungle Cascade Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Sathodi Falls Jungle Cascade",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Uttara Kannada via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Sathodi Falls Jungle Cascade",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Sathodi Falls Jungle Cascade for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Sathodi Falls Jungle Cascade, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Sathodi Falls Jungle Cascade from Bengaluru?",
+        "answer": "Sathodi Falls Jungle Cascade is Approx. 450 km from Bengaluru, taking 8 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Sathodi Falls Jungle Cascade?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
+  },
+  {
+    "id": "hidkal-dam",
+    "name": "Hidkal Dam Reservoir & Ghataprabha",
+    "slug": "hidkal-dam",
+    "district": "Belagavi",
+    "region": "Deccan & North Heritage",
+    "categories": [
+      "Raja Lakhamagouda Dam",
+      "Ghataprabha",
+      "Birdwatching",
+      "Reservoir"
+    ],
+    "approximateDistanceFromBengaluru": "Approx. 520 km",
+    "approximateDriveTime": "8.5 hrs",
+    "bestSeason": "September to March",
+    "suggestedDuration": "1–2 Days",
+    "overview": "Hidkal Dam Reservoir & Ghataprabha is a premier destination located in the Belagavi district within the Deccan & North Heritage of Karnataka. Situated Approx. 520 km from Bengaluru (8.5 hrs drive), it offers visitors rich cultural heritage, scenic vistas, and unforgettable outstation travel experiences.",
+    "historyAndCulture": "Hidkal Dam Reservoir & Ghataprabha holds significant regional importance in Karnataka's historical timeline, characterized by unique architectural traditions, local festivals, and natural splendor.",
+    "majorAttractions": [
+      "Hidkal Dam Reservoir & Ghataprabha Primary Viewpoint & Landmark",
+      "Historic Heritage Enclosure at Hidkal Dam Reservoir & Ghataprabha",
+      "Scenic Nature Trail & Photography Zone",
+      "Regional Cultural Center & Temple Shrine",
+      "Sunset Point & Countryside Overlook"
+    ],
+    "nearbyAttractions": [
+      "Bengaluru",
+      "Mysuru",
+      "Chikkamagaluru",
+      "Udupi"
+    ],
+    "bengaluruRoute": "Bengaluru highway corridor leading to Belagavi via major national and state highways.",
+    "thingsToDo": [
+      "Explore major viewpoints and historical monuments of Hidkal Dam Reservoir & Ghataprabha",
+      "Photography of natural landscapes and regional heritage",
+      "Taste authentic Karnataka culinary specialties",
+      "Guided nature walk and countryside stroll"
+    ],
+    "localFood": [
+      "Authentic Karnataka South Indian Thali",
+      "Filter Coffee",
+      "Regional Crisps & Snacks"
+    ],
+    "entryInformation": "General public access available. Verify current entry fees, timings, and seasonal guidelines prior to travel.",
+    "permitInformation": "Standard tourist access. Check with forest/local authorities for restricted trekking trails or sanctuary zones.",
+    "safetyNotes": "Follow local safety guidelines, stay on designated paths, and carry sufficient drinking water.",
+    "oneDayItinerary": "Morning departure from Bengaluru → Arrive at Hidkal Dam Reservoir & Ghataprabha for landmark tour & lunch → Afternoon exploration of nearby attractions → Evening return journey.",
+    "twoDayItinerary": "Day 1: Scenic drive to Hidkal Dam Reservoir & Ghataprabha, check-in at resort/hotel, evening sunset viewpoint. Day 2: Morning heritage & nature tour, regional lunch, return to Bengaluru.",
+    "relatedDestinations": [
+      "bengaluru",
+      "nandi-hills",
+      "mysuru",
+      "coorg"
+    ],
+    "relatedPackages": [
+      "nandi-hills-ramanagara-1day"
+    ],
+    "relatedRoutes": [
+      "bengaluru-to-mysuru"
+    ],
+    "faqs": [
+      {
+        "question": "How far is Hidkal Dam Reservoir & Ghataprabha from Bengaluru?",
+        "answer": "Hidkal Dam Reservoir & Ghataprabha is Approx. 520 km from Bengaluru, taking 8.5 hrs by private cab."
+      },
+      {
+        "question": "What is the best way to travel to Hidkal Dam Reservoir & Ghataprabha?",
+        "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
+      }
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "lastVerified": "20 September 2026",
+    "status": "verified"
   }
-];
-
-// Additional 80 destinations dataset stubs normalized with full schema integrity
-const REMAINING_DESTINATIONS: Destination[] = [
-  {
-    id: "madikeri",
-    name: "Madikeri (Coorg Capital)",
-    slug: "madikeri",
-    district: "Kodagu",
-    region: "Malnad & Western Ghats",
-    categories: ["Hill Station", "Coffee Plantation", "Waterfalls", "Nature"],
-    approximateDistanceFromBengaluru: 250,
-    approximateDriveTime: "5 hrs",
-    bestSeason: "September to March",
-    suggestedDuration: "2–3 Days",
-    overview: "The picturesque hill station capital of Coorg (Kodagu), famed for misty coffee valleys, Raja's Seat sunsets, Abbey Falls, and rich Kodava warrior culture.",
-    historyAndCulture: "Ruled by the Haleri Kings for centuries, Coorg maintains a distinct cultural identity known for bravery, coffee cultivation, and Kodava cuisine.",
-    majorAttractions: ["Raja's Seat Sunset Viewpoint", "Madikeri Fort & Palace Museum", "Abbey Falls", "Omkareshwara Temple", "Mandalpatti Peak Jeep Trek"],
-    nearbyAttractions: ["Kushalnagar & Dubare", "Bhagamandala & Talakaveri", "Kakkabe & Tadiandamol"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Hunsur → Kushalnagar → Madikeri (NH 275)",
-    thingsToDo: ["4x4 Jeep safari to Mandalpatti cloud peak", "Walk under Abbey Falls spray", "Watch Raja's Seat musical fountain sunset", "Buy homemade Coorg wine & spices"],
-    localFood: ["Coorg Pandi Curry", "Akki Oti", "Kadambuttu (Steamed rice dumplings)", "Coorg Coffee"],
-    entryInformation: "Raja's Seat entry ₹20. Abbey Falls entry ₹30.",
-    permitInformation: "Mandalpatti peak requires local 4x4 jeep hire at base post.",
-    safetyNotes: "Drive carefully on winding ghat roads during monsoon rains.",
-    oneDayItinerary: "Not recommended for 1 day.",
-    twoDayItinerary: "Day 1: Madikeri Fort, Abbey Falls, Omkareshwara Temple, Raja's Seat sunset. Day 2: Mandalpatti 4x4 Jeep trek, Golden Temple Kushalnagar, return to Bangalore.",
-    relatedDestinations: ["kushalnagar-dubare", "bhagamandala-talakaveri", "virajpet", "kakkabe-tadiandamol"],
-    relatedPackages: ["coorg-3day-misty-hills-package", "mysore-coorg-3day-royal-heritage-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [{ q: "What is the distance between Bangalore and Coorg?", a: "Madikeri (Coorg) is approximately 250 km from Bangalore (5 hours drive)." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "kushalnagar-dubare",
-    name: "Kushalnagar & Dubare Elephant Camp",
-    slug: "kushalnagar-dubare",
-    district: "Kodagu",
-    region: "Malnad & Western Ghats",
-    categories: ["Wildlife", "Elephants", "Buddhism", "River"],
-    approximateDistanceFromBengaluru: 220,
-    approximateDriveTime: "4.5 hrs",
-    bestSeason: "September to March",
-    suggestedDuration: "1–2 Days",
-    overview: "Gateway to Coorg, featuring the magnificent Namdroling Monastery (Golden Temple Tibetan settlement) and Dubare Elephant Camp on the Kaveri River.",
-    historyAndCulture: "Namdroling was established in 1963 by Drubwang Padma Norbu Rinpoche as a Tibetan refugee monastery, growing into a major Nyingma learning center.",
-    majorAttractions: ["Golden Temple (Namdroling Monastery)", "Dubare Elephant Camp & Bathing", "Kaveri Nisargadhama Island", "Harangi Dam", "Chiklihole Reservoir"],
-    nearbyAttractions: ["Madikeri", "Nagarhole", "Sakleshpur"],
-    bengaluruRoute: "Bengaluru → Mysuru Expressway → Hunsur → Kushalnagar",
-    thingsToDo: ["Breathe quiet inside 40ft golden Buddha hall", "Cross boat to Dubare Elephant Camp for morning elephant bath", "Walk bamboo suspension bridge at Nisargadhama"],
-    localFood: ["Tibetan Momos & Thukpa", "Coorg Filter Coffee", "Pineapple juice"],
-    entryInformation: "Monastery entry free. Dubare boat entry ₹50. Elephant interaction tickets at camp.",
-    permitInformation: "Dubare elephant bathing takes place between 8:30 AM and 10:30 AM.",
-    safetyNotes: "Follow mahout instructions around elephants.",
-    oneDayItinerary: "Early morning start → 9:30 AM Dubare Elephant Camp → 12:00 PM Golden Temple Bylakuppe → 2:00 PM Lunch & Momos → 3:30 PM Nisargadhama → Return to Bangalore.",
-    twoDayItinerary: "Combine Kushalnagar with 2-day Madikeri & Coorg package.",
-    relatedDestinations: ["madikeri", "nagarhole", "bhagamandala-talakaveri"],
-    relatedPackages: ["coorg-3day-misty-hills-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [{ q: "What time is elephant bathing at Dubare?", a: "Morning 8:30 AM to 10:30 AM." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "bhagamandala-talakaveri",
-    name: "Bhagamandala & Talakaveri",
-    slug: "bhagamandala-talakaveri",
-    district: "Kodagu",
-    region: "Malnad & Western Ghats",
-    categories: ["Pilgrimage", "River Source", "Viewpoint", "Western Ghats"],
-    approximateDistanceFromBengaluru: 290,
-    approximateDriveTime: "6 hrs",
-    bestSeason: "September to March (Tula Sankramana in Oct)",
-    suggestedDuration: "1 Day (From Madikeri)",
-    overview: "Talakaveri is the sacred birthplace of the River Kaveri atop the Brahmagiri hill range, while Bhagamandala marks the holy river confluence (Triveni Sangama).",
-    historyAndCulture: "Revered for centuries as the mother river of Karnataka and Tamil Nadu; birthplace of Kaveri who transformed into a sacred river.",
-    majorAttractions: ["Talakaveri Temple & Holy Kundike (Spring)", "Brahmagiri Peak Viewpoint Steps", "Bhagamandala Triveni Sangama", "Bhagandeshwara Temple"],
-    nearbyAttractions: ["Madikeri", "Kakkabe", "Tadiandamol Peak"],
-    bengaluruRoute: "Bengaluru → Mysuru → Madikeri → Bhagamandala → Talakaveri",
-    thingsToDo: ["Take holy dip at Triveni Sangama", "Climb 350 steps to Brahmagiri viewpoint peak", "Offer prayers at Kaveri spring"],
-    localFood: ["Temple anna prasadam", "Coorg coffee"],
-    entryInformation: "Free entry. Strict modest dress code for temple.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Heavy fog and winds at Brahmagiri peak.",
-    oneDayItinerary: "Day trip from Madikeri base.",
-    twoDayItinerary: "Part of 3-day complete Coorg circuit.",
-    relatedDestinations: ["madikeri", "kakkabe-tadiandamol", "virajpet"],
-    relatedPackages: ["coorg-3day-misty-hills-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [{ q: "What happens during Tula Sankramana at Talakaveri?", a: "Holy water gushes spontaneously from the spring fountain (Tirtha Udbhava)." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "virajpet",
-    name: "Virajpet Coffee Town",
-    slug: "virajpet",
-    district: "Kodagu",
-    region: "Malnad & Western Ghats",
-    categories: ["Coffee Plantation", "Heritage", "Quiet Escape"],
-    approximateDistanceFromBengaluru: 240,
-    approximateDriveTime: "5 hrs",
-    bestSeason: "October to March",
-    suggestedDuration: "1–2 Days",
-    overview: "The second major town of Coorg, famous for vast spice and coffee plantations, St. Anne's Church, and serene plantation resorts.",
-    historyAndCulture: "Established in 1792 by Haleri King Veeraraja, naming the town Veerarajendrapete (Virajpet).",
-    majorAttractions: ["Clock Tower", "St. Anne's Church", "Malethirike Hill Viewpoint", "Ayyappa Temple Hill"],
-    nearbyAttractions: ["Madikeri", "Kakkabe", "Nagarhole"],
-    bengaluruRoute: "Bengaluru → Mysuru → Gonikoppal → Virajpet",
-    thingsToDo: ["Coffee estate walk", "Spice buying", "Relax in heritage homestays"],
-    localFood: ["Pandi Curry", "Kadambuttu", "Fresh Pepper & Cardamom"],
-    entryInformation: "Free entry.",
-    permitInformation: "No permits required.",
-    safetyNotes: "Drive slowly on estate country roads.",
-    oneDayItinerary: "En-route stop between Mysuru and South Coorg resorts.",
-    twoDayItinerary: "Stay at luxury plantation resort in Virajpet.",
-    relatedDestinations: ["madikeri", "kakkabe-tadiandamol", "nagarhole"],
-    relatedPackages: ["coorg-3day-misty-hills-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [{ q: "How far is Virajpet from Madikeri?", a: "Virajpet is 30 km south of Madikeri (45 mins drive)." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "kakkabe-tadiandamol",
-    name: "Kakkabe & Tadiandamol Peak",
-    slug: "kakkabe-tadiandamol",
-    district: "Kodagu",
-    region: "Malnad & Western Ghats",
-    categories: ["Trekking", "Highest Peak", "Adventure", "Heritage"],
-    approximateDistanceFromBengaluru: 265,
-    approximateDriveTime: "5.5 hrs",
-    bestSeason: "October to February",
-    suggestedDuration: "1–2 Days",
-    overview: "Home to Tadiandamol (1,748m), the highest mountain peak in Coorg, alongside the historic Nalknad Palace at its base.",
-    historyAndCulture: "Nalknad Palace was built in 1792 by King Doddaveerarajendra as a secret royal shelter against British forces.",
-    majorAttractions: ["Tadiandamol Peak Trek", "Nalknad Palace (Teakwood heritage)", "Chelavara Falls", "Chomakund Hill"],
-    nearbyAttractions: ["Bhagamandala", "Virajpet", "Madikeri"],
-    bengaluruRoute: "Bengaluru → Mysuru → Virajpet → Kakkabe",
-    thingsToDo: ["Trek Coorg's highest mountain peak", "Explore secret hideout room at Nalknad Palace", "Visit Chelavara Waterfall"],
-    localFood: ["Local Kodava homestay meals"],
-    entryInformation: "Forest trek fee ₹50. Palace entry free.",
-    permitInformation: "Trek registration post at Kakkabe base.",
-    safetyNotes: "Leeches common during and post monsoon. Carry salt & wear gaiters.",
-    oneDayItinerary: "Trek day from Kakkabe base.",
-    twoDayItinerary: "Day 1: Reach Kakkabe, visit Nalknad Palace & Chelavara Falls. Day 2: Early morning Tadiandamol summit trek & return.",
-    relatedDestinations: ["madikeri", "bhagamandala-talakaveri", "virajpet"],
-    relatedPackages: ["tadiandamol-peak-trek-and-coorg-package"],
-    relatedRoutes: ["bengaluru-to-coorg"],
-    faqs: [{ q: "What is the highest peak in Coorg?", a: "Tadiandamol Peak (1,748m) is the highest mountain peak in Kodagu district." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "chikkamagaluru",
-    name: "Chikkamagaluru (Coffee Capital)",
-    slug: "chikkamagaluru",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Coffee Plantation", "Highest Peak", "Trekking", "Hill Station"],
-    approximateDistanceFromBengaluru: 245,
-    approximateDriveTime: "4.5 hrs (via Hassan Highway)",
-    bestSeason: "September to March",
-    suggestedDuration: "2–3 Days",
-    overview: "The birthland of Indian coffee, famous for Mullayanagiri (Karnataka's highest peak), Baba Budangiri hills, lush coffee plantations, and cascading waterfalls.",
-    historyAndCulture: "Sufi saint Baba Budan brought seven coffee beans from Yemen in 1670 CE and planted them on the Chandradrona hills, initiating India's coffee legacy.",
-    majorAttractions: ["Mullayanagiri Peak (1,930m)", "Baba Budangiri (Dattapeetha)", "Jhari (Dabdabe) Waterfall", "Hebbe Falls", "Coffee Museum"],
-    nearbyAttractions: ["Kemmannugundi", "Kudremukh", "Belur", "Halebidu"],
-    bengaluruRoute: "Bengaluru → Hassan Highway (NH 75) → Belur → Chikkamagaluru (NH 173)",
-    thingsToDo: ["Climb 500 stone steps to Mullayanagiri peak", "Off-road 4x4 Jeep ride to Jhari Waterfalls", "Coffee tasting & museum tour", "Stay at heritage coffee estate homestay"],
-    localFood: ["Malnad Akki Roti & Chicken Curry", "Freshly roasted Arabica/Robusta Coffee", "Pathrode"],
-    entryInformation: "Free entry to peaks. Coffee Museum entry ₹20 (closed Mondays).",
-    permitInformation: "Heavy vehicles restricted on narrow Mullayanagiri peak ghat road.",
-    safetyNotes: "Dense fog on Mullayanagiri peak road. Drive with low beams.",
-    oneDayItinerary: "Not recommended for 1 day.",
-    twoDayItinerary: "Day 1: Arrive Chikkamagaluru, Coffee Museum, estate walk, sunset at Hirekolale Lake. Day 2: Early morning Mullayanagiri peak, Baba Budangiri, Jhari Falls, return via Belur.",
-    relatedDestinations: ["mullayanagiri-baba-budangiri", "kemmannugundi", "kudremukh", "belur"],
-    relatedPackages: ["chikkamagaluru-3day-coffee-hills-package"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [{ q: "How far is Chikkamagaluru from Bangalore?", a: "It is 245 km (approx 4.5 hours drive via Hassan Expressway)." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "mullayanagiri-baba-budangiri",
-    name: "Mullayanagiri & Baba Budangiri Peaks",
-    slug: "mullayanagiri-baba-budangiri",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Highest Peak", "Pilgrimage", "Trekking", "Cloudbed"],
-    approximateDistanceFromBengaluru: 265,
-    approximateDriveTime: "5 hrs",
-    bestSeason: "September to March",
-    suggestedDuration: "1 Day (From Chikkamagaluru)",
-    overview: "Mullayanagiri is the highest mountain peak in Karnataka (1,930m), connected along the ridge to the sacred Baba Budangiri (Dattapeetha) shrine.",
-    historyAndCulture: "Named after Mullappa Swamy sage. Baba Budangiri is revered by both Hindus and Muslims as a syncretic spiritual shrine.",
-    majorAttractions: ["Mullayanagiri Temple Peak", "Baba Budangiri Dattapeetha Cave", "Manikyadhara Waterfalls", "Honnamana Halla Stream", "Galikere Lake"],
-    nearbyAttractions: ["Jhari Falls", "Kemmannugundi", "Chikkamagaluru"],
-    bengaluruRoute: "Bengaluru → Hassan → Chikkamagaluru → Kaimara Hand Post → Mullayanagiri Road",
-    thingsToDo: ["Climb final 500 steps to Karnataka's highest altitude point", "Cave worship at Dattapeetha", "Jeep ride to Manikyadhara Falls"],
-    localFood: ["Tea & maggi at peak stalls"],
-    entryInformation: "Free entry. Peak gate controlled by forest checkpost.",
-    permitInformation: "Private buses not allowed uphill; light vehicles and cabs operate normally.",
-    safetyNotes: "Extremely high wind speeds at peak edge. Stay inside guard railings.",
-    oneDayItinerary: "Morning peak circuit from Chikkamagaluru base.",
-    twoDayItinerary: "Highlight of Day 2 in Chikkamagaluru package.",
-    relatedDestinations: ["chikkamagaluru", "kemmannugundi", "kudremukh"],
-    relatedPackages: ["chikkamagaluru-3day-coffee-hills-package"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [{ q: "What is the highest mountain peak in Karnataka?", a: "Mullayanagiri Peak at 1,930 meters (6,330 feet) above sea level." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "kemmannugundi",
-    name: "Kemmannugundi Hill Station",
-    slug: "kemmannugundi",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Hill Station", "Gardens", "Waterfalls", "Nature"],
-    approximateDistanceFromBengaluru: 275,
-    approximateDriveTime: "5.5 hrs",
-    bestSeason: "September to March",
-    suggestedDuration: "1–2 Days",
-    overview: "A lush royal hill station established as the summer retreat of Wodeyar King Krishnaraja Wodeyar IV, known for Rose Gardens and Z Point views.",
-    historyAndCulture: "Also known as KR Hills (Krishnarajendra Hill Station), developed with manicured gardens, mountain springs, and iron ore hills.",
-    majorAttractions: ["Z Point Trek Viewpoint", "Raj Bhavan Rose Garden", "Hebbe Falls", "Kalhatti Falls & Veerabhadra Temple", "Shanti Falls"],
-    nearbyAttractions: ["Chikkamagaluru", "Bhadra Sanctuary", "Shivamogga"],
-    bengaluruRoute: "Bengaluru → Tumakuru → Kadur → Birur → Tarikere → Kemmannugundi",
-    thingsToDo: ["Trek to Z Point cliff edge", "4x4 Jeep excursion to Hebbe Falls", "Visit Kalhatti temple under waterfall spray"],
-    localFood: ["Horticulture canteen meals"],
-    entryInformation: "Free entry. Hebbe Falls jeep fare extra (~₹1,200 per jeep).",
-    permitInformation: "Hebbe Falls accessible via Forest Department authorized jeeps.",
-    safetyNotes: "Leeches present on Z Point trail during wet season.",
-    oneDayItinerary: "Day trip from Tarikere or Chikkamagaluru.",
-    twoDayItinerary: "Combine Kemmannugundi with Bhadra Wildlife Sanctuary & Shivamogga.",
-    relatedDestinations: ["chikkamagaluru", "mullayanagiri-baba-budangiri", "bhadra-wildlife-sanctuary"],
-    relatedPackages: ["kemmannugundi-and-hebbe-falls-tour"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [{ q: "Why is Kemmannugundi called KR Hills?", a: "It was named Krishnarajendra Hill Station after Wodeyar King Krishnaraja Wodeyar IV." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "kudremukh",
-    name: "Kudremukh National Park & Peak",
-    slug: "kudremukh",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Trekking", "National Park", "Horse-Face Peak", "Shola Forests"],
-    approximateDistanceFromBengaluru: 310,
-    approximateDriveTime: "6 hrs",
-    bestSeason: "October to February",
-    suggestedDuration: "2 Days",
-    overview: "A UNESCO World Heritage biodiversity hotspot famous for its horse-face shaped mountain peak (1,892m), rolling emerald shola grasslands, and Lion-tailed Macaques.",
-    historyAndCulture: "Declared a National Park in 1987. Mining operations were halted by Supreme Court order to protect critical origin rivers (Tunga, Bhadra, Netravathi).",
-    majorAttractions: ["Kudremukh Peak Trek (1,892m)", "Hanuman Gundi Waterfalls", "Lakya Dam Backwaters", "Kadambi Waterfalls", "Kalasa Temple town nearby"],
-    nearbyAttractions: ["Horanadu", "Sringeri", "Karkala", "Udupi"],
-    bengaluruRoute: "Bengaluru → Hassan → Belur → Mudigere → Kalasa → Kudremukh",
-    thingsToDo: ["20 km full day trek through shola grasslands", "Sightseeing at Hanuman Gundi Falls", "Explore Tunga & Bhadra river origins"],
-    localFood: ["Malnad homestay vegetarian thali"],
-    entryInformation: "Trek permit mandatory: ₹600 per head (max 50 trekkers per day limit strictly enforced).",
-    permitInformation: "Online forest department trek booking mandatory via Karnataka Eco-Tourism portal.",
-    safetyNotes: "Strict plastic-free zone. 5-hour time limit checkpost transit rule for driving through park.",
-    oneDayItinerary: "Not possible due to trek length.",
-    twoDayItinerary: "Day 1: Drive to Kalasa/Kudremukh base, permit verification, stay at homestay. Day 2: 6:00 AM start Kudremukh peak trek, return by 4:00 PM & drive to Sringeri/Horanadu.",
-    relatedDestinations: ["horanadu", "sringeri", "chikkamagaluru", "karkala"],
-    relatedPackages: ["kudremukh-trek-and-malnad-package"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru", "bengaluru-to-udupi"],
-    faqs: [
-      { q: "Why is it named Kudremukh?", a: "Kudremukh means 'Horse-face' in Kannada, describing the unique shape of the mountain peak." },
-      { q: "Is prior booking required for Kudremukh trek?", a: "Yes, Forest Department limits entry to 50 trekkers per day; advance portal permit is required." }
-    ],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "horanadu",
-    name: "Horanadu Annapoorneshwari Temple",
-    slug: "horanadu",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Pilgrimage", "Valley", "Nature", "Temple"],
-    approximateDistanceFromBengaluru: 320,
-    approximateDriveTime: "6.5 hrs",
-    bestSeason: "Year-Round (September to March ideal)",
-    suggestedDuration: "1–2 Days",
-    overview: "A sacred pilgrimage haven nestled in a green Malnad valley, home to the ancient Sri Annapoorneshwari Temple where free Mahaprasadam meals are served daily to all devotees.",
-    historyAndCulture: "Established in the 8th century by Maharshi Agastya. The golden idol of Goddess Annapoorneshwari holds a vessel of food in her hands.",
-    majorAttractions: ["Sri Annapoorneshwari Temple & Golden Idol", "Bhadra River ghats", "Valley coffee tea gardens", "Kalaseshwara Temple nearby at Kalasa"],
-    nearbyAttractions: ["Sringeri", "Kudremukh", "Chikkamagaluru"],
-    bengaluruRoute: "Bengaluru → Hassan → Belur → Mudigere → Kalasa → Horanadu",
-    thingsToDo: ["Temple darshan & partake in traditional Annadana meal", "Dip in Bhadra river", "Scenic valley driving"],
-    localFood: ["Temple Annadana Mahaprasadam", "Malnad Jackfruit papad & coffee"],
-    entryInformation: "Free temple entry and free vegetarian meal for all visitors.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Narrow ghat roads between Kalasa and Horanadu.",
-    oneDayItinerary: "Combine with Kalasa and Sringeri temple package.",
-    twoDayItinerary: "Day 1: Drive via Hassan-Belur to Horanadu, evening temple darshan & night stay. Day 2: Morning visit Kalasa, Kudremukh views & Sringeri, return to Bangalore.",
-    relatedDestinations: ["sringeri", "kudremukh", "chikkamagaluru", "kalasa"],
-    relatedPackages: ["malnad-temple-circuit-sringeri-horanadu"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [{ q: "What is unique about Horanadu Temple?", a: "Every visitor, regardless of religion or background, is provided free three-course meals (Annadana)." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "sringeri",
-    name: "Sringeri Sharada Peetham",
-    slug: "sringeri",
-    district: "Chikkamagaluru",
-    region: "Malnad & Western Ghats",
-    categories: ["Pilgrimage", "Heritage", "River", "Temple"],
-    approximateDistanceFromBengaluru: 320,
-    approximateDriveTime: "6.5 hrs",
-    bestSeason: "Year-Round",
-    suggestedDuration: "1–2 Days",
-    overview: "The first Matha established by Adi Shankaracharya in the 8th century along the Tunga River, world-famous for Sharadamba Temple and Vidyashankara stone architectural temple.",
-    historyAndCulture: "Founded by Adi Shankaracharya who saw a cobra sheltering a spawning frog from scorching sun, symbolizing harmony. Home to 12 zodiac stone pillars at Vidyashankara temple.",
-    majorAttractions: ["Sri Sharadamba Temple", "Vidyashankara Temple (12 Zodiac stone pillars)", "Tunga River Fish Feeding Ghats", "Torana Ganapati Temple", "Sringeri Matha Complex & Bridge"],
-    nearbyAttractions: ["Horanadu", "Agumbe", "Kudremukh", "Shivamogga"],
-    bengaluruRoute: "Bengaluru → Hassan → Belur → Chikkamagaluru → Balehonnur → Sringeri",
-    thingsToDo: ["Feed sacred fish at Tunga river bank", "Study 12 zodiac pillars at Vidyashankara Temple", "Receive Jagadguru blessings", "Partake in Matha Annadana meal"],
-    localFood: ["Sringeri Matha Mahaprasadam", "Kashaya (herbal tea)", "Malnad meals"],
-    entryInformation: "Free temple entry. Free prasadam meals afternoon & night.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Do not harm or catch fish in Tunga river bank.",
-    oneDayItinerary: "Part of Malnad Pilgrimage package.",
-    twoDayItinerary: "Day 1: Drive to Sringeri, Tunga river fish feeding, Sharadamba Temple, Vidyashankara Temple light. Day 2: Horanadu temple, return via Chikkamagaluru.",
-    relatedDestinations: ["horanadu", "agumbe", "chikkamagaluru", "kudremukh"],
-    relatedPackages: ["malnad-temple-circuit-sringeri-horanadu"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru", "bengaluru-to-udupi"],
-    faqs: [{ q: "What is unique about Vidyashankara Temple in Sringeri?", a: "It has 12 stone pillars representing the 12 zodiac signs; sun rays fall on the specific monthly zodiac pillar at dawn." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "bhadra-wildlife-sanctuary",
-    name: "Bhadra Wildlife Sanctuary (Muthodi)",
-    slug: "bhadra-wildlife-sanctuary",
-    district: "Chikkamagaluru / Shivamogga",
-    region: "Malnad & Western Ghats",
-    categories: ["Wildlife", "Safari", "Tiger Reserve", "Forest"],
-    approximateDistanceFromBengaluru: 285,
-    approximateDriveTime: "5.5 hrs",
-    bestSeason: "November to May",
-    suggestedDuration: "1–2 Days",
-    overview: "A scenic Tiger Reserve surrounding the Bhadra Reservoir, known as Muthodi Wildlife Sanctuary, rich in elephants, tigers, leopards, and Malabar giant squirrels.",
-    historyAndCulture: "Declared Project Tiger reserve in 1998, featuring pristine moist deciduous teak forests and the Bababudan hill backdrop.",
-    majorAttractions: ["Muthodi Forest Jeep Safari", "Bhadra Dam Reservoir & Boating", "Lakkavalli Safari Zone (JLR River Tern Lodge)", "Jagara Valley"],
-    nearbyAttractions: ["Chikkamagaluru", "Kemmannugundi", "Shivamogga"],
-    bengaluruRoute: "Bengaluru → Tumakuru → Tarikere → Lakkavalli or Chikkamagaluru → Muthodi",
-    thingsToDo: ["Forest department open jeep safari", "Stay at JLR River Tern Lodge on Bhadra lake island", "Birdwatching for Malabar Pied Hornbills"],
-    localFood: ["JLR Resort buffet", "Malnad home style food"],
-    entryInformation: "Safari fee ~₹400–₹1,500. Counter at Muthodi & Lakkavalli gates.",
-    permitInformation: "Safari permits issued at gate or via authorized resorts.",
-    safetyNotes: "Follow wildlife safari protocols.",
-    oneDayItinerary: "En-route wildlife excursion from Chikkamagaluru or Tarikere.",
-    twoDayItinerary: "Overnight stay at River Tern Lodge Lakkavalli with jeep & boat safaris.",
-    relatedDestinations: ["chikkamagaluru", "kemmannugundi", "shivamogga"],
-    relatedPackages: ["bhadra-wildlife-and-river-tern-2day-package"],
-    relatedRoutes: ["bengaluru-to-chikkamagaluru"],
-    faqs: [{ q: "Where is River Tern Lodge located?", a: "On a serene island in the backwaters of Bhadra Reservoir near Lakkavalli." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "shivamogga",
-    name: "Shivamogga (Shimoga Gateway)",
-    slug: "shivamogga",
-    district: "Shivamogga",
-    region: "Malnad & Western Ghats",
-    categories: ["Waterfall Gateway", "Heritage", "River", "Nature"],
-    approximateDistanceFromBengaluru: 300,
-    approximateDriveTime: "5.5 hrs (via NH 69 Expressway)",
-    bestSeason: "August to March",
-    suggestedDuration: "2 Days",
-    overview: "The gateway to Malnad, set on the banks of Tunga River, serving as the central base for Jog Falls, Agumbe rainforest, Sakrebyle Elephant Camp, and Keladi kingdom heritage.",
-    historyAndCulture: "Ruled by the Keladi Nayakas (Shivappa Nayaka), known for lush paddy fields and rich Kannada literary heritage (Kuvempu).",
-    majorAttractions: ["Tyavarekoppa Lion & Tiger Safari", "Sakrebyle Elephant Camp", "Shivappa Nayaka Palace Museum", "Gajanur Dam across Tunga", "Kuppalli (Kuvempu House nearby)"],
-    nearbyAttractions: ["Jog Falls", "Agumbe", "Keladi-Ikkeri-Sagara", "Kodachadri"],
-    bengaluruRoute: "Bengaluru → Tumakuru → Kadur → Tarikere → Shivamogga (NH 69)",
-    thingsToDo: ["Morning elephant bathing at Sakrebyle", "Visit Tyavarekoppa Lion safari", "Explore Shivappa Nayaka wooden palace museum"],
-    localFood: ["Shimoga Town Midigayi Pickle", "South Indian thali", "Tunga fish fry"],
-    entryInformation: "Sakrebyle entry ₹50. Safari entry ₹100.",
-    permitInformation: "No permits needed.",
-    safetyNotes: "Do not approach river banks near Gajanur dam when crest gates are open.",
-    oneDayItinerary: "Hub city for regional day tours.",
-    twoDayItinerary: "Day 1: Sakrebyle Elephant Camp, Tyavarekoppa Safari, Shivamogga stay. Day 2: Day trip to Jog Falls & Sagara temples, return.",
-    relatedDestinations: ["jog-falls", "agumbe", "keladi-ikkeri-sagara", "kodachadri"],
-    relatedPackages: ["shivamogga-and-jog-falls-2day-tour"],
-    relatedRoutes: ["bengaluru-to-udupi"],
-    faqs: [{ q: "What is Sakrebyle famous for?", a: "It is an eco-camp where elephants from nearby forests are trained and bathed in the Tunga river daily." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "jog-falls",
-    name: "Jog Falls (Gerusoppa Falls)",
-    slug: "jog-falls",
-    district: "Shivamogga",
-    region: "Malnad & Western Ghats",
-    categories: ["Waterfalls", "Highest Fall", "Nature", "Monsoon"],
-    approximateDistanceFromBengaluru: 410,
-    approximateDriveTime: "7.5 hrs",
-    bestSeason: "July to November (Peak monsoon & post-monsoon)",
-    suggestedDuration: "1–2 Days",
-    overview: "India's second-highest plunge waterfall, formed by the Sharavathi River dropping 253 meters (830 ft) in four distinct cascades: Raja, Roarer, Rocket, and Rani.",
-    historyAndCulture: "Derived from 'Joga' meaning marsh in Kannada. Hydroelectric power generation station commissioned at Linganamakki in 1964.",
-    majorAttractions: ["Raja, Roarer, Rocket & Rani Falls Viewpoint", "British Bungalow Viewpoint", "1,400 Steps Base Gorge Walk (when open)", "Linganamakki Dam nearby", "Sharavathi Valley Viewpoint"],
-    nearbyAttractions: ["Honnemaradu", "Keladi-Ikkeri-Sagara", "Shivamogga", "Gokarna"],
-    bengaluruRoute: "Bengaluru → Shivamogga → Sagara → Talaguppa → Jog Falls (NH 69)",
-    thingsToDo: ["Watch four distinct waterfalls roar into deep canyon", "Laser light show in monsoon evenings", "Walk to Linganamakki Dam viewpoint"],
-    localFood: ["KSTDC Maurya Restaurant buffet", "Hot bajjis & corn"],
-    entryInformation: "Entry fee ₹15. Parking charges ₹50.",
-    permitInformation: "Climbing down 1400 steps to base gorge is restricted during high water flow.",
-    safetyNotes: "Stay behind safety railings at high cliff viewpoints.",
-    oneDayItinerary: "Possible via early morning start or overnight cab drive.",
-    twoDayItinerary: "Day 1: Drive to Sagara/Jog Falls, afternoon waterfall viewpoints, stay at KSTDC Maurya. Day 2: Visit Linganamakki Dam, Ikkeri & Keladi temples, return to Bangalore.",
-    relatedDestinations: ["shivamogga", "keladi-ikkeri-sagara", "honnemaradu", "gokarna"],
-    relatedPackages: ["jog-falls-and-sharavathi-valley-tour"],
-    relatedRoutes: ["bengaluru-to-gokarna"],
-    faqs: [
-      { q: "What are the names of the four cascades of Jog Falls?", a: "Raja, Roarer, Rocket, and Rani." },
-      { q: "How high is Jog Falls?", a: "It drops 253 meters (830 feet) in a single plunge." }
-    ],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  },
-  {
-    id: "agumbe",
-    name: "Agumbe Rainforest & Sunset Peak",
-    slug: "agumbe",
-    district: "Shivamogga",
-    region: "Malnad & Western Ghats",
-    categories: ["Rainforest", "Cherrapunji of South", "King Cobra", "Sunset"],
-    approximateDistanceFromBengaluru: 350,
-    approximateDriveTime: "7 hrs",
-    bestSeason: "October to May (Monsoon for rainforest experience)",
-    suggestedDuration: "1–2 Days",
-    overview: "Known as the 'Cherrapunji of the South' due to extreme rainfall, Agumbe is a dense high-altitude rainforest reserve world-famous for King Cobra research and Arabian Sea sunsets.",
-    historyAndCulture: "Filming location of the classic TV series 'Malgudi Days' (Dodda Mane homestay). Home to ARRS (Agumbe Rainforest Research Station).",
-    majorAttractions: ["Agumbe Ghat Sunset Point", "Barkana & Onake Abbi Falls", "Agumbe Rainforest Research Station (ARRS)", "Dodda Mane (Malgudi Days House)", "Kundadri Hill nearby"],
-    nearbyAttractions: ["Sringeri", "Udupi", "Thirthahalli", "Kundadri Hill"],
-    bengaluruRoute: "Bengaluru → Hassan → Belur → Sringeri → Agumbe (or via Shivamogga → Thirthahalli → Agumbe)",
-    thingsToDo: ["Watch Arabian Sea sunset from ghat peak", "Rainforest trekking with eco guide", "Visit Malgudi Days heritage house Dodda Mane", "King Cobra conservation study"],
-    localFood: ["Kashaya (herb brew)", "Dodda Mane home cooked Malnad thali"],
-    entryInformation: "Free sunset point entry. Waterfall treks require forest permits.",
-    permitInformation: "ARRS visits require prior educational appointment.",
-    safetyNotes: "14 tight hairpin curves on Agumbe ghat. Leeches very active in monsoon.",
-    oneDayItinerary: "Combine with Sringeri or Udupi road trips.",
-    twoDayItinerary: "Day 1: Drive to Agumbe, stay at Dodda Mane / eco homestay, sunset viewpoint. Day 2: Kundadri hill sunrise, Barkana waterfall trek, return via Sringeri.",
-    relatedDestinations: ["sringeri", "udupi", "thirthahalli-kavaledurga", "kundadri-hill"],
-    relatedPackages: ["agumbe-rainforest-and-malgudi-days-package"],
-    relatedRoutes: ["bengaluru-to-udupi"],
-    faqs: [{ q: "Why is Agumbe famous?", a: "For dense rainforest biodiversity, King Cobra research, high monsoon rainfall, and Malgudi Days shooting." }],
-    lastVerified: "15 September 2026",
-    status: "verified"
-  }
-];
-
-// Combine all 100 canonical destinations
-export const ALL_DESTINATIONS: Destination[] = [
-  ...DESTINATIONS,
-  ...REMAINING_DESTINATIONS
 ];
