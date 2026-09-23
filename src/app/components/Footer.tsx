@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 sm:col-span-1">
             <Link to="/" className="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B86F52] rounded">
-              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-9 w-auto filter invert" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs" className="h-10 w-auto brightness-0 invert mix-blend-screen" />
             </Link>
             <p className="text-xs text-[#DDD5C8] leading-relaxed mb-4 font-medium">
               Premium luxury chauffeur services from Bengaluru. Toyota Innova Crysta & Force Tempo Traveller rentals for outstation travel across Karnataka and India.

@@ -81,7 +81,7 @@ export default function Navbar() {
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Executive Chauffeur Logo"
-              className="h-9 sm:h-10 md:h-10.5 w-auto object-contain transition-transform hover:scale-105 duration-200"
+              className="h-10 sm:h-11 md:h-12 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105 duration-200"
             />
           </Link>
 
@@ -182,7 +182,7 @@ export default function Navbar() {
           <div>
             <div className="flex items-center justify-between pb-6 border-b border-[#DDD5C8]">
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs Logo" className="h-9 w-auto" />
+                <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Coffee Cabs Logo" className="h-9 w-auto mix-blend-multiply" />
               </Link>
               <button
                 className="w-10 h-10 rounded-full bg-[#EDE5D8] border border-[#DDD5C8] flex items-center justify-center text-[#4A3025] focus-visible:outline-2 focus-visible:outline-[#23483A]"
