@@ -26,6 +26,8 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           <img
             src={vehicle.images[currentImgIndex]}
             alt={`${vehicle.name} - Image ${currentImgIndex + 1}`}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-700"
           />
 

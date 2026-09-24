@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { Link } from "react-router";
 import { Search, MapPin, Package as PackageIcon, Route as RouteIcon, X, ArrowRight } from "lucide-react";
 import { DESTINATIONS } from "../data/destinations";
@@ -31,11 +31,13 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
 
   const trimmed = query.trim().toLowerCase();
 
-  const results: SearchResultItem[] = [];
+  const limitedResults = useMemo(() => {
+    if (trimmed.length < 2) return [];
 
-  if (trimmed.length >= 2) {
+    const res: SearchResultItem[] = [];
+
     // Search Destinations
-    DESTINATIONS.forEach((d) => {
+    for (const d of DESTINATIONS) {
       if (
         d.name.toLowerCase().includes(trimmed) ||
         d.district.toLowerCase().includes(trimmed) ||
@@ -43,7 +45,7 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
         d.categories.some((c) => c.toLowerCase().includes(trimmed)) ||
         (d.search_keywords && d.search_keywords.some((k) => k.toLowerCase().includes(trimmed)))
       ) {
-        results.push({
+        res.push({
           type: "destination",
           id: d.id,
           title: d.name,
@@ -51,16 +53,16 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
           url: `/travel/destinations/${d.slug}`
         });
       }
-    });
+    }
 
     // Search Packages
-    PACKAGES.forEach((p) => {
+    for (const p of PACKAGES) {
       if (
         p.title.toLowerCase().includes(trimmed) ||
         p.category.toLowerCase().includes(trimmed) ||
         p.route.toLowerCase().includes(trimmed)
       ) {
-        results.push({
+        res.push({
           type: "package",
           id: p.id,
           title: p.title,
@@ -68,16 +70,16 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
           url: `/travel/packages/${p.slug}`
         });
       }
-    });
+    }
 
     // Search Routes
-    ROUTES.forEach((r) => {
+    for (const r of ROUTES) {
       if (
         r.title.toLowerCase().includes(trimmed) ||
         r.to.toLowerCase().includes(trimmed) ||
         r.from.toLowerCase().includes(trimmed)
       ) {
-        results.push({
+        res.push({
           type: "route",
           id: r.id,
           title: r.title,
@@ -85,10 +87,10 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
           url: `/routes/${r.slug}`
         });
       }
-    });
-  }
+    }
 
-  const limitedResults = results.slice(0, 10);
+    return res.slice(0, 10);
+  }, [trimmed]);
 
   return (
     <div ref={searchRef} className="relative w-full max-w-2xl mx-auto z-40">

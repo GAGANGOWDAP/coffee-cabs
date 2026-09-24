@@ -170,6 +170,9 @@ export default function HomePage() {
           <img
             src={`${import.meta.env.BASE_URL}images/hero.png`}
             alt="Coffee Cabs Luxury Fleet"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover object-[center_30%] opacity-40 transition-opacity duration-700"
           />
           <div

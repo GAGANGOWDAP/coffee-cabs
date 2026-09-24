@@ -17,6 +17,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
             alt={destination.name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="lazy"
+            decoding="async"
           />
 
           {/* Region Badge */}
