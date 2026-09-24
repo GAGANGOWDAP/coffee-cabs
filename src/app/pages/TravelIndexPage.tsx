@@ -74,23 +74,25 @@ export default function TravelIndexPage() {
         schemaJson={getTravelIndexSchema()}
       />
       {/* HEADER HERO */}
-      <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#23483A] bg-white px-4 py-1.5 rounded-full border border-[#DDD5C8] mb-4 shadow-sm">
-            <Compass size={16} />
-            <span>KARNATAKA TRAVEL DICTIONARY</span>
+      <section className="bg-[#EDE5D8] border-b border-[#DDD5C8] py-14 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#23483A] bg-white px-4 py-1.5 rounded-full border border-[#DDD5C8] mb-5 shadow-xs">
+            <Compass size={15} />
+            <span>KARNATAKA TRAVEL GUIDE</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#4A3025] tracking-tight mb-4">
-            100 Curated Travel Destinations from Bengaluru
+          <h1 className="text-3xl sm:text-4xl lg:text-[44px] xl:text-5xl font-extrabold text-[#4A3025] tracking-tight mb-4 max-w-4xl mx-auto leading-tight sm:leading-snug">
+            Explore Karnataka from Bengaluru
           </h1>
 
-          <p className="text-[#6F6A63] text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed font-medium">
-            Explore heritage landmarks, hill stations, waterfalls, wildlife sanctuaries, and coastal towns. Rent luxury Toyota Innova Crysta & Force Urbania cabs with verified drivers.
+          <p className="text-[#6F6A63] text-sm sm:text-base max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed font-medium">
+            Discover 100 curated destinations across Karnataka — from heritage towns and hill stations to waterfalls, wildlife sanctuaries, and coastal escapes.
           </p>
 
           {/* Unified Search Component */}
-          <TravelSearch placeholder="Search any of the 100 destinations (e.g. Mysuru, Gokarna, Coorg, Hampi)..." />
+          <div className="max-w-xl sm:max-w-2xl mx-auto">
+            <TravelSearch placeholder="Search destinations — e.g. Mysuru, Gokarna, Coorg, Hampi" />
+          </div>
         </div>
       </section>
 
