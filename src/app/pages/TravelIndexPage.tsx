@@ -10,6 +10,7 @@ export default function TravelIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [selectedRegion, setSelectedRegion] = useState<string>("All");
   const [selectedDistance, setSelectedDistance] = useState<string>("All");
+  const [onlyFeatured, setOnlyFeatured] = useState<boolean>(false);
 
   const categories = [
     "All",
@@ -44,6 +45,11 @@ export default function TravelIndexPage() {
 
   const filteredDestinations = useMemo(() => {
     return DESTINATIONS.filter((d) => {
+      // Featured Filter
+      if (onlyFeatured && !d.featured) {
+        return false;
+      }
+
       // Category Filter
       if (selectedCategory !== "All" && !d.categories.includes(selectedCategory)) {
         return false;
@@ -63,7 +69,7 @@ export default function TravelIndexPage() {
 
       return true;
     });
-  }, [selectedCategory, selectedRegion, selectedDistance]);
+  }, [selectedCategory, selectedRegion, selectedDistance, onlyFeatured]);
 
   return (
     <div className="pt-20 bg-[#F7F3EC] text-[#252525] min-h-screen">
@@ -101,23 +107,37 @@ export default function TravelIndexPage() {
         {/* Filter Pills Bar */}
         <div className="bg-white border border-[#DDD5C8] rounded-3xl p-6 mb-10 space-y-6 shadow-sm">
           <div className="flex items-center justify-between border-b border-[#DDD5C8] pb-4">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#252525]">
+            <div className="flex items-center gap-3 text-sm font-bold text-[#252525]">
               <Filter size={18} className="text-[#23483A]" />
               <span>EXPLORE & FILTER DESTINATIONS ({filteredDestinations.length} / {DESTINATIONS.length})</span>
             </div>
 
-            {(selectedCategory !== "All" || selectedRegion !== "All" || selectedDistance !== "All") && (
+            <div className="flex items-center gap-3">
               <button
-                onClick={() => {
-                  setSelectedCategory("All");
-                  setSelectedRegion("All");
-                  setSelectedDistance("All");
-                }}
-                className="text-xs font-bold text-[#23483A] hover:underline"
+                onClick={() => setOnlyFeatured(!onlyFeatured)}
+                className={`text-xs font-extrabold px-3 py-1 rounded-full border transition-all ${
+                  onlyFeatured
+                    ? "bg-[#23483A] text-white border-[#23483A]"
+                    : "bg-[#EDE5D8] text-[#4A3025] border-[#DDD5C8] hover:border-[#23483A]"
+                }`}
               >
-                Reset Filters
+                ★ Featured Only
               </button>
-            )}
+
+              {(selectedCategory !== "All" || selectedRegion !== "All" || selectedDistance !== "All" || onlyFeatured) && (
+                <button
+                  onClick={() => {
+                    setSelectedCategory("All");
+                    setSelectedRegion("All");
+                    setSelectedDistance("All");
+                    setOnlyFeatured(false);
+                  }}
+                  className="text-xs font-bold text-[#23483A] hover:underline"
+                >
+                  Reset Filters
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Category Filter Pills */}

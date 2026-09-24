@@ -40,13 +40,14 @@ export default function TravelSearch({ placeholder = "Search 100+ destinations, 
         d.name.toLowerCase().includes(trimmed) ||
         d.district.toLowerCase().includes(trimmed) ||
         d.region.toLowerCase().includes(trimmed) ||
-        d.categories.some((c) => c.toLowerCase().includes(trimmed))
+        d.categories.some((c) => c.toLowerCase().includes(trimmed)) ||
+        (d.search_keywords && d.search_keywords.some((k) => k.toLowerCase().includes(trimmed)))
       ) {
         results.push({
           type: "destination",
           id: d.id,
           title: d.name,
-          subtitle: `${d.district}, Karnataka • ${d.approximateDistanceFromBengaluru}`,
+          subtitle: `${d.district}, ${d.region} • ${d.approximateDistanceFromBengaluru}`,
           url: `/travel/destinations/${d.slug}`
         });
       }
