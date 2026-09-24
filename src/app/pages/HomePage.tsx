@@ -226,11 +226,11 @@ export default function HomePage() {
             {/* CARD 1: LEFT - Toyota Innova Crysta */}
             <div className="w-full sm:w-[275px] lg:w-[295px] bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#F7F3EC] mb-2.5 p-2 flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=500&fit=crop"
+                    src={`${import.meta.env.BASE_URL}images/innova-crysta.png`}
                     alt="Toyota Innova Crysta"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
@@ -259,11 +259,11 @@ export default function HomePage() {
                 FLEXIBLE GROUP FAVORITE
               </div>
               <div>
-                <div className="h-[115px] sm:h-[120px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5 mt-0.5">
+                <div className="h-[115px] sm:h-[120px] rounded-xl overflow-hidden bg-[#F7F3EC] mb-2.5 mt-0.5 p-2 flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=500&fit=crop"
+                    src={`${import.meta.env.BASE_URL}images/force-urbania.png`}
                     alt="Force Urbania Luxury"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
@@ -289,11 +289,11 @@ export default function HomePage() {
             {/* CARD 3: RIGHT - Force Tempo Traveller */}
             <div className="w-full sm:w-[275px] lg:w-[295px] bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
-                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#EDE5D8] mb-2.5">
+                <div className="h-[110px] sm:h-[115px] rounded-xl overflow-hidden bg-[#F7F3EC] mb-2.5 p-2 flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&h=500&fit=crop"
+                    src={`${import.meta.env.BASE_URL}images/tempo-traveller.png`}
                     alt="Force Tempo Traveller"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="text-[10px] uppercase font-bold text-[#23483A] tracking-wider mb-0.5">
