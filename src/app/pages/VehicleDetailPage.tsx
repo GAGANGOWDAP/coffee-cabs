@@ -100,11 +100,11 @@ export default function VehicleDetailPage() {
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             {/* Left: Image Gallery */}
             <div>
-              <div className="relative aspect-[16/10] bg-[#F7F3EC] rounded-3xl overflow-hidden border border-[#DDD5C8] shadow-md p-4 flex items-center justify-center">
+              <div className="relative aspect-[16/10] w-full bg-[#F7F3EC] rounded-3xl overflow-hidden border border-[#DDD5C8] shadow-md">
                 <img
                   src={vehicle.images[currentImgIndex] || vehicle.image}
                   alt={`${vehicle.name} premium photo`}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover object-center block"
                 />
 
                 {vehicle.images.length > 1 && (
