@@ -97,6 +97,9 @@ export default function RouteDetailPage() {
             <span className="text-xs text-[#6F6A63] font-semibold bg-[#FFFFFF] px-3 py-1 rounded-full border border-[#DDD5C8]">
               ~{route.approximateDistance}
             </span>
+            <span className="text-xs text-[#6F6A63] font-medium bg-[#FFFFFF]/80 px-3 py-1 rounded-full border border-[#DDD5C8]">
+              Verified Route • September 2026
+            </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold text-[#4A3025] tracking-tight mb-4 max-w-4xl">

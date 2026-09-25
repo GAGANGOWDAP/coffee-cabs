@@ -150,6 +150,9 @@ export default function DestinationDetailPage() {
             <span className="text-[11px] font-bold bg-white text-[#4A3025] px-3 py-1 rounded-full border border-[#DDD5C8]">
               {destination.district}, {destination.region}
             </span>
+            <span className="text-[11px] font-medium bg-white/80 text-[#6F6A63] px-3 py-1 rounded-full border border-[#DDD5C8]">
+              Verified Guide • September 2026
+            </span>
           </div>
 
           {/* Heading & Short Intro */}
