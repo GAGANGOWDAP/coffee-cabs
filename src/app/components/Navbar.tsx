@@ -2,7 +2,13 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
 
-const NAV_LINKS = [
+interface NavLinkItem {
+  label: string;
+  to: string;
+  isHash?: boolean;
+}
+
+const NAV_LINKS: NavLinkItem[] = [
   { label: "Home", to: "/" },
   { label: "Travel", to: "/travel" },
   { label: "Fleet", to: "/fleet" },
