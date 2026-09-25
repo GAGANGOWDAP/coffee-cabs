@@ -9,6 +9,7 @@ export default function NotFoundPage() {
         title="404 — Page Not Found | Coffee Cabs"
         description="The requested page could not be found. Explore 100 Karnataka destinations, outstation tour packages, and luxury fleet with Coffee Cabs."
         canonicalUrl="https://gagangowdap.github.io/coffee-cabs/404"
+        robots="noindex, follow"
       />
       <div className="max-w-xl mx-auto text-center bg-[#FFFFFF] p-8 sm:p-12 rounded-3xl border border-[#DDD5C8] shadow-md space-y-6">
         <div className="w-16 h-16 rounded-full bg-[#F7F3EC] border border-[#DDD5C8] flex items-center justify-center mx-auto text-[#23483A]">
