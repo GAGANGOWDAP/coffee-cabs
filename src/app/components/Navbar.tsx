@@ -164,7 +164,7 @@ export default function Navbar() {
           {/* Mobile Hamburger Button */}
           <button
             ref={menuButtonRef}
-            className="lg:hidden w-10 h-10 rounded-full bg-[#EDE5D8] border border-[#DDD5C8] flex items-center justify-center text-[#4A3025] transition-colors hover:bg-[#DDD5C8] focus-visible:outline-2 focus-visible:outline-[#23483A]"
+            className="lg:hidden w-11 h-11 rounded-full bg-[#EDE5D8] border border-[#DDD5C8] flex items-center justify-center text-[#4A3025] transition-colors hover:bg-[#DDD5C8] focus-visible:outline-2 focus-visible:outline-[#23483A]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}

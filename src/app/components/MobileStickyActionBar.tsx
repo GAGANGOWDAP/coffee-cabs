@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function MobileStickyActionBar() {
   return (
     <div
-      className="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-[#F7F3EC]/95 backdrop-blur-md border-t border-[#DDD5C8] py-2.5 px-4 shadow-[0_-4px_15px_rgba(0,0,0,0.06)]"
+      className="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-[#F7F3EC]/95 backdrop-blur-md border-t border-[#DDD5C8] py-2.5 px-4 pb-[calc(0.625rem+env(safe-area-inset-bottom,0px))] shadow-[0_-4px_15px_rgba(0,0,0,0.06)]"
       aria-label="Quick mobile action bar"
     >
       <div className="grid grid-cols-3 gap-2 items-center max-w-md mx-auto">
