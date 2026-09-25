@@ -233,6 +233,8 @@ export default function HomePage() {
                   <img
                     src={`${import.meta.env.BASE_URL}images/innova-crysta.png`}
                     alt="Toyota Innova Crysta"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -266,6 +268,8 @@ export default function HomePage() {
                   <img
                     src={`${import.meta.env.BASE_URL}images/force-urbania.png`}
                     alt="Force Urbania Luxury"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -296,6 +300,8 @@ export default function HomePage() {
                   <img
                     src={`${import.meta.env.BASE_URL}images/tempo-traveller.png`}
                     alt="Force Tempo Traveller"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -532,6 +538,8 @@ export default function HomePage() {
                     <img
                       src={d.heroImage || defaultFallbackImg}
                       alt={`${d.name} Coffee Cabs`}
+                      loading="lazy"
+                      decoding="async"
                       onError={(e) => {
                         e.currentTarget.src = defaultFallbackImg;
                       }}

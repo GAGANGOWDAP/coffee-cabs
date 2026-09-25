@@ -205,6 +205,10 @@ export default function Footer() {
                 <img
                   src={`${import.meta.env.BASE_URL}images/logo.png`}
                   alt="Coffee Cabs"
+                  width="144"
+                  height="48"
+                  loading="lazy"
+                  decoding="async"
                   className="w-28 sm:w-32 lg:w-36 h-auto brightness-0 invert mix-blend-screen"
                 />
               </Link>

@@ -81,6 +81,9 @@ export default function Navbar() {
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Coffee Cabs Executive Chauffeur Logo"
+              width="180"
+              height="48"
+              decoding="async"
               className="h-10 sm:h-11 md:h-12 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105 duration-200"
             />
           </Link>
