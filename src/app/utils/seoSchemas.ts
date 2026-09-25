@@ -306,8 +306,9 @@ export function getPackageDetailSchema(pkg: {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
-        { "@type": "ListItem", "position": 2, "name": "Tour Packages", "item": `${SITE_URL}/travel/packages` },
-        { "@type": "ListItem", "position": 3, "name": pkg.title, "item": `${SITE_URL}/travel/packages/${pkg.slug}` }
+        { "@type": "ListItem", "position": 2, "name": "Travel", "item": `${SITE_URL}/travel` },
+        { "@type": "ListItem", "position": 3, "name": "Packages", "item": `${SITE_URL}/travel/packages` },
+        { "@type": "ListItem", "position": 4, "name": pkg.title, "item": `${SITE_URL}/travel/packages/${pkg.slug}` }
       ]
     },
     {

@@ -10,10 +10,6 @@ export default function FleetPage() {
   const [activeFilter, setActiveFilter] = useState<string>("ALL");
   const [selectedCompareIds, setSelectedCompareIds] = useState<string[]>([]);
 
-  useEffect(() => {
-    document.title = "Fleet | Premium Chauffeur & Travel Services | Coffee Cabs";
-  }, []);
-
   const filterCategories = [
     { label: "ALL", value: "ALL" },
     { label: "PREMIUM CARS", value: "PREMIUM CARS" },
