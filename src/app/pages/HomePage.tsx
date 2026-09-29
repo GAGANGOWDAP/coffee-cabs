@@ -12,6 +12,9 @@ import {
   ChevronDown,
   ChevronUp,
   MapPin,
+  Send,
+  FileText,
+  CheckCircle2,
 } from "lucide-react";
 import { Link } from "react-router";
 import { VEHICLES } from "../data/vehicles";
@@ -453,30 +456,96 @@ export default function HomePage() {
       <PopularRoutesMatrix />
 
       {/* ── 6. HOW IT WORKS ── */}
-      <section className="gsap-section-reveal py-16 sm:py-24 bg-[#F5E6CA] border-b border-[#DCC7AA]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="text-xs uppercase tracking-widest text-[#6F4E37] font-bold mb-3">
-              Simple & Fast
+      <section className="gsap-section-reveal py-10 sm:py-16 bg-[#F5E6CA] border-b border-[#DCC7AA] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.2em] text-[#6F4E37] font-extrabold mb-2">
+              <span className="h-[2px] w-5 bg-[#6F4E37] shrink-0" />
+              <span>SIMPLE & FAST</span>
+              <span className="h-[2px] w-5 bg-[#6F4E37] shrink-0" />
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4B3832]">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#4B3832] tracking-tight">
               How It Works — 4 Easy Steps
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { step: "01", title: "Choose Vehicle", desc: "Select from Innova Crysta, Force Urbania, Tempo Traveller, or Buses." },
-              { step: "02", title: "WhatsApp Us", desc: "Share your travel dates, trip type, and destination details via WhatsApp or call." },
-              { step: "03", title: "Get Instant Quote", desc: "Receive transparent per-km breakdown with driver allowance & 300km/day rule calculations." },
-              { step: "04", title: "Confirm & Ride", desc: "Get driver details & vehicle confirmation. Enjoy a comfortable luxury journey!" },
-            ].map((s) => (
-              <div key={s.step} className="bg-[#FFFDF7] p-8 rounded-3xl border border-[#DCC7AA] relative shadow-sm hover:border-[#6F4E37]/40 transition-all">
-                <div className="text-3xl font-extrabold text-[#4B3832] mb-4">{s.step}</div>
-                <h3 className="text-base font-bold text-[#4B3832] mb-2">{s.title}</h3>
-                <p className="text-xs text-[#6F4E37] leading-relaxed font-medium">{s.desc}</p>
-              </div>
-            ))}
+          {/* Connected 4-Step Journey */}
+          <div className="relative">
+            {/* Desktop Horizontal Connecting Line (visible on lg+) */}
+            <div
+              className="hidden lg:block absolute top-[44px] left-[10%] right-[10%] h-[2px] bg-[#DCC7AA] z-0"
+              aria-hidden="true"
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10">
+              {[
+                {
+                  step: "01",
+                  title: "Choose Your Vehicle",
+                  desc: "Select a vehicle based on your group size and travel needs.",
+                  icon: Car,
+                },
+                {
+                  step: "02",
+                  title: "Share Your Trip",
+                  desc: "Send your pickup, destination, date and trip details.",
+                  icon: MapPin,
+                },
+                {
+                  step: "03",
+                  title: "Get Your Fare",
+                  desc: "Receive your fare details based on your selected trip and vehicle.",
+                  icon: FileText,
+                },
+                {
+                  step: "04",
+                  title: "Confirm & Ride",
+                  desc: "Confirm your booking and enjoy a comfortable journey.",
+                  icon: CheckCircle2,
+                },
+              ].map((s) => {
+                const IconComponent = s.icon;
+                return (
+                  <div
+                    key={s.step}
+                    className="bg-[#FFFDF7] border border-[#DCC7AA] p-5 sm:p-6 rounded-3xl shadow-xs hover:border-[#6F4E37] transition-all flex flex-col items-start gap-3 group relative"
+                  >
+                    {/* Top Row: Icon & Step Badge */}
+                    <div className="flex items-center justify-between w-full">
+                      <div className="w-11 h-11 rounded-2xl bg-[#F5E6CA] border border-[#DCC7AA] text-[#6F4E37] flex items-center justify-center font-bold shadow-2xs group-hover:bg-[#6F4E37] group-hover:text-[#FFFDF7] transition-colors shrink-0">
+                        <IconComponent size={20} />
+                      </div>
+                      <span className="text-[11px] font-extrabold text-[#6F4E37] uppercase tracking-wider bg-[#F5E6CA] px-2.5 py-1 rounded-full border border-[#DCC7AA]">
+                        STEP {s.step}
+                      </span>
+                    </div>
+
+                    {/* Step Title & Description */}
+                    <div className="space-y-1 pt-1">
+                      <h3 className="text-base font-extrabold text-[#4B3832] group-hover:text-[#6F4E37] transition-colors leading-snug">
+                        {s.title}
+                      </h3>
+                      <p className="text-xs text-[#6F4E37] leading-relaxed font-medium">
+                        {s.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Optional CTA */}
+          <div className="mt-8 sm:mt-10 text-center flex flex-col sm:flex-row items-center justify-center gap-3">
+            <span className="text-xs font-bold text-[#6F4E37] uppercase tracking-wider">Ready to travel?</span>
+            <Link
+              to="/booking"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#6F4E37] text-[#FFFDF7] text-xs font-extrabold uppercase tracking-wider rounded-full hover:bg-[#4B3832] transition-all shadow-xs min-h-[44px]"
+            >
+              <span>REQUEST A QUOTE</span>
+              <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </section>
