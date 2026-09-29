@@ -22,6 +22,9 @@ import FleetComparison from "../components/FleetComparison";
 import PopularRoutesMatrix from "../components/PopularRoutesMatrix";
 import SEO from "../components/SEO";
 import { getHomePageSchema } from "../utils/seoSchemas";
+import PlanYourJourney from "../components/travel/PlanYourJourney";
+import PopularRoutesSection from "../components/travel/PopularRoutesSection";
+import VehicleComparisonTable from "../components/travel/VehicleComparisonTable";
 
 export default function HomePage() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -224,6 +227,9 @@ export default function HomePage() {
               EXPLORE OUR FLEET <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
+
+          {/* Prominent Quick Journey Planner */}
+          <PlanYourJourney className="w-full max-w-2xl mx-auto my-4 relative z-20 text-left" />
         </div>
 
         {/* Foreground Compact Fleet Cards Section */}
@@ -431,9 +437,13 @@ export default function HomePage() {
       </section>
 
       {/* ── 4. FLEET COMPARISON TABLE ── */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+        <VehicleComparisonTable />
+      </div>
       <FleetComparison />
 
-      {/* ── 5. POPULAR ROUTES FLEET TARIFF MATRIX ── */}
+      {/* ── 5. POPULAR ROUTES ── */}
+      <PopularRoutesSection />
       <PopularRoutesMatrix />
 
       {/* ── 6. HOW IT WORKS ── */}

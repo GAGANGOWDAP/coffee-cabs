@@ -99,6 +99,14 @@ export default function FleetPage() {
                   {filter.label}
                 </button>
               ))}
+              {activeFilter !== "ALL" && (
+                <button
+                  onClick={() => setActiveFilter("ALL")}
+                  className="px-4 py-2 rounded-full text-xs font-bold text-[#B86F52] hover:text-[#4A3025] underline whitespace-nowrap"
+                >
+                  Clear All Filters
+                </button>
+              )}
             </div>
           </div>
 
