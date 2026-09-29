@@ -32,10 +32,10 @@ function ScrollToTop() {
 
 function PageLoader() {
   return (
-    <div className="min-h-[60vh] flex items-center justify-center bg-[#F7F3EC]">
+    <div className="min-h-[60vh] flex items-center justify-center bg-[#FFFDF7]">
       <div className="flex flex-col items-center gap-3">
-        <div className="w-8 h-8 border-3 border-[#23483A]/20 border-t-[#23483A] rounded-full animate-spin" />
-        <span className="text-xs font-semibold text-[#6F6A63] tracking-wide uppercase">Loading Coffee Cabs...</span>
+        <div className="w-8 h-8 border-3 border-[#6F4E37]/20 border-t-[#6F4E37] rounded-full animate-spin" />
+        <span className="text-xs font-semibold text-[#6F4E37] tracking-wide uppercase">Loading Coffee Cabs...</span>
       </div>
     </div>
   );
@@ -43,7 +43,7 @@ function PageLoader() {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F7F3EC] text-[#252525] overflow-x-hidden relative">
+    <div className="min-h-screen bg-[#FFFDF7] text-[#4B3832] overflow-x-hidden relative">
       <ScrollToTop />
       <Navbar />
       <main className="pb-20 sm:pb-0">

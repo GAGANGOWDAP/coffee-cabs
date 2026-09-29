@@ -11,24 +11,24 @@ export default function DestinationHowToReach({ destination }: { destination: De
 
   return (
     <div className="space-y-4">
-      <h2 className="text-2xl font-extrabold text-[#4A3025] pb-2 border-b border-[#DDD5C8]">
+      <h2 className="text-2xl font-extrabold text-[#4B3832] pb-2 border-b border-[#DCC7AA]">
         How to Reach {destination.name}
       </h2>
 
       <div className="grid grid-cols-1 gap-4">
         {byCar && (
-          <div className="bg-white border-2 border-[#23483A]/30 p-5 sm:p-6 rounded-3xl shadow-xs flex items-start gap-4">
-            <div className="w-10 h-10 rounded-2xl bg-[#23483A] text-white flex items-center justify-center shrink-0 shadow-xs mt-0.5">
+          <div className="bg-[#FFFDF7] border-2 border-[#6F4E37]/30 p-5 sm:p-6 rounded-3xl shadow-xs flex items-start gap-4">
+            <div className="w-10 h-10 rounded-2xl bg-[#6F4E37] text-[#FFFDF7] flex items-center justify-center shrink-0 shadow-xs mt-0.5">
               <Navigation size={20} />
             </div>
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <h3 className="text-base font-extrabold text-[#252525]">By Car / Private Cab</h3>
-                <span className="bg-[#23483A] text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                <h3 className="text-base font-extrabold text-[#4B3832]">By Car / Private Cab</h3>
+                <span className="bg-[#6F4E37] text-[#FFFDF7] text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">
                   Recommended
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-[#6F6A63] font-medium leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#6F4E37] font-medium leading-relaxed">
                 {byCar}
               </p>
             </div>
@@ -36,37 +36,37 @@ export default function DestinationHowToReach({ destination }: { destination: De
         )}
 
         {byBus && (
-          <div className="bg-white border border-[#DDD5C8] p-5 rounded-2xl shadow-xs flex items-start gap-4">
-            <div className="w-9 h-9 rounded-xl bg-[#F7F3EC] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center shrink-0 mt-0.5">
+          <div className="bg-[#FFFDF7] border border-[#DCC7AA] p-5 rounded-2xl shadow-xs flex items-start gap-4">
+            <div className="w-9 h-9 rounded-xl bg-[#F5E6CA] text-[#6F4E37] border border-[#DCC7AA] flex items-center justify-center shrink-0 mt-0.5">
               <Bus size={18} />
             </div>
             <div>
-              <h3 className="text-sm font-extrabold text-[#252525]">By KSRTC / Private Bus</h3>
-              <p className="text-xs text-[#6F6A63] font-medium leading-relaxed mt-0.5">{byBus}</p>
+              <h3 className="text-sm font-extrabold text-[#4B3832]">By KSRTC / Private Bus</h3>
+              <p className="text-xs text-[#6F4E37] font-medium leading-relaxed mt-0.5">{byBus}</p>
             </div>
           </div>
         )}
 
         {byTrain && (
-          <div className="bg-white border border-[#DDD5C8] p-5 rounded-2xl shadow-xs flex items-start gap-4">
-            <div className="w-9 h-9 rounded-xl bg-[#F7F3EC] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center shrink-0 mt-0.5">
+          <div className="bg-[#FFFDF7] border border-[#DCC7AA] p-5 rounded-2xl shadow-xs flex items-start gap-4">
+            <div className="w-9 h-9 rounded-xl bg-[#F5E6CA] text-[#6F4E37] border border-[#DCC7AA] flex items-center justify-center shrink-0 mt-0.5">
               <Train size={18} />
             </div>
             <div>
-              <h3 className="text-sm font-extrabold text-[#252525]">By Train</h3>
-              <p className="text-xs text-[#6F6A63] font-medium leading-relaxed mt-0.5">{byTrain}</p>
+              <h3 className="text-sm font-extrabold text-[#4B3832]">By Train</h3>
+              <p className="text-xs text-[#6F4E37] font-medium leading-relaxed mt-0.5">{byTrain}</p>
             </div>
           </div>
         )}
 
         {byAir && (
-          <div className="bg-white border border-[#DDD5C8] p-5 rounded-2xl shadow-xs flex items-start gap-4">
-            <div className="w-9 h-9 rounded-xl bg-[#F7F3EC] text-[#23483A] border border-[#DDD5C8] flex items-center justify-center shrink-0 mt-0.5">
+          <div className="bg-[#FFFDF7] border border-[#DCC7AA] p-5 rounded-2xl shadow-xs flex items-start gap-4">
+            <div className="w-9 h-9 rounded-xl bg-[#F5E6CA] text-[#6F4E37] border border-[#DCC7AA] flex items-center justify-center shrink-0 mt-0.5">
               <Plane size={18} />
             </div>
             <div>
-              <h3 className="text-sm font-extrabold text-[#252525]">Nearest Airport</h3>
-              <p className="text-xs text-[#6F6A63] font-medium leading-relaxed mt-0.5">{byAir}</p>
+              <h3 className="text-sm font-extrabold text-[#4B3832]">Nearest Airport</h3>
+              <p className="text-xs text-[#6F4E37] font-medium leading-relaxed mt-0.5">{byAir}</p>
             </div>
           </div>
         )}

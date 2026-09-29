@@ -42,23 +42,23 @@ export default function PopularRoutesMatrix() {
   const activeMobileRoute = routesData[activeRouteIndex];
 
   return (
-    <section ref={containerRef} className="py-16 sm:py-24 bg-[#F7F3EC] border-y border-[#DDD5C8] text-[#252525]">
+    <section ref={containerRef} className="py-16 sm:py-24 bg-[#FFFDF7] border-y border-[#DCC7AA] text-[#4B3832]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 gsap-route-fade">
-          <div className="inline-block text-xs uppercase tracking-widest text-[#4A3025] font-bold mb-3 bg-[#EDE5D8] border border-[#DDD5C8] px-4 py-1.5 rounded-full shadow-sm">
+          <div className="inline-block text-xs uppercase tracking-widest text-[#4B3832] font-bold mb-3 bg-[#F5E6CA] border border-[#DCC7AA] px-4 py-1.5 rounded-full shadow-sm">
             Outstation Tariff Guide
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#252525] mb-3">
-            Popular Routes & <span className="text-[#4A3025]">Fleet Tariff Guide</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4B3832] mb-3">
+            Popular Routes & <span className="text-[#6F4E37]">Fleet Tariff Guide</span>
           </h2>
-          <p className="text-[#6F6A63] text-xs sm:text-sm font-medium">
+          <p className="text-[#6F4E37] text-xs sm:text-sm font-medium">
             Standard owner-approved route tariff reference from Bengaluru. Request an enquiry to confirm vehicle availability.
           </p>
         </div>
 
         {/* ── MOBILE / IPHONE FRIENDLY ROUTE CARD SELECTOR (Visible on Mobile) ── */}
         <div className="block lg:hidden mb-8 gsap-route-fade">
-          <label className="block text-[11px] font-bold text-[#6F6A63] uppercase tracking-wider mb-2">
+          <label className="block text-[11px] font-bold text-[#6F4E37] uppercase tracking-wider mb-2">
             Select Destination
           </label>
 
@@ -69,8 +69,8 @@ export default function PopularRoutesMatrix() {
                 onClick={() => setActiveRouteIndex(idx)}
                 className={`px-4 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                   activeRouteIndex === idx
-                    ? "bg-[#4A3025] text-white shadow-sm"
-                    : "bg-white text-[#252525] border border-[#DDD5C8] hover:bg-[#EDE5D8]"
+                    ? "bg-[#6F4E37] text-[#FFFDF7] shadow-sm"
+                    : "bg-[#FFFDF7] text-[#4B3832] border border-[#DCC7AA] hover:bg-[#F5E6CA]"
                 }`}
               >
                 {r.dest} ({r.dist})
@@ -79,45 +79,45 @@ export default function PopularRoutesMatrix() {
           </div>
 
           {/* Active Route Tariff Card */}
-          <div className="bg-white rounded-3xl p-6 border border-[#DDD5C8] shadow-sm">
-            <div className="flex justify-between items-center pb-4 border-b border-[#DDD5C8] mb-4">
+          <div className="bg-[#FFFDF7] rounded-3xl p-6 border border-[#DCC7AA] shadow-sm">
+            <div className="flex justify-between items-center pb-4 border-b border-[#DCC7AA] mb-4">
               <div>
-                <div className="text-[10px] uppercase font-bold text-[#23483A] flex items-center gap-1">
+                <div className="text-[10px] uppercase font-bold text-[#6F4E37] flex items-center gap-1">
                   <MapPin size={12} /> From Bengaluru
                 </div>
-                <h3 className="text-xl font-extrabold text-[#252525]">{activeMobileRoute.dest}</h3>
+                <h3 className="text-xl font-extrabold text-[#4B3832]">{activeMobileRoute.dest}</h3>
               </div>
-              <div className="bg-[#EDE5D8] px-3.5 py-1.5 rounded-xl border border-[#DDD5C8] text-xs font-extrabold text-[#4A3025]">
+              <div className="bg-[#F5E6CA] px-3.5 py-1.5 rounded-xl border border-[#DCC7AA] text-xs font-extrabold text-[#4B3832]">
                 {activeMobileRoute.dist}
               </div>
             </div>
 
             <div className="space-y-2.5 text-xs mb-6">
-              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
-                <span className="font-bold text-[#252525]">Innova Crysta (7 Seater)</span>
-                <span className="font-extrabold text-lg text-[#4A3025]">{activeMobileRoute.innova}</span>
+              <div className="bg-[#FFFDF7] p-3 rounded-2xl border border-[#DCC7AA] flex justify-between items-center">
+                <span className="font-bold text-[#4B3832]">Innova Crysta (7 Seater)</span>
+                <span className="font-extrabold text-lg text-[#6F4E37]">{activeMobileRoute.innova}</span>
               </div>
-              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
-                <span className="font-bold text-[#252525]">9 Seater Tempo Traveller</span>
-                <span className="font-extrabold text-lg text-[#4A3025]">{activeMobileRoute.tt9}</span>
+              <div className="bg-[#FFFDF7] p-3 rounded-2xl border border-[#DCC7AA] flex justify-between items-center">
+                <span className="font-bold text-[#4B3832]">9 Seater Tempo Traveller</span>
+                <span className="font-extrabold text-lg text-[#6F4E37]">{activeMobileRoute.tt9}</span>
               </div>
-              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
-                <span className="font-bold text-[#252525]">12/14 Seater Tempo Traveller</span>
-                <span className="font-extrabold text-lg text-[#4A3025]">{activeMobileRoute.tt12}</span>
+              <div className="bg-[#FFFDF7] p-3 rounded-2xl border border-[#DCC7AA] flex justify-between items-center">
+                <span className="font-bold text-[#4B3832]">12/14 Seater Tempo Traveller</span>
+                <span className="font-extrabold text-lg text-[#6F4E37]">{activeMobileRoute.tt12}</span>
               </div>
-              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
-                <span className="font-bold text-[#252525]">16 Seater Tempo Traveller</span>
-                <span className="font-extrabold text-lg text-[#4A3025]">{activeMobileRoute.tt16}</span>
+              <div className="bg-[#FFFDF7] p-3 rounded-2xl border border-[#DCC7AA] flex justify-between items-center">
+                <span className="font-bold text-[#4B3832]">16 Seater Tempo Traveller</span>
+                <span className="font-extrabold text-lg text-[#6F4E37]">{activeMobileRoute.tt16}</span>
               </div>
-              <div className="bg-[#F7F3EC] p-3 rounded-2xl border border-[#DDD5C8] flex justify-between items-center">
-                <span className="font-bold text-[#252525]">Force Urbania Luxury</span>
-                <span className="font-extrabold text-lg text-[#4A3025]">{activeMobileRoute.urbania}</span>
+              <div className="bg-[#FFFDF7] p-3 rounded-2xl border border-[#DCC7AA] flex justify-between items-center">
+                <span className="font-bold text-[#4B3832]">Force Urbania Luxury</span>
+                <span className="font-extrabold text-lg text-[#6F4E37]">{activeMobileRoute.urbania}</span>
               </div>
             </div>
 
             <Link
               to={`/packages/${activeMobileRoute.slug}`}
-              className="flex items-center justify-center gap-2 w-full py-3 bg-[#4A3025] text-white text-xs font-bold rounded-full hover:bg-[#23483A] transition-all shadow-sm"
+              className="flex items-center justify-center gap-2 w-full py-3 bg-[#6F4E37] text-[#FFFDF7] text-xs font-bold rounded-full hover:bg-[#4B3832] transition-all shadow-sm"
             >
               View Full {activeMobileRoute.dest} Package Details <ArrowRight size={14} />
             </Link>
@@ -126,12 +126,12 @@ export default function PopularRoutesMatrix() {
 
         {/* ── DESKTOP FULL TABLE VIEW ── */}
         <div className="hidden lg:block gsap-route-fade">
-          <div className="overflow-x-auto rounded-3xl border border-[#DDD5C8] shadow-sm bg-white">
+          <div className="overflow-x-auto rounded-3xl border border-[#DCC7AA] shadow-sm bg-[#FFFDF7]">
             <table className="w-full text-left text-xs min-w-[800px]">
               <thead>
-                <tr className="bg-[#EDE5D8] text-[#252525]">
+                <tr className="bg-[#F5E6CA] text-[#4B3832]">
                   <th className="p-4 font-bold uppercase tracking-wider text-[11px]">Destination</th>
-                  <th className="p-4 font-bold uppercase tracking-wider text-[11px] bg-[#4A3025] text-white">Distance</th>
+                  <th className="p-4 font-bold uppercase tracking-wider text-[11px] bg-[#6F4E37] text-[#FFFDF7]">Distance</th>
                   <th className="p-4 font-bold text-center">9 Seater</th>
                   <th className="p-4 font-bold text-center">12/14 Seater</th>
                   <th className="p-4 font-bold text-center">16 Seater</th>
@@ -139,16 +139,16 @@ export default function PopularRoutesMatrix() {
                   <th className="p-4 font-bold text-center">Innova</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#DDD5C8] text-[#252525]">
+              <tbody className="divide-y divide-[#DCC7AA] text-[#4B3832]">
                 {routesData.map((r) => (
-                  <tr key={r.dest} className="hover:bg-[#F7F3EC] transition-colors">
-                    <td className="p-4 font-bold text-[#252525]">{r.dest}</td>
-                    <td className="p-4 font-extrabold bg-[#F7F3EC] text-[#4A3025]">{r.dist}</td>
-                    <td className="p-4 text-center font-bold text-[#252525]">{r.tt9}</td>
-                    <td className="p-4 text-center font-bold text-[#252525]">{r.tt12}</td>
-                    <td className="p-4 text-center font-bold text-[#252525]">{r.tt16}</td>
-                    <td className="p-4 text-center font-bold text-[#252525]">{r.urbania}</td>
-                    <td className="p-4 text-center font-bold text-[#4A3025]">{r.innova}</td>
+                  <tr key={r.dest} className="hover:bg-[#F5E6CA] transition-colors">
+                    <td className="p-4 font-bold text-[#4B3832]">{r.dest}</td>
+                    <td className="p-4 font-extrabold bg-[#FFFDF7] text-[#6F4E37]">{r.dist}</td>
+                    <td className="p-4 text-center font-bold text-[#4B3832]">{r.tt9}</td>
+                    <td className="p-4 text-center font-bold text-[#4B3832]">{r.tt12}</td>
+                    <td className="p-4 text-center font-bold text-[#4B3832]">{r.tt16}</td>
+                    <td className="p-4 text-center font-bold text-[#4B3832]">{r.urbania}</td>
+                    <td className="p-4 text-center font-bold text-[#6F4E37]">{r.innova}</td>
                   </tr>
                 ))}
               </tbody>
@@ -156,7 +156,7 @@ export default function PopularRoutesMatrix() {
           </div>
         </div>
 
-        <p className="text-center text-xs text-[#6F6A63] mt-4 font-medium italic">
+        <p className="text-center text-xs text-[#6F4E37] mt-4 font-medium italic">
           * Rates listed are standard owner tariff guidelines. Request a booking enquiry for exact fleet confirmation.
         </p>
       </div>

@@ -2,26 +2,53 @@
 
 @layer base {
   :root {
-    --bg-warm-ivory: #F7F3EC;
-    --bg-soft-sand: #EDE5D8;
-    --bg-card: #FFFFFF;
-    --coffee-brown: #4A3025;
-    --forest-green: #23483A;
-    --terracotta: #B86F52;
-    --charcoal: #252525;
-    --warm-gray: #6F6A63;
-    --border-beige: #DDD5C8;
+    /* ── CORE BRAND COLOR PALETTE ── */
+    --color-white: #FFFDF7;
+    --color-cream: #F5E6CA;
+    --color-beige: #DCC7AA;
+    --color-coffee-bean: #6F4E37;
+    --color-espresso: #4B3832;
 
-    --bg-main: #F7F3EC;
-    --bg-surface: #EDE5D8;
-    --text-primary: #252525;
-    --text-secondary: #6F6A63;
-    --text-accent: #23483A;
-    --border-subtle: #DDD5C8;
-    --border-accent: #B86F52;
+    /* ── SEMANTIC TOKENS ── */
+    --color-background: #FFFDF7;
+    --color-surface: #F5E6CA;
+    --color-surface-muted: #DCC7AA;
+    --color-primary: #6F4E37;
+    --color-primary-hover: #4B3832;
+    --color-secondary: #4B3832;
+    --color-accent: #6F4E37;
+    --color-text-primary: #4B3832;
+    --color-text-secondary: #6F4E37;
+    --color-text-on-dark: #FFFDF7;
+    --color-border: #DCC7AA;
+    --color-border-strong: #6F4E37;
+
+    /* Status Colors (Preserved for accessibility & messaging) */
+    --color-success: #2E6F40;
+    --color-warning: #B86F52;
+    --color-error: #C0392B;
+
+    /* ── LEGACY TOKEN MAPPING TO NEW PALETTE ── */
+    --bg-warm-ivory: #FFFDF7;
+    --bg-soft-sand: #F5E6CA;
+    --bg-card: #FFFDF7;
+    --coffee-brown: #4B3832;
+    --forest-green: #6F4E37;
+    --terracotta: #B86F52;
+    --charcoal: #4B3832;
+    --warm-gray: #6F4E37;
+    --border-beige: #DCC7AA;
+
+    --bg-main: #FFFDF7;
+    --bg-surface: #F5E6CA;
+    --text-primary: #4B3832;
+    --text-secondary: #6F4E37;
+    --text-accent: #6F4E37;
+    --border-subtle: #DCC7AA;
+    --border-accent: #6F4E37;
 
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    
+
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
@@ -30,8 +57,8 @@
   }
 
   body, html {
-    background-color: #F7F3EC;
-    color: #252525;
+    background-color: #FFFDF7;
+    color: #4B3832;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -42,7 +69,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #23483A;
+    outline: 2px solid #6F4E37;
     outline-offset: 3px;
   }
 }

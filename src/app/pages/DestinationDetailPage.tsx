@@ -41,15 +41,15 @@ export default function DestinationDetailPage() {
 
   if (!destination) {
     return (
-      <div className="pt-28 pb-16 min-h-screen bg-[#F7F3EC] text-[#252525] flex items-center justify-center px-4">
-        <div className="text-center max-w-md bg-white p-8 rounded-3xl border border-[#DDD5C8] shadow-xs">
-          <h1 className="text-2xl font-extrabold text-[#4A3025] mb-3">Destination Not Found</h1>
-          <p className="text-sm text-[#6F6A63] mb-6 font-medium">
+      <div className="pt-28 pb-16 min-h-screen bg-[#FFFDF7] text-[#4B3832] flex items-center justify-center px-4">
+        <div className="text-center max-w-md bg-[#FFFDF7] p-8 rounded-3xl border border-[#DCC7AA] shadow-xs">
+          <h1 className="text-2xl font-extrabold text-[#4B3832] mb-3">Destination Not Found</h1>
+          <p className="text-sm text-[#6F4E37] mb-6 font-medium">
             The requested travel destination could not be located in our guide.
           </p>
           <Link
             to="/travel"
-            className="inline-flex items-center gap-2 bg-[#4A3025] text-white font-extrabold text-xs px-6 py-3 rounded-xl transition-all hover:bg-[#23483A]"
+            className="inline-flex items-center gap-2 bg-[#6F4E37] text-[#FFFDF7] font-extrabold text-xs px-6 py-3 rounded-xl transition-all hover:bg-[#4B3832]"
           >
             <ArrowLeft size={16} />
             <span>EXPLORE KARNATAKA GUIDE</span>
@@ -104,7 +104,7 @@ export default function DestinationDetailPage() {
   };
 
   return (
-    <article className="pt-20 bg-[#F7F3EC] text-[#252525] min-h-screen">
+    <article className="pt-20 bg-[#FFFDF7] text-[#4B3832] min-h-screen">
       <SEO
         title={destination.seo_title || `${destination.name} Travel Guide & Outstation Cabs | Coffee Cabs`}
         description={
@@ -118,7 +118,7 @@ export default function DestinationDetailPage() {
       />
 
       {/* ── 1. DESTINATION HERO ── */}
-      <section className="relative min-h-[420px] sm:min-h-[480px] flex items-end pb-10 bg-[#EDE5D8] border-b border-[#DDD5C8]">
+      <section className="relative min-h-[420px] sm:min-h-[480px] flex items-end pb-10 bg-[#F5E6CA] border-b border-[#DCC7AA]">
         {destination.heroImage && (
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img
@@ -131,74 +131,74 @@ export default function DestinationDetailPage() {
               loading="eager"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#EDE5D8] via-[#EDE5D8]/75 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#F5E6CA] via-[#F5E6CA]/75 to-transparent" />
           </div>
         )}
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 space-y-4">
           {/* Breadcrumbs Navigation */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-[#6F6A63] font-medium overflow-x-auto whitespace-nowrap">
-            <Link to="/" className="hover:text-[#23483A] transition-colors">Home</Link>
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-[#6F4E37] font-medium overflow-x-auto whitespace-nowrap">
+            <Link to="/" className="hover:text-[#4B3832] transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/travel" className="hover:text-[#23483A] transition-colors">Travel</Link>
+            <Link to="/travel" className="hover:text-[#4B3832] transition-colors">Travel</Link>
             <span>/</span>
-            <span className="text-[#252525] font-bold">{destination.name}</span>
+            <span className="text-[#4B3832] font-bold">{destination.name}</span>
           </nav>
 
           {/* Badges */}
           <div className="flex flex-wrap items-center gap-2">
             {destination.categories?.map((cat, idx) => (
-              <span key={idx} className="bg-[#23483A] text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+              <span key={idx} className="bg-[#6F4E37] text-[#FFFDF7] text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
                 {cat}
               </span>
             ))}
-            <span className="text-[11px] font-bold bg-white text-[#4A3025] px-3 py-1 rounded-full border border-[#DDD5C8]">
+            <span className="text-[11px] font-bold bg-[#FFFDF7] text-[#4B3832] px-3 py-1 rounded-full border border-[#DCC7AA]">
               {destination.district}, {destination.region}
             </span>
-            <span className="text-[11px] font-medium bg-white/80 text-[#6F6A63] px-3 py-1 rounded-full border border-[#DDD5C8]">
+            <span className="text-[11px] font-medium bg-[#FFFDF7]/80 text-[#6F4E37] px-3 py-1 rounded-full border border-[#DCC7AA]">
               Verified Guide • September 2026
             </span>
           </div>
 
           {/* Heading & Short Intro */}
           <div>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#4A3025] tracking-tight mb-2">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#4B3832] tracking-tight mb-2">
               {destination.name}
             </h1>
             {destination.short_intro && (
-              <p className="text-sm sm:text-base text-[#6F6A63] font-medium max-w-3xl leading-relaxed">
+              <p className="text-sm sm:text-base text-[#6F4E37] font-medium max-w-3xl leading-relaxed">
                 {destination.short_intro}
               </p>
             )}
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#DDD5C8]">
-            <div className="flex items-center gap-2 text-xs text-[#6F6A63] font-medium">
-              <ShieldCheck size={16} className="text-[#23483A]" />
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#DCC7AA]">
+            <div className="flex items-center gap-2 text-xs text-[#6F4E37] font-medium">
+              <ShieldCheck size={16} className="text-[#6F4E37]" />
               <span>Verified Destination Guide • Coffee Cabs</span>
             </div>
 
             <div className="flex items-center gap-3">
               <button
                 onClick={handleShare}
-                className="inline-flex items-center gap-2 bg-white hover:bg-[#F7F3EC] text-[#252525] text-xs font-bold px-4 py-2.5 rounded-xl border border-[#DDD5C8] transition-all shadow-xs"
+                className="inline-flex items-center gap-2 bg-[#FFFDF7] hover:bg-[#F5E6CA] text-[#4B3832] text-xs font-bold px-4 py-2.5 rounded-xl border border-[#DCC7AA] transition-all shadow-xs"
               >
-                <Share2 size={14} className="text-[#23483A]" />
+                <Share2 size={14} className="text-[#6F4E37]" />
                 <span>SHARE</span>
               </button>
 
               <button
                 onClick={copyLink}
-                className="inline-flex items-center gap-2 bg-white hover:bg-[#F7F3EC] text-[#252525] text-xs font-bold px-4 py-2.5 rounded-xl border border-[#DDD5C8] transition-all shadow-xs"
+                className="inline-flex items-center gap-2 bg-[#FFFDF7] hover:bg-[#F5E6CA] text-[#4B3832] text-xs font-bold px-4 py-2.5 rounded-xl border border-[#DCC7AA] transition-all shadow-xs"
               >
-                {copied ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} className="text-[#23483A]" />}
+                {copied ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} className="text-[#6F4E37]" />}
                 <span>{copied ? "COPIED" : "COPY LINK"}</span>
               </button>
 
               <Link
                 to={`/booking?destination=${encodeURIComponent(destination.name)}`}
-                className="inline-flex items-center gap-2 bg-[#4A3025] hover:bg-[#23483A] text-white text-xs font-extrabold px-5 py-2.5 rounded-xl shadow-xs transition-all"
+                className="inline-flex items-center gap-2 bg-[#6F4E37] hover:bg-[#4B3832] text-[#FFFDF7] text-xs font-extrabold px-5 py-2.5 rounded-xl shadow-xs transition-all"
               >
                 <span>BOOK CAB TO {destination.name.toUpperCase()}</span>
                 <ArrowRight size={14} />
@@ -220,10 +220,10 @@ export default function DestinationDetailPage() {
           {/* OVERVIEW */}
           {destination.overview && (
             <div className="space-y-3">
-              <h2 className="text-2xl font-extrabold text-[#4A3025] pb-2 border-b border-[#DDD5C8]">
+              <h2 className="text-2xl font-extrabold text-[#4B3832] pb-2 border-b border-[#DCC7AA]">
                 Overview & Travel Summary
               </h2>
-              <p className="text-[#6F6A63] leading-relaxed text-sm sm:text-base font-medium">
+              <p className="text-[#6F4E37] leading-relaxed text-sm sm:text-base font-medium">
                 {destination.overview}
               </p>
             </div>
@@ -232,10 +232,10 @@ export default function DestinationDetailPage() {
           {/* HISTORY & HERITAGE */}
           {destination.historyAndCulture && (
             <div className="space-y-3">
-              <h2 className="text-2xl font-extrabold text-[#4A3025] pb-2 border-b border-[#DDD5C8]">
+              <h2 className="text-2xl font-extrabold text-[#4B3832] pb-2 border-b border-[#DCC7AA]">
                 History & Heritage Context
               </h2>
-              <p className="text-[#6F6A63] leading-relaxed text-sm sm:text-base font-medium">
+              <p className="text-[#6F4E37] leading-relaxed text-sm sm:text-base font-medium">
                 {destination.historyAndCulture}
               </p>
             </div>
@@ -262,28 +262,28 @@ export default function DestinationDetailPage() {
           {/* FAQS (Only shown if faqs exist) */}
           {destination.faqs && destination.faqs.length > 0 && (
             <div className="space-y-4">
-              <h2 className="text-2xl font-extrabold text-[#4A3025] pb-2 border-b border-[#DDD5C8]">
+              <h2 className="text-2xl font-extrabold text-[#4B3832] pb-2 border-b border-[#DCC7AA]">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-3">
                 {destination.faqs.map((faq, i) => (
                   <div
                     key={i}
-                    className="bg-white border border-[#DDD5C8] rounded-2xl overflow-hidden shadow-xs"
+                    className="bg-[#FFFDF7] border border-[#DCC7AA] rounded-2xl overflow-hidden shadow-xs"
                   >
                     <button
                       onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
-                      className="w-full text-left p-4 text-xs sm:text-sm font-extrabold text-[#252525] flex items-center justify-between gap-4 hover:text-[#4A3025] transition-colors"
+                      className="w-full text-left p-4 text-xs sm:text-sm font-extrabold text-[#4B3832] flex items-center justify-between gap-4 hover:text-[#6F4E37] transition-colors"
                     >
                       <span>{faq.question}</span>
                       {openFaqIndex === i ? (
-                        <ChevronUp size={16} className="text-[#23483A] shrink-0" />
+                        <ChevronUp size={16} className="text-[#6F4E37] shrink-0" />
                       ) : (
-                        <ChevronDown size={16} className="text-[#6F6A63] shrink-0" />
+                        <ChevronDown size={16} className="text-[#6F4E37] shrink-0" />
                       )}
                     </button>
                     {openFaqIndex === i && (
-                      <div className="p-4 pt-0 text-xs text-[#6F6A63] border-t border-[#DDD5C8] leading-relaxed font-medium">
+                      <div className="p-4 pt-0 text-xs text-[#6F4E37] border-t border-[#DCC7AA] leading-relaxed font-medium">
                         {faq.answer}
                       </div>
                     )}
@@ -309,8 +309,8 @@ export default function DestinationDetailPage() {
           {/* NEARBY DESTINATIONS */}
           {nearbyDestinations.length > 0 && (
             <div className="space-y-3">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4A3025] flex items-center gap-1.5">
-                <MapPin size={14} className="text-[#23483A]" /> Nearby Destinations
+              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4B3832] flex items-center gap-1.5">
+                <MapPin size={14} className="text-[#6F4E37]" /> Nearby Destinations
               </h3>
               <div className="space-y-3">
                 {nearbyDestinations.map((d) => (
@@ -323,7 +323,7 @@ export default function DestinationDetailPage() {
           {/* RELATED PACKAGES */}
           {relatedPackages.length > 0 && (
             <div className="space-y-3">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4A3025]">
+              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4B3832]">
                 Tour Packages
               </h3>
               <div className="space-y-3">
@@ -337,7 +337,7 @@ export default function DestinationDetailPage() {
           {/* RELATED ROUTES */}
           {relatedRoutes.length > 0 && (
             <div className="space-y-3">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4A3025]">
+              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4B3832]">
                 Outstation Taxi Routes
               </h3>
               <div className="space-y-3">
@@ -351,8 +351,8 @@ export default function DestinationDetailPage() {
           {/* RELATED DESTINATIONS */}
           {relatedDestinations.length > 0 && (
             <div className="space-y-3">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4A3025] flex items-center gap-1.5">
-                <Sparkles size={14} className="text-[#23483A]" /> Similar Travel Experiences
+              <h3 className="text-sm font-extrabold uppercase tracking-wider text-[#4B3832] flex items-center gap-1.5">
+                <Sparkles size={14} className="text-[#6F4E37]" /> Similar Travel Experiences
               </h3>
               <div className="space-y-3">
                 {relatedDestinations.map((d) => (

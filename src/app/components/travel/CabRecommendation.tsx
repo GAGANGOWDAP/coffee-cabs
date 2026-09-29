@@ -14,19 +14,19 @@ export default function CabRecommendation({ destination }: { destination: Destin
   ];
 
   return (
-    <div className="bg-white border border-[#DDD5C8] rounded-3xl p-6 shadow-xs space-y-5">
-      <div className="flex items-center justify-between border-b border-[#DDD5C8] pb-3">
-        <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#23483A] bg-[#EDE5D8] px-3 py-1 rounded-full border border-[#DDD5C8]">
+    <div className="bg-[#FFFDF7] border border-[#DCC7AA] rounded-3xl p-6 shadow-xs space-y-5">
+      <div className="flex items-center justify-between border-b border-[#DCC7AA] pb-3">
+        <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#6F4E37] bg-[#F5E6CA] px-3 py-1 rounded-full border border-[#DCC7AA]">
           COFFEE CABS FLEET ESCORT
         </span>
-        <ShieldCheck size={16} className="text-[#23483A]" />
+        <ShieldCheck size={16} className="text-[#6F4E37]" />
       </div>
 
       <div>
-        <h3 className="text-xl font-extrabold text-[#4A3025] mb-1">
+        <h3 className="text-xl font-extrabold text-[#4B3832] mb-1">
           Recommended Fleet to {destination.name}
         </h3>
-        <p className="text-xs text-[#6F6A63] font-medium leading-relaxed">
+        <p className="text-xs text-[#6F4E37] font-medium leading-relaxed">
           {destination.cab_info?.booking_note ||
             "Rent premium Toyota Innova Crysta, Force Urbania, or Tempo Travellers with verified highway chauffeurs."}
         </p>
@@ -34,14 +34,14 @@ export default function CabRecommendation({ destination }: { destination: Destin
 
       {/* Recommended Vehicles Pills */}
       <div className="space-y-2">
-        <span className="text-[10px] uppercase font-bold text-[#6F6A63] tracking-wider block">
+        <span className="text-[10px] uppercase font-bold text-[#6F4E37] tracking-wider block">
           RECOMMENDED VEHICLES:
         </span>
         <div className="flex flex-wrap gap-2">
           {recommendedVehicles.map((v, i) => (
             <span
               key={i}
-              className="text-xs font-bold text-[#23483A] bg-[#F7F3EC] px-3 py-1.5 rounded-xl border border-[#DDD5C8] flex items-center gap-1.5"
+              className="text-xs font-bold text-[#6F4E37] bg-[#FFFDF7] px-3 py-1.5 rounded-xl border border-[#DCC7AA] flex items-center gap-1.5"
             >
               <Car size={13} /> {v}
             </span>
@@ -49,17 +49,17 @@ export default function CabRecommendation({ destination }: { destination: Destin
         </div>
       </div>
 
-      <div className="space-y-2 pt-2 border-t border-[#DDD5C8] text-xs text-[#6F6A63] font-medium">
+      <div className="space-y-2 pt-2 border-t border-[#DCC7AA] text-xs text-[#6F4E37] font-medium">
         <div className="flex items-center gap-2">
-          <CheckCircle2 size={14} className="text-[#23483A] shrink-0" />
+          <CheckCircle2 size={14} className="text-[#6F4E37] shrink-0" />
           <span>Clean sanitised vehicles with air-conditioning</span>
         </div>
         <div className="flex items-center gap-2">
-          <CheckCircle2 size={14} className="text-[#23483A] shrink-0" />
+          <CheckCircle2 size={14} className="text-[#6F4E37] shrink-0" />
           <span>Verified highway drivers</span>
         </div>
         <div className="flex items-center gap-2">
-          <CheckCircle2 size={14} className="text-[#23483A] shrink-0" />
+          <CheckCircle2 size={14} className="text-[#6F4E37] shrink-0" />
           <span>Owner-approved transparent fare on enquiry</span>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function CabRecommendation({ destination }: { destination: Destin
       <div className="space-y-2.5 pt-2">
         <Link
           to={`/booking?destination=${encodeURIComponent(destination.name)}`}
-          className="w-full text-center bg-[#4A3025] hover:bg-[#23483A] text-white text-xs font-extrabold uppercase tracking-wider py-3.5 px-6 rounded-xl transition-all shadow-xs flex items-center justify-center gap-2 min-h-[48px]"
+          className="w-full text-center bg-[#6F4E37] hover:bg-[#4B3832] text-[#FFFDF7] text-xs font-extrabold uppercase tracking-wider py-3.5 px-6 rounded-xl transition-all shadow-xs flex items-center justify-center gap-2 min-h-[48px]"
         >
           <span>Plan a Cab to {destination.name}</span>
           <ArrowRight size={15} />
@@ -77,7 +77,7 @@ export default function CabRecommendation({ destination }: { destination: Destin
           href={`https://wa.me/917676726209?text=${whatsappMsg}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full text-center bg-[#EDE5D8] hover:bg-[#DDD5C8] text-[#23483A] text-xs font-extrabold py-3 px-4 rounded-xl border border-[#DDD5C8] transition-all flex items-center justify-center gap-2 min-h-[44px]"
+          className="w-full text-center bg-[#F5E6CA] hover:bg-[#DCC7AA] text-[#4B3832] text-xs font-extrabold py-3 px-4 rounded-xl border border-[#DCC7AA] transition-all flex items-center justify-center gap-2 min-h-[44px]"
         >
           <MessageCircle size={15} />
           <span>WhatsApp Chat Enquiry</span>

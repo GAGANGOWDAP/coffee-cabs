@@ -216,10 +216,10 @@ export default function PrivacyPolicyPage() {
 
       {/* 17. Grievance Contact */}
       <section id="grievance-contact" className="scroll-mt-32">
-        <h2 className="text-xl sm:text-2xl font-extrabold text-[#4A3025] mb-3 pb-2 border-b border-[#DDD5C8]">
+        <h2 className="text-xl sm:text-2xl font-extrabold text-[#4B3832] mb-3 pb-2 border-b border-[#DCC7AA]">
           17. Grievance Contact
         </h2>
-        <div className="bg-[#F7F3EC] p-6 rounded-2xl border border-[#DDD5C8] space-y-2 text-sm text-[#252525]">
+        <div className="bg-[#F5E6CA] p-6 rounded-2xl border border-[#DCC7AA] space-y-2 text-sm text-[#4B3832]">
           <p><strong>Grievance Officer:</strong> [GRIEVANCE OFFICER NAME]</p>
           <p><strong>Designation:</strong> [GRIEVANCE OFFICER DESIGNATION]</p>
           <p><strong>Email:</strong> [GRIEVANCE EMAIL ADDRESS]</p>

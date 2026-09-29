@@ -8,13 +8,13 @@ export default function DestinationQuickFacts({ destination }: { destination: De
   const idealStay = destination.quick_facts?.ideal_trip_duration || destination.suggestedDuration;
 
   return (
-    <div className="bg-white border border-[#DDD5C8] rounded-3xl p-6 grid grid-cols-2 sm:grid-cols-4 gap-4 shadow-xs">
+    <div className="bg-[#FFFDF7] border border-[#DCC7AA] rounded-3xl p-6 grid grid-cols-2 sm:grid-cols-4 gap-4 shadow-xs">
       {distance && (
         <div className="space-y-1">
-          <div className="text-[11px] text-[#6F6A63] uppercase tracking-wider font-extrabold flex items-center gap-1">
-            <MapPin size={13} className="text-[#23483A]" /> DISTANCE
+          <div className="text-[11px] text-[#6F4E37] uppercase tracking-wider font-extrabold flex items-center gap-1">
+            <MapPin size={13} className="text-[#6F4E37]" /> DISTANCE
           </div>
-          <div className="text-base sm:text-lg font-extrabold text-[#252525]">
+          <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
             {distance}
           </div>
         </div>
@@ -22,10 +22,10 @@ export default function DestinationQuickFacts({ destination }: { destination: De
 
       {driveTime && (
         <div className="space-y-1">
-          <div className="text-[11px] text-[#6F6A63] uppercase tracking-wider font-extrabold flex items-center gap-1">
-            <Clock size={13} className="text-[#23483A]" /> DRIVE TIME
+          <div className="text-[11px] text-[#6F4E37] uppercase tracking-wider font-extrabold flex items-center gap-1">
+            <Clock size={13} className="text-[#6F4E37]" /> DRIVE TIME
           </div>
-          <div className="text-base sm:text-lg font-extrabold text-[#252525]">
+          <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
             {driveTime}
           </div>
         </div>
@@ -33,10 +33,10 @@ export default function DestinationQuickFacts({ destination }: { destination: De
 
       {bestTime && (
         <div className="space-y-1">
-          <div className="text-[11px] text-[#6F6A63] uppercase tracking-wider font-extrabold flex items-center gap-1">
-            <Calendar size={13} className="text-[#23483A]" /> BEST TIME
+          <div className="text-[11px] text-[#6F4E37] uppercase tracking-wider font-extrabold flex items-center gap-1">
+            <Calendar size={13} className="text-[#6F4E37]" /> BEST TIME
           </div>
-          <div className="text-base sm:text-lg font-extrabold text-[#252525]">
+          <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
             {bestTime}
           </div>
         </div>
@@ -44,10 +44,10 @@ export default function DestinationQuickFacts({ destination }: { destination: De
 
       {idealStay && (
         <div className="space-y-1">
-          <div className="text-[11px] text-[#6F6A63] uppercase tracking-wider font-extrabold flex items-center gap-1">
-            <Compass size={13} className="text-[#23483A]" /> IDEAL STAY
+          <div className="text-[11px] text-[#6F4E37] uppercase tracking-wider font-extrabold flex items-center gap-1">
+            <Compass size={13} className="text-[#6F4E37]" /> IDEAL STAY
           </div>
-          <div className="text-base sm:text-lg font-extrabold text-[#252525]">
+          <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
             {idealStay}
           </div>
         </div>

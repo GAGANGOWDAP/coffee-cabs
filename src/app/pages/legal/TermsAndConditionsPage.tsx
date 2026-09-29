@@ -90,7 +90,7 @@ export default function TermsAndConditionsPage() {
         <p className="text-sm sm:text-base text-[#252525] leading-relaxed mb-4">
           A booking becomes binding and confirmed only after Coffee Cabs explicitly verifies passenger requirements and issues a booking confirmation through an authorized communication channel (such as WhatsApp, SMS, phone call, or email).
         </p>
-        <div className="bg-[#F7F3EC] p-4 rounded-2xl border border-[#DDD5C8] text-xs sm:text-sm text-[#6F6A63]">
+        <div className="bg-[#FFFDF7] p-4 rounded-2xl border border-[#DCC7AA] text-xs sm:text-sm text-[#6F4E37]">
           <strong>Booking Confirmation Factors:</strong> Vehicle availability, requested route, travel date/time, passenger count, luggage capacity, toll/permit feasibility, and operational road conditions.
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function TermsAndConditionsPage() {
           <li>Airport parking fees, commercial parking charges, driver night allowances</li>
           <li>Additional waiting time beyond agreed trip package hours</li>
         </ul>
-        <div className="p-4 bg-[#EDE5D8] rounded-2xl border border-[#DDD5C8] text-xs sm:text-sm text-[#4A3025] font-medium">
+        <div className="p-4 bg-[#F5E6CA] rounded-2xl border border-[#DCC7AA] text-xs sm:text-sm text-[#4B3832] font-medium">
           <em>Fare Disclaimer:</em> Where custom route pricing or seasonal rates apply, <strong>Owner-approved fare is available on enquiry</strong> prior to trip departure.
         </div>
       </section>
@@ -302,7 +302,7 @@ export default function TermsAndConditionsPage() {
         <h2 className="text-xl sm:text-2xl font-extrabold text-[#4A3025] mb-3 pb-2 border-b border-[#DDD5C8]">
           20. Contact Information
         </h2>
-        <div className="bg-[#F7F3EC] p-6 rounded-2xl border border-[#DDD5C8] space-y-2 text-sm text-[#252525]">
+        <div className="bg-[#F5E6CA] p-6 rounded-2xl border border-[#DCC7AA] space-y-2 text-sm text-[#4B3832]">
           <p><strong>Business Name:</strong> [LEGAL BUSINESS NAME]</p>
           <p><strong>Email:</strong> [OFFICIAL EMAIL ADDRESS]</p>
           <p><strong>Phone:</strong> [OFFICIAL PHONE NUMBER]</p>

@@ -47,16 +47,16 @@ export default function VehicleComparisonTable({
   ];
 
   return (
-    <div className={`bg-white border border-[#DDD5C8] rounded-3xl p-5 sm:p-7 shadow-sm text-[#252525] ${className}`}>
+    <div className={`bg-[#FFFDF7] border border-[#DCC7AA] rounded-3xl p-5 sm:p-7 shadow-sm text-[#4B3832] ${className}`}>
       {/* Section Header */}
-      <div className="mb-6 pb-3 border-b border-[#DDD5C8]">
-        <span className="text-[10px] sm:text-xs font-extrabold text-[#23483A] uppercase tracking-widest block mb-0.5">
+      <div className="mb-6 pb-3 border-b border-[#DCC7AA]">
+        <span className="text-[10px] sm:text-xs font-extrabold text-[#6F4E37] uppercase tracking-widest block mb-0.5">
           VEHICLE DECISION GUIDE
         </span>
-        <h3 className="text-xl sm:text-2xl font-extrabold text-[#4A3025]">
+        <h3 className="text-xl sm:text-2xl font-extrabold text-[#4B3832]">
           Not Sure Which Vehicle to Choose?
         </h3>
-        <p className="text-xs sm:text-sm text-[#6F6A63] mt-1">
+        <p className="text-xs sm:text-sm text-[#6F4E37] mt-1">
           Compare seating capacity, luggage space, and trip suitability across Coffee Cabs&apos; verified fleet.
         </p>
       </div>
@@ -65,40 +65,40 @@ export default function VehicleComparisonTable({
       <div className="hidden md:block overflow-x-auto">
         <table className="w-full text-left border-collapse text-xs sm:text-sm">
           <thead>
-            <tr className="bg-[#F7F3EC] border-b border-[#DDD5C8]">
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider">Vehicle Model</th>
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider">Seating</th>
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider">Luggage Capacity</th>
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider">Air Conditioning</th>
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider">Best Suited For</th>
-              <th className="p-3.5 font-extrabold text-[#4A3025] uppercase tracking-wider text-right">Action</th>
+            <tr className="bg-[#F5E6CA] border-b border-[#DCC7AA]">
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider">Vehicle Model</th>
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider">Seating</th>
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider">Luggage Capacity</th>
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider">Air Conditioning</th>
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider">Best Suited For</th>
+              <th className="p-3.5 font-extrabold text-[#4B3832] uppercase tracking-wider text-right">Action</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#DDD5C8]">
+          <tbody className="divide-y divide-[#DCC7AA]">
             {COMPARISON_DATA.map((item) => {
               const isSelected = selectedVehicleId === item.id;
               return (
-                <tr key={item.id} className={`hover:bg-[#F7F3EC]/50 transition-colors ${isSelected ? "bg-[#23483A]/5 font-semibold" : ""}`}>
-                  <td className="p-3.5 font-bold text-[#252525]">
+                <tr key={item.id} className={`hover:bg-[#F5E6CA]/50 transition-colors ${isSelected ? "bg-[#F5E6CA] font-semibold" : ""}`}>
+                  <td className="p-3.5 font-bold text-[#4B3832]">
                     <div className="flex items-center gap-2">
-                      <Car size={16} className="text-[#23483A] shrink-0" />
+                      <Car size={16} className="text-[#6F4E37] shrink-0" />
                       <span>{item.name}</span>
                     </div>
                   </td>
-                  <td className="p-3.5 text-[#6F6A63]">
+                  <td className="p-3.5 text-[#6F4E37]">
                     <div className="flex items-center gap-1.5">
-                      <Users size={14} className="text-[#23483A]" />
+                      <Users size={14} className="text-[#6F4E37]" />
                       <span>{item.seats}</span>
                     </div>
                   </td>
-                  <td className="p-3.5 text-[#6F6A63]">
+                  <td className="p-3.5 text-[#6F4E37]">
                     <div className="flex items-center gap-1.5">
-                      <Luggage size={14} className="text-[#23483A]" />
+                      <Luggage size={14} className="text-[#6F4E37]" />
                       <span>{item.luggage}</span>
                     </div>
                   </td>
-                  <td className="p-3.5 text-[#6F6A63]">{item.ac}</td>
-                  <td className="p-3.5 text-[#6F6A63] font-medium">{item.ideal}</td>
+                  <td className="p-3.5 text-[#6F4E37]">{item.ac}</td>
+                  <td className="p-3.5 text-[#6F4E37] font-medium">{item.ideal}</td>
                   <td className="p-3.5 text-right">
                     {onSelectVehicle ? (
                       <button
@@ -106,8 +106,8 @@ export default function VehicleComparisonTable({
                         onClick={() => onSelectVehicle(item.id)}
                         className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
                           isSelected
-                            ? "bg-[#23483A] text-white"
-                            : "bg-[#4A3025] text-white hover:bg-[#23483A]"
+                            ? "bg-[#6F4E37] text-[#FFFDF7]"
+                            : "bg-[#4B3832] text-[#FFFDF7] hover:bg-[#6F4E37]"
                         }`}
                       >
                         {isSelected ? "Selected" : "Select Vehicle"}
@@ -115,7 +115,7 @@ export default function VehicleComparisonTable({
                     ) : (
                       <Link
                         to={`/booking?vehicle=${item.id}`}
-                        className="inline-flex items-center gap-1 px-3.5 py-1.5 bg-[#4A3025] text-white rounded-full text-xs font-bold hover:bg-[#23483A] transition-all"
+                        className="inline-flex items-center gap-1 px-3.5 py-1.5 bg-[#6F4E37] text-[#FFFDF7] rounded-full text-xs font-bold hover:bg-[#4B3832] transition-all"
                       >
                         <span>Select</span>
                         <ArrowRight size={12} />
@@ -138,29 +138,29 @@ export default function VehicleComparisonTable({
               key={item.id}
               className={`p-4 rounded-2xl border transition-all ${
                 isSelected
-                  ? "bg-[#23483A]/10 border-[#23483A]"
-                  : "bg-[#F7F3EC] border-[#DDD5C8]"
+                  ? "bg-[#F5E6CA] border-[#6F4E37]"
+                  : "bg-[#FFFDF7] border-[#DCC7AA]"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
-                <h4 className="font-bold text-[#4A3025] text-base">{item.name}</h4>
-                <span className="text-[10px] font-extrabold uppercase bg-white px-2.5 py-0.5 rounded-full border border-[#DDD5C8] text-[#23483A]">
+                <h4 className="font-bold text-[#4B3832] text-base">{item.name}</h4>
+                <span className="text-[10px] font-extrabold uppercase bg-[#FFFDF7] px-2.5 py-0.5 rounded-full border border-[#DCC7AA] text-[#6F4E37]">
                   {item.category}
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-2 text-xs text-[#6F6A63] mb-3">
+              <div className="grid grid-cols-2 gap-2 text-xs text-[#6F4E37] mb-3">
                 <div className="flex items-center gap-1.5">
-                  <Users size={14} className="text-[#23483A] shrink-0" />
+                  <Users size={14} className="text-[#6F4E37] shrink-0" />
                   <span>{item.seats}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Luggage size={14} className="text-[#23483A] shrink-0" />
+                  <Luggage size={14} className="text-[#6F4E37] shrink-0" />
                   <span>{item.luggage}</span>
                 </div>
               </div>
 
-              <p className="text-xs text-[#6F6A63] mb-3">
+              <p className="text-xs text-[#6F4E37] mb-3">
                 <strong>Best Suited For: </strong>{item.ideal}
               </p>
 
@@ -170,8 +170,8 @@ export default function VehicleComparisonTable({
                   onClick={() => onSelectVehicle(item.id)}
                   className={`w-full py-2 px-4 rounded-xl text-xs font-bold transition-all text-center ${
                     isSelected
-                      ? "bg-[#23483A] text-white"
-                      : "bg-[#4A3025] text-white hover:bg-[#23483A]"
+                      ? "bg-[#6F4E37] text-[#FFFDF7]"
+                      : "bg-[#4B3832] text-[#FFFDF7] hover:bg-[#6F4E37]"
                   }`}
                 >
                   {isSelected ? "Selected" : "Select This Vehicle"}
@@ -179,7 +179,7 @@ export default function VehicleComparisonTable({
               ) : (
                 <Link
                   to={`/booking?vehicle=${item.id}`}
-                  className="w-full py-2 px-4 bg-[#4A3025] text-white rounded-xl text-xs font-bold hover:bg-[#23483A] transition-all text-center block"
+                  className="w-full py-2 px-4 bg-[#6F4E37] text-[#FFFDF7] rounded-xl text-xs font-bold hover:bg-[#4B3832] transition-all text-center block"
                 >
                   Select This Vehicle
                 </Link>

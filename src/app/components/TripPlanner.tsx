@@ -36,26 +36,26 @@ export default function TripPlanner() {
   });
 
   return (
-    <section className="bg-[#EDE5D8] border border-[#DDD5C8] rounded-3xl p-6 md:p-10 shadow-sm relative overflow-hidden">
+    <section className="bg-[#F5E6CA] border border-[#DCC7AA] rounded-3xl p-6 md:p-10 shadow-sm relative overflow-hidden">
       <div className="relative z-10">
-        <div className="flex items-center gap-2 text-[#23483A] text-xs font-extrabold uppercase tracking-widest mb-3">
+        <div className="flex items-center gap-2 text-[#6F4E37] text-xs font-extrabold uppercase tracking-widest mb-3">
           <Compass size={18} />
           <span>INSTANT TRIP MATCHMAKER</span>
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#4A3025] mb-3">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#4B3832] mb-3">
           Plan Your Ideal Karnataka Holiday
         </h2>
-        <p className="text-[#6F6A63] text-sm max-w-2xl mb-8 leading-relaxed font-medium">
+        <p className="text-[#6F4E37] text-sm max-w-2xl mb-8 leading-relaxed font-medium">
           Select your trip duration and travel interest to find custom-tailored Coffee Cabs packages with private chauffeur vehicles.
         </p>
 
         {/* Interactive Filters Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-5 rounded-2xl border border-[#DDD5C8] mb-8 shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#FFFDF7] p-5 rounded-2xl border border-[#DCC7AA] mb-8 shadow-sm">
           {/* Duration Filter */}
           <div>
-            <label className="flex items-center gap-2 text-xs font-bold text-[#252525] mb-3">
-              <Calendar size={14} className="text-[#23483A]" />
+            <label className="flex items-center gap-2 text-xs font-bold text-[#4B3832] mb-3">
+              <Calendar size={14} className="text-[#6F4E37]" />
               TRIP DURATION
             </label>
             <div className="flex flex-wrap gap-2">
@@ -66,8 +66,8 @@ export default function TripPlanner() {
                   onClick={() => setSelectedDuration(d.value)}
                   className={`text-xs font-bold px-3.5 py-2 rounded-xl border transition-all ${
                     selectedDuration === d.value
-                      ? "bg-[#4A3025] text-white border-[#4A3025]"
-                      : "bg-[#F7F3EC] text-[#6F6A63] border-[#DDD5C8] hover:border-[#23483A]"
+                      ? "bg-[#6F4E37] text-[#FFFDF7] border-[#6F4E37]"
+                      : "bg-[#FFFDF7] text-[#4B3832] border-[#DCC7AA] hover:border-[#6F4E37]"
                   }`}
                 >
                   {d.label}
@@ -78,8 +78,8 @@ export default function TripPlanner() {
 
           {/* Interest Category Filter */}
           <div>
-            <label className="flex items-center gap-2 text-xs font-bold text-[#252525] mb-3">
-              <Sparkles size={14} className="text-[#23483A]" />
+            <label className="flex items-center gap-2 text-xs font-bold text-[#4B3832] mb-3">
+              <Sparkles size={14} className="text-[#6F4E37]" />
               TRAVEL EXPERIENCE & REGION
             </label>
             <div className="flex flex-wrap gap-2">
@@ -90,8 +90,8 @@ export default function TripPlanner() {
                   onClick={() => setSelectedInterest(cat.value)}
                   className={`text-xs font-bold px-3.5 py-2 rounded-xl border transition-all ${
                     selectedInterest === cat.value
-                      ? "bg-[#4A3025] text-white border-[#4A3025]"
-                      : "bg-[#F7F3EC] text-[#6F6A63] border-[#DDD5C8] hover:border-[#23483A]"
+                      ? "bg-[#6F4E37] text-[#FFFDF7] border-[#6F4E37]"
+                      : "bg-[#FFFDF7] text-[#4B3832] border-[#DCC7AA] hover:border-[#6F4E37]"
                   }`}
                 >
                   {cat.label}
@@ -104,10 +104,10 @@ export default function TripPlanner() {
         {/* Matching Packages Results */}
         <div>
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg font-bold text-[#252525]">
+            <h3 className="text-lg font-bold text-[#4B3832]">
               Matched Tour Packages ({filteredPackages.length})
             </h3>
-            <span className="text-xs text-[#6F6A63] font-medium">
+            <span className="text-xs text-[#6F4E37] font-medium">
               All packages include private AC vehicle & driver
             </span>
           </div>
@@ -119,8 +119,8 @@ export default function TripPlanner() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-12 bg-white rounded-2xl border border-[#DDD5C8]">
-              <p className="text-[#6F6A63] text-sm mb-3 font-medium">
+            <div className="text-center py-12 bg-[#FFFDF7] rounded-2xl border border-[#DCC7AA]">
+              <p className="text-[#6F4E37] text-sm mb-3 font-medium">
                 No tour package found matching these specific filters.
               </p>
               <button
@@ -128,7 +128,7 @@ export default function TripPlanner() {
                   setSelectedDuration("all");
                   setSelectedInterest("all");
                 }}
-                className="text-xs font-bold text-[#23483A] hover:underline"
+                className="text-xs font-bold text-[#6F4E37] hover:underline"
               >
                 Reset All Filters
               </button>
