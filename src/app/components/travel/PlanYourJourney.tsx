@@ -47,31 +47,31 @@ export default function PlanYourJourney({ className = "", compact = false }: Pla
   };
 
   return (
-    <div className={`bg-[#EDE5D8] border border-[#DDD5C8] rounded-3xl p-5 sm:p-7 shadow-md text-[#252525] ${className}`}>
+    <div className={`bg-[#EDE5D8] border border-[#DDD5C8] rounded-3xl p-4 sm:p-7 shadow-md text-[#252525] w-full max-w-full box-sizing-border-box overflow-hidden ${className}`}>
       {/* Header */}
-      <div className="flex items-center justify-between mb-5 pb-3 border-b border-[#DDD5C8]">
+      <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#DDD5C8]">
         <div>
           <span className="text-[10px] sm:text-xs font-extrabold text-[#23483A] uppercase tracking-widest block mb-0.5">
             WHERE ARE YOU GOING?
           </span>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-[#4A3025]">
+          <h2 className="text-lg sm:text-2xl font-extrabold text-[#4A3025]">
             Plan Your Journey
           </h2>
         </div>
-        <div className="w-10 h-10 rounded-full bg-[#23483A]/10 flex items-center justify-center text-[#23483A] shrink-0">
-          <Compass size={20} />
+        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#23483A]/10 flex items-center justify-center text-[#23483A] shrink-0">
+          <Compass size={18} />
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3.5 w-full max-w-full">
         {/* Row 1: Pickup & Drop */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full">
           {/* Pickup Location */}
-          <div>
+          <div className="w-full min-w-0">
             <label className="block text-xs font-bold text-[#4A3025] mb-1">
               Pickup Location <span className="text-[#B86F52]">*</span>
             </label>
-            <div className="relative">
+            <div className="relative w-full">
               <MapPin size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#23483A]" />
               <input
                 type="text"
@@ -85,11 +85,11 @@ export default function PlanYourJourney({ className = "", compact = false }: Pla
           </div>
 
           {/* Drop Location */}
-          <div>
+          <div className="w-full min-w-0">
             <label className="block text-xs font-bold text-[#4A3025] mb-1">
               Destination / Drop Location <span className="text-[#B86F52]">*</span>
             </label>
-            <div className="relative">
+            <div className="relative w-full">
               <MapPin size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#4A3025]" />
               <input
                 type="text"
@@ -104,7 +104,7 @@ export default function PlanYourJourney({ className = "", compact = false }: Pla
         </div>
 
         {/* Quick Destination Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs w-full max-w-full min-w-0 overscroll-x-contain scrollbar-none">
           <span className="text-[11px] font-bold text-[#6F6A63] shrink-0 mr-1">Popular:</span>
           {POPULAR_DESTINATIONS.map((dest) => (
             <button
@@ -123,18 +123,18 @@ export default function PlanYourJourney({ className = "", compact = false }: Pla
         </div>
 
         {/* Row 2: Trip Type & Passengers */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full">
           {/* Trip Type */}
-          <div>
+          <div className="w-full min-w-0">
             <label className="block text-xs font-bold text-[#4A3025] mb-1">
               Trip Type
             </label>
-            <div className="relative">
+            <div className="relative w-full">
               <Car size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#23483A]" />
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full pl-10 pr-8 py-2.5 bg-white border border-[#DDD5C8] rounded-xl text-xs sm:text-sm font-semibold text-[#252525] focus:outline-none focus:border-[#23483A] focus:ring-1 focus:ring-[#23483A] transition-all appearance-none"
+                className="w-full pl-10 pr-8 py-2.5 bg-white border border-[#DDD5C8] rounded-xl text-xs sm:text-sm font-semibold text-[#252525] focus:outline-none focus:border-[#23483A] focus:ring-1 focus:ring-[#23483A] transition-all appearance-none truncate"
               >
                 {TRIP_TYPES.map((t) => (
                   <option key={t.id} value={t.id}>

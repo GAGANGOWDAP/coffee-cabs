@@ -86,7 +86,7 @@ export default function TripSummaryCard({
   };
 
   return (
-    <div className="bg-[#EDE5D8]/90 backdrop-blur-md border border-[#DDD5C8] rounded-3xl p-5 sm:p-6 shadow-sm text-[#252525]">
+    <div className="bg-[#EDE5D8]/90 backdrop-blur-md border border-[#DDD5C8] rounded-3xl p-4 sm:p-6 shadow-sm text-[#252525] w-full max-w-full min-w-0 box-sizing-border-box overflow-hidden">
       {/* Header Badge */}
       <div className="flex items-center justify-between border-b border-[#DDD5C8] pb-3 mb-4">
         <div className="flex items-center gap-2 text-xs font-extrabold text-[#23483A] uppercase tracking-wider">

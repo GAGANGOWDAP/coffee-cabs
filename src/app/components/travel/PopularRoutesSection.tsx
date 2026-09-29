@@ -42,7 +42,7 @@ export default function PopularRoutesSection({ limit = 6, className = "" }: Popu
           {displayRoutes.map((route) => (
             <div
               key={route.id}
-              className="bg-white border border-[#DDD5C8] rounded-3xl p-6 shadow-sm hover:shadow-md hover:border-[#23483A]/40 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white border border-[#DDD5C8] rounded-3xl p-4 sm:p-6 shadow-sm hover:shadow-md hover:border-[#23483A]/40 transition-all duration-300 flex flex-col justify-between group w-full max-w-full min-w-0 box-sizing-border-box"
             >
               <div>
                 {/* Route Header Badge */}

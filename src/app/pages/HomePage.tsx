@@ -191,40 +191,40 @@ export default function HomePage() {
         </div>
 
         {/* Upper Hero Content */}
-        <div className="relative z-10 max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+        <div className="relative z-10 max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center w-full">
           {/* Decorative Eyebrow */}
-          <div className="gsap-hero-eyebrow inline-flex items-center gap-3 mb-3">
-            <span className="h-[1px] w-8 sm:w-12 bg-[#23483A]" />
-            <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-extrabold text-[#23483A]">
+          <div className="gsap-hero-eyebrow inline-flex items-center justify-center gap-2 sm:gap-3 mb-3 max-w-full px-2">
+            <span className="hidden sm:inline-block h-[1px] w-6 sm:w-12 bg-[#23483A] shrink-0" />
+            <span className="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-[0.25em] font-extrabold text-[#23483A] text-center max-w-full">
               PREMIUM TRAVEL • BENGALURU & BEYOND
             </span>
-            <span className="h-[1px] w-8 sm:w-12 bg-[#23483A]" />
+            <span className="hidden sm:inline-block h-[1px] w-6 sm:w-12 bg-[#23483A] shrink-0" />
           </div>
 
           {/* Main Headline */}
-          <h1 className="gsap-hero-headline text-3xl sm:text-5xl lg:text-6xl xl:text-[66px] font-extrabold tracking-tight leading-[1.1] text-[#252525] mb-3 sm:mb-4 max-w-4xl">
+          <h1 className="gsap-hero-headline text-2.5xl sm:text-5xl lg:text-6xl xl:text-[66px] font-extrabold tracking-tight leading-[1.15] text-[#252525] mb-3 sm:mb-4 max-w-4xl w-full break-words">
             RIDE TO RELAX.<br />
             <span className="text-[#4A3025]">WE DO THE REST.</span>
           </h1>
 
           {/* Hero Description */}
-          <p className="gsap-hero-desc text-xs sm:text-sm text-[#6F6A63] max-w-[620px] mx-auto mb-6 font-medium leading-relaxed">
+          <p className="gsap-hero-desc text-xs sm:text-sm text-[#6F6A63] max-w-[620px] mx-auto mb-6 font-medium leading-relaxed px-2">
             Bengaluru&apos;s premier car and traveller service for airport transfers, corporate travel, outstation journeys and group transportation.
           </p>
 
           {/* Hero CTAs */}
-          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full max-w-md mx-auto mb-6 lg:mb-8">
+          <div className="gsap-hero-cta flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-xs sm:max-w-md mx-auto mb-6 lg:mb-8">
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-7 py-3.5 bg-[#4A3025] text-white text-xs uppercase tracking-wider font-bold rounded-full hover:bg-[#23483A] transition-all duration-300 text-center shadow-md flex items-center justify-center gap-2 group min-h-[44px]"
+              className="w-full sm:w-auto px-5 sm:px-7 py-3.5 bg-[#4A3025] text-white text-xs uppercase tracking-wider font-bold rounded-full hover:bg-[#23483A] transition-all duration-300 text-center shadow-md flex items-center justify-center gap-2 group min-h-[44px]"
             >
-              BOOK YOUR RIDE <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              BOOK YOUR RIDE <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
             <Link
               to="/fleet"
-              className="w-full sm:w-auto px-7 py-3.5 bg-transparent border border-[#23483A] text-[#23483A] hover:bg-[#23483A] hover:text-white text-xs uppercase tracking-wider font-bold rounded-full transition-all duration-300 text-center flex items-center justify-center gap-2 group min-h-[44px]"
+              className="w-full sm:w-auto px-5 sm:px-7 py-3.5 bg-transparent border border-[#23483A] text-[#23483A] hover:bg-[#23483A] hover:text-white text-xs uppercase tracking-wider font-bold rounded-full transition-all duration-300 text-center flex items-center justify-center gap-2 group min-h-[44px]"
             >
-              EXPLORE OUR FLEET <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              EXPLORE OUR FLEET <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </div>
 
@@ -234,9 +234,9 @@ export default function HomePage() {
 
         {/* Foreground Compact Fleet Cards Section */}
         <div className="relative z-10 max-w-[1020px] mx-auto px-4 sm:px-6 w-full mt-auto">
-          <div className="gsap-hero-cards flex flex-col sm:flex-row items-center sm:items-end justify-center gap-4 lg:gap-5 mb-5">
+          <div className="gsap-hero-cards flex flex-col sm:flex-row items-center sm:items-end justify-center gap-4 lg:gap-5 mb-5 w-full max-w-full">
             {/* CARD 1: LEFT - Toyota Innova Crysta */}
-            <div className="w-full sm:w-[275px] lg:w-[295px] bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
+            <div className="w-full sm:w-[275px] lg:w-[295px] max-w-full bg-white border border-[#DDD5C8] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#23483A] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
               <div>
                 <div className="w-full h-[140px] sm:h-[150px] rounded-xl overflow-hidden bg-[#F7F3EC] mb-2.5">
                   <img
