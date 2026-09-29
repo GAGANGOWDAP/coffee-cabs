@@ -17,6 +17,7 @@ import {
   FileText,
 } from "lucide-react";
 import { VEHICLES } from "../data/vehicles";
+import { trackFormStart, trackFormSubmit, trackPhoneCallClick, trackWhatsAppClick } from "../utils/analytics";
 
 interface BookingFormProps {
   initialVehicleId?: string;
@@ -71,11 +72,25 @@ export default function BookingForm({
     queryPackage ? `Package Inquiry: ${queryPackage}` : queryRoute ? `Route Inquiry: ${queryRoute}` : ""
   );
 
+  // Spam Protection & Analytics state
+  const [honeypot, setHoneypot] = useState("");
+  const renderTimeRef = useRef<number>(Date.now());
+  const hasStartedFormRef = useRef<boolean>(false);
+
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const formRef = useRef<HTMLFormElement>(null);
+
+  const handleFormInteraction = () => {
+    if (!hasStartedFormRef.current) {
+      hasStartedFormRef.current = true;
+      trackFormStart("booking_form");
+    }
+  };
+
+  const sanitizeInput = (val: string) => val.replace(/<[^>]*>?/gm, "").trim();
 
   useEffect(() => {
     if (queryVehicleParam || initialVehicleId) {
@@ -107,11 +122,11 @@ export default function BookingForm({
 
   const validateForm = () => {
     const errs: { [key: string]: string } = {};
-    if (!fullName.trim()) errs.fullName = "Please enter your full name.";
+    if (!sanitizeInput(fullName)) errs.fullName = "Please enter your full name.";
     if (!phone.trim() || phone.trim().length < 8)
       errs.phone = "Please enter a valid phone number (at least 8 digits).";
-    if (!pickupLocation.trim()) errs.pickupLocation = "Please enter pickup location.";
-    if (!dropLocation.trim()) errs.dropLocation = "Please enter destination / drop location.";
+    if (!sanitizeInput(pickupLocation)) errs.pickupLocation = "Please enter pickup location.";
+    if (!sanitizeInput(dropLocation)) errs.dropLocation = "Please enter destination / drop location.";
     if (!travelDate) errs.travelDate = "Please select travel date.";
     setErrors(errs);
     return Object.keys(errs).length === 0;
@@ -119,6 +134,14 @@ export default function BookingForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Honeypot & bot speed check
+    if (honeypot.trim() !== "" || Date.now() - renderTimeRef.current < 1500) {
+      // Silently pretend success to bots without triggering real reservation
+      setSubmitted(true);
+      return;
+    }
+
     if (!validateForm()) {
       if (formRef.current) {
         formRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -130,6 +153,7 @@ export default function BookingForm({
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
+      trackFormSubmit("booking_form");
     }, 600);
   };
 
@@ -260,6 +284,20 @@ export default function BookingForm({
         ) : (
           /* Main Form Flow */
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-8" noValidate>
+            {/* Honeypot Spam Protection Field (Hidden from real users) */}
+            <div style={{ display: "none", position: "absolute", left: "-9999px" }} aria-hidden="true">
+              <label htmlFor="website_hp">Do not fill this field</label>
+              <input
+                type="text"
+                id="website_hp"
+                name="website_hp"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+              />
+            </div>
+
             {/* SECTION 01: CUSTOMER INFORMATION */}
             <section className="space-y-4">
               <div className="flex items-center gap-2 border-b border-[#DDD5C8] pb-2.5">

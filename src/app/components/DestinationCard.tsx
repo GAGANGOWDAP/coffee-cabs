@@ -1,20 +1,26 @@
 import { Link } from "react-router";
 import { MapPin, Clock, Calendar, ArrowRight, ShieldCheck } from "lucide-react";
 import { Destination } from "../data/destinations";
+import { getResponsiveUnsplashSrcSet, CARD_IMAGE_SIZES } from "../utils/imageHelpers";
 
 interface DestinationCardProps {
   destination: Destination;
 }
 
 export default function DestinationCard({ destination }: DestinationCardProps) {
+  const imgSrc = destination.heroImage || "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=800&h=500&fit=crop";
+  const srcSet = getResponsiveUnsplashSrcSet(imgSrc);
+
   return (
     <div className="bg-white border border-[#DDD5C8] rounded-3xl overflow-hidden shadow-sm hover:shadow-md hover:border-[#23483A]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Card Header & Image */}
         <div className="relative aspect-[16/10] bg-[#EDE5D8] overflow-hidden">
           <img
-            src={destination.heroImage || "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=800&h=500&fit=crop"}
-            alt={destination.name}
+            src={imgSrc}
+            srcSet={srcSet}
+            sizes={srcSet ? CARD_IMAGE_SIZES : undefined}
+            alt={`${destination.name} travel destination in Karnataka`}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="lazy"
             decoding="async"

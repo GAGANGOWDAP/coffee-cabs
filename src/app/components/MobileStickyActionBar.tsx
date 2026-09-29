@@ -1,5 +1,6 @@
 import { Phone, CalendarCheck } from "lucide-react";
 import { Link } from "react-router";
+import { trackPhoneCallClick, trackWhatsAppClick } from "../utils/analytics";
 
 export default function MobileStickyActionBar() {
   return (
@@ -11,6 +12,7 @@ export default function MobileStickyActionBar() {
         {/* 1. CALL BUTTON */}
         <a
           href="tel:+917676726209"
+          onClick={() => trackPhoneCallClick("mobile_sticky_bar")}
           className="flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2.5 px-2 bg-[#EDE5D8] border border-[#DDD5C8] rounded-xl text-[#4A3025] hover:border-[#23483A] transition-all min-h-[48px] active:scale-95 focus-visible:outline-2 focus-visible:outline-[#23483A]"
           aria-label="Call Coffee Cabs at +91 76767 26209"
         >
@@ -23,6 +25,7 @@ export default function MobileStickyActionBar() {
           href="https://wa.me/917676726209"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("mobile_sticky_bar")}
           className="flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2.5 px-2 bg-[#EDE5D8] border border-[#DDD5C8] rounded-xl text-[#23483A] hover:border-[#23483A] transition-all min-h-[48px] active:scale-95 focus-visible:outline-2 focus-visible:outline-[#23483A]"
           aria-label="Contact Coffee Cabs on WhatsApp"
         >

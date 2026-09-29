@@ -167,14 +167,17 @@ export default function HomePage() {
       <section className="relative min-h-[820px] md:h-[860px] lg:h-[900px] xl:h-[920px] flex flex-col justify-between bg-[#F7F3EC] text-[#252525] pt-24 sm:pt-28 pb-8 overflow-hidden border-b border-[#DDD5C8]">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          <img
-            src={`${import.meta.env.BASE_URL}images/hero.png`}
-            alt="Coffee Cabs Luxury Fleet"
-            fetchPriority="high"
-            loading="eager"
-            decoding="async"
-            className="w-full h-full object-cover object-[center_30%] opacity-40 transition-opacity duration-700"
-          />
+          <picture>
+            <source srcSet={`${import.meta.env.BASE_URL}images/hero.jpg`} type="image/jpeg" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/hero.jpg`}
+              alt="Coffee Cabs Luxury Fleet"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              className="w-full h-full object-cover object-[center_30%] opacity-40 transition-opacity duration-700"
+            />
+          </picture>
           <div
             className="absolute inset-0"
             style={{

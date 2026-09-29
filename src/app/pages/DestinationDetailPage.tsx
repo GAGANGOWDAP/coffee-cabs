@@ -20,6 +20,7 @@ import PackageCard from "../components/PackageCard";
 import RouteCard from "../components/RouteCard";
 import SEO from "../components/SEO";
 import { getDestinationDetailSchema } from "../utils/seoSchemas";
+import { getResponsiveUnsplashHeroSrcSet, HERO_IMAGE_SIZES } from "../utils/imageHelpers";
 
 // Modular Travel Components
 import DestinationQuickFacts from "../components/travel/DestinationQuickFacts";
@@ -122,9 +123,13 @@ export default function DestinationDetailPage() {
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img
               src={destination.heroImage}
-              alt={destination.name}
+              srcSet={getResponsiveUnsplashHeroSrcSet(destination.heroImage)}
+              sizes={HERO_IMAGE_SIZES}
+              alt={`${destination.name} travel destination in Karnataka`}
               className="w-full h-full object-cover opacity-35"
+              fetchPriority="high"
               loading="eager"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#EDE5D8] via-[#EDE5D8]/75 to-transparent" />
           </div>

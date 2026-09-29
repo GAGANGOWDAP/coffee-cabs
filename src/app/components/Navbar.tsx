@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
+import { trackPhoneCallClick, trackWhatsAppClick } from "../utils/analytics";
 
 interface NavLinkItem {
   label: string;
@@ -148,6 +149,7 @@ export default function Navbar() {
               href="https://wa.me/917676726209"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick("navbar")}
               className="w-9 h-9 rounded-full bg-[#23483A] text-white flex items-center justify-center hover:bg-[#4A3025] hover:scale-105 transition-all duration-250 shadow-sm shrink-0 focus-visible:outline-2 focus-visible:outline-[#23483A]"
               aria-label="Contact Coffee Cabs on WhatsApp"
             >
@@ -159,6 +161,7 @@ export default function Navbar() {
             {/* Phone Link */}
             <a
               href="tel:+917676726209"
+              onClick={() => trackPhoneCallClick("navbar")}
               className="hidden xl:flex items-center gap-1.5 text-xs font-bold text-[#4A3025] hover:text-[#23483A] transition-colors focus-visible:outline-2 focus-visible:outline-[#23483A] rounded"
               aria-label="Call Coffee Cabs at +91 76767 26209"
             >

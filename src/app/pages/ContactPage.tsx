@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router";
 import { Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare, ArrowUpRight, Car, AlertCircle } from "lucide-react";
 import SEO from "../components/SEO";
 import { getContactPageSchema } from "../utils/seoSchemas";
+import { trackFormStart, trackFormSubmit, trackPhoneCallClick, trackWhatsAppClick } from "../utils/analytics";
 
 export default function ContactPage() {
   const whatsappMsg = encodeURIComponent("Hi Coffee Cabs! I have a general inquiry.");
@@ -13,28 +14,50 @@ export default function ContactPage() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  // Spam protection & Analytics state
+  const [honeypot, setHoneypot] = useState("");
+  const renderTimeRef = useRef<number>(Date.now());
+  const hasStartedFormRef = useRef<boolean>(false);
+
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
+  const handleFormInteraction = () => {
+    if (!hasStartedFormRef.current) {
+      hasStartedFormRef.current = true;
+      trackFormStart("contact_form");
+    }
+  };
+
+  const sanitizeInput = (val: string) => val.replace(/<[^>]*>?/gm, "").trim();
+
   const validateForm = () => {
     const errs: { [key: string]: string } = {};
-    if (!fullName.trim()) errs.fullName = "Please enter your full name.";
+    if (!sanitizeInput(fullName)) errs.fullName = "Please enter your full name.";
     if (!email.trim() || !email.includes("@")) errs.email = "Please enter a valid email address.";
-    if (!subject.trim()) errs.subject = "Please enter a subject.";
-    if (!message.trim()) errs.message = "Please enter your message.";
+    if (!sanitizeInput(subject)) errs.subject = "Please enter a subject.";
+    if (!sanitizeInput(message)) errs.message = "Please enter your message.";
     setErrors(errs);
     return Object.keys(errs).length === 0;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Honeypot & bot speed check
+    if (honeypot.trim() !== "" || Date.now() - renderTimeRef.current < 1500) {
+      setSubmitted(true);
+      return;
+    }
+
     if (!validateForm()) return;
 
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
+      trackFormSubmit("contact_form");
     }, 600);
   };
 
@@ -197,6 +220,19 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                    {/* Honeypot Spam Protection Field */}
+                    <div style={{ display: "none", position: "absolute", left: "-9999px" }} aria-hidden="true">
+                      <label htmlFor="contact_hp">Do not fill this field</label>
+                      <input
+                        type="text"
+                        id="contact_hp"
+                        name="contact_hp"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                      />
+                    </div>
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="contact-name" className="block text-xs font-bold text-[#252525] mb-1">

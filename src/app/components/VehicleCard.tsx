@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { ChevronLeft, ChevronRight, Users, Fuel, CheckCircle2 } from "lucide-react";
 import { Vehicle } from "../data/vehicles";
+import { getResponsiveUnsplashSrcSet, CARD_IMAGE_SIZES } from "../utils/imageHelpers";
 
 export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -18,13 +19,18 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
     setCurrentImgIndex((prev) => (prev === vehicle.images.length - 1 ? 0 : prev + 1));
   };
 
+  const currentImgSrc = vehicle.images[currentImgIndex];
+  const srcSet = getResponsiveUnsplashSrcSet(currentImgSrc);
+
   return (
     <div className="bg-white border border-[#DDD5C8] rounded-3xl overflow-hidden shadow-sm hover:shadow-md hover:border-[#23483A]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Slideshow Image Header */}
         <div className="relative aspect-[16/10] w-full bg-[#F7F3EC] overflow-hidden">
           <img
-            src={vehicle.images[currentImgIndex]}
+            src={currentImgSrc}
+            srcSet={srcSet}
+            sizes={srcSet ? CARD_IMAGE_SIZES : undefined}
             alt={`${vehicle.name} - Image ${currentImgIndex + 1}`}
             loading="lazy"
             decoding="async"

@@ -102,7 +102,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/001-bengaluru.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -176,7 +176,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/002-nandi-hills.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -250,7 +250,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/003-ramanagara.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -324,7 +324,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/004-savandurga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -398,7 +398,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/005-bannerghatta.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -472,7 +472,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/006-kanakapura-sangama-mekedatu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -546,7 +546,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/007-bheemeshwari.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -620,7 +620,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/008-shivagange.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -694,7 +694,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/009-devarayanadurga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -768,7 +768,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/010-madhugiri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -842,7 +842,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/011-mysuru.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -916,7 +916,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/012-chamundi-hills.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -990,7 +990,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/013-srirangapatna.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1064,7 +1064,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/014-ranganathittu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1138,7 +1138,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/015-somanathapura.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1212,7 +1212,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/016-talakadu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1286,7 +1286,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/017-shivanasamudra.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1360,7 +1360,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/018-melkote.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1434,7 +1434,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/019-nanjangud.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1508,7 +1508,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/020-krs-brindavan-gardens.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1582,7 +1582,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/021-bandipur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1656,7 +1656,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/022-nagarhole.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1730,7 +1730,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/023-kabini.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1804,7 +1804,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/024-br-hills.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1878,7 +1878,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/025-male-mahadeshwara-hills.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -1952,7 +1952,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/026-belur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2026,7 +2026,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/027-halebidu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2100,7 +2100,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/028-shravanabelagola.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2174,7 +2174,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/029-sakleshpur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2247,7 +2247,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/030-hassan.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2321,7 +2321,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/031-madikeri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2395,7 +2395,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/032-kushalnagar-dubare.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2469,7 +2469,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/033-bhagamandala-talakaveri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2543,7 +2543,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/034-virajpet.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2617,7 +2617,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/035-kakkabe-tadiandamol.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2691,7 +2691,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/036-chikkamagaluru.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2765,7 +2765,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/037-mullayanagiri-baba-budangiri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2839,7 +2839,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/038-kemmannugundi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2913,7 +2913,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/039-kudremukh.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -2987,7 +2987,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/040-horanadu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3061,7 +3061,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/041-sringeri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3135,7 +3135,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/042-bhadra-wildlife-sanctuary.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3209,7 +3209,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/043-shivamogga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3283,7 +3283,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/044-jog-falls.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3357,7 +3357,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/045-agumbe.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3431,7 +3431,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/046-keladi-ikkeri-sagara.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3505,7 +3505,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/047-honnemaradu.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3579,7 +3579,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/048-thirthahalli-kavaledurga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3653,7 +3653,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/049-kodachadri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3727,7 +3727,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/050-udupi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3801,7 +3801,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/051-malpe-st-marys-island.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3875,7 +3875,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/052-manipal.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -3949,7 +3949,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/053-kaup-padubidri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4023,7 +4023,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/054-kollur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4097,7 +4097,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/055-kundapura-maravanthe.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4171,7 +4171,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/056-mangaluru.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4245,7 +4245,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/057-dharmasthala-venur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4319,7 +4319,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/058-kukke-subramanya.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4393,7 +4393,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/059-moodabidri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4467,7 +4467,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/060-karkala.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4541,7 +4541,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/061-gokarna.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4615,7 +4615,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/062-murudeshwar.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4689,7 +4689,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/063-karwar.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4763,7 +4763,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/064-yana-kumta.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4837,7 +4837,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/065-honnavar.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4911,7 +4911,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/066-sirsi-banavasi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -4985,7 +4985,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/067-dandeli.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5059,7 +5059,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/068-yellapur-magod-falls.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5133,7 +5133,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/069-hampi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5206,7 +5206,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/070-hosapete.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5280,7 +5280,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/071-anegundi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5354,7 +5354,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/072-badami.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5428,7 +5428,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/073-pattadakal.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5502,7 +5502,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/074-aihole.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5576,7 +5576,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/075-mahakuta-banashankari.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5650,7 +5650,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/076-almatti-dam.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5724,7 +5724,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/077-kudalasangama.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5798,7 +5798,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/078-vijayapura.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5872,7 +5872,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/079-kalaburagi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -5946,7 +5946,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/080-bidar.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6020,7 +6020,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/081-raichur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6094,7 +6094,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/082-gadag-lakkundi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6168,7 +6168,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/083-hubballi-dharwad.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6242,7 +6242,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/084-belagavi.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6316,7 +6316,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/085-kittur.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6390,7 +6390,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/086-gokak-falls.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6464,7 +6464,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/087-saundatti.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6537,7 +6537,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/088-haveri.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6611,7 +6611,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/089-chitradurga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6685,7 +6685,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/090-davanagere-harihar.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6759,7 +6759,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/091-kudremukh-national-park.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6833,7 +6833,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/092-brahmagiri-wildlife-sanctuary.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6907,7 +6907,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/093-pilikula-nisargadhama.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -6981,7 +6981,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/094-panambur-beach.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7055,7 +7055,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/095-kavaledurga.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7129,7 +7129,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/096-kundadri-hill.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7203,7 +7203,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/097-netrani-island.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7277,7 +7277,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/098-supa-dam.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7351,7 +7351,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/099-sathodi-falls.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   },
@@ -7425,7 +7425,7 @@ export const DESTINATIONS: Destination[] = [
         "answer": "Hiring a private AC chauffeur cab from Coffee Cabs provides seamless door-to-door comfort."
       }
     ],
-    "heroImage": "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?w=1200&h=800&fit=crop",
+    "heroImage": `${import.meta.env.BASE_URL}images/destinations/100-hidkal-dam.webp`,
     "lastVerified": "20 September 2026",
     "status": "verified"
   }
