@@ -17,6 +17,9 @@ const PackagesIndexPage = lazy(() => import("./pages/PackagesIndexPage"));
 const PackageDetailPage = lazy(() => import("./pages/PackageDetailPage"));
 const RoutesIndexPage = lazy(() => import("./pages/RoutesIndexPage"));
 const RouteDetailPage = lazy(() => import("./pages/RouteDetailPage"));
+const TermsAndConditionsPage = lazy(() => import("./pages/legal/TermsAndConditionsPage"));
+const PrivacyPolicyPage = lazy(() => import("./pages/legal/PrivacyPolicyPage"));
+const UserAgreementPage = lazy(() => import("./pages/legal/UserAgreementPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function ScrollToTop() {
@@ -70,6 +73,13 @@ export default function App() {
 
             {/* Booking & Enquiry */}
             <Route path="/booking" element={<BookingPage />} />
+
+            {/* Legal & Compliance Pages */}
+            <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
+            <Route path="/terms" element={<TermsAndConditionsPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/user-agreement" element={<UserAgreementPage />} />
 
             {/* 404 Catch-All */}
             <Route path="*" element={<NotFoundPage />} />

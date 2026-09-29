@@ -300,10 +300,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* COLUMN 4: EXPLORE */}
+            {/* COLUMN 4: EXPLORE & LEGAL */}
             <div>
               <h3 className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[#F7F3EC] mb-4">
-                EXPLORE
+                EXPLORE & LEGAL
               </h3>
               <ul className="space-y-2.5 text-xs sm:text-sm">
                 <li>
@@ -322,6 +322,21 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/terms-and-conditions" className="text-[#D8D2C8] hover:text-[#B86F52] transition-colors">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy" className="text-[#D8D2C8] hover:text-[#B86F52] transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/user-agreement" className="text-[#D8D2C8] hover:text-[#B86F52] transition-colors">
+                    User Agreement
+                  </Link>
+                </li>
+                <li>
                   <Link to="/contact" className="text-[#D8D2C8] hover:text-[#B86F52] transition-colors">
                     Contact Us
                   </Link>
@@ -335,11 +350,20 @@ export default function Footer() {
             {/* Left Copyright */}
             <p>© 2026 Coffee Cabs. All rights reserved.</p>
 
-            {/* Middle Tagline */}
-            <p className="hidden md:block font-serif italic text-[rgba(247,243,236,0.6)]">
-              Drive to a Better Tomorrow | Explore Karnataka with Coffee Cabs
-            </p>
-
+            {/* Legal Links Bar */}
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs text-[#D8D2C8]">
+              <Link to="/terms-and-conditions" className="hover:text-[#B86F52] transition-colors">
+                Terms & Conditions
+              </Link>
+              <span className="opacity-40">•</span>
+              <Link to="/privacy-policy" className="hover:text-[#B86F52] transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="opacity-40">•</span>
+              <Link to="/user-agreement" className="hover:text-[#B86F52] transition-colors">
+                User Agreement
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
