@@ -45,32 +45,37 @@ export default function FleetPage() {
         schemaJson={getFleetIndexSchema()}
       />
       {/* ── A. PREMIUM HERO SECTION ── */}
-      <section className="py-14 sm:py-20 bg-[#F5E6CA] border-b border-[#DCC7AA] relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.2em] text-[#6F4E37] font-extrabold bg-[#FFFDF7] border border-[#DCC7AA] px-4 py-1.5 rounded-full shadow-sm mb-4">
-            <ShieldCheck size={14} className="text-[#6F4E37]" /> OUR FLEET
+      <section className="py-10 sm:py-16 bg-[#F5E6CA] border-b border-[#DCC7AA] relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          {/* Eyebrow */}
+          <div className="inline-flex items-center justify-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#6F4E37] font-extrabold mb-3">
+            <ShieldCheck size={14} className="text-[#6F4E37]" />
+            <span>OUR FLEET</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#4B3832] mb-4 tracking-tight leading-[1.1]">
-            TRAVEL IN COMFORT. ARRIVE IN STYLE.
+          {/* Main Heading */}
+          <h1 className="text-3xl sm:text-5xl lg:text-[56px] font-extrabold text-[#4B3832] mb-4 tracking-tight leading-[1.08] max-w-3xl mx-auto">
+            TRAVEL IN COMFORT.<br className="hidden sm:inline" /> ARRIVE IN STYLE.
           </h1>
 
-          <p className="text-[#6F4E37] text-xs sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed font-medium">
+          {/* Supporting Description */}
+          <p className="text-[#6F4E37] text-xs sm:text-base max-w-2xl sm:max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed font-medium">
             Choose a vehicle based on group size, comfort, and travel requirements. All Coffee Cabs vehicles are commercial permit registered, insured, and maintained in-house to peak standards.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-md mx-auto">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-xs sm:max-w-md mx-auto">
             <Link
               to="/booking"
-              className="w-full sm:w-auto px-7 py-3.5 bg-[#6F4E37] text-[#FFFDF7] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#4B3832] hover:scale-[1.02] transition-all shadow-md flex items-center justify-center gap-2 min-h-[48px]"
+              className="w-full sm:w-auto px-7 py-3.5 bg-[#6F4E37] text-[#FFFDF7] text-xs uppercase tracking-wider font-extrabold rounded-full hover:bg-[#4B3832] transition-all shadow-md flex items-center justify-center gap-2 min-h-[46px]"
             >
-              REQUEST A QUOTE <ArrowRight size={15} />
+              <span>REQUEST A QUOTE</span> <ArrowRight size={15} />
             </Link>
             <a
               href="tel:+917676726209"
-              className="w-full sm:w-auto px-7 py-3.5 bg-transparent border border-[#6F4E37] text-[#6F4E37] hover:bg-[#F5E6CA] hover:text-[#4B3832] text-xs uppercase tracking-wider font-extrabold rounded-full transition-all shadow-sm flex items-center justify-center gap-2 min-h-[48px]"
+              className="w-full sm:w-auto px-7 py-3.5 bg-transparent border border-[#6F4E37] text-[#6F4E37] hover:bg-[#FFFDF7] hover:text-[#4B3832] text-xs uppercase tracking-wider font-extrabold rounded-full transition-all shadow-xs flex items-center justify-center gap-2 min-h-[46px]"
             >
-              <Phone size={15} /> CONTACT US
+              <Phone size={15} /> <span>CONTACT US</span>
             </a>
           </div>
         </div>
