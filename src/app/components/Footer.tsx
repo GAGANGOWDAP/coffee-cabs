@@ -41,18 +41,15 @@ export default function Footer() {
           <p className="text-sm font-extrabold text-[#4B3832] tracking-tight">
             Brighter Journeys
           </p>
-          <div className="w-10 h-0.5 bg-[#6F4E37] ml-auto mt-1 rounded-full" />
         </div>
 
         {/* Main CTA Content Container */}
         <div className="max-w-3xl mx-auto px-4 sm:px-8 relative z-10">
-          {/* Eyebrow with Lines */}
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <span className="h-px w-8 sm:w-12 bg-[#6F4E37]/40" />
+          {/* Eyebrow */}
+          <div className="flex items-center justify-center mb-3">
             <span className="text-xs sm:text-sm font-extrabold text-[#6F4E37] uppercase tracking-[0.2em]">
               KARNATAKA AWAITS
             </span>
-            <span className="h-px w-8 sm:w-12 bg-[#6F4E37]/40" />
           </div>
 
           {/* Main Heading */}
