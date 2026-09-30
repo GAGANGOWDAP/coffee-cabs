@@ -199,8 +199,7 @@ export default function HomePage() {
             {/* LEFT PANEL: BRAND MESSAGE (~45% on desktop) */}
             <div className="lg:col-span-5 flex flex-col justify-center text-left space-y-4">
               {/* Eyebrow */}
-              <div className="gsap-hero-eyebrow inline-flex items-center gap-2">
-                <span className="h-[2px] w-8 bg-[#6F4E37] shrink-0" />
+              <div className="gsap-hero-eyebrow inline-flex items-center">
                 <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-[#6F4E37]">
                   PREMIUM TRAVEL • BENGALURU & BEYOND
                 </span>
