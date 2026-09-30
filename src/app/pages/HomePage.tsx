@@ -358,14 +358,9 @@ export default function HomePage() {
       <section className="gsap-section-reveal py-10 sm:py-16 bg-[#F5E6CA] border-b border-[#DCC7AA] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.2em] text-[#6F4E37] font-extrabold mb-2">
-              <span className="h-[2px] w-5 bg-[#6F4E37] shrink-0" />
-              <span>SIMPLE & FAST</span>
-              <span className="h-[2px] w-5 bg-[#6F4E37] shrink-0" />
-            </div>
+          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#4B3832] tracking-tight">
-              How It Works
+              HOW IT WORKS
             </h2>
           </div>
 
