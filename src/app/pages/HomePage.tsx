@@ -170,7 +170,7 @@ export default function HomePage() {
         schemaJson={getHomePageSchema(faqs)}
       />
       {/* ── 1. TWO-COMPARTMENT HERO SECTION ── */}
-      <section className="relative bg-[#FFFDF7] text-[#4B3832] pt-24 sm:pt-28 pb-10 overflow-hidden border-b border-[#DCC7AA]">
+      <section className="relative bg-[#FFFDF7] text-[#4B3832] pt-24 sm:pt-28 pb-10 sm:pb-14 overflow-hidden border-b border-[#DCC7AA]">
         {/* Full-width Background Image Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <picture>
@@ -181,21 +181,21 @@ export default function HomePage() {
               fetchPriority="high"
               loading="eager"
               decoding="async"
-              className="w-full h-full object-cover object-[center_30%] opacity-25 transition-opacity duration-700"
+              className="w-full h-full object-cover object-[center_30%] opacity-20 transition-opacity duration-700"
             />
           </picture>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(255,253,247,0.92) 0%, rgba(255,253,247,0.75) 50%, rgba(255,253,247,0.98) 100%)",
+                "linear-gradient(180deg, rgba(255,253,247,0.92) 0%, rgba(255,253,247,0.78) 50%, rgba(255,253,247,0.98) 100%)",
             }}
           />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           {/* Two-Column Grid on Desktop (45% Left / 55% Right), Stacked on Mobile */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             {/* LEFT PANEL: BRAND MESSAGE (~45% on desktop) */}
             <div className="lg:col-span-5 flex flex-col justify-center text-left space-y-4">
               {/* Eyebrow */}
@@ -238,144 +238,72 @@ export default function HomePage() {
               <PlanYourJourney className="w-full relative z-20 text-left shadow-lg border border-[#DCC7AA]" />
             </div>
           </div>
-
-        {/* Foreground Compact Fleet Cards Section */}
-        <div className="relative z-10 max-w-[1020px] mx-auto px-4 sm:px-6 w-full mt-auto">
-          <div className="gsap-hero-cards flex flex-col sm:flex-row items-center sm:items-end justify-center gap-4 lg:gap-5 mb-5 w-full max-w-full">
-            {/* CARD 1: LEFT - Toyota Innova Crysta */}
-            <div className="w-full sm:w-[275px] lg:w-[295px] max-w-full bg-[#FFFDF7] border border-[#DCC7AA] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#6F4E37] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
-              <div>
-                <div className="w-full h-[140px] sm:h-[150px] rounded-xl overflow-hidden bg-[#F5E6CA] mb-2.5">
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/innova-crysta.png`}
-                    alt="Toyota Innova Crysta"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="text-[10px] uppercase font-bold text-[#6F4E37] tracking-wider mb-0.5">
-                  PREMIUM SUV • 6+1 SEATER
-                </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#4B3832] mb-2 group-hover:text-[#6F4E37] transition-colors">
-                  Toyota Innova Crysta
-                </h3>
-              </div>
-              <div className="pt-2.5 border-t border-[#DCC7AA] flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#4B3832]">
-                  ₹19 <span className="text-[11px] text-[#6F4E37] font-normal">/ km</span>
-                </div>
-                <Link
-                  to="/booking"
-                  className="text-xs font-bold text-[#6F4E37] hover:text-[#4B3832] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
-                >
-                  Book <ArrowRight size={13} />
-                </Link>
-              </div>
-            </div>
-
-            {/* CARD 2: CENTER FEATURED - Force Urbania Luxury */}
-            <div className="w-full sm:w-[295px] lg:w-[320px] bg-[#FFFDF7] border-2 border-[#6F4E37] rounded-2xl p-3.5 sm:p-4 shadow-md hover:border-[#4B3832] transition-all duration-300 group flex flex-col justify-between relative shrink-0">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#6F4E37] text-[#FFFDF7] text-[9px] font-extrabold uppercase tracking-widest px-3 py-0.5 rounded-full shadow-sm whitespace-nowrap">
-                FLEXIBLE GROUP FAVORITE
-              </div>
-              <div>
-                <div className="w-full h-[145px] sm:h-[155px] rounded-xl overflow-hidden bg-[#F5E6CA] mb-2.5 mt-0.5">
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/force-urbania.png`}
-                    alt="Force Urbania Luxury"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="text-[10px] uppercase font-bold text-[#6F4E37] tracking-wider mb-0.5">
-                  LUXURY RECLINER • 16 SEATER
-                </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#4B3832] mb-2 group-hover:text-[#6F4E37] transition-colors">
-                  Force Urbania Luxury
-                </h3>
-              </div>
-              <div className="pt-2.5 border-t border-[#DCC7AA] flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#4B3832]">
-                  ₹50 <span className="text-[11px] text-[#6F4E37] font-normal">/ km</span>
-                </div>
-                <Link
-                  to="/booking"
-                  className="text-xs font-bold text-[#6F4E37] hover:text-[#4B3832] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
-                >
-                  Book <ArrowRight size={13} />
-                </Link>
-              </div>
-            </div>
-
-            {/* CARD 3: RIGHT - Force Tempo Traveller */}
-            <div className="w-full sm:w-[275px] lg:w-[295px] bg-[#FFFDF7] border border-[#DCC7AA] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:border-[#6F4E37] sm:translate-y-3 transition-all duration-300 group flex flex-col justify-between shrink-0">
-              <div>
-                <div className="w-full h-[140px] sm:h-[150px] rounded-xl overflow-hidden bg-[#F5E6CA] mb-2.5">
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/tempo-traveller.png`}
-                    alt="Force Tempo Traveller"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover object-center block group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="text-[10px] uppercase font-bold text-[#6F4E37] tracking-wider mb-0.5">
-                  GROUP TRAVEL • 12/17 SEATER
-                </div>
-                <h3 className="text-sm sm:text-base font-extrabold text-[#4B3832] mb-2 group-hover:text-[#6F4E37] transition-colors">
-                  Force Tempo Traveller
-                </h3>
-              </div>
-              <div className="pt-2.5 border-t border-[#DCC7AA] flex items-center justify-between">
-                <div className="text-sm font-extrabold text-[#4B3832]">
-                  ₹35 <span className="text-[11px] text-[#6F4E37] font-normal">/ km</span>
-                </div>
-                <Link
-                  to="/booking"
-                  className="text-xs font-bold text-[#6F4E37] hover:text-[#4B3832] flex items-center gap-1 group-hover:translate-x-1 transition-transform"
-                >
-                  Book <ArrowRight size={13} />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Micro Details Statistics Bar */}
-          <div className="gsap-hero-stats bg-[#FFFDF7] p-3 sm:p-3.5 rounded-xl border border-[#DCC7AA] shadow-sm">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-0 text-center">
-              <div className="sm:border-r border-[#DCC7AA] px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#4B3832]">
-                  8+ <span className="text-[#6F4E37]">YEARS</span>
-                </div>
-                <div className="text-[10px] text-[#6F4E37] font-medium">Experience</div>
-              </div>
-              <div className="sm:border-r border-[#DCC7AA] px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#4B3832]">
-                  5000+
-                </div>
-                <div className="text-[10px] text-[#6F4E37] font-medium">Groups Served</div>
-              </div>
-              <div className="sm:border-r border-[#DCC7AA] px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#4B3832]">
-                  &lt; 5 MIN
-                </div>
-                <div className="text-[10px] text-[#6F4E37] font-medium">Average Response</div>
-              </div>
-              <div className="px-2">
-                <div className="text-sm sm:text-base font-extrabold text-[#4B3832]">
-                  24/7
-                </div>
-                <div className="text-[10px] text-[#6F4E37] font-medium">Travel Support</div>
-              </div>
-            </div>
-          </div>
-        </div>
         </div>
       </section>
 
-      {/* ── 2. INTRO / ABOUT BLURB & 3 FEATURE ICONS ── */}
+      {/* ── 2. FEATURED FLEET SECTION ── */}
+      <section id="fleet" className="gsap-section-reveal py-12 sm:py-16 bg-[#F5E6CA] border-b border-[#DCC7AA]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div>
+              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-[#6F4E37] font-extrabold bg-[#FFFDF7] border border-[#DCC7AA] px-4 py-1.5 rounded-full shadow-xs mb-3">
+                <span>OUR FLEET</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#4B3832] tracking-tight">
+                TRAVEL IN COMFORT. ARRIVE IN STYLE.
+              </h2>
+              <p className="text-xs sm:text-sm text-[#6F4E37] font-medium mt-2 max-w-xl">
+                Choose the right vehicle based on your group size, comfort, and travel requirements.
+              </p>
+            </div>
+
+            <Link
+              to="/fleet"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#6F4E37] text-[#FFFDF7] text-xs font-bold uppercase tracking-wider rounded-full hover:bg-[#4B3832] transition-all shrink-0 shadow-sm min-h-[44px]"
+            >
+              <span>VIEW FULL FLEET</span> <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Vehicle Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10">
+            {VEHICLES.slice(0, 3).map((vehicle) => (
+              <VehicleCard key={vehicle.id} vehicle={vehicle} />
+            ))}
+          </div>
+
+          {/* Micro Details Statistics Bar */}
+          <div className="gsap-hero-stats bg-[#FFFDF7] p-4 sm:p-5 rounded-2xl border border-[#DCC7AA] shadow-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0 text-center">
+              <div className="sm:border-r border-[#DCC7AA] px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
+                  8+ <span className="text-[#6F4E37]">YEARS</span>
+                </div>
+                <div className="text-xs text-[#6F4E37] font-medium">Experience</div>
+              </div>
+              <div className="sm:border-r border-[#DCC7AA] px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
+                  5000+
+                </div>
+                <div className="text-xs text-[#6F4E37] font-medium">Groups Served</div>
+              </div>
+              <div className="sm:border-r border-[#DCC7AA] px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
+                  &lt; 5 MIN
+                </div>
+                <div className="text-xs text-[#6F4E37] font-medium">Average Response</div>
+              </div>
+              <div className="px-2">
+                <div className="text-base sm:text-lg font-extrabold text-[#4B3832]">
+                  24/7
+                </div>
+                <div className="text-xs text-[#6F4E37] font-medium">Travel Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="about" className="gsap-section-reveal py-16 sm:py-20 bg-[#FFFDF7] border-b border-[#DCC7AA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
           <div className="text-xs uppercase tracking-widest text-[#6F4E37] font-extrabold mb-3">
@@ -416,34 +344,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. FLEET SECTION ── */}
-      <section id="fleet" className="gsap-section-reveal py-16 sm:py-24 bg-[#FFFDF7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
-            <div>
-              <div className="inline-block text-xs uppercase tracking-widest text-[#6F4E37] font-bold mb-3 bg-[#F5E6CA] border border-[#DCC7AA] px-4 py-1.5 rounded-full">
-                OUR FLEET
-              </div>
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-[#4B3832]">
-                CHOOSE YOUR RIDE
-              </h2>
-            </div>
-            <Link
-              to="/fleet"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#6F4E37] text-[#FFFDF7] text-xs font-bold rounded-full hover:bg-[#4B3832] transition-all shrink-0 shadow-sm"
-            >
-              VIEW FULL FLEET <ArrowRight size={14} />
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {VEHICLES.slice(0, 3).map((vehicle) => (
-              <VehicleCard key={vehicle.id} vehicle={vehicle} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── 4. FLEET COMPARISON TABLE ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-8">
         <VehicleComparisonTable />
@@ -465,7 +365,7 @@ export default function HomePage() {
               <span className="h-[2px] w-5 bg-[#6F4E37] shrink-0" />
             </div>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#4B3832] tracking-tight">
-              How It Works — 4 Easy Steps
+              How It Works
             </h2>
           </div>
 
